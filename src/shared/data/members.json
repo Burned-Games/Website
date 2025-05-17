@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Marito",
+    "role": "Engine Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/oso.jpg",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+    {
+    "name": "Designer 1",
+    "role": "Level Designer",
+    "department": "Design",
+    "icon": "/icons/member1.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+    {
+    "name": "Artist 1",
+    "role": "Environment Artist",
+    "department": "Art",
+    "icon": "/icons/marta_jover/gato.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+      {
+    "name": "Artist 1",
+    "role": "Environment Artist",
+    "department": "Art",
+    "icon": "/icons/marta_jover/gato.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+      {
+    "name": "Artist 1",
+    "role": "Environment Artist",
+    "department": "Art",
+    "icon": "/icons/marta_jover/gato.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+      {
+    "name": "Artist 1",
+    "role": "Environment Artist",
+    "department": "Art",
+    "icon": "/icons/marta_jover/gato.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  }
+  
+]
