@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/P3_Web/static/css/main.807d0672.css",
-    "main.js": "/P3_Web/static/js/main.f5564c18.js",
+    "main.js": "/P3_Web/static/js/main.972b537c.js",
     "static/js/206.074b45fc.chunk.js": "/P3_Web/static/js/206.074b45fc.chunk.js",
-    "static/media/TitleLogo40k.png": "/P3_Web/static/media/TitleLogo40k.18dd8a6b731b4ab2b7af.png",
     "static/media/logo.png": "/P3_Web/static/media/logo.d10a27ceb615b0f67c95.png",
     "index.html": "/P3_Web/index.html"
   },
   "entrypoints": [
     "static/css/main.807d0672.css",
-    "static/js/main.f5564c18.js"
+    "static/js/main.972b537c.js"
   ]
 }

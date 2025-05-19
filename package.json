@@ -1,7 +1,7 @@
 {
   "name": "p3",
   "version": "0.1.0",
-  "homepage": "https://martagnarta.github.io/P3_Web",
+  "homepage": "https://burned-games.github.io",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^10.0.7",
