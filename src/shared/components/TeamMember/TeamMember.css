@@ -13,10 +13,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background: #1a1a1a;
+    background: var(--color-background-secondary);
     border-radius: 8px;
     margin-bottom: 2rem;
-    border-left: 4px solid #4026d4;
+    border-left: 4px solid var(--color-primary);
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -46,12 +46,12 @@
 }
 
 .team-member-card {
-    background: #2b2b2b;
-    border-radius: 10px;
+    background: var(--color-background-primary);
+    border-radius: var(--border-radius-lg);
     padding: 1.5rem;
     width: 250px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -71,19 +71,19 @@
 }
 
 .team-member-info h3 {
-    color: #fff;
+    color: var(--color-text-primary);
     margin: 0 0 0.5rem 0;
     font-size: 1.2rem;
 }
 
 .team-member-info .role {
-    color: #4026d4;
+    color: var(--color-primary);
     margin: 0.25rem 0;
     font-weight: bold;
 }
 
 .team-member-info .department {
-    color: #888;
+    color: var(--color-text-secondary);
     margin: 0.25rem 0;
     font-size: 0.9rem;
 }
@@ -96,13 +96,13 @@
 }
 
 .social-links a {
-    color: #fff;
+    color: var(--color-text-primary);
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #4026d4;
+    color: var(--color-primary);
 }
 
 /* Media queries para responsividad */

@@ -13,7 +13,7 @@
 
 .page-title {
     font-size: 3.5rem;
-    color: #4026d4;
+    color: var(--color-primary);
     text-transform: uppercase;
     letter-spacing: 0.125rem;
     text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
@@ -21,7 +21,7 @@
 
 .page-subtitle {
     font-size: 1.3rem;
-    color: #ffffff;
+    color: var(--color-text-primary);
     opacity: 0.8;
 }
 
@@ -33,10 +33,10 @@
 .page-title-button {
     padding: 0.8rem 1.8rem;
     font-size: 1.1rem;
-    background-color: #4026d4;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
     border: none;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius-sm);
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;

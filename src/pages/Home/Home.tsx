@@ -9,6 +9,17 @@ const Home: React.FC = () => {
 
     return (
         <div className="home-container">
+            <video
+                className="video-background"
+                autoPlay
+                loop
+                muted
+                playsInline
+            >
+                <source src={`${process.env.PUBLIC_URL}/videos/background.mp4`} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="overlay"></div>
             <PageTitle 
                 title="Warhammer 40,000"
                 subtitle="The Last Marine"

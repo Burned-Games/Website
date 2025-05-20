@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
                 >
                     Home
                 </button>
-                <button 
+                {/* <button 
                     className={isActive('/game')}
                     onClick={() => handleNavigation('/game')}
                 >
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
                     onClick={() => handleNavigation('/about')}
                 >
                     About Us
-                </button>
+                </button> */}
                 <button 
                     className={isActive('/downloads')}
                     onClick={() => handleNavigation('/downloads')}
