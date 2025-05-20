@@ -14,7 +14,7 @@
     );
     
     /* Header */
-    --layout-header-height: 6.0rem; /* Matched with Navbar height */
+    --layout-header-height: 6.0rem; 
     --layout-header-background: var(--color-background-secondary);
     
     /* Content */
@@ -31,5 +31,5 @@
     /* Background Options */
     --layout-background-type: none;
     --layout-background-video-opacity: 0.7;
-    --layout-background-overlay: rgba(0, 0, 0, 0.7);
+    --layout-background-overlay: rgba(0, 0, 0, 0.774);
 }

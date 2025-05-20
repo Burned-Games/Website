@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             
             <div className="content-overlay">
                 <PageTitle 
-                    logoSrc={`${process.env.PUBLIC_URL}/images/TLM_Logo.png`}
+                    logoSrc={`${process.env.PUBLIC_URL}/images/TLM_Logo.webp`}
                     logoAlt="Game Logo"
                     subtitle="Page & Game in development"
                     buttonText="Play Now"

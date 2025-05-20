@@ -133,3 +133,7 @@ dist
 *.js.map
 *.mjs.map
 node_modules/**/*.map
+
+# Build directory
+/build
+build/
