@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 
 const Navbar: React.FC = () => {
     const navigate = useNavigate();

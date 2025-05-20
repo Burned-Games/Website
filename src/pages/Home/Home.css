@@ -17,8 +17,8 @@
 }
 
 .content-overlay {
-    position: absolute; /* Cambiado de relative a absolute */
-    inset: 0; /* Asegura que ocupe exactamente el mismo espacio que el video */
+    position: absolute;
+    inset: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
