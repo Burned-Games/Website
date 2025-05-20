@@ -19,7 +19,18 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="navbar">
-            <div className="navbar-logo">
+            <div 
+                className="navbar-logo"
+                onClick={() => handleNavigation('/')}
+                role="button"
+                tabIndex={0}
+                style={{ cursor: 'pointer' }}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        handleNavigation('/')
+                    }
+                }}
+            >
                 <img src={logo} alt="Team Logo" />
                 <span className="company-name">Burned Games</span>
             </div>

@@ -9,7 +9,7 @@
     padding: 0.5rem 2rem;
     background-color: var(--color-background-secondary);
     z-index: 1000;
-    height: 60px;
+    height: var(--layout-navbar-height);
     border-bottom: 2px solid var(--color-primary);
 }
 

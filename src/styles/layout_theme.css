@@ -1,0 +1,35 @@
+:root {
+    /* Layout Structure */
+    --layout-max-width: 100%;
+    --layout-min-height: 100%;
+
+    /* Navbar */
+    --layout-navbar-height: 3.75rem;
+    --layout-navbar-padding: 0.5rem;
+    --layout-navbar-border: 2px;
+    --layout-navbar-total-height: calc(
+        var(--layout-navbar-height) + 
+        (var(--layout-navbar-padding) * 2) + 
+        var(--layout-navbar-border)
+    );
+    
+    /* Header */
+    --layout-header-height: 6.0rem; /* Matched with Navbar height */
+    --layout-header-background: var(--color-background-secondary);
+    
+    /* Content */
+    --layout-content-background: transparent;
+    --layout-content-max-width: 100%;
+    
+    /* Footer */
+    --layout-footer-height: 3.0rem;
+    --layout-footer-background: rgba(0, 0, 0, 0.85);
+    
+    /* Spacing */
+    --layout-gap: 1rem;
+    
+    /* Background Options */
+    --layout-background-type: none;
+    --layout-background-video-opacity: 0.7;
+    --layout-background-overlay: rgba(0, 0, 0, 0.7);
+}

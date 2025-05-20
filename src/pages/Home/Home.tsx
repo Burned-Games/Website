@@ -1,31 +1,35 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../shared/components/PageTitle/PageTitle';
 import './Home.css';
 
 const Home: React.FC = () => {
-    const handlePlayNow = () => {
-        console.log('Play Now clicked!');
-    };
+    const navigate = useNavigate();
 
     return (
-        <div className="home-container">
+        <div className="home-content">
             <video
-                className="video-background"
+                className="background-video"
                 autoPlay
                 loop
                 muted
                 playsInline
             >
-                <source src={`${process.env.PUBLIC_URL}/videos/background.mp4`} type="video/mp4" />
-                Your browser does not support the video tag.
+                <source 
+                    src={`${process.env.PUBLIC_URL}/videos/background.mp4`} 
+                    type="video/mp4" 
+                />
             </video>
-            <div className="overlay"></div>
-            <PageTitle 
-                title="Warhammer 40,000"
-                subtitle="The Last Marine"
-                buttonText="Play Now"
-                onButtonClick={handlePlayNow}
-            />
+            
+            <div className="content-overlay">
+                <PageTitle 
+                    logoSrc={`${process.env.PUBLIC_URL}/images/TLM_Logo.png`}
+                    logoAlt="Game Logo"
+                    subtitle="Page & Game in development"
+                    buttonText="Play Now"
+                    onButtonClick={() => navigate('/downloads')}
+                />
+            </div>
         </div>
     );
 };

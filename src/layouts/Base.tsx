@@ -1,46 +1,47 @@
 import React from 'react';
+import '../styles/layout_theme.css';
 import './Base.css';
 import Navbar from '../shared/components/Navbar/Navbar';
-import Header from '../shared/components/Header/Header';
 
-interface BaseProps {
+interface BaseLayoutProps {
     children: React.ReactNode;
     headerProps?: {
         title: string;
         subtitle: string;
-        logoSrc?: string;
-        logoAlt?: string;
+        logoSrc: string;
+        logoAlt: string;
     };
     hideHeader?: boolean;
+    className?: string;
 }
 
-const Base: React.FC<BaseProps> = ({ children, headerProps, hideHeader = false }) => {
+const Base: React.FC<BaseLayoutProps> = ({
+    children,
+    headerProps,
+    hideHeader = false,
+    className
+}) => {
     return (
-        <div className="base">
+        <div className={`base ${className || ''}`}>
             <nav className="base-nav">
                 <Navbar />
             </nav>
             
-            <div className="base-container">
+            <main className="base-content">
                 {!hideHeader && headerProps && (
                     <header className="base-header">
-                        <Header 
-                            title={headerProps.title}
-                            subtitle={headerProps.subtitle}
-                            logoSrc={headerProps.logoSrc}
-                            logoAlt={headerProps.logoAlt}
-                        />
+                        <h1>{headerProps.title}</h1>
+                        <p>{headerProps.subtitle}</p>
                     </header>
                 )}
-                
-                <main className="base-content">
-                    {children}
-                </main>
-                
-                <footer className="base-footer">
-                    <p>&copy; 2025 Burned Games - Warhammer 40.000: The Last Marine</p>
-                </footer>
-            </div>
+                {children}
+            </main>
+            
+            <footer className="base-footer">
+                <p className="base-footer-text">
+                    &copy; 2025 Burned Games - All rights reserved
+                </p>
+            </footer>
         </div>
     );
 };

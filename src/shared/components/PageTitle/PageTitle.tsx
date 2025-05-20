@@ -2,7 +2,6 @@ import React from 'react';
 import './PageTitle.css';
 
 interface PageTitleProps {
-    title: string;
     subtitle?: string;
     buttonText?: string;
     onButtonClick?: () => void;
@@ -11,7 +10,6 @@ interface PageTitleProps {
 }
 
 const PageTitle: React.FC<PageTitleProps> = ({ 
-    title, 
     subtitle, 
     buttonText, 
     onButtonClick,
@@ -26,7 +24,6 @@ const PageTitle: React.FC<PageTitleProps> = ({
                         <img src={logoSrc} alt={logoAlt} />
                     </div>
                 )}
-                <h1 className="page-title">{title}</h1>
                 {subtitle && <p className="page-subtitle">{subtitle}</p>}
                 {buttonText && onButtonClick && (
                     <button 

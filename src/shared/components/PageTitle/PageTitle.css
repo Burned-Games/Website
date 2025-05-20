@@ -28,6 +28,7 @@
 .page-title-logo img {
     max-width: 40%;
     height: auto;
+    filter: drop-shadow(0 0 15px var(--color-glow));
 }
 
 .page-title-button {
