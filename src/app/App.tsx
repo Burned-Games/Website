@@ -5,35 +5,40 @@ import Game from '../pages/Game/Game';
 import Media from '../pages/Media/Media';
 import About from '../pages/About/About';
 import Downloads from '../pages/Downloads/Downloads';
+import config from '../../src/config/config';
 import './App.css';
 
 function App() {
-  const basename = process.env.PUBLIC_URL || '/';
-
-  const defaultHeaderProps = {
-    title: "Warhammer 40.000",
-    subtitle: "The Last Marine",
-    logoSrc: `${process.env.PUBLIC_URL}/images/logo.png`,
-    logoAlt: "Game Logo"
-  };
-
   const routes = [
-    { path: '/', element: <Home />, hideHeader: true },
-    { path: '/game', element: <Game /> },
-    { path: '/media', element: <Media /> },
-    { path: '/about', element: <About /> },
-    { path: '/downloads', element: <Downloads /> }
+    { 
+      path: config.routes.home, 
+      element: <Home />, 
+      hideHeader: true 
+    },
+    { 
+      path: config.routes.downloads, 
+      element: <Downloads />, 
+      headerProps: {
+        title: "Downloads",
+        subtitle: "Download our game for your platform",
+        logoSrc: config.assets.images.gameLogo,
+        logoAlt: "Game Logo"
+      }
+    },
+    { path: config.routes.game, element: <Game /> },
+    { path: config.routes.media, element: <Media /> },
+    { path: config.routes.about, element: <About /> },
   ];
 
   return (
-    <Router basename={basename}>
+    <Router basename={config.baseUrl}>
       <Routes>
-        {routes.map(({ path, element, hideHeader }) => (
+        {routes.map(({ path, element, hideHeader, headerProps }) => (
           <Route
             key={path}
             path={path}
             element={
-              <Base headerProps={defaultHeaderProps} hideHeader={hideHeader}>
+              <Base headerProps={headerProps} hideHeader={hideHeader}>
                 {element}
               </Base>
             }

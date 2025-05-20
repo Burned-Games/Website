@@ -4,7 +4,7 @@
     --layout-min-height: 100%;
 
     /* Navbar */
-    --layout-navbar-height: 4.75rem;
+    --layout-navbar-height: 3.75rem;
     --layout-navbar-padding: 0.5rem;
     --layout-navbar-border: 2px;
     --layout-navbar-total-height: calc(

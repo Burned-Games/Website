@@ -1,13 +1,10 @@
 import React from 'react';
-import PageTitle from '../../shared/components/PageTitle/PageTitle';
+import DownloadTable from '../../shared/components/DTable/DTable';
 
 const Downloads: React.FC = () => {
     return (
-        <div>
-            {/* <PageTitle 
-                title="Downloads"
-                subtitle="Get the latest version"
-            /> */}
+        <div className="downloads-page">
+            <DownloadTable />
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../shared/components/PageTitle/PageTitle';
+import config from '../../config/config';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -16,18 +17,18 @@ const Home: React.FC = () => {
                 playsInline
             >
                 <source 
-                    src={`${process.env.PUBLIC_URL}/videos/background.mp4`} 
+                    src={config.assets.videos.background}
                     type="video/mp4" 
                 />
             </video>
             
             <div className="content-overlay">
                 <PageTitle 
-                    logoSrc={`${process.env.PUBLIC_URL}/images/TLM_Logo.webp`}
+                    logoSrc={config.assets.images.gameLogo}
                     logoAlt="Game Logo"
                     subtitle="Page & Game in development"
                     buttonText="Play Now"
-                    onButtonClick={() => navigate('/downloads')}
+                    onButtonClick={() => navigate(config.routes.downloads)}
                 />
             </div>
         </div>
