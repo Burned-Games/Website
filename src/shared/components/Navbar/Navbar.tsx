@@ -61,13 +61,13 @@ const Navbar: React.FC = () => {
                     onClick={() => handleNavigation('/media')}
                 >
                     Media
-                </button>
+                </button>*/
                 <button 
                     className={isActive('/about')}
                     onClick={() => handleNavigation('/about')}
                 >
                     About Us
-                </button> */}
+                </button> }
                 <button 
                     className={isActive('/downloads')}
                     onClick={() => handleNavigation('/downloads')}

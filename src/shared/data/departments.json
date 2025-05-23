@@ -1,0 +1,61 @@
+{
+  "departments": [
+    {
+      "id": "code",
+      "name": "Code",
+      "color": "var(--color-department-code)",
+      "subcategories": [
+        {
+          "id": "core",
+          "name": "Engine Programmer"
+        },
+        {
+          "id": "gameplay",
+          "name": "Gameplay Programmer"
+        },
+        {
+          "id": "tools",
+          "name": "IA Programmer"
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "name": "Art",
+      "color": "var(--color-department-art)",
+      "subcategories": [
+        {
+          "id": "environment",
+          "name": "Environment Artist"
+        },
+        {
+          "id": "character",
+          "name": "Character Artist"
+        },
+        {
+          "id": "concept",
+          "name": "Concept Artist"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "color": "var(--color-department-design)",
+      "subcategories": [
+        {
+          "id": "level",
+          "name": "Level Designer"
+        },
+        {
+          "id": "game",
+          "name": "Gameplay Designer"
+        },
+        {
+          "id": "ui",
+          "name": "UI/UX Designer"
+        }
+      ]
+    }
+  ]
+}

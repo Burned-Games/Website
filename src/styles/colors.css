@@ -1,11 +1,14 @@
 :root {
   /* Main colors */
-  --color-primary: #c49c1b;
-  --color-secondary: #d4af37;
+  --color-primary: #b18017;
+  --color-secondary: #966d14;
   
   /* Background colors */
-  --color-background-primary: #2b2b2b;
-  --color-background-secondary: #1a1a1a;
+  --color-background-primary: #252733;
+  --color-background-secondary: #1a1d2b;
+
+  /* Footer colors */
+  --layout-footer-background: #1e2231;
   
   /* Text colors */
   --color-text-primary: #ffffff;
@@ -19,7 +22,7 @@
   --color-active: var(--color-primary);
   
   /* Overlays and transparencies */
-  --color-overlay: rgba(0, 0, 0, 0.7);
+  --color-overlay: rgba(10, 9, 15, 0.7);
   --color-overlay-light: rgba(0, 0, 0, 0.5);
   --color-overlay-darker: rgba(0, 0, 0, 0.7);
   --color-primary-transparent: rgba(64, 38, 212, 0.1);
@@ -37,4 +40,9 @@
   
   /* Glow effects */
   --color-glow: rgba(255, 255, 255, 0.3);
+
+  /* Department Colors */
+  --color-department-code: #4749c78a;
+  --color-department-art: #fd4d5088;
+  --color-department-design: #3ca8418a;
 }

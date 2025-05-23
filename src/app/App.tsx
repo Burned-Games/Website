@@ -27,7 +27,16 @@ function App() {
     },
     { path: config.routes.game, element: <Game /> },
     { path: config.routes.media, element: <Media /> },
-    { path: config.routes.about, element: <About /> },
+    { 
+      path: config.routes.about, 
+      element: <About />,
+      headerProps: {
+        title: "Burned Games",
+        subtitle: "Meet the Team Behind Warhammer 40.000: The Last Marine",
+        logoSrc: config.assets.images.gameLogo,
+        logoAlt: "Team Logo",
+      }
+    },
   ];
 
   return (

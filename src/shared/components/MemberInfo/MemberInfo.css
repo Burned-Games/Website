@@ -1,0 +1,136 @@
+.member-info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.member-info-content {
+    background: var(--color-background-secondary);
+    width: 95%;
+    height: 95vh;
+    max-width: 1400px;
+    margin: 2.5vh auto;
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.member-info-inner {
+    padding: 2rem;
+}
+
+.close-button {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: var(--color-background-secondary);
+    border: none;
+    color: var(--color-text-primary);
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    z-index: 1001;
+}
+
+.member-info-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.member-info-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info-title h2 {
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.member-role,
+.member-department {
+    color: var(--color-text-secondary);
+    margin: 0.5rem 0;
+}
+
+.member-bio,
+.member-skills,
+.member-projects {
+    margin: 2rem 0;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: var(--color-primary);
+    color: var(--color-text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.member-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.member-social a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.member-social a:hover {
+    background: var(--color-primary);
+}
+
+.member-works {
+    margin-top: 2rem;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.work-item {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.work-item img,
+.work-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
