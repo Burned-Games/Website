@@ -1,14 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from '../shared/context/LanguageContext';
+import { useTranslation } from '../shared/hooks/useTranslation';
 import Base from '../layouts/Base';
 import Home from '../pages/Home/Home';
 import Game from '../pages/Game/Game';
 import Media from '../pages/Media/Media';
 import About from '../pages/About/About';
 import Downloads from '../pages/Downloads/Downloads';
-import config from '../../src/config/config';
+import config from '../config/config';
 import './App.css';
 
 function App() {
+  const { t } = useTranslation();
+  
   const routes = [
     { 
       path: config.routes.home, 
@@ -19,10 +23,10 @@ function App() {
       path: config.routes.downloads, 
       element: <Downloads />, 
       headerProps: {
-        title: "Downloads",
-        subtitle: "Download our game for your platform",
+        title: t.downloads.title,
+        subtitle: t.downloads.subtitle,
         logoSrc: config.assets.images.gameLogo,
-        logoAlt: "Game Logo"
+        logoAlt: t.general.altTexts.gameLogo
       }
     },
     { path: config.routes.game, element: <Game /> },
@@ -31,30 +35,32 @@ function App() {
       path: config.routes.about, 
       element: <About />,
       headerProps: {
-        title: "Burned Games",
-        subtitle: "Meet the Team Behind Warhammer 40.000: The Last Marine",
+        title: t.about.title,
+        subtitle: t.about.subtitle,
         logoSrc: config.assets.images.gameLogo,
-        logoAlt: "Team Logo",
+        logoAlt: t.general.altTexts.teamLogo
       }
-    },
+    }
   ];
 
   return (
-    <Router basename={config.baseUrl}>
-      <Routes>
-        {routes.map(({ path, element, hideHeader, headerProps }) => (
-          <Route
-            key={path}
-            path={path}
-            element={
-              <Base headerProps={headerProps} hideHeader={hideHeader}>
-                {element}
-              </Base>
-            }
-          />
-        ))}
-      </Routes>
-    </Router>
+    <LanguageProvider>
+      <Router basename={config.baseUrl}>
+        <Routes>
+          {routes.map(({ path, element, hideHeader, headerProps }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                <Base headerProps={headerProps} hideHeader={hideHeader}>
+                  {element}
+                </Base>
+              }
+            />
+          ))}
+        </Routes>
+      </Router>
+    </LanguageProvider>
   );
 }
 

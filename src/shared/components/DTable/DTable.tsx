@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from '../../hooks/useTranslation';
 import config from '../../../config/config';
 import './DTable.css';
 
@@ -15,31 +16,35 @@ interface SystemProps {
     downloadUrl: string;
 }
 
-const SystemColumn: React.FC<SystemProps> = ({ type, icon, specs, downloadUrl }) => (
-    <div className="download-column">
-        <div className="system-info">
-            <img src={icon} alt={`${type} icon`} className="system-icon" />
-            <h3>{type.charAt(0).toUpperCase() + type.slice(1)}</h3>
+const SystemColumn: React.FC<SystemProps> = ({ type, icon, specs, downloadUrl }) => {
+    const { t } = useTranslation();
+    
+    return (
+        <div className="download-column">
+            <div className="system-info">
+                <img src={icon} alt={`${t.downloads.platforms[type]} icon`} className="system-icon" />
+                <h3>{t.downloads.platforms[type]}</h3>
+            </div>
+            <div className="system-specs">
+                <ul>
+                    <li><strong>{t.downloads.systemSpecs.os}:</strong> {specs.os}</li>
+                    <li><strong>{t.downloads.systemSpecs.processor}:</strong> {specs.processor}</li>
+                    <li><strong>{t.downloads.systemSpecs.memory}:</strong> {specs.memory}</li>
+                    <li><strong>{t.downloads.systemSpecs.graphics}:</strong> {specs.graphics}</li>
+                    <li><strong>{t.downloads.systemSpecs.storage}:</strong> {specs.storage}</li>
+                </ul>
+            </div>
+            <div className="download-action">
+                <button 
+                    className="download-button"
+                    onClick={() => window.open(downloadUrl, '_blank')}
+                >
+                    {t.downloads.downloadButton}
+                </button>
+            </div>
         </div>
-        <div className="system-specs">
-            <ul>
-                <li><strong>OS:</strong> {specs.os}</li>
-                <li><strong>Processor:</strong> {specs.processor}</li>
-                <li><strong>Memory:</strong> {specs.memory}</li>
-                <li><strong>Graphics:</strong> {specs.graphics}</li>
-                <li><strong>Storage:</strong> {specs.storage}</li>
-            </ul>
-        </div>
-        <div className="download-action">
-            <button 
-                className="download-button"
-                onClick={() => window.open(downloadUrl, '_blank')}
-            >
-                Download
-            </button>
-        </div>
-    </div>
-);
+    );
+};
 
 const DTable: React.FC = () => {
     return (

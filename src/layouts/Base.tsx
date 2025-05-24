@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from '../shared/hooks/useTranslation';
 import '../styles/layout_theme.css';
 import './Base.css';
 import Navbar from '../shared/components/Navbar/Navbar';
@@ -21,6 +22,8 @@ const Base: React.FC<BaseLayoutProps> = ({
     hideHeader = false,
     className
 }) => {
+    const { t } = useTranslation();
+
     return (
         <div className={`base ${className || ''}`}>
             <nav className="base-nav">
@@ -38,9 +41,7 @@ const Base: React.FC<BaseLayoutProps> = ({
             </main>
             
             <footer className="base-footer">
-                <p className="base-footer-text">
-                    &copy; 2025 Burned Games - All rights reserved
-                </p>
+                <p className="base-footer-text">{t.footer.copyright}</p>
             </footer>
         </div>
     );

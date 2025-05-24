@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
+    "@material-icons/font": "^1.0.36",
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
     "@testing-library/dom": "^10.4.0",

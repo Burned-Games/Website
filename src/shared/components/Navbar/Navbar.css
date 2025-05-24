@@ -80,6 +80,13 @@
     color: var(--color-text-primary);
 }
 
+.navbar-content {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
+}
+
 /* Media queries para móvil */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -112,5 +119,22 @@
     .nav-button:hover {
         background-color: #2b2b2b;
         color: #d4af37;
+    }
+
+    .navbar-content {
+        margin: 0; /* Reset margin for mobile */
+    }
+
+    /* Asegurar que el LanguageSelector se muestre correctamente en móvil */
+    .language-selector {
+        display: none;
+    }
+
+    .navbar-links.open ~ .language-selector {
+        display: block;
+        position: absolute;
+        top: calc(var(--layout-navbar-height) + 0.5rem);
+        left: 1rem;
+        z-index: 1001;
     }
 }

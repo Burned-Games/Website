@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import members from '../../data/members.json';
-import departments from '../../data/departments.json';
+import members from '../../data/members/members.json';
+import departments from '../../data/members/departments.json';
 import MemberInfo from '../MemberInfo/MemberInfo';
 import './TeamMember.css';
 import { config } from '../../../config/paths';

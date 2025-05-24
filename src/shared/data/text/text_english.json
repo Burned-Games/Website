@@ -1,0 +1,118 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "downloads": "Downloads",
+    "media": "Media",
+    "game": "Game"
+  },
+  "general": {
+    "company": "Burned Games",
+    "loading": "Loading...",
+    "close": "Close",
+    "back": "Back",
+    "altTexts": {
+      "teamLogo": "Team Logo",
+      "gameLogo": "Game Logo",
+      "defaultAvatar": "Member Avatar"
+    }
+  },
+  "home": {
+    "subtitle": "Page & Game in development",
+    "playButton": "Play Now"
+  },
+  "about": {
+    "title": "Burned Games",
+    "subtitle": "Meet the Team Behind Warhammer 40.000: The Last Marine",
+    "teamSection": {
+      "title": "Our Team",
+      "allTeams": "All Teams",
+      "filters": {
+        "allDepartments": "All Teams",
+        "allMembers": "All Members"
+      }
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "subtitle": "Download our game for your platform",
+    "platforms": {
+      "windows": "Windows",
+      "linux": "Linux"
+    },
+    "systemSpecs": {
+      "title": "System Requirements",
+      "os": "OS",
+      "processor": "Processor",
+      "memory": "Memory",
+      "graphics": "Graphics",
+      "storage": "Storage"
+    },
+    "downloadButton": "Download"
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Screenshots and Videos",
+    "sections": {
+      "characters": {
+        "title": "Character Designs",
+        "subtitle": "Character concepts and models"
+      },
+      "environments": {
+        "title": "Environment Concepts",
+        "subtitle": "World and level designs"
+      }
+    },
+    "gallery": {
+      "previous": "Previous image",
+      "next": "Next image",
+      "close": "Close gallery",
+      "openFullscreen": "Open fullscreen"
+    }
+  },
+  "game": {
+    "title": "A new Warhammer 40.000 Title",
+    "subtitle": "By Burned Games",
+    "loading": "Loading game assets..."
+  },
+  "memberInfo": {
+    "sections": {
+      "about": "About",
+      "skills": "Skills",
+      "portfolio": "Portfolio"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portfolio"
+    }
+  },
+  "components": {
+    "header": {
+      "backToHome": "Back to home"
+    },
+    "gallery": {
+      "viewLarger": "View larger image",
+      "loadingError": "Error loading image",
+      "noImages": "No images available"
+    },
+    "table": {
+      "noData": "No data available",
+      "loading": "Loading data..."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Burned Games - All rights reserved",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "contact": "Contact Us"
+    }
+  },
+  "errors": {
+    "general": "Something went wrong",
+    "notFound": "Page not found",
+    "loading": "Error loading content",
+    "tryAgain": "Try again"
+  }
+}

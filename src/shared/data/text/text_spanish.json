@@ -1,0 +1,118 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "downloads": "Descargas",
+    "media": "Media",
+    "game": "Juego"
+  },
+  "general": {
+    "company": "Burned Games",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "back": "Volver",
+    "altTexts": {
+      "teamLogo": "Logo del Equipo",
+      "gameLogo": "Logo del Juego",
+      "defaultAvatar": "Avatar del Miembro"
+    }
+  },
+  "home": {
+    "subtitle": "Página y Juego en desarrollo",
+    "playButton": "Jugar Ahora"
+  },
+  "about": {
+    "title": "Burned Games",
+    "subtitle": "Conoce al Equipo detrás de Warhammer 40.000: The Last Marine",
+    "teamSection": {
+      "title": "Nuestro Equipo",
+      "allTeams": "Todos los Equipos",
+      "filters": {
+        "allDepartments": "Todos los Equipos",
+        "allMembers": "Todos los Miembros"
+      }
+    }
+  },
+  "downloads": {
+    "title": "Descargas",
+    "subtitle": "Descarga nuestro juego para tu plataforma",
+    "platforms": {
+      "windows": "Windows",
+      "linux": "Linux"
+    },
+    "systemSpecs": {
+      "title": "Requisitos del Sistema",
+      "os": "Sistema Operativo",
+      "processor": "Procesador",
+      "memory": "Memoria",
+      "graphics": "Gráficos",
+      "storage": "Almacenamiento"
+    },
+    "downloadButton": "Descargar"
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Capturas y Videos",
+    "sections": {
+      "characters": {
+        "title": "Diseños de Personajes",
+        "subtitle": "Conceptos y modelos de personajes"
+      },
+      "environments": {
+        "title": "Conceptos de Entornos",
+        "subtitle": "Diseños de mundo y niveles"
+      }
+    },
+    "gallery": {
+      "previous": "Imagen anterior",
+      "next": "Siguiente imagen",
+      "close": "Cerrar galería",
+      "openFullscreen": "Abrir pantalla completa"
+    }
+  },
+  "game": {
+    "title": "Un nuevo título de Warhammer 40.000",
+    "subtitle": "Por Burned Games",
+    "loading": "Cargando recursos del juego..."
+  },
+  "memberInfo": {
+    "sections": {
+      "about": "Sobre",
+      "skills": "Habilidades",
+      "portfolio": "Portfolio"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portfolio"
+    }
+  },
+  "components": {
+    "header": {
+      "backToHome": "Volver al inicio"
+    },
+    "gallery": {
+      "viewLarger": "Ver imagen más grande",
+      "loadingError": "Error cargando la imagen",
+      "noImages": "No hay imágenes disponibles"
+    },
+    "table": {
+      "noData": "No hay datos disponibles",
+      "loading": "Cargando datos..."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Burned Games - Todos los derechos reservados",
+    "links": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Uso",
+      "contact": "Contáctanos"
+    }
+  },
+  "errors": {
+    "general": "Algo salió mal",
+    "notFound": "Página no encontrada",
+    "loading": "Error cargando el contenido",
+    "tryAgain": "Intentar de nuevo"
+  }
+}

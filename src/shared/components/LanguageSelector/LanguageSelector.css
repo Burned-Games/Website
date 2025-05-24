@@ -1,0 +1,59 @@
+.language-selector {
+    position: relative;
+    z-index: 100;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; /* Reduced from 0.5rem */
+    background: none;
+    border: 1px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+    padding: 0.3rem 0.6rem; /* Reduced from 0.4rem 0.8rem */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.8rem; /* Reduced from 0.9rem */
+}
+
+.language-button:hover {
+    background-color: var(--color-hover);
+}
+
+.language-button .material-icons {
+    font-size: 1rem; /* Reduced from 1.2rem */
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 0.4rem); /* Reduced from 0.5rem */
+    right: 0;
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    min-width: 100px; /* Reduced from 120px */
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-item {
+    width: 100%;
+    text-align: left;
+    padding: 0.4rem 0.8rem; /* Reduced from 0.6rem 1rem */
+    border: none;
+    background: none;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.8rem; /* Reduced from 0.9rem */
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-hover);
+}
+
+.dropdown-item.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+}

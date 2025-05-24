@@ -54,7 +54,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2vh;
     width: 100%;
-    max-width: 75rem;
+    max-width: 65rem;
     margin: 0 auto;
     padding: 2vh;
     box-sizing: border-box;
@@ -62,7 +62,7 @@
 
 .team-member-card {
     width: 100%;
-    max-width: 22rem;
+    max-width: 18rem;
     min-height: 18rem;
     background: var(--color-background-primary);
     border-radius: var(--border-radius-lg);
@@ -129,9 +129,10 @@
     background: var(--department-color);
     color: var(--color-text-primary);
     padding: 0.5vh 1vh;
-    border-radius: 0.25rem;
+    border-radius: 1.0rem;
     font-size: clamp(0.8rem, 2vh, 1rem);
     font-weight: 500;
+    font-weight: bold;
 }
 
 .role-tag {
