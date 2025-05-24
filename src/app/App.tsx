@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from '../shared/context/LanguageContext';
 import { useTranslation } from '../shared/hooks/useTranslation';
@@ -8,9 +9,10 @@ import Media from '../pages/Media/Media';
 import About from '../pages/About/About';
 import Downloads from '../pages/Downloads/Downloads';
 import config from '../config/config';
+import { ThemeProvider } from '../providers/ThemeProvider';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   const { t } = useTranslation();
   
   const routes = [
@@ -45,21 +47,23 @@ function App() {
 
   return (
     <LanguageProvider>
-      <Router basename={config.baseUrl}>
-        <Routes>
-          {routes.map(({ path, element, hideHeader, headerProps }) => (
-            <Route
-              key={path}
-              path={path}
-              element={
-                <Base headerProps={headerProps} hideHeader={hideHeader}>
-                  {element}
-                </Base>
-              }
-            />
-          ))}
-        </Routes>
-      </Router>
+      <ThemeProvider>
+        <Router basename={config.baseUrl}>
+          <Routes>
+            {routes.map(({ path, element, hideHeader, headerProps }) => (
+              <Route
+                key={path}
+                path={path}
+                element={
+                  <Base headerProps={headerProps} hideHeader={hideHeader}>
+                    {element}
+                  </Base>
+                }
+              />
+            ))}
+          </Routes>
+        </Router>
+      </ThemeProvider>
     </LanguageProvider>
   );
 }
