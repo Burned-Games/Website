@@ -4,6 +4,7 @@ import { useTranslation } from '../../hooks/useTranslation';
 import './Navbar.css';
 import logo from '../../images/logo.webp';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import ThemeSelector from '../ThemeSelector/ThemeSelector';
 
 const Navbar: React.FC = () => {
     const navigate = useNavigate();
@@ -79,6 +80,7 @@ const Navbar: React.FC = () => {
                         {t.navigation.downloads}
                     </button>
                 </div>
+                <ThemeSelector />
                 <LanguageSelector />
             </div>
         </nav>

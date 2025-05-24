@@ -23,6 +23,15 @@
 .navbar-logo img {
     height: 100%;
     width: auto;
+    transition: filter 0.3s ease;
+}
+
+:root[data-theme="light"] .navbar-logo img {
+    filter: brightness(0);
+}
+
+:root[data-theme="dark"] .navbar-logo img {
+    filter: none;
 }
 
 .company-name {
@@ -44,8 +53,8 @@
     display: block;
     width: 10px;
     height: 10px;
-    border-right: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-right: 3px solid var(--color-text-primary); /* Changed from #fff */
+    border-bottom: 3px solid var(--color-text-primary); /* Changed from #fff */
     transform: rotate(45deg);
     transition: transform 0.3s ease;
 }
@@ -129,11 +138,25 @@
         display: none;
     }
 
+    .theme-selector {
+        display: none;
+    }
+
+    .navbar-links.open ~ .theme-selector {
+        display: block;
+        position: absolute;
+        top: calc(var(--layout-navbar-height) + 1rem);
+        left: 35%;
+        transform: translateX(-50%);
+        z-index: 1001;
+    }
+
     .navbar-links.open ~ .language-selector {
         display: block;
         position: absolute;
         top: calc(var(--layout-navbar-height) + 1rem);
-        right: 4%;
+        left: 65%;
+        transform: translateX(-50%);
         z-index: 1001;
     }
 }
