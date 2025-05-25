@@ -1,6 +1,6 @@
 import React from 'react';
-import Gallery from '../../shared/components/Gallery/Gallery';
-import { config } from '../../config/paths';
+import Gallery from '../../Gallery'; // Actualizado path
+import { config } from '../../../../../../config/paths'; // Actualizado path
 
 const Character_Gallery: React.FC = () => {
     const characters = [

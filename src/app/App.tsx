@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from '../shared/context/LanguageContext';
 import { useTranslation } from '../shared/hooks/useTranslation';
-import Base from '../layouts/Base';
+import Base from '../shared/layouts/Base';
 import Home from '../pages/Home/Home';
 import Game from '../pages/Game/Game';
 import Media from '../pages/Media/Media';

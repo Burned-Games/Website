@@ -1,8 +1,8 @@
 import React from 'react';
-import { useTranslation } from '../shared/hooks/useTranslation';
-import '../styles/layout_theme.css';
+import { useTranslation } from '../hooks/useTranslation';
+import '../../styles/layout_theme.css'; // Actualizado path
 import './Base.css';
-import Navbar from '../shared/components/Navbar/Navbar';
+import Navbar from '../components/Viewer/Navbar/Navbar';
 
 interface BaseLayoutProps {
     children: React.ReactNode;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import PageTitle from '../../shared/components/PageTitle/PageTitle';
+import PageTitle from '../../shared/components/Text/PageTitle/PageTitle';
 import config from '../../config/config';
 import { useTranslation } from '../../shared/hooks/useTranslation';
 import './Home.css';

@@ -1,5 +1,5 @@
 import React from 'react';
-import DownloadTable from '../../shared/components/DTable/DTable';
+import DownloadTable from '../../shared/components/Tables/DTable/DTable';
 
 const Downloads: React.FC = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../../../providers/ThemeProvider';
+import { useTheme } from '../../../../providers/ThemeProvider';
 import './ThemeSelector.css';
 
 const ThemeSelector: React.FC = () => {

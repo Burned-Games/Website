@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { useTranslation } from '../../hooks/useTranslation';
+import { useTranslation } from '../../../hooks/useTranslation';
 import './Navbar.css';
-import logo from '../../images/logo.webp';
-import LanguageSelector from '../LanguageSelector/LanguageSelector';
-import ThemeSelector from '../ThemeSelector/ThemeSelector';
+import logo from '../../../assets/images/logo.webp';
+import LanguageSelector from '../../Buttons/LanguageSelector/LanguageSelector';
+import ThemeSelector from '../../Buttons/ThemeSelector/ThemeSelector';
 
 const Navbar: React.FC = () => {
     const navigate = useNavigate();

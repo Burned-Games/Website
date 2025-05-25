@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTranslation } from '../../hooks/useTranslation';
-import config from '../../../config/config';
+import { useTranslation } from '../../../hooks/useTranslation';
+import config from '../../../../config/config';
 import './DTable.css';
 
 interface SystemProps {
