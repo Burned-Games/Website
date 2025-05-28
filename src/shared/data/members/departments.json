@@ -1,61 +1,188 @@
 {
-  "departments": [
-    {
-      "id": "code",
-      "name": "Code",
-      "color": "var(--color-department-code)",
-      "subcategories": [
-        {
-          "id": "core",
-          "name": "Engine Programmer"
-        },
-        {
-          "id": "gameplay",
-          "name": "Gameplay Programmer"
-        },
-        {
-          "id": "tools",
-          "name": "IA Programmer"
-        }
-      ]
-    },
-    {
-      "id": "art",
-      "name": "Art",
-      "color": "var(--color-department-art)",
-      "subcategories": [
-        {
-          "id": "environment",
-          "name": "Environment Artist"
-        },
-        {
-          "id": "character",
-          "name": "Character Artist"
-        },
-        {
-          "id": "concept",
-          "name": "Concept Artist"
-        }
-      ]
-    },
-    {
-      "id": "design",
-      "name": "Design",
-      "color": "var(--color-department-design)",
-      "subcategories": [
-        {
-          "id": "level",
-          "name": "Level Designer"
-        },
-        {
-          "id": "game",
-          "name": "Gameplay Designer"
-        },
-        {
-          "id": "ui",
-          "name": "UI/UX Designer"
-        }
-      ]
-    }
-  ]
+  "en": {
+    "allTeams": "All Teams",
+    "departments": [
+      {
+        "id": "code",
+        "name": "Code",
+        "color": "var(--color-department-code)",
+        "subcategories": [
+          {
+            "id": "core",
+            "name": "Engine Programmer"
+          },
+          {
+            "id": "gameplay",
+            "name": "Gameplay Programmer"
+          },
+          {
+            "id": "tools",
+            "name": "IA Programmer"
+          }
+        ]
+      },
+      {
+        "id": "art",
+        "name": "Art",
+        "color": "var(--color-department-art)",
+        "subcategories": [
+          {
+            "id": "environment",
+            "name": "Environment Artist"
+          },
+          {
+            "id": "character",
+            "name": "Character Artist"
+          },
+          {
+            "id": "concept",
+            "name": "Concept Artist"
+          }
+        ]
+      },
+      {
+        "id": "design",
+        "name": "Design",
+        "color": "var(--color-department-design)",
+        "subcategories": [
+          {
+            "id": "level",
+            "name": "Level Designer"
+          },
+          {
+            "id": "game",
+            "name": "Gameplay Designer"
+          },
+          {
+            "id": "ui",
+            "name": "UI/UX Designer"
+          }
+        ]
+      }
+    ]
+  },
+  "es": {
+    "allTeams": "Todo el Equipo",
+    "departments": [
+      {
+        "id": "code",
+        "name": "Código",
+        "color": "var(--color-department-code)",
+        "subcategories": [
+          {
+            "id": "core",
+            "name": "Programador de Motor"
+          },
+          {
+            "id": "gameplay",
+            "name": "Programador de Jugabilidad"
+          },
+          {
+            "id": "tools",
+            "name": "Programador de IA"
+          }
+        ]
+      },
+      {
+        "id": "art",
+        "name": "Arte",
+        "color": "var(--color-department-art)",
+        "subcategories": [
+          {
+            "id": "environment",
+            "name": "Artista de Entornos"
+          },
+          {
+            "id": "character",
+            "name": "Artista de Personajes"
+          },
+          {
+            "id": "concept",
+            "name": "Artista Conceptual"
+          }
+        ]
+      },
+      {
+        "id": "design",
+        "name": "Diseño",
+        "color": "var(--color-department-design)",
+        "subcategories": [
+          {
+            "id": "level",
+            "name": "Diseñador de Niveles"
+          },
+          {
+            "id": "game",
+            "name": "Diseñador de Jugabilidad"
+          },
+          {
+            "id": "ui",
+            "name": "Diseñador UI/UX"
+          }
+        ]
+      }
+    ]
+  },
+  "ca": {
+    "allTeams": "Tot l'Equip",
+    "departments": [
+      {
+        "id": "code",
+        "name": "Codi",
+        "color": "var(--color-department-code)",
+        "subcategories": [
+          {
+            "id": "core",
+            "name": "Programador de Motor"
+          },
+          {
+            "id": "gameplay",
+            "name": "Programador de Jugabilitat"
+          },
+          {
+            "id": "tools",
+            "name": "Programador d'IA"
+          }
+        ]
+      },
+      {
+        "id": "art",
+        "name": "Art",
+        "color": "var(--color-department-art)",
+        "subcategories": [
+          {
+            "id": "environment",
+            "name": "Artista d'Entorns"
+          },
+          {
+            "id": "character",
+            "name": "Artista de Personatges"
+          },
+          {
+            "id": "concept",
+            "name": "Artista Conceptual"
+          }
+        ]
+      },
+      {
+        "id": "design",
+        "name": "Disseny",
+        "color": "var(--color-department-design)",
+        "subcategories": [
+          {
+            "id": "level",
+            "name": "Dissenyador de Nivells"
+          },
+          {
+            "id": "game",
+            "name": "Dissenyador de Jugabilitat"
+          },
+          {
+            "id": "ui",
+            "name": "Dissenyador UI/UX"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -1,11 +1,12 @@
 {
   "navigation": {
     "home": "Inicio",
-    "about": "Nosotros",
+    "about": "Equipo",
     "downloads": "Descargas",
-    "media": "Media",
+    "media": "Galería",
     "game": "Juego"
   },
+
   "general": {
     "company": "Burned Games",
     "loading": "Cargando...",
@@ -17,102 +18,77 @@
       "defaultAvatar": "Avatar del Miembro"
     }
   },
+
   "home": {
+    "title": "The Last Marine",
     "subtitle": "Página y Juego en desarrollo",
+    "description": "Embárcate en una épica aventura en el universo de Warhammer 40,000",
     "playButton": "Jugar Ahora"
   },
+
   "about": {
     "title": "Burned Games",
     "subtitle": "Conoce al Equipo detrás de Warhammer 40.000: The Last Marine",
-    "teamSection": {
+    "description": "Un equipo apasionado creando experiencias únicas",
+    "team": {
       "title": "Nuestro Equipo",
-      "allTeams": "Todos los Equipos",
-      "filters": {
-        "allDepartments": "Todos los Equipos",
-        "allMembers": "Todos los Miembros"
-      }
+      "subtitle": "Los creadores detrás del juego"
     }
   },
+
   "downloads": {
     "title": "Descargas",
     "subtitle": "Descarga nuestro juego para tu plataforma",
+    "description": "Elige tu plataforma y comienza la aventura",
     "platforms": {
       "windows": "Windows",
       "linux": "Linux"
     },
     "systemSpecs": {
-      "title": "Requisitos del Sistema",
       "os": "Sistema Operativo",
       "processor": "Procesador",
       "memory": "Memoria",
       "graphics": "Gráficos",
       "storage": "Almacenamiento"
     },
-    "downloadButton": "Descargar"
-  },
-  "media": {
-    "title": "Media",
-    "subtitle": "Capturas y Videos",
-    "sections": {
-      "characters": {
-        "title": "Diseños de Personajes",
-        "subtitle": "Conceptos y modelos de personajes"
-      },
-      "environments": {
-        "title": "Conceptos de Entornos",
-        "subtitle": "Diseños de mundo y niveles"
-      }
-    },
-    "gallery": {
-      "previous": "Imagen anterior",
-      "next": "Siguiente imagen",
-      "close": "Cerrar galería",
-      "openFullscreen": "Abrir pantalla completa"
+    "downloadButton": "Descargar",
+    "buttons": {
+      "download": "Descargar Ahora",
+      "viewOnGithub": "Ver en GitHub"
     }
   },
+
+  "media": {
+    "title": "Galería",
+    "subtitle": "Capturas y Videos",
+    "gallery": {
+      "characters": "Personajes",
+      "environments": "Entornos"
+    }
+  },
+
   "game": {
     "title": "Un nuevo título de Warhammer 40.000",
     "subtitle": "Por Burned Games",
-    "loading": "Cargando recursos del juego..."
-  },
-  "memberInfo": {
-    "sections": {
-      "about": "Sobre",
-      "skills": "Habilidades",
-      "portfolio": "Portfolio"
-    },
-    "social": {
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "portfolio": "Portfolio"
+    "description": "Embárcate en una misión épica",
+    "features": {
+      "title": "Características",
+      "items": [
+        "Combate táctico",
+        "Historia inmersiva",
+        "Gráficos detallados",
+        "Personalización única"
+      ]
     }
   },
-  "components": {
-    "header": {
-      "backToHome": "Volver al inicio"
-    },
-    "gallery": {
-      "viewLarger": "Ver imagen más grande",
-      "loadingError": "Error cargando la imagen",
-      "noImages": "No hay imágenes disponibles"
-    },
-    "table": {
-      "noData": "No hay datos disponibles",
-      "loading": "Cargando datos..."
-    }
-  },
+
   "footer": {
     "copyright": "© 2025 Burned Games - Todos los derechos reservados",
-    "links": {
-      "privacy": "Política de Privacidad",
-      "terms": "Términos de Uso",
-      "contact": "Contáctanos"
-    }
+    "rights": "Todos los derechos reservados"
   },
+
   "errors": {
-    "general": "Algo salió mal",
     "notFound": "Página no encontrada",
-    "loading": "Error cargando el contenido",
-    "tryAgain": "Intentar de nuevo"
+    "general": "Algo salió mal"
   }
 }

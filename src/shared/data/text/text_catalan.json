@@ -1,9 +1,9 @@
 {
   "navigation": {
     "home": "Inici",
-    "about": "Nosaltres",
+    "about": "Equip",
     "downloads": "Descàrregues",
-    "media": "Media",
+    "media": "Galeria",
     "game": "Joc"
   },
   "general": {
@@ -26,9 +26,7 @@
     "subtitle": "Coneix l'Equip darrere de Warhammer 40.000: The Last Marine",
     "teamSection": {
       "title": "El Nostre Equip",
-      "allTeams": "Tots els Equips",
       "filters": {
-        "allDepartments": "Tots els Equips",
         "allMembers": "Tots els Membres"
       }
     }

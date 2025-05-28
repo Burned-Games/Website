@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from '../../../hooks/useTranslation';
 import members from '../../../data/members/members.json';
 import departments from '../../../data/members/departments.json';
 import MemberInfo from './MemberInfo/MemberInfo';
@@ -14,9 +15,12 @@ const Card = ({ member, onClick }: {
     member: typeof members[0];
     onClick: () => void;
 }) => {
+    const { language } = useTranslation();
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
     const memberIcon = member.icon ? `${config.basePath}${member.icon}` : defaultIcon;
-    const department = departments.departments.find(
+    
+    const localizedDepartments = departments[language as keyof typeof departments].departments;
+    const department = localizedDepartments.find(
         d => d.name.toLowerCase() === member.department.toLowerCase()
     );
 
@@ -57,17 +61,21 @@ const Card = ({ member, onClick }: {
 };
 
 const TeamMember: React.FC = () => {
+    const { language } = useTranslation();
     const [filter, setFilter] = useState<FilterState>({
         department: null,
         subcategory: null
     });
     const [selectedMember, setSelectedMember] = useState<typeof members[0] | null>(null);
 
+    const localizedDepartments = departments[language as keyof typeof departments].departments;
+    const localizedTexts = departments[language as keyof typeof departments];
+
     const filteredMembers = members
         .filter(member => {
             if (!filter.department) return true;
             
-            const department = departments.departments.find(d => d.id === filter.department);
+            const department = localizedDepartments.find(d => d.id === filter.department);
             if (!department) return false;
 
             const isDepartmentMatch = member.department.toLowerCase() === department.name.toLowerCase();
@@ -86,9 +94,9 @@ const TeamMember: React.FC = () => {
                         className={`filter-button ${!filter.department ? 'active' : ''}`}
                         onClick={() => setFilter({ department: null, subcategory: null })}
                     >
-                        All Teams
+                        {localizedTexts.allTeams}
                     </button>
-                    {departments.departments.map(dept => (
+                    {localizedDepartments.map(dept => (
                         <button
                             key={dept.id}
                             className={`filter-button ${filter.department === dept.id ? 'active' : ''}`}
@@ -109,9 +117,9 @@ const TeamMember: React.FC = () => {
                             className={`filter-button ${!filter.subcategory ? 'active' : ''}`}
                             onClick={() => setFilter(prev => ({ ...prev, subcategory: null }))}
                         >
-                            All {departments.departments.find(d => d.id === filter.department)?.name}
+                            All {localizedDepartments.find(d => d.id === filter.department)?.name}
                         </button>
-                        {departments.departments
+                        {localizedDepartments
                             .find(d => d.id === filter.department)
                             ?.subcategories.map(sub => (
                                 <button
