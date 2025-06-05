@@ -1,10 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../../../hooks/useTranslation';
-import members from '../../../data/members/members.json';
-import departments from '../../../data/members/departments.json';
 import MemberInfo from './MemberInfo/MemberInfo';
 import './TeamMember.css';
 import { config } from '../../../../config/paths';
+
+interface Member {
+    name: string;
+    role: string;
+    department: string;
+    icon?: string;
+    github?: string;
+    linkedin?: string;
+    bio?: string;
+    skills?: string[];
+}
+
+interface Department {
+    id: string;
+    name: string;
+    color: string;
+    subcategories: Array<{
+        id: string;
+        name: string;
+    }>;
+}
+
+interface DepartmentsData {
+    allTeams: string;
+    departments: Department[];
+}
 
 interface FilterState {
   department: string | null;
@@ -12,15 +36,23 @@ interface FilterState {
 }
 
 const Card = ({ member, onClick }: { 
-    member: typeof members[0];
+    member: Member;
     onClick: () => void;
 }) => {
     const { language } = useTranslation();
+    const [departments, setDepartments] = useState<DepartmentsData | null>(null);
+    
+    useEffect(() => {
+        fetch(`${config.basePath}/data/members/departments.json`)
+            .then(response => response.json())
+            .then(data => setDepartments(data[language as keyof typeof data]))
+            .catch(error => console.error('Error loading departments:', error));
+    }, [language]);
+
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
     const memberIcon = member.icon ? `${config.basePath}${member.icon}` : defaultIcon;
     
-    const localizedDepartments = departments[language as keyof typeof departments].departments;
-    const department = localizedDepartments.find(
+    const department = departments?.departments.find(
         d => d.name.toLowerCase() === member.department.toLowerCase()
     );
 
@@ -66,16 +98,30 @@ const TeamMember: React.FC = () => {
         department: null,
         subcategory: null
     });
-    const [selectedMember, setSelectedMember] = useState<typeof members[0] | null>(null);
+    const [selectedMember, setSelectedMember] = useState<Member | null>(null);
+    const [members, setMembers] = useState<Member[]>([]);
+    const [departments, setDepartments] = useState<DepartmentsData | null>(null);
 
-    const localizedDepartments = departments[language as keyof typeof departments].departments;
-    const localizedTexts = departments[language as keyof typeof departments];
+    // Cargar datos desde public
+    useEffect(() => {
+        // Cargar miembros
+        fetch(`${config.basePath}/data/members/members.json`)
+            .then(response => response.json())
+            .then(data => setMembers(data))
+            .catch(error => console.error('Error loading members:', error));
+
+        // Cargar departamentos
+        fetch(`${config.basePath}/data/members/departments.json`)
+            .then(response => response.json())
+            .then(data => setDepartments(data[language as keyof typeof data]))
+            .catch(error => console.error('Error loading departments:', error));
+    }, [language]);
 
     const filteredMembers = members
         .filter(member => {
-            if (!filter.department) return true;
+            if (!filter.department || !departments) return true;
             
-            const department = localizedDepartments.find(d => d.id === filter.department);
+            const department = departments.departments.find(d => d.id === filter.department);
             if (!department) return false;
 
             const isDepartmentMatch = member.department.toLowerCase() === department.name.toLowerCase();
@@ -86,6 +132,10 @@ const TeamMember: React.FC = () => {
         })
         .sort((a, b) => a.name.localeCompare(b.name));
 
+    if (!departments) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <div className="team-container">
             <div className="filters-container">
@@ -94,9 +144,9 @@ const TeamMember: React.FC = () => {
                         className={`filter-button ${!filter.department ? 'active' : ''}`}
                         onClick={() => setFilter({ department: null, subcategory: null })}
                     >
-                        {localizedTexts.allTeams}
+                        {departments.allTeams}
                     </button>
-                    {localizedDepartments.map(dept => (
+                    {departments.departments.map(dept => (
                         <button
                             key={dept.id}
                             className={`filter-button ${filter.department === dept.id ? 'active' : ''}`}
@@ -117,9 +167,9 @@ const TeamMember: React.FC = () => {
                             className={`filter-button ${!filter.subcategory ? 'active' : ''}`}
                             onClick={() => setFilter(prev => ({ ...prev, subcategory: null }))}
                         >
-                            All {localizedDepartments.find(d => d.id === filter.department)?.name}
+                            All {departments.departments.find(d => d.id === filter.department)?.name}
                         </button>
-                        {localizedDepartments
+                        {departments.departments
                             .find(d => d.id === filter.department)
                             ?.subcategories.map(sub => (
                                 <button
