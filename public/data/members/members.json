@@ -1,17 +1,17 @@
 [
   {
-    "name": "Guillem Moxntegit",
+    "name": "Guillem Montes",
     "role": "Producer",
     "department": "Produccion",
-    "icon": "avatar.webp",
-    "github": "https://github.com/Guillem257",
-    "linkedin": "https://www.linkedin.com/in/guillem-montes-recasens-2488602a7/"
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
   },
   {
     "name": "Raül Sánchez",
     "role": "Game Designer",
     "department": "Design",
-    "icon": "avatar.webp",
+    "icon": "/icons/marito/icon.png",
     "github": "https://github.com/username",
     "linkedin": "https://linkedin.com/in/username"
   },
