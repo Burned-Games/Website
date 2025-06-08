@@ -1,0 +1,11 @@
+{
+  "name": "Eduardo Bergillos",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Dedicated programmer with focus on network programming and multiplayer systems.",
+  "skills": ["C++", "Networking", "Multiplayer Systems", "Server Architecture"],
+  "works": []
+}

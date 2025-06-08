@@ -1,0 +1,11 @@
+{
+  "name": "Sergio Corona",
+  "role": "3D Artist",
+  "department": "Art",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Talented 3D artist with focus on hard surface modeling and technical art.",
+  "skills": ["Blender", "Maya", "Substance Designer", "Technical Art"],
+  "works": []
+}

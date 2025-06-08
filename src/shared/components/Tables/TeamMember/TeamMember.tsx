@@ -5,6 +5,7 @@ import './TeamMember.css';
 import { config } from '../../../../config/paths';
 
 interface Member {
+    id: string; // Nuevo campo para identificar la carpeta
     name: string;
     role: string;
     department: string;
@@ -13,6 +14,12 @@ interface Member {
     linkedin?: string;
     bio?: string;
     skills?: string[];
+    works?: Array<{
+        title: string;
+        description?: string;
+        image: string;
+        type: 'image' | 'video';
+    }>;
 }
 
 interface Department {
@@ -31,8 +38,8 @@ interface DepartmentsData {
 }
 
 interface FilterState {
-  department: string | null;
-  subcategory: string | null;
+    department: string | null;
+    subcategory: string | null;
 }
 
 const Card = ({ member, onClick }: { 
@@ -50,7 +57,8 @@ const Card = ({ member, onClick }: {
     }, [language]);
 
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
-    const memberIcon = member.icon ? `${config.basePath}${member.icon}` : defaultIcon;
+    // Ahora la ruta del icono está basada en la carpeta del dossier
+    const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
     const department = departments?.departments.find(
         d => d.name.toLowerCase() === member.department.toLowerCase()
@@ -101,16 +109,68 @@ const TeamMember: React.FC = () => {
     const [selectedMember, setSelectedMember] = useState<Member | null>(null);
     const [members, setMembers] = useState<Member[]>([]);
     const [departments, setDepartments] = useState<DepartmentsData | null>(null);
+    const [loading, setLoading] = useState(true);
 
-    // Cargar datos desde public
+    // Función para obtener la lista de carpetas de dossiers
+    const loadDossiersList = async (): Promise<string[]> => {
+        try {
+            // Primero intentamos cargar un archivo index que liste las carpetas
+            const response = await fetch(`${config.basePath}/data/dossier/index.json`);
+            if (response.ok) {
+                const data = await response.json();
+                return data.dossiers || [];
+            }
+        } catch (error) {
+            console.log('No index.json found, trying to discover dossiers...');
+        }
+
+        // Si no hay index.json, intentamos descubrir las carpetas
+        // Esto requerirá que mantengas manualmente una lista o uses un script de build
+        return [];
+    };
+
+    // Función para cargar un dossier individual
+    const loadDossier = async (dossierId: string): Promise<Member | null> => {
+        try {
+            const response = await fetch(`${config.basePath}/data/dossier/${dossierId}/${dossierId}.json`);
+            if (!response.ok) {
+                throw new Error(`Failed to load dossier for ${dossierId}`);
+            }
+            const data = await response.json();
+            return {
+                ...data,
+                id: dossierId
+            };
+        } catch (error) {
+            console.error(`Error loading dossier ${dossierId}:`, error);
+            return null;
+        }
+    };
+
+    // Cargar todos los dossiers
     useEffect(() => {
-        // Cargar miembros
-        fetch(`${config.basePath}/data/members/members.json`)
-            .then(response => response.json())
-            .then(data => setMembers(data))
-            .catch(error => console.error('Error loading members:', error));
+        const loadAllDossiers = async () => {
+            setLoading(true);
+            try {
+                const dossierIds = await loadDossiersList();
+                const memberPromises = dossierIds.map(id => loadDossier(id));
+                const loadedMembers = await Promise.all(memberPromises);
+                
+                // Filtrar miembros que no se pudieron cargar
+                const validMembers = loadedMembers.filter((member): member is Member => member !== null);
+                setMembers(validMembers);
+            } catch (error) {
+                console.error('Error loading dossiers:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
 
-        // Cargar departamentos
+        loadAllDossiers();
+    }, []);
+
+    // Cargar departamentos
+    useEffect(() => {
         fetch(`${config.basePath}/data/members/departments.json`)
             .then(response => response.json())
             .then(data => setDepartments(data[language as keyof typeof data]))
@@ -132,7 +192,7 @@ const TeamMember: React.FC = () => {
         })
         .sort((a, b) => a.name.localeCompare(b.name));
 
-    if (!departments) {
+    if (loading || !departments) {
         return <div>Loading...</div>;
     }
 
@@ -187,7 +247,7 @@ const TeamMember: React.FC = () => {
             <div className="team-grid">
                 {filteredMembers.map((member) => (
                     <Card 
-                        key={member.name}
+                        key={member.id}
                         member={member}
                         onClick={() => setSelectedMember(member)}
                     />

@@ -4,6 +4,7 @@ import { config } from '../../../../../config/paths';
 import './MemberInfo.css';
 
 interface Member {
+    id: string; // Nuevo campo
     name: string;
     role: string;
     department: string;
@@ -12,6 +13,12 @@ interface Member {
     linkedin?: string;
     bio?: string;
     skills?: string[];
+    works?: Array<{
+        title: string;
+        description?: string;
+        image: string;
+        type: 'image' | 'video';
+    }>;
 }
 
 interface MemberInfoProps {
@@ -58,7 +65,8 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     if (!isOpen) return null;
 
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
-    const memberIcon = member.icon ? `${config.basePath}${member.icon}` : defaultIcon;
+    // Usar la nueva ruta basada en el dossier
+    const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
     const department = departments?.departments.find(
         d => d.name.toLowerCase() === member.department.toLowerCase()
@@ -107,6 +115,33 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                                     <span key={index} className="skill-tag">
                                         {skill}
                                     </span>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {member.works && member.works.length > 0 && (
+                        <div className="member-info-section">
+                            <h3>Portfolio</h3>
+                            <div className="work-grid">
+                                {member.works.map((work, index) => (
+                                    <div key={index} className="work-item">
+                                        {work.type === 'image' ? (
+                                            <img 
+                                                src={`${config.basePath}/data/dossier/${member.id}/${work.image}`} 
+                                                alt={work.title}
+                                            />
+                                        ) : (
+                                            <video 
+                                                src={`${config.basePath}/data/dossier/${member.id}/${work.image}`}
+                                                controls
+                                            />
+                                        )}
+                                        <div className="work-info">
+                                            <h4>{work.title}</h4>
+                                            {work.description && <p>{work.description}</p>}
+                                        </div>
+                                    </div>
                                 ))}
                             </div>
                         </div>

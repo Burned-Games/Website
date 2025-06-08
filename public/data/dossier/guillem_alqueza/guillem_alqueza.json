@@ -1,0 +1,11 @@
+{
+  "name": "Guillem Alqueza",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Experienced programmer with expertise in gameplay programming and AI systems.",
+  "skills": ["C#", "Unity", "AI Programming", "Gameplay Systems"],
+  "works": []
+}

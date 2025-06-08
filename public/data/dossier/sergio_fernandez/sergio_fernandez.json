@@ -1,0 +1,11 @@
+{
+  "name": "Sergio Fernández",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Skilled programmer with focus on audio programming and sound systems.",
+  "skills": ["C++", "Audio Programming", "FMOD", "Wwise"],
+  "works": []
+}

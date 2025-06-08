@@ -1,0 +1,11 @@
+{
+  "name": "Miguel Turmo",
+  "role": "3D Artist",
+  "department": "Art",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Talented 3D artist specializing in weapon and prop modeling for games.",
+  "skills": ["Maya", "3ds Max", "Substance Painter", "Hard Surface Modeling"],
+  "works": []
+}

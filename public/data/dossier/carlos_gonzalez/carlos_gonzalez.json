@@ -1,0 +1,11 @@
+{
+  "name": "Carlos González",
+  "role": "3D Artist",
+  "department": "Art",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Skilled 3D artist specializing in character modeling and texturing for games.",
+  "skills": ["Blender", "Maya", "Substance Painter", "ZBrush"],
+  "works": []
+}

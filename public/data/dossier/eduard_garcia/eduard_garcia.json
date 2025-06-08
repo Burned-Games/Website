@@ -1,0 +1,11 @@
+{
+  "name": "Eduard Garcia",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Dedicated programmer specializing in physics programming and simulation systems.",
+  "skills": ["C++", "Physics Programming", "Bullet Physics", "Mathematics"],
+  "works": []
+}

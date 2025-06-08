@@ -1,0 +1,11 @@
+{
+  "name": "Jiajie Lin",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Skilled programmer with focus on data structures and algorithm optimization.",
+  "skills": ["C++", "Data Structures", "Algorithms", "Performance Analysis"],
+  "works": []
+}

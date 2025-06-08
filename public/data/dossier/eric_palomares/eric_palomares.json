@@ -1,0 +1,11 @@
+{
+  "name": "Èric Palomares",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Passionate programmer with focus on game mechanics and systems programming.",
+  "skills": ["C#", "Unity", "Game Systems", "Design Patterns"],
+  "works": []
+}

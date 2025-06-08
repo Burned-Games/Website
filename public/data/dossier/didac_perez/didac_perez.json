@@ -1,0 +1,11 @@
+{
+  "name": "Didac Perez",
+  "role": "3D Artist",
+  "department": "Art",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Passionate 3D artist with focus on game asset creation and optimization.",
+  "skills": ["Blender", "Maya", "Substance Suite", "Game Optimization"],
+  "works": []
+}

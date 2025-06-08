@@ -1,0 +1,11 @@
+{
+  "name": "Albert Cifuentes",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.png",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Experienced programmer with expertise in UI programming and user interface systems.",
+  "skills": ["C#", "Unity UI", "React", "Frontend Development"],
+  "works": []
+}

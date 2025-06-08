@@ -1,0 +1,11 @@
+{
+  "name": "Maria Perarnau",
+  "role": "3D Artist",
+  "department": "Art",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Skilled 3D artist specializing in architectural visualization and environment design.",
+  "skills": ["3ds Max", "Maya", "V-Ray", "Architectural Visualization"],
+  "works": []
+}

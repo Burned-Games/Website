@@ -1,0 +1,11 @@
+{
+  "name": "Pau Mena",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Experienced programmer specializing in database management and backend systems.",
+  "skills": ["Java", "SQL", "Backend Development", "Database Design"],
+  "works": []
+}

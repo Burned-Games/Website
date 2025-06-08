@@ -1,0 +1,11 @@
+{
+  "name": "Rebeca Fernández",
+  "role": "3D Artist",
+  "department": "Art",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Creative 3D artist specializing in organic modeling and sculpting.",
+  "skills": ["ZBrush", "Maya", "Substance Painter", "Retopology"],
+  "works": []
+}

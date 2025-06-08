@@ -1,0 +1,11 @@
+{
+  "name": "Roger Puchol",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Experienced programmer with expertise in console development and platform optimization.",
+  "skills": ["C++", "Console Development", "PlayStation", "Xbox"],
+  "works": []
+}

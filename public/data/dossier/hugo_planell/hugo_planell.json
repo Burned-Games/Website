@@ -1,0 +1,11 @@
+{
+  "name": "Hugo Planell",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.jpg",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Skilled programmer specializing in VR/AR development and immersive technologies.",
+  "skills": ["Unity", "VR/AR Development", "OpenXR", "Immersive Tech"],
+  "works": []
+}

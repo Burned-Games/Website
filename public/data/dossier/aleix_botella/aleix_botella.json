@@ -1,0 +1,11 @@
+{
+  "name": "Aleix Botella",
+  "role": "Programmer",
+  "department": "Code",
+  "icon": "avatar.png",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Passionate programmer specializing in tools development and automation.",
+  "skills": ["Python", "C#", "Tools Development", "Pipeline Automation"],
+  "works": []
+}
