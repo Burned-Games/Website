@@ -1,9 +1,9 @@
 [
   {
-    "name": "Guillem Montegit",
+    "name": "Guillem Moxntegit",
     "role": "Producer",
     "department": "Produccion",
-    "icon": "/data/dossier/guillem_montes/guillem_montes.jpeg",
+    "icon": "avatar.webp",
     "github": "https://github.com/Guillem257",
     "linkedin": "https://www.linkedin.com/in/guillem-montes-recasens-2488602a7/"
   },
@@ -11,7 +11,7 @@
     "name": "Raül Sánchez",
     "role": "Game Designer",
     "department": "Design",
-    "icon": "/icons/marito/icon.png",
+    "icon": "avatar.webp",
     "github": "https://github.com/username",
     "linkedin": "https://linkedin.com/in/username"
   },
