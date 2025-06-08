@@ -1,11 +1,11 @@
 [
   {
-    "name": "Guillem Montes",
+    "name": "Guillem Montegit",
     "role": "Producer",
     "department": "Produccion",
-    "icon": "/icons/marito/icon.png",
-    "github": "https://github.com/username",
-    "linkedin": "https://linkedin.com/in/username"
+    "icon": "/data/dossier/guillem_montes/guillem_montes.jpeg",
+    "github": "https://github.com/Guillem257",
+    "linkedin": "https://www.linkedin.com/in/guillem-montes-recasens-2488602a7/"
   },
   {
     "name": "Raül Sánchez",
