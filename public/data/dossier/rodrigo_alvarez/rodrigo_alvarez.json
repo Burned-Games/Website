@@ -8,5 +8,7 @@
   "linkedin": "https://www.linkedin.com/in/rodrigo-%C3%A1lvarez-moiz%C3%A9-2657212b2/",
   "bio": "In this project, I focused on developing the enemy AI and acquiring knowledge of Lua, as this was the language we used. My main task was programming the Support enemy from start to finish, and I contributed, albeit to a lesser extent, to the design of other enemies. For example, I was responsible for the initial iteration of the tank enemy and played a supporting role during the first three iterations of the boss enemy. I am very satisfied with the work done and the results obtained. I feel this experience has significantly improved my understanding of enemy programming and how to approach it in the context of such an ambitious project. I thoroughly enjoyed this process and look forward to following a similar path in the future.",
   "TASKS1":"",
-  "TASKS1_Image": ""
+  "TASKS1_Image": "",   
+  "DESC1": ""
+ 
 }

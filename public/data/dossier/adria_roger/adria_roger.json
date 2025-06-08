@@ -7,8 +7,9 @@
   "github": "https://github.com/Adri1714",
   "linkedin": "https://www.linkedin.com/in/adria-roger-0b5899196/",
   "bio": "As a programmer, I was mainly working on the enemy systems. Before that, I worked on explosion physics, the BulletPool system, and I also helped with the public scripting variables and the scripting documentation. In the enemies department, my main task was the Ranged Enemy, although I also started working on the MiniBoss. However, the MiniBoss was cancelled after a bit of progress. When I joined the Ranged Enemy task, it was already started, so I added new features like a return-to-origin system (which was later used in other enemies), improvements to the detection system, and I added new animations. After that, I focused on fixing bugs in all enemies and improving how they worked. One of the most important things I learned from this project was how teamwork really works. During the development, my work was connected to what others were doing, and the same happened with their work and mine. Because of that, I saw how important it is to have good communication and understand each other in order to make the project go well.",
-  "TASKS1":"Drive organization",
-  "TASKS1_Image": "ruta de imagen"
+  "TASKS1":"",
+  "TASKS1_Image": "",   
+  "DESC1": ""
 }
 
 

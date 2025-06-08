@@ -8,5 +8,7 @@
   "linkedin": "https://www.linkedin.com/in/hugo-planell-moreno-5693a82a2/",
   "bio": "I am the original creator of **TeaEngine**, a custom game engine that served as the foundation for the development of **Coffee Engine**, which I co-created together with **Mario Dorado Martínez**. This engine was used in the development of _Warhammer 40k: The Last Marine_. Throughout the project, I worked with a team that I led as **Lead Engine**, coordinating development and making key technical decisions regarding the engine’s direction. During the project, I focused on core areas such as **rendering**, **resource management**, **Coffee Runtime**, the **scripting system** and its maintenance, **frustum culling**, the **Scene Manager**, and **serialization**. I was also responsible for the **technical documentation** and ensuring the engine’s **cross-platform support**. In addition to my technical responsibilities, I worked closely with my team to resolve bugs, providing constant technical support and effective solutions to complex issues.",
   "TASKS1":"",
-  "TASKS1_Image": ""
+  "TASKS1_Image": "",   
+  "DESC1": ""
+ 
 }

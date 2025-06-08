@@ -8,5 +8,7 @@
   "linkedin": "https://www.linkedin.com/in/eduardo-bergillos-rivas-57a324222/",
   "bio": "As the Main Enemy Programmer, I was responsible for leading and cordinating the enemy programming team. I managed task distribution and oversight to ensure consistency and efficiency across all-enemy related systems. I developed the base enemy class used as a foundation for all enemy behaviors. I also implemented the initial versions of the core enemy type, laying the groundwork for the logic, movement, and interactions. While other team members later expanded upon and refined these enemies, I remained involved throughout the process, providing technical guidance, support, and code reviews. I was fully in charge  of the Final Boss development. This included implementing all of its phases, mechanics, abilities, animations. Beyond enemy programming, I supported game releases, and maintained constant communication with other departments, particularly Design, Audio, and Art, to align implementation efforts. Additionally, I assisted with the design of the healing particle and made his implementation, I assited with the integration of enemy audio, and I was fully in charge of implementing all VFX and particle systems related to enemies, managing their activation, synchronization, and gameplay feedback.",
   "TASKS1":"",
-  "TASKS1_Image": ""
+  "TASKS1_Image": "",   
+  "DESC1": ""
+ 
 }

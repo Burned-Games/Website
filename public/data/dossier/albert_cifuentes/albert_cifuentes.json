@@ -8,5 +8,6 @@
   "linkedin": "https://www.linkedin.com/in/albert-cifuentes-bur%C3%A9s-835062366/",
   "bio": "As the audio programmer, I was responsible for implementing all the music and sound effects in the game. I used Wwise to organize and manage the audio, sorting everything into folders and soundbanks, and setting up different busses to separate the music and sound effects. To improve the audio experience, I used several Wwise features like 3D spatialization, pitch and volume adjustments, random containers for variation, and share sets to keep things optimized, converting the files to Vorbis and setting the music to streaming mode to save memory and improve performance. All audio events were triggered and controlled using Lua scripting, and in the engine I organized the audio objects in the hierarchy, adjusting their volumes and making sure everything was correctly connected. I also worked on finding or editing some of the audio clips using Audacity when necessary, and I guided the design team in the search for sounds to make sure everything fit the game properly. Besides that, I kept the Lua scripting documentation up to date and wrote the README files for every version we released. At the beginning of development, I also helped a bit with the engine’s input system and added some features to the player’s godmode.",
   "TASKS1":"",
-  "TASKS1_Image": ""
+  "TASKS1_Image": "",   
+  "DESC1": ""
 }

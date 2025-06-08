@@ -8,5 +8,7 @@
   "linkedin": "https://www.linkedin.com/in/lluc-cid-i-bernal-193843251/",
   "bio": "First, I started by designing the user interface alongside the user experience (UI/UX), ensuring it was intuitive, functional, and visually consistent with the project's overall vision. After that, I focused on level design, developing levels 1, 2, and 3. In this phase, I paid special attention to the type and quantity of enemies to implement, based on the guidelines provided by the enemy design department. Additionally, I worked on defining a proper difficulty curve to maintain a balanced yet challenging progression. This aspect went through continuous iteration during QA sessions, allowing us to fine-tune and polish the gameplay experience. Once that phase was completed, I moved on to post-processing the interface, optimizing visual elements to enhance the final presentation of the game. I also took charge of designing and creating the audio elements, ensuring each sound contributed meaningfully to the atmosphere and gameplay. Lastly, I dedicated time to creating particle effects and spent considerable effort on multiple QA iterations, with a strong focus on refining and improving the overall quality of the product.",
   "TASKS1":"",
-  "TASKS1_Image": ""
+  "TASKS1_Image": "",   
+  "DESC1": ""
+ 
 }

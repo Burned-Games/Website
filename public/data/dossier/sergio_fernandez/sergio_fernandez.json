@@ -8,5 +8,8 @@
   "linkedin": "www.linkedin.com/in/sergio-fernandez-contreras-5a57a0233",
   "bio": "My work has focused on being a gameplay and enemy programmer, although during the first sprint I collaborated with other teammates to develop the Input module for the engine. As a gameplay programmer, I implemented the first iteration of the grenade, which is thrown in a parabolic arc and deals damage to enemies. I also developed the armor upgrade system, which activates visual enhancements and provides additional benefits to the player. Additionally, I created the scrap generation system that triggers when enemies are defeated. The arena battle with the miniboss was another task I was responsible for. Lastly, I fixed various bugs related to enemy behavior, ensuring they functioned correctly.",
   "TASKS1":"",
-  "TASKS1_Image": ""
+  "TASKS1_Image": "",   
+  "DESC1": ""
+   
+     
 }
