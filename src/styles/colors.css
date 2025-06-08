@@ -16,7 +16,7 @@
 
 /* Dark theme (default) */
 :root[data-theme="dark"] {
-  --color-primary: #b18017;
+  --color-primary: #b9933f;
   --color-secondary: #966d14;
   
   --color-background-primary: #252733;
@@ -41,7 +41,7 @@
 
 /* Light theme */
 :root[data-theme="light"] {
-  --color-primary: #b18017;
+  --color-primary: #D3B581;
   --color-secondary: #d4a439;
   
   --color-background-primary: #ffffff;

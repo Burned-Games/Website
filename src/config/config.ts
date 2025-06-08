@@ -2,21 +2,12 @@ const config = {
     // Base URL
     baseUrl: process.env.PUBLIC_URL || '/',
 
-    // Helper functions para generar rutas dinámicamente
-    getAsset: {
-        image: (filename: string) => `${process.env.PUBLIC_URL}/assets/images/${filename}`,
-        video: (filename: string) => `${process.env.PUBLIC_URL}/assets/videos/${filename}`,
-        model: (filename: string) => `${process.env.PUBLIC_URL}/assets/models/${filename}`,
-        icon: (filename: string) => `${process.env.PUBLIC_URL}/assets/icons/${filename}`,
-        data: (path: string) => `${process.env.PUBLIC_URL}/data/${path}`,
-    },
-
     // Layout defaults
     layout: {
         header: {
             title: "Warhammer 40.000",
             subtitle: "The Last Marine",
-            // logoSrc: `${process.env.PUBLIC_URL}/assets/images/logo.png`,
+            logoSrc: `${process.env.PUBLIC_URL}/assets/images/logo.png`,
             logoAlt: "Game Logo"
         }
     },
@@ -30,7 +21,6 @@ const config = {
         downloads: '/downloads'
     },
 
-    // Downloads configuration
     downloads: {
         linux: {
             icon: `${process.env.PUBLIC_URL}/assets/images/linux.png`,

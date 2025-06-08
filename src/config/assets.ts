@@ -22,6 +22,10 @@ class AssetManager {
         return `${this.basePath}/assets/icons/${filename}`;
     }
 
+    font(filename: string): string {
+        return `${this.basePath}/assets/fonts/${filename}`;
+    }
+
     data(path: string): string {
         return `${this.basePath}/data/${path}`;
     }
@@ -34,6 +38,11 @@ class AssetManager {
             gameLogo: this.image('TLM_Logo.webp'),
             linux: this.image('linux.png'),
             windows: this.image('windows.png'),
+            borderMember: this.image('border_member2.webp'),
+            separator: this.image('separator.webp'), 
+            corner: this.image('corner.webp'),
+            dossierBackground: this.image('dossier_background.webp'),
+            cardName: this.image('cardName.webp'),
         };
     }
 
@@ -46,6 +55,14 @@ class AssetManager {
     get models() {
         return {
             pipes: this.model('P_pipes_1/P_Pipes_1.gltf'),
+        };
+    }
+
+    get fonts() {
+        return {
+            dossierTitle: {
+                // woff2: this.font('Muleno.woff2'),
+            }
         };
     }
 
