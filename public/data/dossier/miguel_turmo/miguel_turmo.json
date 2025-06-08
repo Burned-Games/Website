@@ -2,10 +2,11 @@
   "name": "Miguel Turmo",
   "role": "3D Artist",
   "department": "Art",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Talented 3D artist specializing in weapon and prop modeling for games.",
-  "skills": ["Maya", "3ds Max", "Substance Painter", "Hard Surface Modeling"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"turmopalaumiguel@gmail.com",
+  "github": "https://github.com/miguelturmo",
+  "linkedin": "https://www.linkedin.com/in/miguel-turmo-palau-564528314/",
+  "bio": "During this proyect i was able to work as enemy creation and animation, i worked in the creaton of props and animated two of those for the visuals of the videogame and a bit of UI",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

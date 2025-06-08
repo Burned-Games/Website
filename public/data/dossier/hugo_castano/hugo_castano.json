@@ -2,10 +2,11 @@
   "name": "Hugo Castaño",
   "role": "Game Designer",
   "department": "Design",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Innovative game designer with a passion for creating engaging player experiences.",
-  "skills": ["Game Design", "UI/UX Design", "Prototyping", "User Research"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"hugocastanocuellar@gmail.com",
+  "github": "https://github.com/LazyRacoonDev",
+  "linkedin": "www.linkedin.com/in/hugocastano",
+  "bio": "In this project, I started working on every part of the design process, as I was the only one in the design department with any knowledge about the Warhammer 40K universe.After all the design was done, I started doing QA, looking for bugs and reporting them.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

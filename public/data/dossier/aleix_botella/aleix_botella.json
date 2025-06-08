@@ -2,10 +2,11 @@
   "name": "Aleix Botella",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.png",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Passionate programmer specializing in tools development and automation.",
-  "skills": ["Python", "C#", "Tools Development", "Pipeline Automation"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"aleixbotella.1@gmail.com",
+  "github": "https://github.com/Aleix3",
+  "linkedin": "https://www.linkedin.com/in/aleix-botella-llobet-11a336339/",
+  "bio": "My work has been almost entirely focused on Main Character programming. I developed the complete player logic, including movement, orientation, bullet management, and the implementation of the dual weapon system (Bolter and Shotgun). I also created an AnimationManager to handle all 31 player animations, with blending between torso and leg animations. Additionally, I implemented the abilities: Grenade, Electric Zone, and Sword Push. I handled the integration of all player in game art assets, including 3D models, VFX, and particle systems. I implemented logic to control when and how these assets appear, animate or react in game, making sure they are synchronized with the gameplay and the player actions. I was also responsible for all player interactions with the environment, as well as the integration with enemy logic, UI systems, and other related components. Beyond the player, I developed the in-game camera system. This includes smooth player following, joystick-based rotation, both manual and automatic zoom (which activates in the Boss Arena or Coliseum), and the camera shake effect. Finally, during the last development iterations, in addition to refining and polishing the player features, I implemented the full tutorial system and provided support across various other tasks.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

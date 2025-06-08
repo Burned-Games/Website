@@ -2,10 +2,11 @@
   "name": "Pau Mena",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Experienced programmer specializing in database management and backend systems.",
-  "skills": ["Java", "SQL", "Backend Development", "Database Design"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"contacto@paumt.com",
+  "github": "https://github.com/PauMenaTorres",
+  "linkedin": "https://www.linkedin.com/in/pau-mena-torres-a884232a0/",
+  "bio": "My main task was to implement the HUD, which takes into account all player variables to activate and deactivate animations and cooldowns. The visuals show cooldowns with animations, how health is healed, the current bullet count, the weapons' red color when you fire without bullets, and button feedback for all actions. I also implemented a viggnette when the player is hitted, an alert when enemies are warned,health bars for the mini-boss and the main boss, and the colliseum doors logic and animations. Regarding the player, I implemented the fervor standard, so it can have its animation when thrown and have a boost to attack and reload speed. Regarding the engine, I have been implementing the first fully functional version of the UI with images, text, buttons, sliders, toggles, anchor points, sorting layers and independent UI transform, which has been the basis for creating the gameplay UI throughout the project, which has been continuously improved.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

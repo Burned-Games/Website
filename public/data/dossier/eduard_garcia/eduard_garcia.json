@@ -2,10 +2,11 @@
   "name": "Eduard Garcia",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Dedicated programmer specializing in physics programming and simulation systems.",
-  "skills": ["C++", "Physics Programming", "Bullet Physics", "Mathematics"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"garciatobajaseduard@gmail.com",
+  "github": "https://github.com/Eduuuuuuuuuuuu",
+  "linkedin": "www.linkedin.com/in/edu-garcia-tobajas-830065295",
+  "bio": "I contributed to the Input and UI modules by developing scripting functions and fixing various bugs. I implemented several particle effects in an initial iteration and then carried out multiple iterations to create collisions in Blender, polishing them to their final form. Finally, I took part in QA sessions, where I identified and documented bugs.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

@@ -2,10 +2,11 @@
   "name": "Alejandro Ibáñez",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Passionate programmer with expertise in mobile game development and optimization.",
-  "skills": ["C#", "Unity", "Mobile Development", "iOS/Android"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"shibainuale@gmail.com",
+  "github": "https://github.com/AlejandroIR",
+  "linkedin": "https://www.linkedin.com/in/alejandro-ibáñez-b0b340314/",
+  "bio": "I developed the core systems for the Player Upgrade System and the UI of the Workbench, ensuring smooth user interaction. Later, I worked on the Arena Coliseum Battle. I also contributed as an Engine Physics Programmer, improving the game’s physical interactions. Throughout development, I regularly participated in QA, identifying and fixing bugs. Additionally, I helped polish and expand the Main Character’s.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

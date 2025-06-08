@@ -2,10 +2,11 @@
   "name": "Pau Hernández",
   "role": "3D Artist",
   "department": "Art",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Skilled 3D artist with focus on vehicle modeling and mechanical design.",
-  "skills": ["Blender", "3ds Max", "KeyShot", "CAD Software"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"contactpauher@gmail.com",
+  "github": "https://github.com/PauHeer",
+  "linkedin": "https://es.linkedin.com/in/pauher",
+  "bio": "In this project I contributed to the initial creation of the game's UI, including interfaces like the main menu, pause menu, settings screen, and the workbench. Additionally, I participated in multiple QA sessions, focusing on identifying bugs and areas for improvement across both functionality and usability.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

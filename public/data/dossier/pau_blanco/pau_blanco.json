@@ -2,10 +2,11 @@
   "name": "Pau Blanco",
   "role": "3D Artist",
   "department": "Art",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Skilled 3D artist with expertise in environment modeling and lighting for games.",
-  "skills": ["Blender", "3ds Max", "Substance Suite", "Lighting"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"paublancov@gmail.com",
+  "github": "https://github.com/PauloWhite2004",
+  "linkedin": "https://www.linkedin.com/in/pau-blanco-valle-b0a224360/",
+  "bio": "In this project, I was mainly responsible for the artistic design of enemies, creation of props for the levels, and animations. I designed several iterations for enemies such as the Tank, Boss, and Miniboss. Later on, I also created props and tileable textures. Finally, in the latest iterations, I have done all the animations for the Tank and the introduction cutscene for Level 3. In conclusion, I would say that what I enjoyed the most in this project was the enemy concept art and the animations.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

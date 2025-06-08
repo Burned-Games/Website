@@ -2,10 +2,11 @@
   "name": "Didac Perez",
   "role": "3D Artist",
   "department": "Art",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Passionate 3D artist with focus on game asset creation and optimization.",
-  "skills": ["Blender", "Maya", "Substance Suite", "Game Optimization"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"didacpema@gmail.com",
+  "github": "https://github.com/didacpema",
+  "linkedin": "https://www.linkedin.com/in/d%C3%ADdac-pm/",
+  "bio": "In this project, I was part of the art department, with my main focus on animation and 3D modeling. I started by creating some concepts for the main character's design. I also created the full 3D models of the player's Bolter weapon, the Ork Boy, and the Ork Rifle (blockout, high-poly, low-poly, and textured), as well as the rig for the Ork Boy. I then moved on to creating controllers and fully animating the Space Marine, the Ork Boy, the Weird Boy, and Garrosh. I also animated the intro and endgame cinematics and helped develop the trailer.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

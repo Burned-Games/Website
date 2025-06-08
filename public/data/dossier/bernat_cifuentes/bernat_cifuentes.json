@@ -2,10 +2,11 @@
   "name": "Bernat Cifuentes",
   "role": "Game Designer",
   "department": "Design",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Passionate game designer with expertise in mechanics design and player feedback systems.",
-  "skills": ["Game Design", "Systems Design", "Balancing", "Analytics"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"bernat.cifuentes@gmail.com",
+  "github": "https://github.com/ItsBernii",
+  "linkedin": "https://www.linkedin.com/in/bernat-cifuentes-casals-6a0982369/",
+  "bio": "During the project, I started by working on the level design of the game. Deciding on the aesthetics, organizing the spaces, the enemies that would appear, and creating the corresponding flowcharts. After finalizing the level design, I focused on creating the post-processing design for each level, outlining and documenting every technique and choice of filters to be used in different areas or levels in general. Additionally, I performed QA to find bugs and suggest improvements within our project in order to deliver a final game we could be proud of. Finally, I designed the project’s website, structuring different sections to showcase the essential elements of the game and the work done by our team members.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

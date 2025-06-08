@@ -2,10 +2,11 @@
   "name": "Guillem Alqueza",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Experienced programmer with expertise in gameplay programming and AI systems.",
-  "skills": ["C#", "Unity", "AI Programming", "Gameplay Systems"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"guillemalqueza@gmail.com",
+  "github": "https://github.com/guillemalqueza",
+  "linkedin": "https://www.linkedin.com/in/guillemalqueza/",
+  "bio": "During the development of this project, I worked as one of the programmers of Coffee Engine, contributing to several core systems of both the engine and the game. I was responsible for the implementation of key modules, including: - Audio Module: integrating Wwise with 3D audio, event-driven sound management, RTCPs, auxiliary busses, and profiler support. - Animation System: Supporting skeletal animation, blending, and partial blending. - UI Module: Includes features like anchors, stretching, transform handling, color customization, and spritesheet animation. It supports various interface elements such as images, buttons, toggles, sliders and text, offering a flexible and dynamic UI creation workflow. - Navigation System: Generates navigation meshes from geometry and provides pathfinding algorithms, accessible through scripting for easy integration in gameplay. On the gameplay side, I developed the Save and Load System, including checkpoint management and persistent save data. I also developed interactive mechanics such as doors and levers. Beyond feature development, I focused heavily on performance optimization, for both the engine and the game. This involved using tools like Tracy Profiler, optimizing frustum culling and other systems, and improving assets, resources and script performance. I also actively participated in code reviews. Throughout the project, I provided continuous bug fixing support accross multiple engine systems and gameplay scripts, ensuring stability and polish in the final game.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

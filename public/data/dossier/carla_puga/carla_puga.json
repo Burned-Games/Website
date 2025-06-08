@@ -2,10 +2,11 @@
   "name": "Carla Puga",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Dedicated programmer with focus on machine learning and AI integration in games.",
-  "skills": ["Python", "Machine Learning", "TensorFlow", "AI Integration"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"cpugaper@gmail.com",
+  "github": "https://github.com/cpugaper",
+  "linkedin": "https://www.linkedin.com/in/carla-puga-p%C3%A9rez/",
+  "bio": "As a programmer, I mainly worked in the enemy department, though I initially contributed to explosion physics, scripting documentation, and public variable visibility. In the enemies department, I began working on an early MiniBoss prototype, but it was later canceled. Therefore, I was reassigned to the enemy Tank. When I joined the task, the Tank had already some of its work done; however, I worked on various iterations to improve its previous state machine as well as add new features to it, such as animations, an alert-nearby-enemies system (later reused in other enemies), the berserk ability and the indicator and stun states. I've also worked on general improvements for the enemies' rotation, detection, and raycasting systems. After that, I've been dedicated to bug-fixing and polishing their behavior. Working on this project has taught me the importance of teamwork and adaptability in a large team while also improving my problem-solving and interpersonal skills.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

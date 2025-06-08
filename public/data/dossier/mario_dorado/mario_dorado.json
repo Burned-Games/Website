@@ -2,10 +2,11 @@
   "name": "Mario Dorado",
   "role": "Engine Programmer",
   "department": "Code",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Specialized engine programmer with deep knowledge of graphics programming and rendering.",
-  "skills": ["C++", "DirectX", "OpenGL", "Graphics Programming"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"mariodoradomartinez@gmail.com",
+  "github": "https://github.com/mdoradom",
+  "linkedin": "https://www.linkedin.com/in/mario-dorado-martinez/",
+  "bio": "",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

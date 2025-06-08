@@ -2,10 +2,11 @@
   "name": "Nicolás Sort",
   "role": "Character Designer",
   "department": "Design",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Talented character designer with expertise in creating memorable and distinctive game characters.",
-  "skills": ["Character Design", "Concept Art", "Digital Illustration", "Storyboarding"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"nicolassortsauquillo@gmail.com",
+  "github": "https://github.com/nsortsauquillo",
+  "linkedin": "https://www.linkedin.com/in/nsortsauquillo/",
+  "bio": "In this project, I was responsible for the full design of the main character. I defined their gameplay role, visual identity, and overall integration within the game world. I designed the majority of the character’s audio effects, making sure they aligned with the gameplay and the game’s aesthetic tone. I also created several particle effects myself to enhance the character’s visual feedback. Additionally, I handled the balancing of the character’s stats to support fair and engaging gameplay. I actively participated in QA sessions throughout development to identify issues, refine mechanics, and polish the final experience.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

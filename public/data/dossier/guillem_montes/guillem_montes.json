@@ -3,13 +3,10 @@
   "role": "Producer",
   "department": "Produccion",
   "icon": "avatar.webp",
+  "gmail":"guillem2525@gmail.com",
   "github": "https://github.com/Guillem257",
   "linkedin": "https://www.linkedin.com/in/guillem-montes-recasens-2488602a7/",
   "bio": "As the producer, my main task was to organize the work of the entire class based on their specialties and the development timeline. I created a development plan and used organizational tools such as Drive, Notion, and Discord, which I kept constantly updated to ensure the project remained well-structured. We worked with the Scrum methodology, which I managed and led with the help of the production team and the Scrum Masters. Every two weeks, we updated these groups according to the project's needs.",
   "TASKS1":"Drive organization",
-  "TASKS1_Image": "ruta de imagen",
-  "TASKS2":"Drive organization",
-  "TASKS2_Image": "ruta de imagen"
-
-
+  "TASKS1_Image": "ruta de imagen"
 }

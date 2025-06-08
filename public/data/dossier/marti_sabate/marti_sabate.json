@@ -3,9 +3,10 @@
   "role": "Programmer",
   "department": "Code",
   "icon": "avatar.webp",
+  "gmail":"sabatemiranda@gmail.com",
   "github": "https://github.com/msabate00",
   "linkedin": "https://www.linkedin.com/in/marti-sabate-miranda/",
-  "bio": "Dedicated programmer with expertise in game engine development and optimization.",
-  "skills": ["C++", "Unity", "Unreal Engine", "OpenGL"],
-  "works": []
+  "bio": "",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }

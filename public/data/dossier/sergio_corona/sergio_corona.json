@@ -2,10 +2,11 @@
   "name": "Sergio Corona",
   "role": "3D Artist",
   "department": "Art",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Talented 3D artist with focus on hard surface modeling and technical art.",
-  "skills": ["Blender", "Maya", "Substance Designer", "Technical Art"],
-  "works": []
+  "icon": "avatar.webp",
+  "gmail":"seregero18@gmail.com",
+  "github": "https://github.com/seregero00",
+  "linkedin": "https://www.linkedin.com/in/sergio-corona-7a9325222/",
+  "bio": "In this project, I worked as an Environment Artist, creating assets based on concept sketches provided by a concept artist. During the process, I learned and applied the full modeling pipeline to produce optimized assets suitable for videogame. Each asset followed a clear workflow: starting with a blockout, followed by a high-poly sculpt in ZBrush, and then baking the details onto a low-poly version for texturing. After completing the props, I moved on to VFX, where I created a support attack — an electric projectile.",
+  "TASKS1":"",
+  "TASKS1_Image": ""
 }
