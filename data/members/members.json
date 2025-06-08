@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Guillem Montes",
+    "role": "Producer",
+    "department": "Produccion",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Raül Sánchez",
+    "role": "Game Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Carlos González",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Martí Sabaté",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Hugo Castaño",
+    "role": "Game Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Lluc Cid",
+    "role": "Game Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Bernat Cifuentes",
+    "role": "Game Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Miguel Iglesias",
+    "role": "Game Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Izan Sánchez",
+    "role": "Game Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Nicolás Sort",
+    "role": "Character Designer",
+    "department": "Design",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Pau Blanco",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Núria Casé",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Sergio Corona",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Rafael Esquius",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Luis Fernández",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Rebeca Fernández",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Pau Hernández",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Marta Jover",
+    "role": "Environment Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Alexia Palacín",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Maria Perarnau",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Didac Perez",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Miguel Turmo",
+    "role": "3D Artist",
+    "department": "Art",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Guillem Alqueza",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Rodrigo Álvarez",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Eduardo Bergillos",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Aleix Botella",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Albert Cifuentes",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Mario Dorado",
+    "role": "Engine Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Sergio Fernández",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Eduard Garcia",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Alejandro Ibáñez",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Jiajie Lin",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Pau Mena",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Edgar Mesa",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Èric Palomares",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Hugo Planell",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Roger Puchol",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Carla Puga",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+  {
+    "name": "Adrià Roger",
+    "role": "Programmer",
+    "department": "Code",
+    "icon": "/icons/marito/icon.png",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  }
+]

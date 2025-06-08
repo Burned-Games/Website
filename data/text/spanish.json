@@ -1,0 +1,94 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Equipo",
+    "downloads": "Descargas",
+    "media": "Galería",
+    "game": "Juego"
+  },
+
+  "general": {
+    "company": "Burned Games",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "back": "Volver",
+    "altTexts": {
+      "teamLogo": "Logo del Equipo",
+      "gameLogo": "Logo del Juego",
+      "defaultAvatar": "Avatar del Miembro"
+    }
+  },
+
+  "home": {
+    "title": "The Last Marine",
+    "subtitle": "Página y Juego en desarrollo",
+    "description": "Embárcate en una épica aventura en el universo de Warhammer 40,000",
+    "playButton": "Jugar Ahora"
+  },
+
+  "about": {
+    "title": "Burned Games",
+    "subtitle": "Conoce al Equipo detrás de Warhammer 40.000: The Last Marine",
+    "description": "Un equipo apasionado creando experiencias únicas",
+    "team": {
+      "title": "Nuestro Equipo",
+      "subtitle": "Los creadores detrás del juego"
+    }
+  },
+
+  "downloads": {
+    "title": "Descargas",
+    "subtitle": "Descarga nuestro juego para tu plataforma",
+    "description": "Elige tu plataforma y comienza la aventura",
+    "platforms": {
+      "windows": "Windows",
+      "linux": "Linux"
+    },
+    "systemSpecs": {
+      "os": "Sistema Operativo",
+      "processor": "Procesador",
+      "memory": "Memoria",
+      "graphics": "Gráficos",
+      "storage": "Almacenamiento"
+    },
+    "downloadButton": "Descargar",
+    "buttons": {
+      "download": "Descargar Ahora",
+      "viewOnGithub": "Ver en GitHub"
+    }
+  },
+
+  "media": {
+    "title": "Galería",
+    "subtitle": "Capturas y Videos",
+    "gallery": {
+      "characters": "Personajes",
+      "environments": "Entornos"
+    }
+  },
+
+  "game": {
+    "title": "Un nuevo título de Warhammer 40.000",
+    "subtitle": "Por Burned Games",
+    "description": "Embárcate en una misión épica",
+    "features": {
+      "title": "Características",
+      "items": [
+        "Combate táctico",
+        "Historia inmersiva",
+        "Gráficos detallados",
+        "Personalización única"
+      ]
+    }
+  },
+
+  "footer": {
+    "copyright": "© 2025 Burned Games - Todos los derechos reservados",
+    "rights": "Todos los derechos reservados"
+  },
+
+  "errors": {
+    "notFound": "Página no encontrada",
+    "general": "Algo salió mal"
+  }
+}

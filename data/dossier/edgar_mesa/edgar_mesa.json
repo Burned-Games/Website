@@ -1,0 +1,11 @@
+{
+  "name": "Edgar Mesa",
+  "role": "UI Programmer",
+  "department": "Code",
+  "icon": "avatar.webp",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Dedicated programmer with expertise in web development and full-stack solutions.",
+  "skills": ["JavaScript", "React", "Node.js", "Full-Stack Development"],
+  "works": []
+}

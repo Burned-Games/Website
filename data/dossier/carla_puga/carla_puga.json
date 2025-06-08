@@ -1,0 +1,11 @@
+{
+  "name": "Carla Puga",
+  "role": "Enemy Programmer",
+  "department": "Code",
+  "icon": "avatar.webp",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Dedicated programmer with focus on machine learning and AI integration in games.",
+  "skills": ["Python", "Machine Learning", "TensorFlow", "AI Integration"],
+  "works": []
+}

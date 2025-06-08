@@ -1,0 +1,11 @@
+{
+  "name": "Mario Dorado",
+  "role": "Engine Programmer",
+  "department": "Code",
+  "icon": "avatar.webp",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Specialized engine programmer with deep knowledge of graphics programming and rendering.",
+  "skills": ["C++", "DirectX", "OpenGL", "Graphics Programming"],
+  "works": []
+}

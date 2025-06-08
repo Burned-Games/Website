@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "home": "Inici",
+    "about": "Equip",
+    "downloads": "Descàrregues",
+    "media": "Galeria",
+    "game": "Joc"
+  },
+  "general": {
+    "company": "Burned Games",
+    "loading": "Carregant...",
+    "close": "Tancar",
+    "back": "Tornar",
+    "altTexts": {
+      "teamLogo": "Logo de l'Equip",
+      "gameLogo": "Logo del Joc",
+      "defaultAvatar": "Avatar del Membre"
+    }
+  },
+  "home": {
+    "subtitle": "Pàgina i Joc en desenvolupament",
+    "playButton": "Jugar Ara"
+  },
+  "about": {
+    "title": "Burned Games",
+    "subtitle": "Coneix l'Equip darrere de Warhammer 40.000: The Last Marine",
+    "teamSection": {
+      "title": "El Nostre Equip",
+      "filters": {
+        "allMembers": "Tots els Membres"
+      }
+    }
+  },
+  "downloads": {
+    "title": "Descàrregues",
+    "subtitle": "Descarrega el nostre joc per la teva plataforma",
+    "platforms": {
+      "windows": "Windows",
+      "linux": "Linux"
+    },
+    "systemSpecs": {
+      "title": "Requisits del Sistema",
+      "os": "Sistema Operatiu",
+      "processor": "Processador",
+      "memory": "Memòria",
+      "graphics": "Gràfics",
+      "storage": "Emmagatzematge"
+    },
+    "downloadButton": "Descarregar"
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Captures i Vídeos",
+    "sections": {
+      "characters": {
+        "title": "Dissenys de Personatges",
+        "subtitle": "Conceptes i models de personatges"
+      },
+      "environments": {
+        "title": "Conceptes d'Entorns",
+        "subtitle": "Dissenys de món i nivells"
+      }
+    },
+    "gallery": {
+      "previous": "Imatge anterior",
+      "next": "Següent imatge",
+      "close": "Tancar galeria",
+      "openFullscreen": "Obrir pantalla completa"
+    }
+  },
+  "game": {
+    "title": "Un nou títol de Warhammer 40.000",
+    "subtitle": "Per Burned Games",
+    "loading": "Carregant recursos del joc..."
+  },
+  "memberInfo": {
+    "sections": {
+      "about": "Sobre",
+      "skills": "Habilitats",
+      "portfolio": "Portfoli"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portfoli"
+    }
+  },
+  "components": {
+    "header": {
+      "backToHome": "Tornar a l'inici"
+    },
+    "gallery": {
+      "viewLarger": "Veure imatge més gran",
+      "loadingError": "Error carregant la imatge",
+      "noImages": "No hi ha imatges disponibles"
+    },
+    "table": {
+      "noData": "No hi ha dades disponibles",
+      "loading": "Carregant dades..."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Burned Games - Tots els drets reservats",
+    "links": {
+      "privacy": "Política de Privacitat",
+      "terms": "Condicions d'Ús",
+      "contact": "Contacta'ns"
+    }
+  },
+  "errors": {
+    "general": "Alguna cosa ha anat malament",
+    "notFound": "Pàgina no trobada",
+    "loading": "Error carregant el contingut",
+    "tryAgain": "Torna-ho a provar"
+  }
+}

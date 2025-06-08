@@ -1,0 +1,11 @@
+{
+  "name": "Martí Sabaté",
+  "role": "Programmer Lead",
+  "department": "Production",
+  "icon": "avatar.webp",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Dedicated programmer with expertise in game engine development and optimization.",
+  "skills": ["C++", "Unity", "Unreal Engine", "OpenGL"],
+  "works": []
+}

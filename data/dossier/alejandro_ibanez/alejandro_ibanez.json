@@ -1,0 +1,11 @@
+{
+  "name": "Alejandro Ibáñez",
+  "role": "UI Programmer, Gameplay Programmer",
+  "department": "Code",
+  "icon": "avatar.webp",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Passionate programmer with expertise in mobile game development and optimization.",
+  "skills": ["C#", "Unity", "Mobile Development", "iOS/Android"],
+  "works": []
+}

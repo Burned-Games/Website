@@ -1,0 +1,11 @@
+{
+  "name": "Rodrigo Álvarez",
+  "role": "Gameplay Programmer",
+  "department": "Code",
+  "icon": "avatar.webp",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "bio": "Skilled programmer specializing in engine development and performance optimization.",
+  "skills": ["C++", "OpenGL", "Vulkan", "Performance Optimization"],
+  "works": []
+}

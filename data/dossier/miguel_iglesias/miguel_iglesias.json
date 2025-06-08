@@ -1,0 +1,11 @@
+{
+  "name": "Miguel Iglesias",
+  "role": "Level Designer, Audio Designer, QA Tester",
+  "department": "Design",
+  "icon": "avatar.webp",
+  "github": "https://github.com/MiguelIglesiasAbarca",
+  "linkedin": "https://www.linkedin.com/in/miguel-iglesias-abarca",
+  "bio": "I began by focusing on level design, where I was responsible for creating levels 1, 2, and 3. This included building 3D blockouts to define spatial layout and gameplay flow, as well as integrating placeholders to establish early visual references and guide development. I also shaped a difficulty curve that provided a balanced and engaging progression, which was refined through multiple QA-driven iterations.\n\nIn parallel, I worked on setting up the 3D NavMesh to ensure smooth and coherent navigation for AI agents throughout the environments. This was key to maintaining believable enemy behavior and fluid gameplay.\n\nBeyond level design, I was responsible for designing and implementing audio elements that enriched the atmosphere, while creating custom particle effects to enhance visual feedback, aiming to match the tone and rhythm of gameplay while improving clarity and player satisfaction.\n\nThroughout development, I played a major role in QA, actively participating in numerous testing sessions. I focused especially on environment consistency and gamefeel, identifying and resolving issues that could hinder immersion, pacing, or player responsiveness.",
+  "skills": ["Game Design", "Multiplayer Design", "Social Systems", "Monetization"],
+  "works": []
+}
