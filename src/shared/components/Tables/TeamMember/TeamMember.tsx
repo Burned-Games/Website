@@ -109,7 +109,6 @@ const TeamMember: React.FC = () => {
     const [selectedMember, setSelectedMember] = useState<Member | null>(null);
     const [members, setMembers] = useState<Member[]>([]);
     const [departments, setDepartments] = useState<DepartmentsData | null>(null);
-    const [loading, setLoading] = useState(true);
 
     // Función para obtener la lista de carpetas de dossiers
     const loadDossiersList = async (): Promise<string[]> => {
@@ -150,19 +149,15 @@ const TeamMember: React.FC = () => {
     // Cargar todos los dossiers
     useEffect(() => {
         const loadAllDossiers = async () => {
-            setLoading(true);
             try {
                 const dossierIds = await loadDossiersList();
                 const memberPromises = dossierIds.map(id => loadDossier(id));
                 const loadedMembers = await Promise.all(memberPromises);
                 
-                // Filtrar miembros que no se pudieron cargar
                 const validMembers = loadedMembers.filter((member): member is Member => member !== null);
                 setMembers(validMembers);
             } catch (error) {
                 console.error('Error loading dossiers:', error);
-            } finally {
-                setLoading(false);
             }
         };
 
@@ -192,8 +187,8 @@ const TeamMember: React.FC = () => {
         })
         .sort((a, b) => a.name.localeCompare(b.name));
 
-    if (loading || !departments) {
-        return <div>Loading...</div>;
+    if (!departments) {
+        return <div></div>;
     }
 
     return (

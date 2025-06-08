@@ -23,9 +23,9 @@ export interface TranslationType {
 
     // Home Page
     home: {
-        title: string;
+        title?: string;
         subtitle: string;
-        description: string;
+        description?: string;
         playButton: string;
     };
 
@@ -33,10 +33,17 @@ export interface TranslationType {
     about: {
         title: string;
         subtitle: string;
-        description: string;
-        team: {
+        description?: string;
+        team?: {
             title: string;
-            subtitle: string;
+            subtitle?: string;
+        };
+        teamSection?: {
+            title: string;
+            filters: {
+                allDepartments?: string;
+                allMembers: string;
+            };
         };
     };
 
@@ -44,22 +51,21 @@ export interface TranslationType {
     downloads: {
         title: string;
         subtitle: string;
-        description: string;
-        // System Requirements Section
+        description?: string;
         platforms: {
             windows: string;
             linux: string;
         };
         systemSpecs: {
+            title?: string;
             os: string;
             processor: string;
             memory: string;
             graphics: string;
             storage: string;
         };
-        // Download Actions
         downloadButton: string;
-        buttons: {
+        buttons?: {
             download: string;
             viewOnGithub: string;
         };
@@ -69,9 +75,23 @@ export interface TranslationType {
     media: {
         title: string;
         subtitle: string;
+        sections?: {
+            characters: {
+                title: string;
+                subtitle: string;
+            };
+            environments: {
+                title: string;
+                subtitle: string;
+            };
+        };
         gallery: {
             characters: string;
             environments: string;
+            previous?: string;
+            next?: string;
+            close?: string;
+            openFullscreen?: string;
         };
     };
 
@@ -79,22 +99,60 @@ export interface TranslationType {
     game: {
         title: string;
         subtitle: string;
-        description: string;
-        features: {
+        description?: string;
+        loading?: string;
+        features?: {
             title: string;
             items: string[];
+        };
+    };
+
+    // Member Info (agregado)
+    memberInfo?: {
+        sections: {
+            about: string;
+            skills: string;
+            portfolio: string;
+        };
+        social: {
+            github: string;
+            linkedin: string;
+            portfolio: string;
+        };
+    };
+
+    // Components (agregado)
+    components?: {
+        header: {
+            backToHome: string;
+        };
+        gallery: {
+            viewLarger: string;
+            loadingError: string;
+            noImages: string;
+        };
+        table: {
+            noData: string;
+            loading: string;
         };
     };
 
     // Global Footer
     footer: {
         copyright: string;
-        rights: string;
+        rights?: string;
+        links?: {
+            privacy: string;
+            terms: string;
+            contact: string;
+        };
     };
 
     // Error Messages
     errors: {
         notFound: string;
         general: string;
+        loading?: string;
+        tryAgain?: string;
     };
 }

@@ -1,12 +1,11 @@
 import React, { createContext, useState, useEffect } from 'react';
 import type { TranslationType } from '../types/translations';
-import { config } from '../../config/paths';
+import { data } from '../../config/data';
 
 interface LanguageContextType {
     texts: TranslationType;
     language: string;
     setLanguage: (lang: string) => void;
-    isLoading: boolean;
 }
 
 const defaultTranslations: TranslationType = {
@@ -94,31 +93,40 @@ const defaultTranslations: TranslationType = {
 export const LanguageContext = createContext<LanguageContextType>({
     texts: defaultTranslations,
     language: 'en',
-    setLanguage: () => {},
-    isLoading: true
+    setLanguage: () => {}
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [language, setLanguage] = useState('en');
     const [texts, setTexts] = useState<TranslationType>(defaultTranslations);
-    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const loadTranslations = async () => {
-            setIsLoading(true);
             try {
-                const response = await fetch(`${config.basePath}/data/text/text_${language}.json`);
+                const translationUrl = data.translations(language);
+                console.log('Loading translations from:', translationUrl);
+                
+                const response = await fetch(translationUrl);
+                
                 if (!response.ok) {
-                    throw new Error(`Failed to load translations for ${language}`);
+                    console.warn(`Translation file not found for language: ${language}. Status: ${response.status}`);
+                    setTexts(defaultTranslations);
+                    return;
                 }
+
                 const translations = await response.json();
-                setTexts(translations);
+                console.log('Loaded translations:', translations);
+                
+                // Verificar que las traducciones tienen la estructura esperada
+                if (translations && typeof translations === 'object') {
+                    setTexts(translations);
+                } else {
+                    console.warn('Invalid translation structure');
+                    setTexts(defaultTranslations);
+                }
             } catch (error) {
                 console.error('Error loading translations:', error);
-               
                 setTexts(defaultTranslations);
-            } finally {
-                setIsLoading(false);
             }
         };
 
@@ -128,8 +136,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const value: LanguageContextType = {
         texts,
         language,
-        setLanguage,
-        isLoading
+        setLanguage
     };
 
     return (
