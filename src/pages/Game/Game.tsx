@@ -6,9 +6,7 @@ const Game: React.FC = () => {
     
     return (
         <div>
-            <GLTFViewer
-                modelPath={modelPath}
-            />
+
         </div>
     );
 };
