@@ -2,9 +2,10 @@
   "name": "Adrià Roger",
   "role": "Programmer",
   "department": "Code",
-  "icon": "avatar.png",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
+  "icon": "avatar.webp",
+  "gmail":"adria.roger.juanola@gmail.com",
+  "github": "https://github.com/Adri1714",
+  "linkedin": "https://www.linkedin.com/in/adria-roger-0b5899196/",
   "bio": "Passionate programmer specializing in shader programming and visual effects.",
   "skills": ["HLSL", "Shader Programming", "Visual Effects", "Graphics Programming"],
   "works": []
