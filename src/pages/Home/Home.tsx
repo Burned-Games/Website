@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../shared/components/Text/PageTitle/PageTitle';
 import config from '../../config/config';
+import assets from '../../config/assets';
 import { useTranslation } from '../../shared/hooks/useTranslation';
 import './Home.css';
 
@@ -19,14 +20,14 @@ const Home: React.FC = () => {
                 playsInline
             >
                 <source 
-                    src={config.assets.videos.background}
+                    src={assets.videos.background}
                     type="video/mp4" 
                 />
             </video>
             
             <div className="content-overlay">
                 <PageTitle 
-                    logoSrc={config.assets.images.gameLogo}
+                    logoSrc={assets.images.gameLogo}
                     logoAlt="Game Logo"
                     subtitle={t.home.subtitle}
                     buttonText={t.home.playButton}

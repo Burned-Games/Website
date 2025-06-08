@@ -30,7 +30,10 @@ const AppRoutes: React.FC = () => {
             key={path}
             path={path}
             element={
-              <Base headerProps={headerProps} hideHeader={hideHeader}>
+              <Base 
+                headerProps={headerProps || undefined} 
+                hideHeader={hideHeader || false}
+              >
                 <Element />
               </Base>
             }

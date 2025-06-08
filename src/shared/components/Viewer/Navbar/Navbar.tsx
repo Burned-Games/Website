@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from '../../../hooks/useTranslation';
 import './Navbar.css';
-import logo from '../../../assets/images/logo.webp';
+import assets from '../../../../config/assets';
 import LanguageSelector from '../../Buttons/LanguageSelector/LanguageSelector';
 import ThemeSelector from '../../Buttons/ThemeSelector/ThemeSelector';
 
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                     }
                 }}
             >
-                <img src={logo} alt={t.general.altTexts.teamLogo} />
+                <img src={assets.images.logoWebp} alt={t.general.altTexts.teamLogo} />
                 <span className="company-name">{t.general.company}</span>
             </div>
             

@@ -1,17 +1,14 @@
 const config = {
     // Base URL
     baseUrl: process.env.PUBLIC_URL || '/',
-    
-    // Assets paths - Updated to use assets folder
-    assets: {
-        images: {
-            logo: `${process.env.PUBLIC_URL}/assets/images/logo.png`,
-            logoWebp: `${process.env.PUBLIC_URL}/assets/images/logo.webp`,
-            gameLogo: `${process.env.PUBLIC_URL}/assets/images/TLM_Logo.webp`,
-        },
-        videos: {
-            background: `${process.env.PUBLIC_URL}/assets/videos/background.mp4`,
-        }
+
+    // Helper functions para generar rutas dinámicamente
+    getAsset: {
+        image: (filename: string) => `${process.env.PUBLIC_URL}/assets/images/${filename}`,
+        video: (filename: string) => `${process.env.PUBLIC_URL}/assets/videos/${filename}`,
+        model: (filename: string) => `${process.env.PUBLIC_URL}/assets/models/${filename}`,
+        icon: (filename: string) => `${process.env.PUBLIC_URL}/assets/icons/${filename}`,
+        data: (path: string) => `${process.env.PUBLIC_URL}/data/${path}`,
     },
 
     // Layout defaults
@@ -19,7 +16,7 @@ const config = {
         header: {
             title: "Warhammer 40.000",
             subtitle: "The Last Marine",
-            logoSrc: `${process.env.PUBLIC_URL}/assets/images/logo.png`,
+            // logoSrc: `${process.env.PUBLIC_URL}/assets/images/logo.png`,
             logoAlt: "Game Logo"
         }
     },

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from '../../../hooks/useTranslation';
 import config from '../../../../config/config';
+import assets from '../../../../config/assets';
 import './DTable.css';
 
 interface SystemProps {
@@ -51,13 +52,13 @@ const DTable: React.FC = () => {
         <div className="download-table">
             <SystemColumn 
                 type="linux"
-                icon={config.downloads.linux.icon}
+                icon={assets.images.linux}
                 specs={config.downloads.linux.specs}
                 downloadUrl={config.downloads.linux.downloadUrl}
             />
             <SystemColumn 
                 type="windows"
-                icon={config.downloads.windows.icon}
+                icon={assets.images.windows}
                 specs={config.downloads.windows.specs}
                 downloadUrl={config.downloads.windows.downloadUrl}
             />

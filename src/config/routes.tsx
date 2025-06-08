@@ -14,8 +14,8 @@ interface RouteConfig {
   headerProps?: {
     title: string;
     subtitle: string;
-    logoSrc: string;
-    logoAlt: string;
+    logoSrc?: string;
+    logoAlt?: string;
   };
 }
 
@@ -31,7 +31,7 @@ export const createRoutes = (t: TranslationType): RouteConfig[] => [
     headerProps: {
       title: t.downloads.title,
       subtitle: t.downloads.subtitle,
-      logoSrc: config.assets.images.gameLogo,
+      // logoSrc: config.assets.images.gameLogo,
       logoAlt: t.general.altTexts.gameLogo
     }
   },
@@ -49,7 +49,7 @@ export const createRoutes = (t: TranslationType): RouteConfig[] => [
     headerProps: {
       title: t.about.title,
       subtitle: t.about.subtitle,
-      logoSrc: config.assets.images.gameLogo,
+      // logoSrc: config.assets.images.gameLogo,
       logoAlt: t.general.altTexts.teamLogo
     }
   }

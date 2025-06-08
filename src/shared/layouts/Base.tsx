@@ -9,8 +9,8 @@ interface BaseLayoutProps {
     headerProps?: {
         title: string;
         subtitle: string;
-        logoSrc: string;
-        logoAlt: string;
+        logoSrc?: string;
+        logoAlt?: string;
     };
     hideHeader?: boolean;
     className?: string;
