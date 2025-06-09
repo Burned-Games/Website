@@ -36,7 +36,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    background-attachment: scroll;
+    background-attachment: local;
     opacity: 0.25;
     z-index: -2;
     pointer-events: none;
@@ -472,7 +472,7 @@
 
 @media (max-width: 768px) {
     .member-info-content::before {
-        background-attachment: scroll;
+        background-attachment: local;
         background-size: cover;
         min-height: 100%;
     }

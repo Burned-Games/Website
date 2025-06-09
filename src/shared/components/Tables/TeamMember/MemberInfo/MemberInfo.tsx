@@ -98,6 +98,23 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     const primaryDepartment = member.department.split(',')[0].trim();
     const departmentLogo = getDepartmentLogo(primaryDepartment);
     
+    // Función para procesar texto con markdown básico
+    const processText = (text: string): string => {
+        if (!text) return '';
+        
+        return text
+            // Convertir **texto** a <strong>texto</strong>
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            // Convertir *texto* a <em>texto</em>
+            .replace(/\*(.*?)\*/g, '<em>$1</em>')
+            // Convertir dobles saltos de línea a párrafos
+            .split('\n\n')
+            .map(paragraph => paragraph.trim())
+            .filter(paragraph => paragraph.length > 0)
+            .map(paragraph => `<p>${paragraph.replace(/\n/g, '<br>')}</p>`)
+            .join('');
+    };
+    
     return (
         <div className="member-info-overlay" onClick={onClose}>
             <div 
@@ -206,7 +223,10 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                             {member.bio && (
                                 <div className="member-about">
                                     <h3>About</h3>
-                                    <p className="member-bio">{member.bio}</p>
+                                    <div 
+                                        className="member-bio"
+                                        dangerouslySetInnerHTML={{ __html: processText(member.bio) }}
+                                    />
                                 </div>
                             )}
                         </div>
