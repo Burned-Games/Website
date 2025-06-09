@@ -1,11 +1,11 @@
 {
   "name": "Carlos González",
-  "role": "Lead Artist, Character Artist, Environment Artist, UI Artist, VFX Artist",
+  "role": "Lead Artist, Character Artist, Environment Artist, UI/UX Artist, VFX Artist",
   "department": "Production, Art",
   "icon": "avatar.webp",
   "github": "https://github.com/gosu00",
   "linkedin": "www.linkedin.com/in/carlos-gonzález-subirón-45ab7722a",
-  "bio": "Skilled 3D artist specializing in character modeling and texturing for games.",
+  "bio": "As Lead Artist, I was responsible for establishing and overseeing the visual direction of the game from concept to final implementation. I led a team of artists, ensuring a cohesive style across environments, characters, UI, and animations. I collaborated closely with design and programming teams to align art with gameplay and performance goals. I also contributed key visual assets and guided the integration of artwork into the game engine, balancing aesthetics with technical constraints.",
   "skills": ["Blender", "Maya", "Substance Painter", "ZBrush"],
   "works": []
 }

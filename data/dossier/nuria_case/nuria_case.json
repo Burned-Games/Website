@@ -3,9 +3,9 @@
   "role": "Concept Artist, Environment Artist",
   "department": "Art",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Creative 3D artist specializing in stylized art and character modeling.",
+  "github": "https://github.com/CaseChips",
+  "linkedin": "www.linkedin.com/in/núria-casé-masana-aa374236a",
+  "bio": "In the early stages of the project, my primary contributions were in creating concept art and environment thumbnails to help define the visual direction. As development progressed, I transitioned to asset dressing for the first and second levels, ensuring each asset was properly optimized and exported for in-game use. Throughout the majority of the project, my focus remained on asset dressing, though I also supported other areas when needed. This included designing decals, developing the main logo and various UI elements, and offering support during the production of the game trailer.",
   "skills": ["Maya", "ZBrush", "Substance Painter", "Marvelous Designer"],
   "works": []
 }

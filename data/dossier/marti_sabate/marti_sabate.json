@@ -1,11 +1,12 @@
 {
   "name": "Martí Sabaté",
-  "role": "Programmer Lead",
-  "department": "Production",
+  "role": "Lead Coder",
+  "department": "Production, Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Dedicated programmer with expertise in game engine development and optimization.",
+  "github": "https://github.com/msabate00",
+  "linkedin": "https://www.linkedin.com/in/marti-sabate-miranda/",
+  "portfolio": "https://msabate00.github.io/",
+  "bio": "As Lead Programmer, I was responsible for defining and maintaining the game's technical structure from pre-production to final release. I coordinated the code department, organizing tasks, ensuring technical consistency, and facilitating communication across teams. I personally handled the planning and execution of both the engine and game release processes, ensuring stability, version control, and deployment accuracy. Throughout the project, I also contributed directly to several core systems, including the engine's particle module, destructible props, gameplay indicators, camera boundaries, and various optimization tasks. Additionally, I provided technical support across gameplay systems, including Player, Enemies, UI, and Environment, helping team members troubleshoot, integrate, and maintain quality code.",
   "skills": ["C++", "Unity", "Unreal Engine", "OpenGL"],
   "works": []
 }

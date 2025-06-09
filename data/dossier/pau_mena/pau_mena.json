@@ -3,9 +3,10 @@
   "role": "UI Programmer",
   "department": "Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Experienced programmer specializing in database management and backend systems.",
-  "skills": ["Java", "SQL", "Backend Development", "Database Design"],
+  "github": "https://github.com/PauMenaTorres",
+  "linkedin": "https://www.linkedin.com/in/pau-mena-torres-a884232a0/",
+  "portfolio": "https://paumenatorres.github.io/Porfolio/",
+  "bio": "My main task was to implement the HUD, which takes into account all player variables to activate and deactivate animations and cooldowns. The visuals show cooldowns with animations, how health is healed, the current bullet count, the weapons' red color when you fire without bullets, and button feedback for all actions. I also implemented a vignette when the player is hit, an alert when enemies are warned, health bars for the mini-boss and the main boss, and the coliseum doors logic and animations. Regarding the player, I implemented the fervor standard, so it can have its animation when thrown and have a boost to attack and reload speed. Regarding the engine, I have been implementing the first fully functional version of the UI with images, text, buttons, sliders, toggles, anchor points, sorting layers and independent UI transform, which has been the basis for creating the gameplay UI throughout the project, which has been continuously improved.",
+  "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
   "works": []
 }

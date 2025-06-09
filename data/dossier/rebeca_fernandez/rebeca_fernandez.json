@@ -3,9 +3,10 @@
   "role": "Concept Artist, Character Artist, Environment Artist, VFX Artist",
   "department": "Art",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Creative 3D artist specializing in organic modeling and sculpting.",
+  "github": "https://github.com/Becca203",
+  "linkedin": "https://www.linkedin.com/in/rebeca-fern%C3%A1ndez-l%C3%B3pez-b6b21136a/",
+  "portfolio": "https://www.artstation.com/beca_flopez",
+  "bio": "As an artist on this project, I worked on enemy conceptualization and creation, environment art, and visual effects. I started with enemy concepts, especially the support enemy and its weapon. After several iterations and once the design was finalized, I executed the complete 3D modeling pipeline from blockout through final texturing, focusing on optimization. When that phase was finished, I joined the environment team. I had to quickly adapt to the established workflow and develop a variety of props to help bring the different maps to life as a team. At the same time, I participated in the initial phase of particle systems. This was a particular challenge, as it required research and experimentation to create appealing and functional visual effects within the engine's limitations.",
   "skills": ["ZBrush", "Maya", "Substance Painter", "Retopology"],
   "works": []
 }

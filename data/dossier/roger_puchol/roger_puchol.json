@@ -3,9 +3,9 @@
   "role": "Engine Programmer",
   "department": "Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Experienced programmer with expertise in console development and platform optimization.",
-  "skills": ["C++", "Console Development", "PlayStation", "Xbox"],
+  "github": "https://github.com/Ropuce",
+  "linkedin": "www.linkedin.com/in/roger-puchol-celma",
+  "bio": "As part of the engine team, I implemented the input system in all of its iterations, along with various QoL features and bug fixing. Also provided help with using the editor and debugging and fixing bugs in various parts of the project (engine and gameplay).",
+  "skills": ["C++", "Input Systems", "Engine Development", "Debugging"],
   "works": []
 }

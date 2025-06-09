@@ -1,11 +1,11 @@
 {
   "name": "Jiajie Lin",
-  "role": "UI Programmer, Gameplay Programmer",
+  "role": "Engine Programmer, UI Programmer, Gameplay Programmer",
   "department": "Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Skilled programmer with focus on data structures and algorithm optimization.",
-  "skills": ["C++", "Data Structures", "Algorithms", "Performance Analysis"],
+  "github": "https://github.com/Linjiajie2002",
+  "linkedin": "https://www.linkedin.com/in/jiajielin2002/",
+  "bio": "At the early stage of the project, I led the physics team to build and refine the missing physics systems in our engine. Later on, I developed a custom particle system for the engine. After establishing the core concept and structure, I also implemented a particle effect component, allowing designers to control visual effects more efficiently. As a gameplay programmer, I created powerful weapons for our main character, including a shotgun and a throwable grenade, adding depth and intensity to the combat experience. I then took on the role of UI programmer, where I independently developed the mission system, popup system, and dialogue system within the UI framework. I continuously improved these systems by implementing new features based on designer feedback, making them more polished and user-friendly. Lastly, I also contributed to the development of the project's web interface.",
+  "skills": ["C++", "Physics Systems", "Particle Systems", "UI Development"],
   "works": []
 }
