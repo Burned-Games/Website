@@ -1,4 +1,4 @@
-.home-content {
+.game-page-container {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.content-overlay {
+.game-hero-section {
     position: relative;
     z-index: 2;
     display: flex;
@@ -19,30 +19,45 @@
     min-height: 40vh;
 }
 
-.game-synopsis {
+.game-catchphrase {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.game-catchphrase h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+.game-description {
     max-width: 800px;
     margin-top: 2rem;
     text-align: center;
 }
 
-.game-synopsis p {
+.game-description p {
     color: var(--color-text-secondary);
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
 }
 
-.game-content-below {
+.game-main-content {
     position: relative;
     z-index: 1;
     background: var(--color-background);
 }
 
-.game-pillars-section {
+/* Game Pillars */
+.game-pillars-wrapper {
     padding: 6rem 2rem;
 }
 
-.game-pillars-title {
+.pillars-heading {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
@@ -54,7 +69,7 @@
     background-clip: text;
 }
 
-.game-pillars-container {
+.pillars-grid {
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -63,25 +78,25 @@
     gap: 3rem;
 }
 
-.pillar {
+.pillar-card {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
     padding: 2.5rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
 }
 
-.pillar:hover {
+.pillar-card:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
 }
 
-.pillar-icon {
+.pillar-badge {
     min-width: 80px;
     width: 80px;
     height: 80px;
@@ -98,74 +113,42 @@
     flex-shrink: 0;
 }
 
-.pillar-content {
+.pillar-text {
     flex: 1;
     color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
-.pillar-content p {
+.pillar-text p {
     margin: 0;
     font-size: 1rem;
 }
 
-.game-gallery-section {
-    padding: 6rem 2rem;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.game-gallery-title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin-bottom: 4rem;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.game-hook-phrase {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.game-hook-phrase h3 {
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    font-style: italic;
-    margin: 0;
-}
-
-/* Section Titles */
-.section-title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin-bottom: 4rem;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 /* Lore Section */
-.game-lore-section {
+.game-lore-wrapper {
     padding: 6rem 2rem;
     background: rgba(255, 255, 255, 0.02);
 }
 
-.lore-content {
+.lore-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.lore-text {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-.lore-content p {
+.lore-text p {
     color: var(--color-text-secondary);
     font-size: 1.2rem;
     line-height: 1.8;
@@ -173,12 +156,24 @@
 }
 
 /* Ultramarine Section */
-.game-ultramarine-section {
+.ultramarine-wrapper {
     padding: 6rem 2rem;
     background: var(--color-background);
 }
 
-.ultramarine-content {
+.ultramarine-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ultramarine-layout {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -187,34 +182,35 @@
     align-items: center;
 }
 
-.ultramarine-image img {
+.ultramarine-picture img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.ultramarine-info {
+.ultramarine-details {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.info-block h3 {
+.detail-block h3 {
     color: var(--color-primary);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.info-block p {
+.detail-block p {
     color: var(--color-text-secondary);
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Feature Sections (Enemies & Levels) */
-.game-feature-section {
+/* Showcase Sections (Enemies & Levels) */
+.enemies-showcase,
+.levels-showcase {
     padding: 6rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -224,15 +220,15 @@
     margin: 0 auto;
 }
 
-.enemies-section {
+.enemies-showcase {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.levels-section {
+.levels-showcase {
     background: rgba(255, 255, 255, 0.02);
 }
 
-.feature-image img {
+.showcase-image img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -240,20 +236,20 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.feature-content h2 {
+.showcase-info h2 {
     color: var(--color-text-primary);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-.feature-content p {
+.showcase-info p {
     color: var(--color-text-secondary);
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
 }
 
-.feature-button {
+.showcase-btn {
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: white;
     border: none;
@@ -267,18 +263,30 @@
     letter-spacing: 1px;
 }
 
-.feature-button:hover {
+.showcase-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Controls Section */
-.game-controls-section {
+.controls-wrapper {
     padding: 6rem 2rem;
     background: rgba(0, 0, 0, 0.3);
 }
 
-.controls-grid {
+.controls-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.controls-layout {
     max-width: 800px;
     margin: 0 auto;
     display: grid;
@@ -286,7 +294,7 @@
     gap: 2rem;
 }
 
-.control-item {
+.control-box {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -296,7 +304,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.key {
+.control-key {
     background: var(--color-primary);
     color: white;
     padding: 0.5rem 1rem;
@@ -307,18 +315,18 @@
     text-align: center;
 }
 
-.action {
+.control-desc {
     color: var(--color-text-secondary);
     font-size: 1rem;
 }
 
 /* Coffee Engine Section */
-.game-engine-section {
+.engine-showcase {
     padding: 6rem 2rem;
     background: var(--color-background);
 }
 
-.engine-content {
+.engine-layout {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -327,60 +335,108 @@
     align-items: center;
 }
 
-.engine-image img {
+.engine-logo img {
     width: 100%;
     max-width: 300px;
     height: auto;
 }
 
-.engine-info h2 {
+.engine-details h2 {
     color: var(--color-text-primary);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-.engine-info p {
+.engine-details p {
     color: var(--color-text-secondary);
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
 }
 
+/* Screenshots Gallery */
+.screenshots-wrapper {
+    padding: 6rem 2rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.screenshots-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .game-hook-phrase h3 {
+    .game-catchphrase h3 {
         font-size: 1.2rem;
     }
     
-    .section-title {
+    .pillars-heading,
+    .lore-heading,
+    .ultramarine-heading,
+    .controls-heading,
+    .screenshots-heading {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
     
-    .ultramarine-content,
-    .game-feature-section,
-    .engine-content {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .pillar-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .pillar-badge {
+        margin: 0 auto;
+    }
+    
+    .ultramarine-layout,
+    .enemies-showcase,
+    .levels-showcase,
+    .engine-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
-    .feature-content h2,
-    .engine-info h2 {
+    .showcase-info h2,
+    .engine-details h2 {
         font-size: 2rem;
     }
     
-    .controls-grid {
+    .controls-layout {
         grid-template-columns: 1fr;
     }
     
-    .control-item {
+    .control-box {
         justify-content: center;
         text-align: center;
     }
     
-    .lore-content p,
-    .feature-content p,
-    .engine-info p {
+    .lore-text p,
+    .showcase-info p,
+    .engine-details p {
         font-size: 1rem;
+    }
+    
+    .game-pillars-wrapper,
+    .game-lore-wrapper,
+    .ultramarine-wrapper,
+    .controls-wrapper,
+    .engine-showcase,
+    .screenshots-wrapper {
+        padding: 4rem 1rem;
     }
 }
