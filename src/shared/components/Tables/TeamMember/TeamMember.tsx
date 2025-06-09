@@ -5,7 +5,7 @@ import './TeamMember.css';
 import { config } from '../../../../config/paths';
 
 interface Member {
-    id: string; // Nuevo campo para identificar la carpeta
+    id: string;
     name: string;
     role: string;
     department: string;
@@ -57,11 +57,12 @@ const Card = ({ member, onClick }: {
     }, [language]);
 
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
-    // Ahora la ruta del icono está basada en la carpeta del dossier
+   
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
+    const primaryDepartmentName = parseDepartments(member.department)[0];
     const department = departments?.departments.find(
-        d => d.name.toLowerCase() === member.department.toLowerCase()
+        d => d.name.toLowerCase() === primaryDepartmentName.toLowerCase()
     );
 
     return (
@@ -81,7 +82,7 @@ const Card = ({ member, onClick }: {
                             '--department-color': department?.color 
                         } as React.CSSProperties}
                     >
-                        {member.department}
+                        {primaryDepartmentName}
                     </span>
                     <span className="role-tag">{member.role}</span>
                 </div>
@@ -98,6 +99,18 @@ const Card = ({ member, onClick }: {
             </div>
         </div>
     );
+};
+
+// Función para separar departamentos múltiples
+const parseDepartments = (departmentString: string): string[] => {
+    // Divide por comas y limpia espacios
+    return departmentString.split(',').map(dept => dept.trim()).filter(dept => dept.length > 0);
+};
+
+// Función para verificar si un miembro pertenece a un departamento específico
+const memberBelongsToDepartment = (member: Member, departmentName: string): boolean => {
+    const memberDepartments = parseDepartments(member.department);
+    return memberDepartments.some(dept => dept.toLowerCase() === departmentName.toLowerCase());
 };
 
 const TeamMember: React.FC = () => {
@@ -146,6 +159,18 @@ const TeamMember: React.FC = () => {
         }
     };
 
+    // Función para separar roles múltiples en roles individuales
+    const parseRoles = (roleString: string): string[] => {
+        // Divide por comas y limpia espacios
+        return roleString.split(',').map(role => role.trim()).filter(role => role.length > 0);
+    };
+
+    // Función para verificar si un miembro coincide con el filtro de subcategoría
+    const memberMatchesSubcategory = (member: Member, subcategoryName: string): boolean => {
+        const memberRoles = parseRoles(member.role);
+        return memberRoles.some(role => role === subcategoryName);
+    };
+
     // Cargar todos los dossiers
     useEffect(() => {
         const loadAllDossiers = async () => {
@@ -179,11 +204,19 @@ const TeamMember: React.FC = () => {
             const department = departments.departments.find(d => d.id === filter.department);
             if (!department) return false;
 
-            const isDepartmentMatch = member.department.toLowerCase() === department.name.toLowerCase();
-            if (!filter.subcategory) return isDepartmentMatch;
+            // Verificar si el miembro pertenece a alguno de los departamentos que tiene
+            const isDepartmentMatch = memberBelongsToDepartment(member, department.name);
+            if (!isDepartmentMatch) return false;
 
+            // Si no hay filtro de subcategoría, mostrar todos los miembros del departamento
+            if (!filter.subcategory) return true;
+
+            // Buscar la subcategoría seleccionada
             const subcategory = department.subcategories.find(s => s.id === filter.subcategory);
-            return isDepartmentMatch && member.role === subcategory?.name;
+            if (!subcategory) return false;
+
+            // Verificar si alguno de los roles del miembro coincide con la subcategoría
+            return memberMatchesSubcategory(member, subcategory.name);
         })
         .sort((a, b) => a.name.localeCompare(b.name));
 

@@ -39,11 +39,18 @@ interface MemberInfoProps {
 
 const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     useEffect(() => {
-        // Crear e inyectar la fuente personalizada
-        // const fontFace = new FontFace('DossierFont', `url(${assets.fonts.dossierTitle.woff2})`);
-        // fontFace.load().then(() => {
-        //     document.fonts.add(fontFace);
-        // });
+        // Cargar la fuente personalizada
+        const loadFont = async () => {
+            try {
+                const fontFace = new FontFace('DossierFont', `url(${assets.fonts.dossierTitle.woff2})`);
+                await fontFace.load();
+                document.fonts.add(fontFace);
+            } catch (error) {
+                console.warn('No se pudo cargar la fuente personalizada:', error);
+            }
+        };
+
+        loadFont();
 
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -61,15 +68,45 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
+    // Función para obtener el logo del departamento
+    const getDepartmentLogo = (department: string): string => {
+        const departmentKey = department.toLowerCase();
+        const logos = assets.images.departmentLogos;
+        
+        switch (departmentKey) {
+            case 'code':
+            case 'código':
+            case 'codi':
+                return logos.code;
+            case 'production':
+            case 'producción':
+            case 'producció':
+                return logos.production;
+            case 'art':
+            case 'arte':
+                return logos.art;
+            case 'design':
+            case 'diseño':
+            case 'disseny':
+                return logos.design;
+            default:
+                return logos.code; // Logo por defecto
+        }
+    };
+
+    // Función para obtener el primer departamento para el logo
+    const primaryDepartment = member.department.split(',')[0].trim();
+    const departmentLogo = getDepartmentLogo(primaryDepartment);
+    
     return (
         <div className="member-info-overlay" onClick={onClose}>
             <div 
                 className="member-info-content" 
                 onClick={(e) => e.stopPropagation()}
-                // style={{
-                //     '--dossier-background-image': `url(${assets.images.dossierBackground})`,
-                //     '--dossier-font': 'DossierFont, serif'
-                // } as React.CSSProperties}
+                style={{
+                    '--dossier-background-image': `url(${assets.images.dossierBackground})`,
+                    '--dossier-font': 'DossierFont, serif'
+                } as React.CSSProperties}
             >
                 <div className="member-info-inner">
                     <div 
@@ -87,10 +124,15 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                     
                     <div className="dossier-header">
                         <div className="dossier-icon">
+                            <img 
+                                src={departmentLogo} 
+                                alt={`${primaryDepartment} logo`}
+                                className="department-logo"
+                            />
                         </div>
                         <div className="dossier-title-container">
                             <h1 className="dossier-title">Classified Personal Dossier</h1>
-                            <div className="dossier-set-number">Set.No: 01</div>
+                            <div className="dossier-set-number">SET.NO:01</div>
                         </div>
                     </div>
                     
@@ -160,19 +202,6 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                             <div className="member-department-box">
                                 <p className="member-department">{member.department}</p>
                             </div>
-                            
-                            {member.roles && member.roles.length > 0 && (
-                                <div className="member-roles">
-                                    <h3>Roles</h3>
-                                    <div className="roles-list">
-                                        {member.roles.map((role, index) => (
-                                            <span key={index} className="role-tag">
-                                                {role}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
                             
                             {member.bio && (
                                 <div className="member-about">

@@ -67,12 +67,12 @@ const Navbar: React.FC = () => {
                     >
                         {t.navigation.game}
                     </button>
-                    <button 
+                    {/* <button 
                         className={isActive('/media')}
                         onClick={() => handleNavigation('/media')}
                     >
                         {t.navigation.media}
-                    </button>
+                    </button> */}
                     <button 
                         className={isActive('/downloads')}
                         onClick={() => handleNavigation('/downloads')}

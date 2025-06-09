@@ -12,6 +12,7 @@
   --color-department-code: #4749c78a;
   --color-department-art: #fd4d5091;
   --color-department-design: #3ca8418a;
+  --color-department-production: #8B5A3C; /* Color marrón/dorado para Production */
 }
 
 /* Dark theme (default) */
@@ -23,8 +24,13 @@
   --color-background-secondary: #1a1d2b;
   --layout-footer-background: #1e2231;
   
-  --color-text-primary: #ffffff;
+  --color-text-primary: #eeeeee;
   --color-text-secondary: #c0c0c0;
+
+ /* Member Card */
+  --color-text-member: #dfcda8;
+  --color-text-warning: #ffeeca8e;
+  --color-text-number: #d8c6b7d2;
   
   --color-accent: #61dafb;
   --color-hover: var(--color-secondary);

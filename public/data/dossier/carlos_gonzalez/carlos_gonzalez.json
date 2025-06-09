@@ -1,10 +1,10 @@
 {
   "name": "Carlos González",
-  "role": "3D Artist",
-  "department": "Art",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
+  "role": "Lead Artist, Character Artist, Environment Artist, UI Artist, VFX Artist",
+  "department": "Production, Art",
+  "icon": "avatar.webp",
+  "github": "https://github.com/gosu00",
+  "linkedin": "www.linkedin.com/in/carlos-gonzález-subirón-45ab7722a",
   "bio": "Skilled 3D artist specializing in character modeling and texturing for games.",
   "skills": ["Blender", "Maya", "Substance Painter", "ZBrush"],
   "works": []

@@ -17,7 +17,42 @@
           },
           {
             "id": "tools",
-            "name": "IA Programmer"
+            "name": "UI Programmer"
+          },
+          {
+            "id": "audio",
+            "name": "Audio Programmer"
+          },
+          {
+            "id": "enemy",
+            "name": "Enemy Programmer"
+          },
+          {
+            "id": "character",
+            "name": "Player Programmer"
+          }
+        ]
+      },
+      {
+        "id": "production",
+        "name": "Production",
+        "color": "var(--color-department-production)",
+        "subcategories": [
+          {
+            "id": "production",
+            "name": "Producer"
+          },
+          {
+            "id": "design",
+            "name": "Lead Designer"
+          },
+          {
+            "id": "code",
+            "name": "Lead Coder"
+          },
+          {
+            "id": "art",
+            "name": "Lead Artist"
           }
         ]
       },
@@ -80,6 +115,41 @@
           {
             "id": "tools",
             "name": "Programador de IA"
+          },
+          {
+            "id": "audio",
+            "name": "Programador de Audio"
+          },
+          {
+            "id": "enemy",
+            "name": "Programador de Enemigos"
+          },
+          {
+            "id": "character",
+            "name": "Programador de Personajes"
+          }
+        ]
+      },
+      {
+        "id": "production",
+        "name": "Producción",
+        "color": "var(--color-department-production)",
+        "subcategories": [
+          {
+            "id": "production",
+            "name": "Productor"
+          },
+          {
+            "id": "design",
+            "name": "Director de Diseño"
+          },
+          {
+            "id": "code",
+            "name": "Director de Código"
+          },
+          {
+            "id": "art",
+            "name": "Director de Arte"
           }
         ]
       },
@@ -142,6 +212,41 @@
           {
             "id": "tools",
             "name": "Programador d'IA"
+          },
+          {
+            "id": "audio",
+            "name": "Programador d'Àudio"
+          },
+          {
+            "id": "enemy",
+            "name": "Programador d'Enemics"
+          },
+          {
+            "id": "character",
+            "name": "Programador de Personatges"
+          }
+        ]
+      },
+      {
+        "id": "production",
+        "name": "Producció",
+        "color": "var(--color-department-production)",
+        "subcategories": [
+          {
+            "id": "production",
+            "name": "Productor"
+          },
+          {
+            "id": "design",
+            "name": "Director de Disseny"
+          },
+          {
+            "id": "code",
+            "name": "Director de Codi"
+          },
+          {
+            "id": "art",
+            "name": "Director d'Art"
           }
         ]
       },

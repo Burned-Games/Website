@@ -38,11 +38,19 @@ class AssetManager {
             gameLogo: this.image('TLM_Logo.webp'),
             linux: this.image('linux.png'),
             windows: this.image('windows.png'),
-            borderMember: this.image('border_member2.webp'),
+            borderMember: this.image('border_member.webp'),
             separator: this.image('separator.webp'), 
             corner: this.image('corner.webp'),
             dossierBackground: this.image('dossier_background.webp'),
             cardName: this.image('cardName.webp'),
+            // Logos de departamentos
+            departmentLogos: {
+                code: this.image('department-code-logo.webp'),
+                engine: this.image('department-engine-logo.webp'),
+                production: this.image('department-engine-logo.webp'),
+                art: this.image('department-art-logo.webp'),
+                design: this.image('department-design-logo.webp')
+            }
         };
     }
 
@@ -61,7 +69,7 @@ class AssetManager {
     get fonts() {
         return {
             dossierTitle: {
-                // woff2: this.font('Muleno.woff2'),
+                woff2: this.font('Muleno.woff2'),
             }
         };
     }

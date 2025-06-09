@@ -1,11 +1,11 @@
 {
   "name": "Hugo Castaño",
-  "role": "Game Designer",
+  "role": "Narrative Designer, Level Designer",
   "department": "Design",
-  "icon": "avatar.jpg",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Innovative game designer with a passion for creating engaging player experiences.",
+  "icon": "avatar.webp",
+  "github": "https://github.com/LazyRacoonDev",
+  "linkedin": "https://www.linkedin.com/in/hugocastano",
+  "bio": "In this project, I started working on every part of the design process, as I was the only one in the design department with any knowledge about the Warhammer 40K universe.\n\nAfter the first weeks of the projects were finished, I did some moodboards for the different levels. After that I made the game's narrative, from dialogues to loading screens text.\n\nAfter all the design was done, I started doing QA, looking for bugs and reporting them.",
   "skills": ["Game Design", "UI/UX Design", "Prototyping", "User Research"],
   "works": []
 }
