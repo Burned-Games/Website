@@ -60,6 +60,7 @@ const Card = ({ member, onClick }: {
    
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
+
     const primaryDepartmentName = parseDepartments(member.department)[0];
     const department = departments?.departments.find(
         d => d.name.toLowerCase() === primaryDepartmentName.toLowerCase()
