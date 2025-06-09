@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/PauHeer",
   "linkedin": "https://es.linkedin.com/in/pauher",
-  "bio": "In this project I contributed to the initial creation of the game's UI, including interfaces like the main menu, pause menu, settings screen, and the workbench. Additionally, I participated in multiple QA sessions, focusing on identifying bugs and areas for improvement across both functionality and usability.",
+  "translations": {
+    "en": {
+      "role": "UI/UX Artist",
+      "department": "Art",
+      "bio": "In this project I contributed to the initial creation of the game's UI, including interfaces like the main menu, pause menu, settings screen, and the workbench. Additionally, I participated in multiple QA sessions, focusing on identifying bugs and areas for improvement across both functionality and usability."
+    },
+    "es": {
+      "role": "Artista de UI/UX",
+      "department": "Arte",
+      "bio": "En este proyecto, contribuí a la creación inicial de la interfaz de usuario del juego, incluyendo pantallas como el menú principal, el menú de pausa, la pantalla de configuración y el banco de trabajo. Además, participé en múltiples sesiones de QA, enfocándome en identificar errores y áreas de mejora tanto en funcionalidad como en usabilidad."
+    },
+    "ca": {
+      "role": "Artista d'UI/UX",
+      "department": "Art",
+      "bio": "En aquest projecte, vaig contribuir a la creació inicial de la interfície d'usuari del joc, incloent-hi pantalles com el menú principal, el menú de pausa, la pantalla de configuració i el banc de treball. A més, vaig participar en múltiples sessions de QA, centrant-me en identificar errors i àrees de millora tant en funcionalitat com en usabilitat."
+    }
+  },
+
   "skills": ["UI/UX Design", "Adobe Creative Suite", "Figma", "Game UI"],
   "works": []
 }

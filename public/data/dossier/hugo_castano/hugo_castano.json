@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/LazyRacoonDev",
   "linkedin": "https://www.linkedin.com/in/hugocastano",
-  "bio": "In this project, I started working on every part of the design process, as I was the only one in the design department with any knowledge about the Warhammer 40K universe.\n\nAfter the first weeks of the projects were finished, I did some moodboards for the different levels. After that I made the game's narrative, from dialogues to loading screens text.\n\nAfter all the design was done, I started doing QA, looking for bugs and reporting them.",
+  "translations": {
+    "en": {
+      "role": "Narrative Designer, Level Designer",
+      "department": "Design",
+      "bio": "In this project, I started working on every part of the design process, as I was the only one in the design department with any knowledge about the Warhammer 40K universe.\n\nAfter the first weeks of the project were finished, I did some moodboards for the different levels. After that, I made the game's narrative, from dialogues to loading screens text.\n\nAfter all the design was done, I started doing QA, looking for bugs and reporting them."
+    },
+    "es": {
+      "role": "Diseñador Narrativo, Diseñador de Niveles",
+      "department": "Diseño",
+      "bio": "En este proyecto, comencé trabajando en cada parte del proceso de diseño, ya que era el único en el departamento de diseño con conocimiento sobre el universo de Warhammer 40K.\n\nDespués de las primeras semanas del proyecto, hice algunos moodboards para los diferentes niveles. Luego, creé la narrativa del juego, incluyendo diálogos y textos de pantallas de carga.\n\nUna vez finalizado todo el diseño, comencé a realizar QA, buscando errores y reportándolos."
+    },
+    "ca": {
+      "role": "Dissenyador Narratiu, Dissenyador de Nivells",
+      "department": "Disseny",
+      "bio": "En aquest projecte, vaig començar treballant en cada part del procés de disseny, ja que era l'únic en el departament de disseny amb coneixement sobre l'univers de Warhammer 40K.\n\nDesprés de les primeres setmanes del projecte, vaig fer alguns moodboards per als diferents nivells. Després, vaig crear la narrativa del joc, incloent-hi diàlegs i textos de pantalles de càrrega.\n\nUn cop finalitzat tot el disseny, vaig començar a fer QA, buscant errors i informant-los."
+    }
+  },
+
   "skills": ["Game Design", "UI/UX Design", "Prototyping", "User Research"],
   "works": []
 }

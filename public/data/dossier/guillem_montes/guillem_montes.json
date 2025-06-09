@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/Guillem257",
   "linkedin": "https://www.linkedin.com/in/guillem-montes-recasens-2488602a7/",
-  "bio": "As the producer, my main task was to organize the work of the entire class based on their specialties and the development timeline. I created a development plan and used organizational tools such as Drive, Notion, and Discord, which I kept constantly updated to ensure the project remained well-structured.\n\nWe worked with the Scrum methodology, which I managed and led with the help of the production team and the Scrum Masters. Every two weeks, we updated these groups according to the project's needs.",
+  "translations": {
+    "en": {
+      "role": "Producer",
+      "department": "Production",
+      "bio": "As the producer, my main task was to organize the work of the entire class based on their specialties and the development timeline. I created a development plan and used organizational tools such as Drive, Notion, and Discord, which I kept constantly updated to ensure the project remained well-structured.\n\nWe worked with the Scrum methodology, which I managed and led with the help of the production team and the Scrum Masters. Every two weeks, we updated these groups according to the project's needs."
+    },
+    "es": {
+      "role": "Productor",
+      "department": "Producción",
+      "bio": "Como productor, mi tarea principal fue organizar el trabajo de toda la clase según sus especialidades y la línea de tiempo de desarrollo. Creé un plan de desarrollo y utilicé herramientas organizativas como Drive, Notion y Discord, que mantuve constantemente actualizadas para asegurar que el proyecto estuviera bien estructurado.\n\nTrabajamos con la metodología Scrum, que gestioné y lideré con la ayuda del equipo de producción y los Scrum Masters. Cada dos semanas, actualizábamos estos grupos según las necesidades del proyecto."
+    },
+    "ca": {
+      "role": "Productor",
+      "department": "Producció",
+      "bio": "Com a productor, la meva tasca principal va ser organitzar el treball de tota la classe segons les seves especialitats i la línia temporal de desenvolupament. Vaig crear un pla de desenvolupament i vaig utilitzar eines organitzatives com Drive, Notion i Discord, que vaig mantenir constantment actualitzades per assegurar que el projecte estigués ben estructurat.\n\nVam treballar amb la metodologia Scrum, que vaig gestionar i liderar amb l'ajuda de l'equip de producció i els Scrum Masters. Cada dues setmanes, actualitzàvem aquests grups segons les necessitats del projecte."
+    }
+  },
+
   "skills": ["Project Management", "Team Leadership", "Agile Methodologies", "Game Production"],
   "works": []
 }

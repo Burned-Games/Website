@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/Linjiajie2002",
   "linkedin": "https://www.linkedin.com/in/jiajielin2002/",
-  "bio": "At the early stage of the project, I led the physics team to build and refine the missing physics systems in our engine. Later on, I developed a custom particle system for the engine. After establishing the core concept and structure, I also implemented a particle effect component, allowing designers to control visual effects more efficiently. As a gameplay programmer, I created powerful weapons for our main character, including a shotgun and a throwable grenade, adding depth and intensity to the combat experience. I then took on the role of UI programmer, where I independently developed the mission system, popup system, and dialogue system within the UI framework. I continuously improved these systems by implementing new features based on designer feedback, making them more polished and user-friendly. Lastly, I also contributed to the development of the project's web interface.",
+  "translations": {
+    "en": {
+      "role": "Gameplay Programmer, UI Programmer",
+      "department": "Code",
+      "bio": "At the early stage of the project, I led the physics team to build and refine the missing physics systems in our engine. Later on, I developed a custom particle system for the engine. After establishing the core concept and structure, I also implemented a particle effect component, allowing designers to control visual effects more efficiently. As a gameplay programmer, I created powerful weapons for our main character, including a shotgun and a throwable grenade, adding depth and intensity to the combat experience. I then took on the role of UI programmer, where I independently developed the mission system, popup system, and dialogue system within the UI framework. I continuously improved these systems by implementing new features based on designer feedback, making them more polished and user-friendly. Lastly, I also contributed to the development of the project's web interface."
+    },
+    "es": {
+      "role": "Programador de Jugabilidad, Programador de UI",
+      "department": "Código",
+      "bio": "En la etapa inicial del proyecto, lideré el equipo de física para construir y perfeccionar los sistemas de física que faltaban en nuestro motor. Más adelante, desarrollé un sistema de partículas personalizado para el motor. Tras establecer el concepto y la estructura central, también implementé un componente de efectos de partículas, permitiendo a los diseñadores controlar los efectos visuales de manera más eficiente. Como programador de jugabilidad, creé armas poderosas para nuestro personaje principal, incluyendo una escopeta y una granada arrojadiza, agregando profundidad e intensidad a la experiencia de combate. Luego asumí el rol de programador de UI, donde desarrollé de manera independiente el sistema de misiones, el sistema de ventanas emergentes y el sistema de diálogos dentro del marco de UI. Mejoré continuamente estos sistemas implementando nuevas características basadas en los comentarios de los diseñadores, haciéndolos más pulidos y accesibles para los usuarios. Por último, también contribuí al desarrollo de la interfaz web del proyecto."
+    },
+    "ca": {
+      "role": "Programador de Jugabilitat, Programador d'UI",
+      "department": "Codi",
+      "bio": "En la fase inicial del projecte, vaig liderar l'equip de física per construir i perfeccionar els sistemes de física que faltaven en el nostre motor. Més endavant, vaig desenvolupar un sistema de partícules personalitzat per al motor. Després d'establir el concepte i l'estructura central, també vaig implementar un component d'efectes de partícules, permetent als dissenyadors controlar els efectes visuals de manera més eficient. Com a programador de jugabilitat, vaig crear armes poderoses per al nostre personatge principal, incloent-hi una escopeta i una granada llançable, aportant profunditat i intensitat a l'experiència de combat. Després vaig assumir el rol de programador d'UI, on vaig desenvolupar de manera independent el sistema de missions, el sistema de finestres emergents i el sistema de diàlegs dins del marc d'UI. Vaig millorar contínuament aquests sistemes implementant noves característiques basades en els comentaris dels dissenyadors, fent-los més polits i accessibles per als usuaris. Finalment, també vaig contribuir al desenvolupament de la interfície web del projecte."
+    }
+  },
+
   "skills": ["C++", "Physics Systems", "Particle Systems", "UI Development"],
   "works": []
 }

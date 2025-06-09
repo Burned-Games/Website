@@ -5,7 +5,23 @@
   "icon": "avatar.webp",
   "github": "https://github.com/Serfercont",
   "linkedin": "https://www.linkedin.com/in/sergio-fernandez-contreras-5a57a0233",
-  "bio": "My work has focused on being a gameplay and enemy programmer, although during the first sprint I collaborated with other teammates to develop the Input module for the engine. As a gameplay programmer, I implemented the first iteration of the grenade, which is thrown in a parabolic arc and deals damage to enemies. I also developed the armor upgrade system, which activates visual enhancements and provides additional benefits to the player. Additionally, I created the scrap generation system that triggers when enemies are defeated. The arena battle with the miniboss was another task I was responsible for. Lastly, I fixed various bugs related to enemy behavior, ensuring they functioned correctly.",
+  "translations": {
+    "en": {
+      "role": "Enemy Programmer, Gameplay Programmer",
+      "department": "Code",
+      "bio": "My work has focused on being a gameplay and enemy programmer, although during the first sprint I collaborated with other teammates to develop the Input module for the engine. As a gameplay programmer, I implemented the first iteration of the grenade, which is thrown in a parabolic arc and deals damage to enemies. I also developed the armor upgrade system, which activates visual enhancements and provides additional benefits to the player. Additionally, I created the scrap generation system that triggers when enemies are defeated. The arena battle with the miniboss was another task I was responsible for. Lastly, I fixed various bugs related to enemy behavior, ensuring they functioned correctly."
+    },
+    "es": {
+      "role": "Programador de Enemigos, Programador de Jugabilidad",
+      "department": "Código",
+      "bio": "Mi trabajo se ha centrado en ser programador de jugabilidad y enemigos, aunque durante el primer sprint colaboré con otros compañeros para desarrollar el módulo de entrada del motor. Como programador de jugabilidad, implementé la primera iteración de la granada, que se lanza en un arco parabólico y causa daño a los enemigos. También desarrollé el sistema de mejora de armadura, que activa mejoras visuales y proporciona beneficios adicionales al jugador. Además, creé el sistema de generación de chatarra que se activa cuando los enemigos son derrotados. La batalla en la arena contra el mini-jefe fue otra tarea de la que fui responsable. Por último, corregí varios errores relacionados con el comportamiento de los enemigos, asegurándome de que funcionaran correctamente."
+    },
+    "ca": {
+      "role": "Programador d'Enemics, Programador de Jugabilitat",
+      "department": "Codi",
+      "bio": "El meu treball s'ha centrat en ser programador de jugabilitat i enemics, tot i que durant el primer sprint vaig col·laborar amb altres companys per desenvolupar el mòdul d'entrada del motor. Com a programador de jugabilitat, vaig implementar la primera iteració de la granada, que es llança en un arc parabòlic i causa mal als enemics. També vaig desenvolupar el sistema de millora d'armadura, que activa millores visuals i proporciona beneficis addicionals al jugador. A més, vaig crear el sistema de generació de ferralla que s'activa quan els enemics són derrotats. La batalla a l'arena contra el mini-cap va ser una altra tasca de la qual vaig ser responsable. Finalment, vaig corregir diversos errors relacionats amb el comportament dels enemics, assegurant-me que funcionessin correctament."
+    }
+  },
   "skills": ["C#", "Unity", "Gameplay Programming", "Enemy AI"],
   "works": []
 }

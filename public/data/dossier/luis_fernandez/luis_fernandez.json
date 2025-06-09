@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/Ludef26",
   "linkedin": "https://www.linkedin.com/in/luis-fern%C3%A1ndez-d%C3%ADaz-113894350/",
-  "bio": "In this project, I worked mainly on the environment art part, producing assets from concept arts and keeping a cohesion with the other assets made by the other artists. The assets have followed a blockout process, then highpoly design to finish with texturing. After finishing the assets section I got involved with the VFX, in which I completed the 'Thunder Fury' attack of the final boss.",
+  "translations": {
+    "en": {
+      "role": "Environment Artist, VFX Artist",
+      "department": "Art",
+      "bio": "In this project, I worked mainly on the environment art part, producing assets from concept arts and keeping a cohesion with the other assets made by the other artists. The assets have followed a blockout process, then highpoly design to finish with texturing. After finishing the assets section I got involved with the VFX, in which I completed the 'Thunder Fury' attack of the final boss."
+    },
+    "es": {
+      "role": "Artista de Entornos, Artista de VFX",
+      "department": "Arte",
+      "bio": "En este proyecto, trabajé principalmente en la parte de arte de entornos, produciendo assets a partir de concept arts y manteniendo una cohesión con los demás assets creados por otros artistas. Los assets han seguido un proceso de blockout, luego diseño highpoly y finalmente el texturizado. Después de finalizar la sección de assets, me involucré en los VFX, en los cuales completé el ataque 'Thunder Fury' del jefe final."
+    },
+    "ca": {
+      "role": "Artista d'Entorns, Artista de VFX",
+      "department": "Art",
+      "bio": "En aquest projecte, vaig treballar principalment en la part d'art d'entorns, produint assets a partir de concept arts i mantenint una cohesió amb els altres assets creats pels altres artistes. Els assets han seguit un procés de blockout, després disseny highpoly i finalment el texturitzat. Després de finalitzar la secció d'assets, em vaig involucrar en els VFX, en els quals vaig completar l'atac 'Thunder Fury' del cap final."
+    }
+  },
+
   "skills": ["Maya", "Blender", "Environment Art", "VFX"],
   "works": []
 }

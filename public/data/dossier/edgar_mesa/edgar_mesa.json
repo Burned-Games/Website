@@ -5,8 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/edgarmd1",
   "linkedin": "https://www.linkedin.com/in/edgar-mesa-dominguez-386243270/",
+  "translations": {
+    "en": {
+      "role": "UI Programmer",
+      "department": "Code",
+      "bio": "During development, I focused on implementing and polishing the UI screens. I created the main menu with animated elements, visual feedback on buttons, settings with audio and full screen options and logic to handle saved games, including continuing from the correct level when a save exists. I also developed the pause menu with access to controls and settings, ensuring values like audio and fullscreen persist across sessions. Additionally, I implemented a scrolling credits screen with speed control and redesigned the loading and lose screens. Beyond screen logic, I have been implementing the engine's first UI module by adding essential features such as buttons, sliders, toggles, anchor points, sorting layers, and support for parent-child hierarchies. The UI system uses an independent transform structure that handles position, scaling, and alignment, and supports dynamic 2D texture rendering for clean integration of UI components."
+    },
+    "es": {
+      "role": "Programador de UI",
+      "department": "Código",
+      "bio": "Durante el desarrollo, me enfoqué en implementar y pulir las pantallas de UI. Creé el menú principal con elementos animados, retroalimentación visual en los botones, configuraciones de audio y opciones de pantalla completa, además de la lógica para gestionar partidas guardadas, permitiendo continuar desde el nivel correcto cuando existe un guardado. También desarrollé el menú de pausa con acceso a controles y configuraciones, asegurando que valores como el audio y la pantalla completa persistan entre sesiones. Además, implementé una pantalla de créditos con desplazamiento y control de velocidad, y rediseñé las pantallas de carga y derrota. Más allá de la lógica de pantalla, he estado implementando el primer módulo de UI del motor, agregando funciones esenciales como botones, deslizadores, interruptores, puntos de anclaje, capas de ordenación y soporte para jerarquías padre-hijo. El sistema de UI utiliza una estructura de transformación independiente que maneja posición, escalado y alineación, y admite renderizado dinámico de texturas 2D para una integración limpia de los componentes de UI."
+    },
+    "ca": {
+      "role": "Programador d'UI",
+      "department": "Codi",
+      "bio": "Durant el desenvolupament, em vaig centrar en implementar i polir les pantalles d'UI. Vaig crear el menú principal amb elements animats, retroalimentació visual en els botons, configuracions d'àudio i opcions de pantalla completa, a més de la lògica per gestionar partides guardades, permetent continuar des del nivell correcte quan existeix un guardat. També vaig desenvolupar el menú de pausa amb accés a controls i configuracions, assegurant que valors com l'àudio i la pantalla completa persistissin entre sessions. A més, vaig implementar una pantalla de crèdits amb desplaçament i control de velocitat, i vaig redissenyar les pantalles de càrrega i derrota. Més enllà de la lògica de pantalla, he estat implementant el primer mòdul d'UI del motor, afegint funcions essencials com botons, lliscadors, interruptors, punts d'ancoratge, capes de ordenació i suport per a jerarquies pare-fill. El sistema d'UI utilitza una estructura de transformació independent que gestiona posició, escalat i alineació, i admet renderització dinàmica de textures 2D per a una integració neta dels components d'UI."
+    }
+  },
   "portfolio": "https://edgarmd1.github.io/Porfolio/",
-  "bio": "During development, I focused on implementing and polishing the UI screens. I created the main menu with animated elements, visual feedback on buttons, settings with audio and full screen options and logic to handle saved games, including continuing from the correct level when a save exists. I also developed the pause menu with access to controls and settings, ensuring values like audio and fullscreen persist across sessions. Additionally, I implemented a scrolling credits screen with speed control and redesigned the loading and lose screens. Beyond screen logic, I have been implementing the engine's first UI module by adding essential features such as buttons, sliders, toggles, anchor points, sorting layers, and support for parent-child hierarchies. The UI system uses an independent transform structure that handles position, scaling, and alignment, and supports dynamic 2D texture rendering for clean integration of UI components.",
   "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
   "works": []
 }
