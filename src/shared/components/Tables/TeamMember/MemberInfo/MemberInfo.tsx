@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { config } from '../../../../../config/paths';
 import assets from '../../../../../config/assets';
 import Gallery from '../../Gallery/Gallery';
+import { useTranslation } from '../../../../hooks/useTranslation';
 import './MemberInfo.css';
 
 interface Member {
@@ -17,6 +18,14 @@ interface Member {
     skills?: string[];
     roles?: string[];
     pics?: string[];
+    translations?: {
+        [language: string]: {
+            role?: string;
+            department?: string;
+            bio?: string;
+            skills?: string[];
+        };
+    };
     works?: Array<{
         title: string;
         description?: string;
@@ -40,6 +49,8 @@ interface MemberInfoProps {
 }
 
 const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
+    const { language } = useTranslation();
+
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -53,6 +64,19 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     }, [isOpen]);
 
     if (!isOpen) return null;
+
+    // Función para obtener contenido traducido
+    const getTranslatedContent = () => {
+        const translations = member.translations?.[language];
+        return {
+            role: translations?.role || member.role,
+            department: translations?.department || member.department,
+            bio: translations?.bio || member.bio,
+            skills: translations?.skills || member.skills
+        };
+    };
+
+    const translatedContent = getTranslatedContent();
 
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
@@ -121,8 +145,8 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
         }
     };
 
-    // Función para obtener el primer departamento para el logo
-    const primaryDepartment = member.department.split(',')[0].trim();
+    // Función para obtener el primer departamento para el logo (usando traducción)
+    const primaryDepartment = translatedContent.department.split(',')[0].trim();
     const departmentLogo = getDepartmentLogo(primaryDepartment);
     const departmentBanner = getDepartmentBanner(primaryDepartment);
     
@@ -258,12 +282,12 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                                 <h2>{member.name}</h2>
                             </div>
                             
-                            {member.bio && (
+                            {translatedContent.bio && (
                                 <div className="member-about">
                                     <h3>About</h3>
                                     <div 
                                         className="member-bio"
-                                        dangerouslySetInnerHTML={{ __html: processText(member.bio) }}
+                                        dangerouslySetInnerHTML={{ __html: processText(translatedContent.bio) }}
                                     />
                                 </div>
                             )}

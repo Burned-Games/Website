@@ -14,7 +14,15 @@ interface Member {
     linkedin?: string;
     bio?: string;
     skills?: string[];
-    pics?: string[]; // Añadir esta línea
+    pics?: string[];
+    translations?: {
+        [language: string]: {
+            role?: string;
+            department?: string;
+            bio?: string;
+            skills?: string[];
+        };
+    };
     works?: Array<{
         title: string;
         description?: string;
@@ -50,6 +58,17 @@ const Card = ({ member, onClick }: {
     const { language } = useTranslation();
     const [departments, setDepartments] = useState<DepartmentsData | null>(null);
     
+    // Función para obtener contenido traducido del miembro
+    const getTranslatedMemberContent = () => {
+        const translations = member.translations?.[language];
+        return {
+            role: translations?.role || member.role,
+            department: translations?.department || member.department
+        };
+    };
+
+    const translatedMember = getTranslatedMemberContent();
+    
     useEffect(() => {
         fetch(`${config.basePath}/data/members/departments.json`)
             .then(response => response.json())
@@ -58,11 +77,9 @@ const Card = ({ member, onClick }: {
     }, [language]);
 
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
-   
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
-
-    const primaryDepartmentName = parseDepartments(member.department)[0];
+    const primaryDepartmentName = parseDepartments(translatedMember.department)[0];
     const department = departments?.departments.find(
         d => d.name.toLowerCase() === primaryDepartmentName.toLowerCase()
     );
@@ -86,7 +103,7 @@ const Card = ({ member, onClick }: {
                     >
                         {primaryDepartmentName}
                     </span>
-                    <span className="role-tag">{member.role}</span>
+                    <span className="role-tag">{translatedMember.role}</span>
                 </div>
                 <div className="social-links">
                     {member.github && (
@@ -109,9 +126,11 @@ const parseDepartments = (departmentString: string): string[] => {
     return departmentString.split(',').map(dept => dept.trim()).filter(dept => dept.length > 0);
 };
 
-// Función para verificar si un miembro pertenece a un departamento específico
-const memberBelongsToDepartment = (member: Member, departmentName: string): boolean => {
-    const memberDepartments = parseDepartments(member.department);
+// Función para verificar si un miembro pertenece a un departamento específico (usando traducción)
+const memberBelongsToDepartment = (member: Member, departmentName: string, language: string): boolean => {
+    const translations = member.translations?.[language];
+    const department = translations?.department || member.department;
+    const memberDepartments = parseDepartments(department);
     return memberDepartments.some(dept => dept.toLowerCase() === departmentName.toLowerCase());
 };
 
@@ -167,9 +186,11 @@ const TeamMember: React.FC = () => {
         return roleString.split(',').map(role => role.trim()).filter(role => role.length > 0);
     };
 
-    // Función para verificar si un miembro coincide con el filtro de subcategoría
+    // Función para verificar si un miembro coincide con el filtro de subcategoría (usando traducción)
     const memberMatchesSubcategory = (member: Member, subcategoryName: string): boolean => {
-        const memberRoles = parseRoles(member.role);
+        const translations = member.translations?.[language];
+        const role = translations?.role || member.role;
+        const memberRoles = parseRoles(role);
         return memberRoles.some(role => role === subcategoryName);
     };
 
@@ -206,8 +227,8 @@ const TeamMember: React.FC = () => {
             const department = departments.departments.find(d => d.id === filter.department);
             if (!department) return false;
 
-            // Verificar si el miembro pertenece a alguno de los departamentos que tiene
-            const isDepartmentMatch = memberBelongsToDepartment(member, department.name);
+            // Verificar si el miembro pertenece a alguno de los departamentos que tiene (usando traducción)
+            const isDepartmentMatch = memberBelongsToDepartment(member, department.name, language);
             if (!isDepartmentMatch) return false;
 
             // Si no hay filtro de subcategoría, mostrar todos los miembros del departamento
