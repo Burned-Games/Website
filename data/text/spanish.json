@@ -4,7 +4,8 @@
     "about": "Equipo",
     "downloads": "Descargas",
     "media": "Galería",
-    "game": "Juego"
+    "game": "Juego",
+    "engine": "Motor Propio"
   },
 
   "general": {
@@ -25,7 +26,10 @@
     "description": "Embárcate en una épica aventura en el universo de Warhammer 40,000",
     "playButton": "Jugar Ahora"
   },
-
+  "engine": {
+    "subtitle": "Coffee Engine",
+    "playButton": "Descargar Ahora"
+  },
   "about": {
     "title": "Burned Games",
     "subtitle": "Conoce al Equipo detrás de Warhammer 40.000: The Last Marine",
