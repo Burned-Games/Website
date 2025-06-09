@@ -36,6 +36,7 @@ class AssetManager {
             logo: this.image('logo.png'),
             logoWebp: this.image('logo.webp'),
             gameLogo: this.image('TLM_Logo.webp'),
+            coffeEngineLogo: this.image('coffe_engine_logo.webp'),
             linux: this.image('linux.png'),
             windows: this.image('windows.png'),
             borderMember: this.image('border_member.webp'),

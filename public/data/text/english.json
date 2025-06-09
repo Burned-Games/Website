@@ -4,7 +4,8 @@
     "about": "About Us",
     "downloads": "Downloads",
     "media": "Media",
-    "game": "Game"
+    "game": "Game",
+    "engine": "Our Engine"
   },
   "general": {
     "company": "Burned Games",
@@ -20,6 +21,10 @@
   "home": {
     "subtitle": "Page & Game in development",
     "playButton": "Play Now"
+  },
+  "engine": {
+    "subtitle": "Coffee Engine",
+    "playButton": "Download Now"
   },
   "about": {
     "title": "Burned Games",

@@ -17,6 +17,7 @@ const config = {
         home: '/',
         game: '/game',
         media: '/media',
+        engine: '/engine',
         about: '/about',
         downloads: '/downloads'
     },

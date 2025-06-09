@@ -4,6 +4,7 @@ export interface TranslationType {
         home: string;
         about: string;
         downloads: string;
+        engine: string;
         media: string;
         game: string;
     };
@@ -100,6 +101,19 @@ export interface TranslationType {
         title: string;
         subtitle: string;
         description?: string;
+        loading?: string;
+        features?: {
+            title: string;
+            items: string[];
+        };
+    };
+
+        // Game Page
+    engine: {
+        title: string;
+        subtitle: string;
+        description?: string;
+        playButton: string;
         loading?: string;
         features?: {
             title: string;

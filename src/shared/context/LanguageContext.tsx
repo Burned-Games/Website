@@ -14,7 +14,8 @@ const defaultTranslations: TranslationType = {
         about: 'About',
         downloads: 'Downloads',
         media: 'Media',
-        game: 'Game'
+        game: 'Game',
+        engine: 'Engine'
     },
     general: {
         company: 'Burned Games',
@@ -75,6 +76,16 @@ const defaultTranslations: TranslationType = {
         title: 'Game',
         subtitle: 'Warhammer 40.000: The Last Marine',
         description: '',
+        features: {
+            title: 'Features',
+            items: []
+        }
+    },
+    engine: {
+        title: 'Game',
+        subtitle: 'Warhammer 40.000: The Last Marine',
+        description: '',
+        playButton: 'Play Now',
         features: {
             title: 'Features',
             items: []
