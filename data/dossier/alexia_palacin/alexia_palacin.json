@@ -6,7 +6,23 @@
   "github": "https://github.com/Apb8",
   "linkedin": "https://www.linkedin.com/in/alexia-palacin/",
   "portfolio": "https://www.linkedin.com/in/alexia-palacin/",
-  "bio": "Working on this project has allowed me to contribute to different artistic aspects of videogame development. During the initial phase, I focused on creating several concepts based on the designer's guidelines. One of the highlights was my Main Character concepts for the Space Marine, where we began shaping the visual identity of the character. Afterwards, I moved on to 3D modeling: I started with the Chainsword, the Space Marine's weapon, and then transitioned to modeling environment props, meeting both the technical and artistic requirements we were aiming for. Finally, I joined the VFX team, where I contributed by creating VFX using both Particle Systems and Mesh-based Systems.",
+  "translations": {
+    "en": {
+      "role": "Concept Artist, Environment Artist, VFX Artist",
+      "department": "Art",
+      "bio": "Working on this project has allowed me to contribute to different artistic aspects of videogame development. During the initial phase, I focused on creating several concepts based on the designer's guidelines. One of the highlights was my Main Character concepts for the Space Marine, where we began shaping the visual identity of the character. Afterwards, I moved on to 3D modeling: I started with the Chainsword, the Space Marine's weapon, and then transitioned to modeling environment props, meeting both the technical and artistic requirements we were aiming for. Finally, I joined the VFX team, where I contributed by creating VFX using both Particle Systems and Mesh-based Systems."
+    },
+    "es": {
+      "role": "Artista Conceptual, Artista de Entornos, Artista de VFX",
+      "department": "Arte",
+      "bio": "Trabajar en este proyecto me ha permitido contribuir a diferentes aspectos artísticos del desarrollo de videojuegos. Durante la fase inicial, me centré en crear varios conceptos basados en las directrices del diseñador. Uno de los momentos destacados fue mis conceptos del Personaje Principal para el Space Marine, donde comenzamos a dar forma a la identidad visual del personaje. Después, pasé al modelado 3D: comencé con la Chainsword, el arma del Space Marine, y luego pasé a modelar objetos del entorno, cumpliendo con los requisitos tanto técnicos como artísticos que buscábamos. Finalmente, me uní al equipo de VFX, donde contribuí creando efectos visuales utilizando tanto sistemas de partículas como sistemas basados en mallas."
+    },
+    "ca": {
+      "role": "Artista Conceptual, Artista d'Entorns, Artista de VFX",
+      "department": "Art",
+      "bio": "Treballar en aquest projecte m'ha permès contribuir a diferents aspectes artístics del desenvolupament de videojocs. Durant la fase inicial, em vaig centrar en crear diversos conceptes basats en les directrius del dissenyador. Un dels moments destacats va ser els meus conceptes del Personatge Principal per al Space Marine, on vam començar a donar forma a la identitat visual del personatge. Després, vaig passar al modelatge 3D: vaig començar amb la Chainsword, l'arma del Space Marine, i després vaig passar a modelar objectes de l'entorn, complint amb els requisits tant tècnics com artístics que buscàvem. Finalment, em vaig unir a l'equip de VFX, on vaig contribuir creant efectes visuals utilitzant tant sistemes de partícules com sistemes basats en malles."
+    }
+  },
   "skills": ["Blender", "ZBrush", "Substance Painter", "Concept Art"],
   "works": []
 }

@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/cpugaper",
   "linkedin": "https://www.linkedin.com/in/carla-puga-p%C3%A9rez/",
-  "bio": "As a programmer, I mainly worked in the enemy department, though I initially contributed to explosion physics, scripting documentation, and public variable visibility. In the enemies department, I began working on an early MiniBoss prototype, but it was later canceled. Therefore, I was reassigned to the enemy Tank. When I joined the task, the Tank had already some of its work done; however, I worked on various iterations to improve its previous state machine as well as add new features to it, such as animations, an alert-nearby-enemies system (later reused in other enemies), the berserk ability and the indicator and stun states. I've also worked on general improvements for the enemies' rotation, detection, and raycasting systems. After that, I've been dedicated to bug-fixing and polishing their behavior. Working on this project has taught me the importance of teamwork and adaptability in a large team while also improving my problem-solving and interpersonal skills.",
+  "translations": {
+    "en": {
+      "role": "Enemy Programmer",
+      "department": "Code",
+      "bio": "As a programmer, I mainly worked in the enemy department, though I initially contributed to explosion physics, scripting documentation, and public variable visibility. In the enemies department, I began working on an early MiniBoss prototype, but it was later canceled. Therefore, I was reassigned to the enemy Tank. When I joined the task, the Tank had already some of its work done; however, I worked on various iterations to improve its previous state machine as well as add new features to it, such as animations, an alert-nearby-enemies system (later reused in other enemies), the berserk ability and the indicator and stun states. I've also worked on general improvements for the enemies' rotation, detection, and raycasting systems. After that, I've been dedicated to bug-fixing and polishing their behavior. Working on this project has taught me the importance of teamwork and adaptability in a large team while also improving my problem-solving and interpersonal skills."
+    },
+    "es": {
+      "role": "Programador de Enemigos",
+      "department": "Código",
+      "bio": "Como programador, trabajé principalmente en el departamento de enemigos, aunque inicialmente contribuí en la física de explosiones, la documentación de scripting y la visibilidad de variables públicas. En el departamento de enemigos, comencé trabajando en un prototipo inicial de MiniBoss, pero posteriormente fue cancelado. Por lo tanto, fui reasignado al enemigo Tanque. Cuando me uní a la tarea, el Tanque ya tenía parte de su trabajo hecho; sin embargo, trabajé en varias iteraciones para mejorar su máquina de estados anterior, además de añadir nuevas características como animaciones, un sistema de alerta para enemigos cercanos (posteriormente reutilizado en otros enemigos), la habilidad de frenesí y los estados de indicador y aturdimiento. También trabajé en mejoras generales para los sistemas de rotación, detección y raycasting de los enemigos. Después de eso, me dediqué a corregir errores y pulir su comportamiento. Trabajar en este proyecto me enseñó la importancia del trabajo en equipo y la adaptabilidad dentro de un grupo grande, además de mejorar mis habilidades para la resolución de problemas y comunicación interpersonal."
+    },
+    "ca": {
+      "role": "Programador d'Enemics",
+      "department": "Codi",
+      "bio": "Com a programador, vaig treballar principalment en el departament d'enemics, tot i que inicialment vaig contribuir en la física d'explosions, la documentació de scripting i la visibilitat de variables públiques. En el departament d'enemics, vaig començar treballant en un prototip inicial del MiniBoss, però posteriorment va ser cancel·lat. Per tant, vaig ser reassignat a l'enemic Tanque. Quan em vaig unir a la tasca, el Tanque ja tenia part del seu treball fet; però, vaig treballar en diverses iteracions per millorar la seva anterior màquina d'estats, a més d'afegir noves característiques com animacions, un sistema d'alerta per a enemics propers (posteriorment reutilitzat en altres enemics), la habilitat de frenesí i els estats d'indicador i atordiment. També vaig treballar en millores generals per als sistemes de rotació, detecció i raycasting dels enemics. Després d'això, em vaig dedicar a corregir errors i polir el seu comportament. Treballar en aquest projecte m'ha ensenyat la importància del treball en equip i l'adaptabilitat dins d'un grup gran, a més de millorar les meves habilitats de resolució de problemes i comunicació interpersonal."
+    }
+  },
+
   "skills": ["Python", "Machine Learning", "TensorFlow", "AI Integration"],
   "works": []
 }

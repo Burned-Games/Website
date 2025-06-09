@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/ItsBernii",
   "linkedin": "https://www.linkedin.com/in/bernat-cifuentes-casals-6a0982369/",
-  "bio": "During the project, I started by working on the level design of the game. Deciding on the aesthetics, organizing the spaces, the enemies that would appear, and creating the corresponding flowcharts.\n\nAfter finalizing the level design, I focused on creating the post-processing design for each level, outlining and documenting every technique and choice of filters to be used in different areas or levels in general.\n\nAdditionally, I performed QA to find bugs and suggest improvements within our project in order to deliver a final game we could be proud of.\n\nFinally, I designed the project's website, structuring different sections to showcase the essential elements of the game and the work done by our team members.",
+  "translations": {
+    "en": {
+      "role": "Level Designer",
+      "department": "Design",
+      "bio": "During the project, I started by working on the level design of the game. Deciding on the aesthetics, organizing the spaces, the enemies that would appear, and creating the corresponding flowcharts.\n\nAfter finalizing the level design, I focused on creating the post-processing design for each level, outlining and documenting every technique and choice of filters to be used in different areas or levels in general.\n\nAdditionally, I performed QA to find bugs and suggest improvements within our project in order to deliver a final game we could be proud of.\n\nFinally, I designed the project's website, structuring different sections to showcase the essential elements of the game and the work done by our team members."
+    },
+    "es": {
+      "role": "Diseñador de Niveles",
+      "department": "Diseño",
+      "bio": "Durante el proyecto, comencé trabajando en el diseño de niveles del juego. Decidiendo la estética, organizando los espacios, los enemigos que aparecerían y creando los diagramas de flujo correspondientes.\n\nDespués de finalizar el diseño de niveles, me enfoqué en crear el diseño de postprocesado para cada nivel, detallando y documentando cada técnica y elección de filtros a utilizar en diferentes áreas o niveles en general.\n\nAdemás, realicé QA para encontrar errores y sugerir mejoras dentro de nuestro proyecto con el objetivo de entregar un juego final del que pudiéramos estar orgullosos.\n\nFinalmente, diseñé el sitio web del proyecto, estructurando diferentes secciones para mostrar los elementos esenciales del juego y el trabajo realizado por los miembros de nuestro equipo."
+    },
+    "ca": {
+      "role": "Dissenyador de Nivells",
+      "department": "Disseny",
+      "bio": "Durant el projecte, vaig començar treballant en el disseny de nivells del joc. Decidint l'estètica, organitzant els espais, els enemics que apareixerien i creant els diagrames de flux corresponents.\n\nDesprés de finalitzar el disseny de nivells, em vaig centrar en crear el disseny de postprocessament per a cada nivell, detallant i documentant cada tècnica i elecció de filtres a utilitzar en diferents àrees o nivells en general.\n\nA més, vaig realitzar QA per trobar errors i suggerir millores dins del nostre projecte amb l'objectiu de lliurar un joc final del qual poguéssim estar orgullosos.\n\nFinalment, vaig dissenyar el lloc web del projecte, estructurant diferents seccions per mostrar els elements essencials del joc i el treball realitzat pels membres del nostre equip."
+    }
+  },
+
   "skills": ["Game Design", "Systems Design", "Balancing", "Analytics"],
   "works": []
 }

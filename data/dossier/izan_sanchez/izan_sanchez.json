@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/izansl",
   "linkedin": "https://www.linkedin.com/in/izan-sánchez-lozano/",
-  "bio": "In this project, I was primarily responsible for the complete design of all enemies and the Boss, covering everything from their visual appearance to their behavior and abilities. In addition to the design, I was also in charge of creating the sound effects for both the enemies and the Boss, as well as some of the visual particle effects associated with them. Finally, I handled the balancing of the enemies' and Boss's stats, and actively participated in QA sessions to polish the game experience as much as possible.",
+  "translations": {
+    "en": {
+      "role": "Gameplay Designer, Audio Designer",
+      "department": "Design",
+      "bio": "In this project, I was primarily responsible for the complete design of all enemies and the Boss, covering everything from their visual appearance to their behavior and abilities. In addition to the design, I was also in charge of creating the sound effects for both the enemies and the Boss, as well as some of the visual particle effects associated with them. Finally, I handled the balancing of the enemies' and Boss's stats, and actively participated in QA sessions to polish the game experience as much as possible."
+    },
+    "es": {
+      "role": "Diseñador de Jugabilidad, Diseñador de Audio",
+      "department": "Diseño",
+      "bio": "En este proyecto, fui responsable principalmente del diseño completo de todos los enemigos y del Jefe, abarcando desde su apariencia visual hasta su comportamiento y habilidades. Además del diseño, también me encargué de crear los efectos de sonido tanto para los enemigos como para el Jefe, así como algunos de los efectos de partículas visuales asociados a ellos. Finalmente, gestioné el equilibrio de las estadísticas de los enemigos y del Jefe, y participé activamente en sesiones de QA para pulir la experiencia de juego lo máximo posible."
+    },
+    "ca": {
+      "role": "Dissenyador de Jugabilitat, Dissenyador d'Àudio",
+      "department": "Disseny",
+      "bio": "En aquest projecte, vaig ser responsable principalment del disseny complet de tots els enemics i del Cap, cobrint des de la seva aparença visual fins al seu comportament i habilitats. A més del disseny, també vaig estar a càrrec de crear els efectes de so tant per als enemics com per al Cap, així com alguns dels efectes de partícules visuals associats a ells. Finalment, vaig gestionar l'equilibri de les estadístiques dels enemics i del Cap, i vaig participar activament en sessions de QA per polir l'experiència de joc al màxim."
+    }
+  },
+
   "skills": ["Game Design", "Audio Design", "Enemy Design", "Balancing"],
   "works": []
 }

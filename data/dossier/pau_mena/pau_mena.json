@@ -6,7 +6,24 @@
   "github": "https://github.com/PauMenaTorres",
   "linkedin": "https://www.linkedin.com/in/pau-mena-torres-a884232a0/",
   "portfolio": "https://paumenatorres.github.io/Porfolio/",
-  "bio": "My main task was to implement the HUD, which takes into account all player variables to activate and deactivate animations and cooldowns. The visuals show cooldowns with animations, how health is healed, the current bullet count, the weapons' red color when you fire without bullets, and button feedback for all actions. I also implemented a vignette when the player is hit, an alert when enemies are warned, health bars for the mini-boss and the main boss, and the coliseum doors logic and animations. Regarding the player, I implemented the fervor standard, so it can have its animation when thrown and have a boost to attack and reload speed. Regarding the engine, I have been implementing the first fully functional version of the UI with images, text, buttons, sliders, toggles, anchor points, sorting layers and independent UI transform, which has been the basis for creating the gameplay UI throughout the project, which has been continuously improved.",
+  "translations": {
+    "en": {
+      "role": "UI Programmer",
+      "department": "Code",
+      "bio": "My main task was to implement the HUD, which takes into account all player variables to activate and deactivate animations and cooldowns. The visuals show cooldowns with animations, how health is healed, the current bullet count, the weapons' red color when you fire without bullets, and button feedback for all actions. I also implemented a vignette when the player is hit, an alert when enemies are warned, health bars for the mini-boss and the main boss, and the coliseum doors logic and animations. Regarding the player, I implemented the fervor standard, so it can have its animation when thrown and have a boost to attack and reload speed. Regarding the engine, I have been implementing the first fully functional version of the UI with images, text, buttons, sliders, toggles, anchor points, sorting layers and independent UI transform, which has been the basis for creating the gameplay UI throughout the project, which has been continuously improved."
+    },
+    "es": {
+      "role": "Programador de UI",
+      "department": "Código",
+      "bio": "Mi tarea principal fue implementar el HUD, que tiene en cuenta todas las variables del jugador para activar y desactivar animaciones y tiempos de reutilización. Los elementos visuales muestran los tiempos de reutilización con animaciones, cómo se cura la salud, el conteo actual de balas, el color rojo de las armas cuando disparas sin munición y la retroalimentación de los botones para todas las acciones. También implementé un viñeteado cuando el jugador recibe daño, una alerta cuando los enemigos son advertidos, barras de salud para el mini-jefe y el jefe principal, y la lógica y animaciones de las puertas del coliseo. En cuanto al jugador, implementé el estandarte de fervor, de modo que pueda tener su animación cuando se lanza y proporcionar un aumento en la velocidad de ataque y recarga. En cuanto al motor, he estado implementando la primera versión totalmente funcional de la UI con imágenes, texto, botones, deslizadores, interruptores, puntos de anclaje, capas de ordenación y una transformación de UI independiente, lo que ha sido la base para la creación de la UI de jugabilidad a lo largo del proyecto, la cual se ha ido mejorando continuamente."
+    },
+    "ca": {
+      "role": "Programador d'UI",
+      "department": "Codi",
+      "bio": "La meva tasca principal va ser implementar el HUD, que té en compte totes les variables del jugador per activar i desactivar animacions i temps de reutilització. Els elements visuals mostren els temps de reutilització amb animacions, com es cura la salut, el recompte actual de bales, el color vermell de les armes quan dispares sense munició i la retroalimentació dels botons per a totes les accions. També vaig implementar un vinyetejat quan el jugador rep mal, una alerta quan els enemics són advertits, barres de salut per al mini-cap i el cap principal, i la lògica i animacions de les portes del coliseu. Pel que fa al jugador, vaig implementar l'estàndard de fervor, de manera que pugui tenir la seva animació quan es llança i proporcionar un augment en la velocitat d'atac i recàrrega. Pel que fa al motor, he estat implementant la primera versió totalment funcional de la UI amb imatges, text, botons, lliscadors, interruptors, punts d'ancoratge, capes d'ordenació i una transformació d'UI independent, la qual cosa ha estat la base per a la creació de la UI de jugabilitat al llarg del projecte, que s'ha anat millorant contínuament."
+    }
+  },
+
   "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
   "works": []
 }

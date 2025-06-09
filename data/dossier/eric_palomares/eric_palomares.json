@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/errico6",
   "linkedin": "https://www.linkedin.com/in/eric-palomares-0a0690368/",
-  "bio": "My work has consisted of creating the particle system used in the engine from scratch. And helping in multiple areas of gameplay, such as the system that dynamically attracts scrap to the player, the healing system that works in blocks based on maximum health, and the system for destroying environmental objects, among other bugs that I have fixed. I have also participated in QA work to report errors and bad experiences, and to give the game to others to test and receive their feedback.",
+  "translations": {
+    "en": {
+      "role": "Gameplay Programmer",
+      "department": "Code",
+      "bio": "My work has consisted of creating the particle system used in the engine from scratch. And helping in multiple areas of gameplay, such as the system that dynamically attracts scrap to the player, the healing system that works in blocks based on maximum health, and the system for destroying environmental objects, among other bugs that I have fixed. I have also participated in QA work to report errors and bad experiences, and to give the game to others to test and receive their feedback."
+    },
+    "es": {
+      "role": "Programador de Jugabilidad",
+      "department": "Código",
+      "bio": "Mi trabajo ha consistido en crear el sistema de partículas utilizado en el motor desde cero. También he ayudado en múltiples áreas de jugabilidad, como el sistema que atrae dinámicamente chatarra hacia el jugador, el sistema de curación que funciona en bloques según la salud máxima y el sistema para destruir objetos del entorno, además de otros errores que he corregido. También he participado en el trabajo de QA para reportar errores y malas experiencias, y para dar el juego a otros para que lo prueben y recibir sus comentarios."
+    },
+    "ca": {
+      "role": "Programador de Jugabilitat",
+      "department": "Codi",
+      "bio": "La meva feina ha consistit en crear el sistema de partícules utilitzat en el motor des de zero. També he ajudat en múltiples àrees de jugabilitat, com el sistema que atrau dinàmicament ferralla cap al jugador, el sistema de curació que funciona en blocs segons la salut màxima i el sistema per destruir objectes de l'entorn, a més d'altres errors que he corregit. També he participat en el treball de QA per reportar errors i males experiències, i per donar el joc a altres perquè el provin i rebre els seus comentaris."
+    }
+  },
+
   "skills": ["C#", "Unity", "Particle Systems", "Engine Programming"],
   "works": []
 }

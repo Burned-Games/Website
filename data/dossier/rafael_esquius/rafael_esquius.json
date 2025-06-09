@@ -6,7 +6,24 @@
   "github": "https://github.com/SRRafael8",
   "linkedin": "https://www.linkedin.com/in/rafael-esquius-879a71221/",
   "portfolio": "https://srrafael8.itch.io/",
-  "bio": "During the project, I worked as the UI artist, focusing on the user interface elements to ensure a visual cohesive and intuitive player experience. My work included the art of the in-game HUD, which communicates essential gameplay information, as well as the UI for the Abilities, Buffs and Debuffs icons. I also created various interface components such as guide buttons. I also made the art of the Pause screen, Controller Controls Screen and the Settings Screen, making sure each screen was both functional and visually aligned with the game's aesthetics. Throughout the project, I aimed to deliver a clean and immersive UI experience that supports gameplay and increases the visual identity of the videogame.",
+  "translations": {
+    "en": {
+      "role": "UI/UX Artist",
+      "department": "Art",
+      "bio": "During the project, I worked as the UI artist, focusing on the user interface elements to ensure a visually cohesive and intuitive player experience. My work included the art of the in-game HUD, which communicates essential gameplay information, as well as the UI for the Abilities, Buffs, and Debuffs icons. I also created various interface components such as guide buttons. Additionally, I designed the art for the Pause screen, Controller Controls screen, and the Settings screen, ensuring each screen was both functional and visually aligned with the game's aesthetics. Throughout the project, I aimed to deliver a clean and immersive UI experience that supports gameplay and strengthens the visual identity of the video game."
+    },
+    "es": {
+      "role": "Artista de UI/UX",
+      "department": "Arte",
+      "bio": "Durante el proyecto, trabajé como artista de UI, enfocándome en los elementos de la interfaz de usuario para garantizar una experiencia visualmente cohesiva e intuitiva para el jugador. Mi trabajo incluyó el arte del HUD en el juego, que comunica información esencial de la jugabilidad, así como la UI para los iconos de habilidades, mejoras y desventajas. También creé varios componentes de interfaz, como botones guía. Además, diseñé el arte para la pantalla de pausa, la pantalla de controles del mando y la pantalla de configuración, asegurando que cada una fuera funcional y estuviera visualmente alineada con la estética del juego. A lo largo del proyecto, mi objetivo fue ofrecer una experiencia de UI limpia e inmersiva que apoyara la jugabilidad y reforzara la identidad visual del videojuego."
+    },
+    "ca": {
+      "role": "Artista d'UI/UX",
+      "department": "Art",
+      "bio": "Durant el projecte, vaig treballar com a artista d'UI, centrant-me en els elements de la interfície d'usuari per garantir una experiència visualment cohesionada i intuïtiva per al jugador. El meu treball va incloure l'art del HUD en el joc, que comunica informació essencial de la jugabilitat, així com la UI per als icones d'habilitats, millores i desavantatges. També vaig crear diversos components d'interfície, com botons guia. A més, vaig dissenyar l'art per a la pantalla de pausa, la pantalla de controls del comandament i la pantalla de configuració, assegurant que cadascuna fos funcional i estigués visualment alineada amb l'estètica del joc. Al llarg del projecte, el meu objectiu va ser oferir una experiència d'UI neta i immersiva que donés suport a la jugabilitat i reforcés la identitat visual del videojoc."
+    }
+  },
+
   "skills": ["UI/UX Design", "Photoshop", "Illustrator", "Game UI"],
   "works": []
 }

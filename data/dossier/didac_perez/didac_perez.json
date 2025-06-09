@@ -6,7 +6,24 @@
   "github": "https://github.com/didacpema",
   "linkedin": "https://www.linkedin.com/in/d%C3%ADdac-pm/",
   "portfolio": "https://didac_perez_marquez.artstation.com",
-  "bio": "In this project, I was part of the art department, with my main focus on animation and 3D modeling. I started by creating some concepts for the main character's design. I also created the full 3D models of the player's Bolter weapon, the Ork Boy, and the Ork Rifle (blockout, high-poly, low-poly, and textured), as well as the rig for the Ork Boy. I then moved on to creating controllers and fully animating the Space Marine, the Ork Boy, the Weird Boy, and Garrosh. I also animated the intro and endgame cinematics and helped develop the trailer.",
+  "translations": {
+    "en": {
+      "role": "Animator, Character Artist",
+      "department": "Art",
+      "bio": "In this project, I was part of the art department, with my main focus on animation and 3D modeling. I started by creating some concepts for the main character's design. I also created the full 3D models of the player's Bolter weapon, the Ork Boy, and the Ork Rifle (blockout, high-poly, low-poly, and textured), as well as the rig for the Ork Boy. I then moved on to creating controllers and fully animating the Space Marine, the Ork Boy, the Weird Boy, and Garrosh. I also animated the intro and endgame cinematics and helped develop the trailer."
+    },
+    "es": {
+      "role": "Animador, Artista de Personajes",
+      "department": "Arte",
+      "bio": "En este proyecto, formé parte del departamento de arte, con un enfoque principal en animación y modelado 3D. Comencé creando algunos conceptos para el diseño del personaje principal. También creé los modelos 3D completos del arma Bolter del jugador, el Ork Boy y el Ork Rifle (bloqueo, high-poly, low-poly y texturizado), además del rig para el Ork Boy. Luego pasé a crear controladores y animar completamente al Space Marine, el Ork Boy, el Weird Boy y Garrosh. También animé las cinemáticas de introducción y final del juego, además de ayudar en el desarrollo del tráiler."
+    },
+    "ca": {
+      "role": "Animador, Artista de Personatges",
+      "department": "Art",
+      "bio": "En aquest projecte, vaig formar part del departament d'art, amb un enfocament principal en animació i modelatge 3D. Vaig començar creant alguns conceptes per al disseny del personatge principal. També vaig crear els models 3D complets de l'arma Bolter del jugador, l'Ork Boy i l'Ork Rifle (bloqueig, high-poly, low-poly i texturitzat), a més del rig per a l'Ork Boy. Després vaig passar a crear controladors i animar completament el Space Marine, l'Ork Boy, el Weird Boy i Garrosh. També vaig animar les cinemàtiques d'introducció i final del joc, a més d'ajudar en el desenvolupament del tràiler."
+    }
+  },
+
   "skills": ["Blender", "Maya", "Substance Suite", "Game Optimization"],
   "works": []
 }

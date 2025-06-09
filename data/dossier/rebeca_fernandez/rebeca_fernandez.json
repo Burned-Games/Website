@@ -6,7 +6,24 @@
   "github": "https://github.com/Becca203",
   "linkedin": "https://www.linkedin.com/in/rebeca-fern%C3%A1ndez-l%C3%B3pez-b6b21136a/",
   "portfolio": "https://www.artstation.com/beca_flopez",
-  "bio": "As an artist on this project, I worked on enemy conceptualization and creation, environment art, and visual effects. I started with enemy concepts, especially the support enemy and its weapon. After several iterations and once the design was finalized, I executed the complete 3D modeling pipeline from blockout through final texturing, focusing on optimization. When that phase was finished, I joined the environment team. I had to quickly adapt to the established workflow and develop a variety of props to help bring the different maps to life as a team. At the same time, I participated in the initial phase of particle systems. This was a particular challenge, as it required research and experimentation to create appealing and functional visual effects within the engine's limitations.",
+  "translations": {
+    "en": {
+      "role": "Concept Artist, Character Artist, Environment Artist, VFX Artist",
+      "department": "Art",
+      "bio": "As an artist on this project, I worked on enemy conceptualization and creation, environment art, and visual effects. I started with enemy concepts, especially the support enemy and its weapon. After several iterations and once the design was finalized, I executed the complete 3D modeling pipeline from blockout through final texturing, focusing on optimization. When that phase was finished, I joined the environment team. I had to quickly adapt to the established workflow and develop a variety of props to help bring the different maps to life as a team. At the same time, I participated in the initial phase of particle systems. This was a particular challenge, as it required research and experimentation to create appealing and functional visual effects within the engine's limitations."
+    },
+    "es": {
+      "role": "Artista Conceptual, Artista de Personajes, Artista de Entornos, Artista de VFX",
+      "department": "Arte",
+      "bio": "Como artista en este proyecto, trabajé en la conceptualización y creación de enemigos, arte de entornos y efectos visuales. Comencé con los conceptos de enemigos, especialmente el enemigo de apoyo y su arma. Tras varias iteraciones y una vez finalizado el diseño, llevé a cabo todo el proceso de modelado 3D desde el bloque inicial hasta la texturización final, con un enfoque en la optimización. Una vez concluida esa fase, me uní al equipo de entornos. Tuve que adaptarme rápidamente al flujo de trabajo establecido y desarrollar una variedad de accesorios para ayudar a dar vida a los diferentes mapas como parte del equipo. Al mismo tiempo, participé en la fase inicial de los sistemas de partículas. Este desafío requirió investigación y experimentación para crear efectos visuales atractivos y funcionales dentro de las limitaciones del motor."
+    },
+    "ca": {
+      "role": "Artista Conceptual, Artista de Personatges, Artista d'Entorns, Artista de VFX",
+      "department": "Art",
+      "bio": "Com a artista en aquest projecte, vaig treballar en la conceptualització i creació d'enemics, art d'entorns i efectes visuals. Vaig començar amb els conceptes d'enemics, especialment l'enemic de suport i la seva arma. Després de diverses iteracions i un cop finalitzat el disseny, vaig dur a terme tot el procés de modelatge 3D des del bloqueig inicial fins a la texturització final, amb un enfocament en l'optimització. Un cop conclosa aquesta fase, em vaig unir a l'equip d'entorns. Vaig haver d'adaptar-me ràpidament al flux de treball establert i desenvolupar una varietat d'accessoris per ajudar a donar vida als diferents mapes com a part de l'equip. Al mateix temps, vaig participar en la fase inicial dels sistemes de partícules. Aquest repte va requerir investigació i experimentació per crear efectes visuals atractius i funcionals dins de les limitacions del motor."
+    }
+  },
+
   "skills": ["ZBrush", "Maya", "Substance Painter", "Retopology"],
   "works": []
 }

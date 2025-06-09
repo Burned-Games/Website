@@ -4,7 +4,24 @@
   "department": "Art",
   "icon": "avatar.webp",
   "github": "https://github.com/MariaPerarnau",
-  "bio": "On this project, I contributed in multiple areas, including enemy and prop concept development, tank asset production, environment prop modeling and visual polish during the final development phase. My initial focus was on exploring visual ideas for enemy types, particularly a ranged and tank class unit and its weaponry. Once the concept was finalized, I was responsible for modeling a detailed enemy tank, taking it through each production stage, from early blockouts to final textures. Later, I moved into environment work, where I created various props used throughout the map. This required quickly adapting to the team's existing pipeline and collaborating closely with other artists to maintain visual consistency across levels. I also focused on additional concept work for various in-game props. Toward the end of development, I assisted with visual effects and helped refine the maps by adjusting some asset placement or adding some more decal variations and visual effects.",
+ "translations": {
+    "en": {
+      "role": "Character Artist, Concept Artist, Environment Artist",
+      "department": "Art",
+      "bio": "On this project, I contributed in multiple areas, including enemy and prop concept development, tank asset production, environment prop modeling and visual polish during the final development phase. My initial focus was on exploring visual ideas for enemy types, particularly a ranged and tank class unit and its weaponry. Once the concept was finalized, I was responsible for modeling a detailed enemy tank, taking it through each production stage, from early blockouts to final textures. Later, I moved into environment work, where I created various props used throughout the map. This required quickly adapting to the team's existing pipeline and collaborating closely with other artists to maintain visual consistency across levels. I also focused on additional concept work for various in-game props. Toward the end of development, I assisted with visual effects and helped refine the maps by adjusting some asset placement or adding some more decal variations and visual effects."
+    },
+    "es": {
+      "role": "Artista de Personajes, Artista Conceptual, Artista de Entornos",
+      "department": "Arte",
+      "bio": "En este proyecto, contribuí en múltiples áreas, incluyendo el desarrollo de conceptos de enemigos y accesorios, la producción de assets de tanques, el modelado de accesorios de entornos y el pulido visual durante la fase final de desarrollo. Mi enfoque inicial fue explorar ideas visuales para los tipos de enemigos, en particular una unidad de ataque a distancia y una clase de tanque con su armamento. Una vez finalizado el concepto, fui responsable de modelar un tanque enemigo detallado, llevándolo a través de cada etapa de producción, desde los primeros blockouts hasta las texturas finales. Más adelante, pasé al trabajo de entornos, donde creé varios accesorios utilizados a lo largo del mapa. Esto requirió una rápida adaptación al flujo de trabajo existente del equipo y una estrecha colaboración con otros artistas para mantener la coherencia visual en los niveles. También me centré en el trabajo adicional de concepto para varios accesorios dentro del juego. Hacia el final del desarrollo, ayudé con los efectos visuales y refiné los mapas ajustando la colocación de algunos assets y añadiendo más variaciones de decals y efectos visuales."
+    },
+    "ca": {
+      "role": "Artista de Personatges, Artista Conceptual, Artista d'Entorns",
+      "department": "Art",
+      "bio": "En aquest projecte, vaig contribuir en múltiples àrees, incloent-hi el desenvolupament de conceptes d'enemics i accessoris, la producció d'assets de tancs, el modelatge d'accessoris d'entorns i el polit visual durant la fase final de desenvolupament. El meu enfocament inicial va ser explorar idees visuals per als tipus d'enemics, en particular una unitat d'atac a distància i una classe de tanc amb el seu armament. Un cop finalitzat el concepte, vaig ser responsable de modelar un tanc enemic detallat, portant-lo a través de cada etapa de producció, des dels primers blockouts fins a les textures finals. Més endavant, vaig passar al treball d'entorns, on vaig crear diversos accessoris utilitzats al llarg del mapa. Això va requerir una ràpida adaptació al flux de treball existent de l'equip i una estreta col·laboració amb altres artistes per mantenir la coherència visual en els nivells. També em vaig centrar en treball addicional de conceptes per a diversos accessoris dins del joc. Cap al final del desenvolupament, vaig ajudar amb els efectes visuals i vaig refinar els mapes ajustant la col·locació d'alguns assets i afegint més variacions de decals i efectes visuals."
+    }
+  },
+
   "skills": ["Blender", "Substance Painter", "Concept Art", "Environment Art"],
   "works": []
 }
