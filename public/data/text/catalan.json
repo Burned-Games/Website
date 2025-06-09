@@ -4,7 +4,8 @@
     "about": "Equip",
     "downloads": "Descàrregues",
     "media": "Galeria",
-    "game": "Joc"
+    "game": "Joc",
+    "engine": "Motor Propi"
   },
   "general": {
     "company": "Burned Games",
@@ -20,6 +21,10 @@
   "home": {
     "subtitle": "Pàgina i Joc en desenvolupament",
     "playButton": "Jugar Ara"
+  },
+    "engine": {
+    "subtitle": "Coffee Engine",
+    "playButton": "Descarregar Ara"
   },
   "about": {
     "title": "Burned Games",
