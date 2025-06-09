@@ -1,0 +1,126 @@
+.engine-hero {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--color-background-primary) 0%, var(--color-background-secondary) 40%);
+    position: relative;
+    overflow: hidden;
+}
+
+.engine-hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.engine-hero-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.engine-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.engine-hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    margin: 0 0 1rem 0;
+    line-height: 1.3;
+}
+
+.engine-hero-description {
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    margin: 0 0 2rem 0;
+    line-height: 1.6;
+}
+
+.engine-hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.engine-hero-left {
+    flex: 1 1 350px;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 2rem;
+}
+
+.engine-hero-right {
+    flex: 1 1 300px;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engine-hero-logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 24px var(--color-glow));
+    border-radius: var(--border-radius-lg);
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .engine-hero {
+        min-height: 80vh;
+    }
+    .engine-hero-flex {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
+    }
+    .engine-hero-left, .engine-hero-right {
+        padding: 0;
+        max-width: 100%;
+    }
+    .engine-hero-logo {
+        max-width: 220px;
+        padding: 1rem;
+    }
+    .engine-hero-title {
+        font-size: 2.2rem;
+    }
+    .engine-hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .engine-hero {
+        min-height: 60vh;
+    }
+    .engine-hero-container {
+        padding: 1rem;
+    }
+    .engine-hero-title {
+        font-size: 1.5rem;
+    }
+    .engine-hero-logo {
+        max-width: 140px;
+        padding: 0.5rem;
+    }
+}
