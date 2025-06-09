@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/miguelturmo",
   "linkedin": "https://www.linkedin.com/in/miguel-turmo-palau-564528314/",
-  "bio": "During this project I was able to work as enemy creation and animation, I worked in the creation of props and animated two of those for the visuals of the videogame and a bit of UI.",
+  "translations": {
+    "en": {
+      "role": "Animator, Character Artist, Environment Artist",
+      "department": "Art",
+      "bio": "During this project I was able to work on enemy creation and animation. I contributed to the creation of props and animated two of them for the visuals of the videogame, as well as some UI elements."
+    },
+    "es": {
+      "role": "Animador, Artista de Personajes, Artista de Entornos",
+      "department": "Arte",
+      "bio": "Durante este proyecto, pude trabajar en la creación y animación de enemigos. Contribuí a la creación de accesorios y animé dos de ellos para la estética del videojuego, además de algunos elementos de UI."
+    },
+    "ca": {
+      "role": "Animador, Artista de Personatges, Artista d'Entorns",
+      "department": "Art",
+      "bio": "Durant aquest projecte, vaig poder treballar en la creació i animació d'enemics. Vaig contribuir a la creació de props i vaig animar-ne dos per a l'estètica del videojoc, així com alguns elements d'UI."
+    }
+  },
+
   "skills": ["Maya", "3ds Max", "Substance Painter", "Animation"],
   "works": []
 }

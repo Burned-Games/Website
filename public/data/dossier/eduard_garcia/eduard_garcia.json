@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/Eduuuuuuuuuuuu",
   "linkedin": "https://www.linkedin.com/in/edu-garcia-tobajas-830065295",
-  "bio": "I contributed to the Input and UI modules by developing scripting functions and fixing various bugs. I implemented several particle effects in an initial iteration and then carried out multiple iterations to create collisions in Blender, polishing them to their final form. Finally, I took part in QA sessions, where I identified and documented bugs.",
+  "translations": {
+    "en": {
+      "role": "Gameplay Programmer",
+      "department": "Code",
+      "bio": "I contributed to the Input and UI modules by developing scripting functions and fixing various bugs. I implemented several particle effects in an initial iteration and then carried out multiple iterations to create collisions in Blender, polishing them to their final form. Finally, I took part in QA sessions, where I identified and documented bugs."
+    },
+    "es": {
+      "role": "Programador de Jugabilidad",
+      "department": "Código",
+      "bio": "Contribuí a los módulos de Entrada y UI desarrollando funciones de scripting y corrigiendo varios errores. Implementé varios efectos de partículas en una iteración inicial y luego llevé a cabo múltiples iteraciones para crear colisiones en Blender, puliéndolas hasta su forma final. Finalmente, participé en sesiones de QA, donde identifiqué y documenté errores."
+    },
+    "ca": {
+      "role": "Programador de Jugabilitat",
+      "department": "Codi",
+      "bio": "Vaig contribuir als mòduls d'Entrada i UI desenvolupant funcions de scripting i corregint diversos errors. Vaig implementar diversos efectes de partícules en una iteració inicial i després vaig dur a terme múltiples iteracions per crear col·lisions a Blender, polint-les fins a la seva forma final. Finalment, vaig participar en sessions de QA, on vaig identificar i documentar errors."
+    }
+  },
+
   "skills": ["C#", "Unity", "Blender", "VFX Systems"],
   "works": []
 }

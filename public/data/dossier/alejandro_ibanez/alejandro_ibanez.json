@@ -5,7 +5,23 @@
   "icon": "avatar.webp",
   "github": "https://github.com/AlejandroIR",
   "linkedin": "https://www.linkedin.com/in/alejandro-ibáñez-b0b340314/",
-  "bio": "I developed the core systems for the Player Upgrade System and the UI of the Workbench, ensuring smooth user interaction. Later, I worked on the Arena Coliseum Battle. I also contributed as an Engine Physics Programmer, improving the game's physical interactions. Throughout development, I regularly participated in QA, identifying and fixing bugs. Additionally, I helped polish and expand the Main Character's abilities.",
+  "translations": {
+    "en": {
+      "role": "UI Programmer, Gameplay Programmer",
+      "department": "Code",
+      "bio": "I developed the core systems for the Player Upgrade System and the UI of the Workbench, ensuring smooth user interaction. Later, I worked on the Arena Coliseum Battle. I also contributed as an Engine Physics Programmer, improving the game's physical interactions. Throughout development, I regularly participated in QA, identifying and fixing bugs. Additionally, I helped polish and expand the Main Character's abilities."
+    },
+    "es": {
+      "role": "Programador de UI, Programador de Jugabilidad",
+      "department": "Código",
+      "bio": "Desarrollé los sistemas centrales para el Sistema de Mejora del Jugador y la UI del Banco de Trabajo, asegurando una interacción de usuario fluida. Más tarde, trabajé en la Batalla del Coliseo Arena. También contribuí como Programador de Física del Motor, mejorando las interacciones físicas del juego. Durante el desarrollo, participé regularmente en QA, identificando y corrigiendo errores. Además, ayudé a pulir y expandir las habilidades del Personaje Principal."
+    },
+    "ca": {
+      "role": "Programador d'UI, Programador de Jugabilitat",
+      "department": "Codi",
+      "bio": "Vaig desenvolupar els sistemes centrals per al Sistema de Millora del Jugador i la UI del Banc de Treball, assegurant una interacció d'usuari fluida. Més tard, vaig treballar en la Batalla del Coliseu Arena. També vaig contribuir com a Programador de Física del Motor, millorant les interaccions físiques del joc. Durant el desenvolupament, vaig participar regularment en QA, identificant i corregint errors. A més, vaig ajudar a polir i expandir les habilitats del Personatge Principal."
+    }
+  },
   "skills": ["C#", "Unity", "Mobile Development", "iOS/Android"],
   "works": []
 }

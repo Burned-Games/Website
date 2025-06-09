@@ -5,7 +5,24 @@
   "icon": "avatar.webp",
   "github": "https://github.com/seregero00",
   "linkedin": "https://www.linkedin.com/in/sergio-corona-7a9325222/",
-  "bio": "In this project, I worked as an Environment Artist, creating assets based on concept sketches provided by a concept artist. During the process, I learned and applied the full modeling pipeline to produce optimized assets suitable for videogame. Each asset followed a clear workflow: starting with a blockout, followed by a high-poly sculpt in ZBrush, and then baking the details onto a low-poly version for texturing. After completing the props, I moved on to VFX, where I created a support attack — an electric projectile.",
+  "translations": {
+    "en": {
+      "role": "Environment Artist, VFX Artist",
+      "department": "Art",
+      "bio": "In this project, I worked as an Environment Artist, creating assets based on concept sketches provided by a concept artist. During the process, I learned and applied the full modeling pipeline to produce optimized assets suitable for video games. Each asset followed a clear workflow: starting with a blockout, followed by a high-poly sculpt in ZBrush, and then baking the details onto a low-poly version for texturing. After completing the props, I moved on to VFX, where I created a support attack—an electric projectile."
+    },
+    "es": {
+      "role": "Artista de Entornos, Artista de VFX",
+      "department": "Arte",
+      "bio": "En este proyecto, trabajé como Artista de Entornos, creando assets basados en bocetos conceptuales proporcionados por un artista conceptual. Durante el proceso, aprendí y apliqué el pipeline completo de modelado para producir assets optimizados para videojuegos. Cada asset siguió un flujo de trabajo claro: comenzando con un bloque inicial, seguido de un esculpido en alta resolución en ZBrush, y luego horneando los detalles en una versión de baja resolución para su texturizado. Después de completar los accesorios, pasé a VFX, donde creé un ataque de apoyo: un proyectil eléctrico."
+    },
+    "ca": {
+      "role": "Artista d'Entorns, Artista de VFX",
+      "department": "Art",
+      "bio": "En aquest projecte, vaig treballar com a Artista d'Entorns, creant assets basats en esbossos conceptuals proporcionats per un artista conceptual. Durant el procés, vaig aprendre i aplicar el pipeline complet de modelatge per produir assets optimitzats per a videojocs. Cada asset va seguir un flux de treball clar: començant per un bloqueig inicial, seguit d'un esculpit en alta resolució a ZBrush, i després cuinant els detalls en una versió de baixa resolució per al seu texturitzat. Després de completar els accessoris, vaig passar a VFX, on vaig crear un atac de suport: un projectil elèctric."
+    }
+  },
+
   "skills": ["Blender", "ZBrush", "Substance Designer", "VFX"],
   "works": []
 }

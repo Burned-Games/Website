@@ -6,7 +6,24 @@
   "github": "https://github.com/martagnarta",
   "linkedin": "https://www.linkedin.com/in/marta-jover-valero-6a4979185/",
   "portfolio": "https://martajvalero.com",
-  "bio": "Talented environment artist specializing in creating immersive game worlds.",
+  "translations": {
+    "en": {
+      "role": "Environment Artist, Concept Artist, Branding Artist",
+      "department": "Art",
+      "bio": "Talented environment artist specializing in creating immersive game worlds."
+    },
+    "es": {
+      "role": "Artista de Entornos, Artista Conceptual, Artista de Marca",
+      "department": "Arte",
+      "bio": "Artista de entornos talentoso especializado en crear mundos de juego inmersivos."
+    },
+    "ca": {
+      "role": "Artista d'Entorns, Artista Conceptual, Artista de Marca",
+      "department": "Art",
+      "bio": "Artista d'entorns talentós especialitzat en crear mons de joc immersius."
+    }
+  },
+
   "skills": ["Unreal Engine", "World Machine", "Substance Suite", "Photogrammetry"],
   "works": []
 }

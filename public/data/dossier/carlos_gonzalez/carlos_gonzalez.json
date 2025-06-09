@@ -5,7 +5,23 @@
   "icon": "avatar.webp",
   "github": "https://github.com/gosu00",
   "linkedin": "https://www.linkedin.com/in/carlos-gonzález-subirón-45ab7722a",
-  "bio": "As Lead Artist, I was responsible for establishing and overseeing the visual direction of the game from concept to final implementation. I led a team of artists, ensuring a cohesive style across environments, characters, UI, and animations. I collaborated closely with design and programming teams to align art with gameplay and performance goals. I also contributed key visual assets and guided the integration of artwork into the game engine, balancing aesthetics with technical constraints.",
+  "translations": {
+    "en": {
+      "role": "Lead Artist, Character Artist, Environment Artist, UI/UX Artist, VFX Artist",
+      "department": "Production, Art",
+      "bio": "As Lead Artist, I was responsible for establishing and overseeing the visual direction of the game from concept to final implementation. I led a team of artists, ensuring a cohesive style across environments, characters, UI, and animations. I collaborated closely with design and programming teams to align art with gameplay and performance goals. I also contributed key visual assets and guided the integration of artwork into the game engine, balancing aesthetics with technical constraints."
+    },
+    "es": {
+      "role": "Artista Principal, Artista de Personajes, Artista de Entornos, Artista de UI/UX, Artista de VFX",
+      "department": "Producción, Arte",
+      "bio": "Como Artista Principal, fui responsable de establecer y supervisar la dirección visual del juego desde el concepto hasta la implementación final. Lideré un equipo de artistas, asegurando un estilo cohesivo en entornos, personajes, UI y animaciones. Colaboré estrechamente con los equipos de diseño y programación para alinear el arte con la jugabilidad y los objetivos de rendimiento. También contribuí con elementos visuales clave y guié la integración del arte en el motor del juego, equilibrando la estética con las limitaciones técnicas."
+    },
+    "ca": {
+      "role": "Artista Principal, Artista de Personatges, Artista d'Entorns, Artista de UI/UX, Artista de VFX",
+      "department": "Producció, Art",
+      "bio": "Com a Artista Principal, vaig ser responsable d'establir i supervisar la direcció visual del joc des del concepte fins a la implementació final. Vaig liderar un equip d'artistes, assegurant un estil cohesiu en entorns, personatges, UI i animacions. Vaig col·laborar estretament amb els equips de disseny i programació per alinear l'art amb la jugabilitat i els objectius de rendiment. També vaig contribuir amb elements visuals clau i vaig guiar la integració de l'art en el motor del joc, equilibrant l'estètica amb les limitacions tècniques."
+    }
+  },
   "skills": ["Blender", "Maya", "Substance Painter", "ZBrush"],
   "works": []
 }

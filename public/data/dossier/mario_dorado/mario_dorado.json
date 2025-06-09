@@ -6,7 +6,24 @@
   "github": "https://github.com/mdoradom",
   "linkedin": "https://www.linkedin.com/in/mario-dorado-martinez/",
   "portfolio": "https://mdoradom.com/",
-  "bio": "Before the development of this project, I was working alongside Hugo Planell Moreno as one of the main developers of Coffee Engine, the custom engine we used to create this game. Throughout the development, my primary role was to expand and improve the engine. I implemented core systems such as the physics module, the collision detection system, the prefab system, and the scripting system. Additionally, I focused on optimizing performance through profiling tools and maintaining high code quality standards. I was also one of the three developers responsible for reviewing pull requests related to new engine features, ensuring consistency and reliability across the codebase. Finally, I was one of the developers responsible for compiling and maintaining the Linux builds of the game, with special focus on Steam Deck, ensuring full compatibility, smooth performance, and proper controller support in every release.",
+  "translations": {
+    "en": {
+      "role": "Engine Programmer",
+      "department": "Code",
+      "bio": "Before the development of this project, I was working alongside Hugo Planell Moreno as one of the main developers of Coffee Engine, the custom engine we used to create this game. Throughout the development, my primary role was to expand and improve the engine. I implemented core systems such as the physics module, the collision detection system, the prefab system, and the scripting system. Additionally, I focused on optimizing performance through profiling tools and maintaining high code quality standards. I was also one of the three developers responsible for reviewing pull requests related to new engine features, ensuring consistency and reliability across the codebase. Finally, I was one of the developers responsible for compiling and maintaining the Linux builds of the game, with special focus on Steam Deck, ensuring full compatibility, smooth performance, and proper controller support in every release."
+    },
+    "es": {
+      "role": "Programador de Motor",
+      "department": "Código",
+      "bio": "Antes del desarrollo de este proyecto, trabajé junto a Hugo Planell Moreno como uno de los desarrolladores principales de Coffee Engine, el motor personalizado que usamos para crear este juego. Durante el desarrollo, mi rol principal fue expandir y mejorar el motor. Implementé sistemas centrales como el módulo de física, el sistema de detección de colisiones, el sistema de prefabs y el sistema de scripting. Además, me enfoqué en optimizar el rendimiento mediante herramientas de perfilado y mantener altos estándares de calidad del código. También fui uno de los tres desarrolladores responsables de revisar solicitudes de incorporación de nuevas funciones al motor, garantizando coherencia y fiabilidad en la base de código. Finalmente, fui uno de los desarrolladores encargados de compilar y mantener las versiones de Linux del juego, con especial enfoque en Steam Deck, asegurando compatibilidad total, rendimiento fluido y soporte adecuado para controles en cada lanzamiento."
+    },
+    "ca": {
+      "role": "Programador de Motor",
+      "department": "Codi",
+      "bio": "Abans del desenvolupament d'aquest projecte, vaig treballar juntament amb Hugo Planell Moreno com un dels desenvolupadors principals de Coffee Engine, el motor personalitzat que vam utilitzar per crear aquest joc. Durant el desenvolupament, el meu paper principal va ser expandir i millorar el motor. Vaig implementar sistemes clau com el mòdul de física, el sistema de detecció de col·lisions, el sistema de prefabs i el sistema de scripting. A més, em vaig centrar en optimitzar el rendiment mitjançant eines de perfilatge i mantenir alts estàndards de qualitat del codi. També vaig ser un dels tres desenvolupadors responsables de revisar sol·licituds d'incorporació de noves funcions al motor, garantint coherència i fiabilitat en la base de codi. Finalment, vaig ser un dels desenvolupadors responsables de compilar i mantenir les versions de Linux del joc, amb especial enfocament en Steam Deck, assegurant compatibilitat total, rendiment fluid i suport adequat per als controls en cada llançament."
+    }
+  },
+
   "skills": ["C++", "Engine Development", "Physics Systems", "Linux/Steam Deck"],
   "pics": ["mario_dorado1.png"]
 }
