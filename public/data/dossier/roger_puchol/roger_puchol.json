@@ -9,20 +9,20 @@
     "en": {
       "role": "Engine Programmer",
       "department": "Code",
-      "bio": "As part of the engine team, I implemented the input system in all of its iterations, along with various QoL features and bug fixing. Also provided help with using the editor and debugging and fixing bugs in various parts of the project (engine and gameplay)."
+      "bio": "As part of the engine team, I implemented the input system in all of its iterations, along with various QoL features and bug fixing. Also provided help with using the editor and debugging and fixing bugs in various parts of the project (both engine and gameplay)."
     },
     "es": {
       "role": "Programador de Motor",
       "department": "Código",
-      "bio": "Como parte del equipo de motor, implementé el sistema de entrada en todas sus iteraciones, junto con varias mejoras de calidad de vida y corrección de errores. También brindé ayuda en el uso del editor y en la depuración y corrección de errores en varias partes del proyecto (motor y jugabilidad)."
+      "bio": "Como parte del equipo de motor, implementé el sistema de entrada en todas sus iteraciones, junto con varias mejoras de calidad de vida y corrección de errores. También brindé ayuda en el uso del editor y en la depuración y corrección de errores en varias partes del proyecto (tanto motor como gameplay)."
     },
     "ca": {
       "role": "Programador de Motor",
       "department": "Codi",
-      "bio": "Com a part de l'equip de motor, vaig implementar el sistema d'entrada en totes les seves iteracions, juntament amb diverses millores de qualitat de vida i correcció d'errors. També vaig brindar ajuda en l'ús de l'editor i en la depuració i correcció d'errors en diverses parts del projecte (motor i jugabilitat)."
+      "bio": "Com a part de l'equip de motor, vaig implementar el sistema d'entrada en totes les seves iteracions, juntament amb diverses millores de qualitat de vida i correcció d'errors. També vaig brindar ajuda en l'ús de l'editor i en la depuració i correcció d'errors en diverses parts del projecte (tant motor com gameplay)."
     }
   },
 
-  "skills": ["C++", "Input Systems", "Engine Development", "Debugging"],
+  "skills": ["C++", "C#", "Unity", "Input Systems", "Engine Development", "Debugging", "Code Analysis"],
   "works": []
 }
