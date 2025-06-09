@@ -1,11 +1,11 @@
 {
   "name": "Luis Fernández",
-  "role": "Enviroment Artist, VFX Artist",
+  "role": "Environment Artist, VFX Artist",
   "department": "Art",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Passionate 3D artist with expertise in character animation and rigging.",
-  "skills": ["Maya", "Blender", "Character Rigging", "Animation"],
+  "github": "https://github.com/Ludef26",
+  "linkedin": "https://www.linkedin.com/in/luis-fern%C3%A1ndez-d%C3%ADaz-113894350/",
+  "bio": "In this project, I worked mainly on the environment art part, producing assets from concept arts and keeping a cohesion with the other assets made by the other artists. The assets have followed a blockout process, then highpoly design to finish with texturing. After finishing the assets section I got involved with the VFX, in which I completed the 'Thunder Fury' attack of the final boss.",
+  "skills": ["Maya", "Blender", "Environment Art", "VFX"],
   "works": []
 }

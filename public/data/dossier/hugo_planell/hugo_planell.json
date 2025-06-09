@@ -1,11 +1,12 @@
 {
   "name": "Hugo Planell",
-  "role": "Engine Lead, Engine Programmer",
+  "role": "Lead Engine, Engine Programmer, Lead Coder",
   "department": "Production, Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Skilled programmer specializing in VR/AR development and immersive technologies.",
-  "skills": ["Unity", "VR/AR Development", "OpenXR", "Immersive Tech"],
+  "github": "https://github.com/hugoplanell",
+  "linkedin": "https://www.linkedin.com/in/hugo-planell-moreno-5693a82a2/",
+  "portfolio": "https://itch.io/profile/hugoplacer",
+  "bio": "I am the original creator of TeaEngine, a custom game engine that served as the foundation for the development of Coffee Engine, which I co-created together with Mario Dorado Martínez. This engine was used in the development of Warhammer 40k: The Last Marine. Throughout the project, I worked with a team that I led as Lead Engine, coordinating development and making key technical decisions regarding the engine's direction. During the project, I focused on core areas such as rendering, resource management, Coffee Runtime, the scripting system and its maintenance, frustum culling, the Scene Manager, and serialization. I was also responsible for the technical documentation and ensuring the engine's cross-platform support. In addition to my technical responsibilities, I worked closely with my team to resolve bugs, providing constant technical support and effective solutions to complex issues.",
+  "skills": ["C++", "Engine Development", "Rendering", "Cross-Platform"],
   "works": []
 }

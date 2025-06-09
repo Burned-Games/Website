@@ -3,9 +3,10 @@
   "role": "UI Programmer",
   "department": "Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Dedicated programmer with expertise in web development and full-stack solutions.",
-  "skills": ["JavaScript", "React", "Node.js", "Full-Stack Development"],
+  "github": "https://github.com/edgarmd1",
+  "linkedin": "www.linkedin.com/in/edgar-mesa-dominguez-386243270",
+  "portfolio": "https://edgarmd1.github.io/Porfolio/",
+  "bio": "During development, I focused on implementing and polishing the UI screens. I created the main menu with animated elements, visual feedback on buttons, settings with audio and full screen options and logic to handle saved games, including continuing from the correct level when a save exists. I also developed the pause menu with access to controls and settings, ensuring values like audio and fullscreen persist across sessions. Additionally, I implemented a scrolling credits screen with speed control and redesigned the loading and lose screens. Beyond screen logic, I have been implementing the engine's first UI module by adding essential features such as buttons, sliders, toggles, anchor points, sorting layers, and support for parent-child hierarchies. The UI system uses an independent transform structure that handles position, scaling, and alignment, and supports dynamic 2D texture rendering for clean integration of UI components.",
+  "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
   "works": []
 }

@@ -3,9 +3,10 @@
   "role": "Lead Game Designer",
   "department": "Production, Design",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Creative game designer focused on player experience and innovative gameplay mechanics.",
+  "github": "https://github.com/Galycon",
+  "linkedin": "https://www.linkedin.com/in/ra%C3%BCl-s%C3%A1nchez-rodr%C3%ADguez-284459328/",
+  "portfolio": "https://2004rasr.framer.website/",
+  "bio": "As Lead Designer, I was responsible for shaping the creative and structural foundation of the project, bridging vision with execution. I led the design department while coordinating across all teams, ensuring that every element of the game was aligned with our core experience. I designed and balanced core systems such as combat statistics, in-game economy, and camera behavior. I created the Game Design Document from scratch and iterated on it throughout development to reflect both evolving ideas and production realities. I designed and built levels with a strong focus on flow and pacing. I developed a fully guided tutorial experience to support onboarding.",
   "skills": ["Game Design", "Level Design", "Player Psychology", "Balancing"],
   "works": []
 }

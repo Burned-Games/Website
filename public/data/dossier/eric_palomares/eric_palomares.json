@@ -3,9 +3,9 @@
   "role": "Gameplay Programmer",
   "department": "Code",
   "icon": "avatar.webp",
-  "github": "https://github.com/username",
-  "linkedin": "https://linkedin.com/in/username",
-  "bio": "Passionate programmer with focus on game mechanics and systems programming.",
-  "skills": ["C#", "Unity", "Game Systems", "Design Patterns"],
+  "github": "https://github.com/errico6",
+  "linkedin": "https://www.linkedin.com/in/eric-palomares-0a0690368/",
+  "bio": "My work has consisted of creating the particle system used in the engine from scratch. And helping in multiple areas of gameplay, such as the system that dynamically attracts scrap to the player, the healing system that works in blocks based on maximum health, and the system for destroying environmental objects, among other bugs that I have fixed. I have also participated in QA work to report errors and bad experiences, and to give the game to others to test and receive their feedback.",
+  "skills": ["C#", "Unity", "Particle Systems", "Engine Programming"],
   "works": []
 }

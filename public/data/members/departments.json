@@ -44,7 +44,7 @@
           },
           {
             "id": "design",
-            "name": "Lead Designer"
+            "name": "Lead Game Designer"
           },
           {
             "id": "code",
@@ -72,6 +72,18 @@
           {
             "id": "concept",
             "name": "Concept Artist"
+          },
+          {
+            "id": "ui",
+            "name": "UI/UX Artist"
+          },
+          {
+            "id": "vfx",
+            "name": "VFX Artist"
+          },
+          {
+            "id": "animator",
+            "name": "Animator"
           }
         ]
       },
@@ -91,6 +103,10 @@
           {
             "id": "ui",
             "name": "UI/UX Designer"
+          },
+          {
+            "id": "narrative",
+            "name": "Narrative Designer"
           }
         ]
       }
@@ -169,6 +185,18 @@
           {
             "id": "concept",
             "name": "Artista Conceptual"
+          },
+          {
+            "id": "ui",
+            "name": "Artista UI/UX"
+          },
+          {
+            "id": "vfx",
+            "name": "Artista VFX"
+          },
+          {
+            "id": "animator",
+            "name": "Animador"
           }
         ]
       },
@@ -188,6 +216,10 @@
           {
             "id": "ui",
             "name": "Diseñador UI/UX"
+          },
+          {
+            "id": "narrative",
+            "name": "Diseñador Narrativo"
           }
         ]
       }
@@ -266,6 +298,18 @@
           {
             "id": "concept",
             "name": "Artista Conceptual"
+          },
+          {
+            "id": "ui",
+            "name": "Artista UI/UX"
+          },
+          {
+            "id": "vfx",
+            "name": "Artista VFX"
+          },
+          {
+            "id": "animator",
+            "name": "Animador"
           }
         ]
       },
@@ -285,6 +329,10 @@
           {
             "id": "ui",
             "name": "Dissenyador UI/UX"
+          },
+          {
+            "id": "narrative",
+            "name": "Dissenyador Narratiu"
           }
         ]
       }
