@@ -56,12 +56,6 @@ const Navbar: React.FC = () => {
                         {t.navigation.home}
                     </button>
                     <button 
-                        className={isActive('/about')}
-                        onClick={() => handleNavigation('/about')}
-                    >
-                        {t.navigation.about}
-                    </button>
-                    <button 
                         className={isActive('/game')}
                         onClick={() => handleNavigation('/game')}
                     >
@@ -78,6 +72,12 @@ const Navbar: React.FC = () => {
                         onClick={() => handleNavigation('/media')}
                     >
                         {t.navigation.media}
+                    </button>
+                    <button 
+                        className={isActive('/about')}
+                        onClick={() => handleNavigation('/about')}
+                    >
+                        {t.navigation.about}
                     </button>
                     <button 
                         className={isActive('/downloads')}

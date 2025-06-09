@@ -58,6 +58,13 @@ class AssetManager {
                 production: this.image('EstandarteProdu.webp'),
                 art: this.image('EstandarteArte.webp'),
                 design: this.image('EstandarteDesign.webp')
+            },
+            // Game screenshots
+            gameScreenshots: {
+                screenshot1: this.image('screenshot1.webp'),
+                screenshot2: this.image('screenshot2.webp'),
+                screenshot3: this.image('screenshot3.webp'),
+                screenshot4: this.image('screenshot4.webp')
             }
         };
     }
