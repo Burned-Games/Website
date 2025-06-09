@@ -8,5 +8,5 @@
   "portfolio": "https://mdoradom.com/",
   "bio": "Before the development of this project, I was working alongside Hugo Planell Moreno as one of the main developers of Coffee Engine, the custom engine we used to create this game. Throughout the development, my primary role was to expand and improve the engine. I implemented core systems such as the physics module, the collision detection system, the prefab system, and the scripting system. Additionally, I focused on optimizing performance through profiling tools and maintaining high code quality standards. I was also one of the three developers responsible for reviewing pull requests related to new engine features, ensuring consistency and reliability across the codebase. Finally, I was one of the developers responsible for compiling and maintaining the Linux builds of the game, with special focus on Steam Deck, ensuring full compatibility, smooth performance, and proper controller support in every release.",
   "skills": ["C++", "Engine Development", "Physics Systems", "Linux/Steam Deck"],
-  "works": []
+  "pics": ["mario_dorado1.png"]
 }

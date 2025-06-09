@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { config } from '../../../../../config/paths';
 import assets from '../../../../../config/assets';
+import Gallery from '../../Gallery/Gallery';
 import './MemberInfo.css';
 
 interface Member {
@@ -15,6 +16,7 @@ interface Member {
     bio?: string;
     skills?: string[];
     roles?: string[];
+    pics?: string[];
     works?: Array<{
         title: string;
         description?: string;
@@ -39,19 +41,6 @@ interface MemberInfoProps {
 
 const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     useEffect(() => {
-        // Cargar la fuente personalizada
-        const loadFont = async () => {
-            try {
-                const fontFace = new FontFace('DossierFont', `url(${assets.fonts.dossierTitle.woff2})`);
-                await fontFace.load();
-                document.fonts.add(fontFace);
-            } catch (error) {
-                console.warn('No se pudo cargar la fuente personalizada:', error);
-            }
-        };
-
-        loadFont();
-
         if (isOpen) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -67,6 +56,18 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
 
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
+    
+    // Función para obtener las imágenes de la galería
+    const getGalleryImages = () => {
+        if (!member.pics || member.pics.length === 0) return [];
+        
+        return member.pics.map((pic, index) => ({
+            src: assets.dossier(member.id, pic),
+            alt: `${member.name} - Image ${index + 1}`,
+        }));
+    };
+
+    const galleryImages = getGalleryImages();
     
     // Función para obtener el logo del departamento
     const getDepartmentLogo = (department: string): string => {
@@ -94,9 +95,36 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
         }
     };
 
+    // Función para obtener el estandarte del departamento
+    const getDepartmentBanner = (department: string): string => {
+        const departmentKey = department.toLowerCase();
+        const banners = assets.images.departmentBanners;
+        
+        switch (departmentKey) {
+            case 'code':
+            case 'código':
+            case 'codi':
+                return banners.code;
+            case 'production':
+            case 'producción':
+            case 'producció':
+                return banners.production;
+            case 'art':
+            case 'arte':
+                return banners.art;
+            case 'design':
+            case 'diseño':
+            case 'disseny':
+                return banners.design;
+            default:
+                return banners.code; // Estandarte por defecto
+        }
+    };
+
     // Función para obtener el primer departamento para el logo
     const primaryDepartment = member.department.split(',')[0].trim();
     const departmentLogo = getDepartmentLogo(primaryDepartment);
+    const departmentBanner = getDepartmentBanner(primaryDepartment);
     
     // Función para procesar texto con markdown básico
     const processText = (text: string): string => {
@@ -117,12 +145,18 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     
     return (
         <div className="member-info-overlay" onClick={onClose}>
+            <button 
+                className="close-button" 
+                onClick={onClose}
+                aria-label="Cerrar dossier"
+            >
+                ×
+            </button>
             <div 
                 className="member-info-content" 
                 onClick={(e) => e.stopPropagation()}
                 style={{
                     '--dossier-background-image': `url(${assets.images.dossierBackground})`,
-                    '--dossier-font': 'DossierFont, serif'
                 } as React.CSSProperties}
             >
                 <div className="member-info-inner">
@@ -141,11 +175,19 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                     
                     <div className="dossier-header">
                         <div className="dossier-icon">
-                            <img 
-                                src={departmentLogo} 
-                                alt={`${primaryDepartment} logo`}
-                                className="department-logo"
-                            />
+                            <div 
+                                className="department-banner"
+                                style={{
+                                    backgroundImage: `url(${departmentBanner})`
+                                }}
+                            >
+                                <img 
+                                    src={departmentLogo} 
+                                    alt={`${primaryDepartment} logo`}
+                                    className="department-logo"
+                                />
+                                <p className="department-name">{primaryDepartment}</p>
+                            </div>
                         </div>
                         <div className="dossier-title-container">
                             <h1 className="dossier-title">Classified Personal Dossier</h1>
@@ -216,10 +258,6 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                                 <h2>{member.name}</h2>
                             </div>
                             
-                            <div className="member-department-box">
-                                <p className="member-department">{member.department}</p>
-                            </div>
-                            
                             {member.bio && (
                                 <div className="member-about">
                                     <h3>About</h3>
@@ -239,39 +277,59 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                         }}
                     ></div>
                     
-                    {member.detailedRoles && member.detailedRoles.length > 0 && (
-                        <div className="role-section">
-                            {member.detailedRoles.map((role, index) => (
-                                <div key={index} className="role-detail-box">
-                                    <h3 className="role-detail-title">{role.title}</h3>
-                                    <p className="role-description">{role.description}</p>
-                                    
-                                    {role.media && role.media.length > 0 ? (
-                                        <div className="role-media">
-                                            {role.media.map((media, mediaIndex) => (
-                                                <div key={mediaIndex} className="role-media-item">
-                                                    {media.type === 'image' ? (
-                                                        <img 
-                                                            src={`${config.basePath}/data/dossier/${member.id}/${media.image}`}
-                                                            alt={`${role.title} media ${mediaIndex + 1}`}
-                                                        />
-                                                    ) : (
-                                                        <video 
-                                                            src={`${config.basePath}/data/dossier/${member.id}/${media.image}`}
-                                                            controls
-                                                        />
-                                                    )}
-                                                </div>
-                                            ))}
-                                        </div>
-                                    ) : (
-                                        <div className="role-media-placeholder">
-                                            Media content will be added here
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
+                    {/* Sección de Galería */}
+                    {galleryImages.length > 0 && (
+                        <div className="member-gallery-section">
+                            <h3 className="gallery-title">Portfolio</h3>
+                            <Gallery 
+                                images={galleryImages}
+                                type="grid"
+                            />
                         </div>
+                    )}
+                    
+                    {member.detailedRoles && member.detailedRoles.length > 0 && (
+                        <>
+                            <div 
+                                className="separator"
+                                style={{
+                                    backgroundImage: `url(${assets.images.separator})`
+                                }}
+                            ></div>
+                            
+                            <div className="role-section">
+                                {member.detailedRoles.map((role, index) => (
+                                    <div key={index} className="role-detail-box">
+                                        <h3 className="role-detail-title">{role.title}</h3>
+                                        <p className="role-description">{role.description}</p>
+                                        
+                                        {role.media && role.media.length > 0 ? (
+                                            <div className="role-media">
+                                                {role.media.map((media, mediaIndex) => (
+                                                    <div key={mediaIndex} className="role-media-item">
+                                                        {media.type === 'image' ? (
+                                                            <img 
+                                                                src={`${config.basePath}/data/dossier/${member.id}/${media.image}`}
+                                                                alt={`${role.title} media ${mediaIndex + 1}`}
+                                                            />
+                                                        ) : (
+                                                            <video 
+                                                                src={`${config.basePath}/data/dossier/${member.id}/${media.image}`}
+                                                                controls
+                                                            />
+                                                        )}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        ) : (
+                                            <div className="role-media-placeholder">
+                                                Media content will be added here
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </>
                     )}
                 </div>
             </div>

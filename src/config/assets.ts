@@ -48,9 +48,16 @@ class AssetManager {
             departmentLogos: {
                 code: this.image('department-code-logo.webp'),
                 engine: this.image('department-engine-logo.webp'),
-                production: this.image('department-engine-logo.webp'),
+                production: this.image('department-production-logo.webp'),
                 art: this.image('department-art-logo.webp'),
                 design: this.image('department-design-logo.webp')
+            },
+            // Estandartes de departamentos
+            departmentBanners: {
+                code: this.image('EstandarteCode.webp'),
+                production: this.image('EstandarteProdu.webp'),
+                art: this.image('EstandarteArte.webp'),
+                design: this.image('EstandarteDesign.webp')
             }
         };
     }

@@ -38,7 +38,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, type }) => {
         return (
             <div className="gallery-container">
                 <div className="gallery-grid">
-                    {images.slice(0, 4).map((image, index) => (
+                    {images.map((image, index) => (
                         <div 
                             key={index} 
                             className="gallery-item"

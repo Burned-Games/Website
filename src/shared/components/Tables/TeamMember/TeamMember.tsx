@@ -14,6 +14,7 @@ interface Member {
     linkedin?: string;
     bio?: string;
     skills?: string[];
+    pics?: string[]; // Añadir esta línea
     works?: Array<{
         title: string;
         description?: string;
