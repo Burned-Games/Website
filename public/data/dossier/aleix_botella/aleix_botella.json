@@ -24,5 +24,6 @@
   },
 
   "skills": ["C#", "Unity", "Game Programming", "Gameplay Systems"],
+  "picfoot": ["ElectricZone","General Player","Granade","MeleeAttack","PlayerMovement","PlayerShooting"],
   "pics": ["aleix_botella1.webm", "aleix_botella2.gif", "aleix_botella3.webm", "aleix_botella4.webm", "aleix_botella5.webm", "aleix_botella6.gif"]
 }

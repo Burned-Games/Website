@@ -25,5 +25,6 @@
   },
 
   "skills": ["Character Design", "Audio Design", "Game Balancing", "QA Testing"],
+  "picfoot": [""],
   "pics": ["nicolas_sort1.gif", "nicolas_sort2.gif", "nicolas_sort3.gif"]
 }

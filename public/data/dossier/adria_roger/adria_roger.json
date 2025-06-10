@@ -24,5 +24,8 @@
     }
   },
   "skills": ["HLSL", "Shader Programming", "Visual Effects", "Graphics Programming"],
+  "picfoot": ["Scripting Documentation on the Engine Web", "Scripting vector variables showing", "Physics Explosion", "Enemy Return functionality","Bullets and Range logic"],
   "pics": ["adria_roger1.webp", "adria_roger2.webp", "adria_roger3.webp", "adria_roger4.webm", "adria_roger5.webm"]
+  
+  
 }

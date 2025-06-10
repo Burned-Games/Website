@@ -24,5 +24,6 @@
   },
 
   "skills": ["Game Design", "Systems Design", "Balancing", "Analytics"],
+  "picfoot": [""],
   "pics": ["bernat_cifuentes1.webp", "bernat_cifuentes2.webp", "bernat_cifuentes3.webp", "bernat_cifuentes4.webp", "bernat_cifuentes5.webp"]
 }

@@ -24,5 +24,6 @@
   },
 
   "skills": ["Game Design", "Multiplayer Design", "Social Systems", "Monetization"],
+  "picfoot": [""],
   "pics": ["miguel_iglesias1.webp", "miguel_iglesias2.webp", "miguel_iglesias3.webp", "miguel_iglesias4.webp", "miguel_iglesias5.webp", "miguel_iglesias6.webp"]
 }
