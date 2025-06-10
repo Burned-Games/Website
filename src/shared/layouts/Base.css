@@ -27,7 +27,7 @@
     max-width: 100%;
     min-height: calc(100vh - var(--layout-navbar-total-height) - var(--layout-footer-height));
     margin-top: var(--layout-navbar-total-height);
-    background: var(--color-background-primary);
+
     box-sizing: border-box;
 }
 

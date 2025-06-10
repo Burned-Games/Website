@@ -32,8 +32,27 @@ const Game: React.FC = () => {
     ];
     
     return (
-        <div className="game-page-container">
+        <div 
+            className="game-page-container"
+            style={{
+                '--game-background': `url(${assets.images.gameBackground})`
+            } as React.CSSProperties}
+        >
+            
             <div className="game-hero-section">
+                <div 
+                    className="corner-decoration top-left"
+                    style={{
+                        '--corner-image': `url(${assets.images.corner})`
+                    } as React.CSSProperties}
+                ></div>
+                <div 
+                    className="corner-decoration top-right"
+                    style={{
+                        '--corner-image': `url(${assets.images.corner})`
+                    } as React.CSSProperties}
+                ></div>
+                
                 <PageTitle 
                     logoSrc={assets.images.gameLogo}
                     logoAlt="Coffee Engine Logo"
@@ -43,14 +62,40 @@ const Game: React.FC = () => {
                 />
                 
                 <div className="game-catchphrase">
-                    <h3>The Last Space Marine stands between humanity and extinction</h3>
+                    <h3>Only one Ultramarine survived the drop - Battle-Brother Quintus Maxillian.</h3>
+                    <h3>Alone. Outnumbered. Unbreakable.</h3>
                 </div>
                 
                 <div className="game-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>You are the last Space Marine. Unleash your strength and courage on the battlefield to eliminate any enemy that stands in your way. Will you be able to reach the end of this story using your entire arsenal?</p>
+                </div>
+                
+                <div className="game-video-section">
+                    <video
+                        className="game-cinematic"
+                        controls
+                        autoPlay
+                        loop
+                        muted
+                        poster={assets.images.gameScreenshots.screenshot1}
+                    >
+                        <source 
+                            src={assets.videos.gameSinopsis}
+                            type="video/mp4" 
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="video-caption">
+                        <p>Play as the Last Marine</p>
+                    </div>
                 </div>
             </div>
-            
+            <div 
+                className="game-separator"
+                style={{
+                    backgroundImage: `url(${assets.images.separator})`
+                }}> 
+            </div>
             <div className="game-main-content">
                 {/* Game Pillars Section */}
                 <div className="game-pillars-wrapper">
@@ -94,14 +139,28 @@ const Game: React.FC = () => {
                     </div>
                 </div>
                 
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
+                
                 {/* Lore Section */}
                 <div className="game-lore-wrapper">
-                    <h2 className="lore-heading">The Universe</h2>
+                    <h2 className="lore-heading">Our Universe</h2>
                     <div className="lore-text">
-                        <p>In the distant future, humanity has spread across the galaxy, but now faces its darkest hour. Ancient evils have awakened, and civilizations crumble before unstoppable forces. As the last Space Marine of your chapter, you carry the weight of humanity's survival on your shoulders.</p>
-                        <p>Explore forgotten worlds, uncover ancient secrets, and discover the truth behind the galaxy's destruction. Every choice you make will determine the fate of countless souls.</p>
+                        <p>The hive world of Temperis is under siege. A brutal WAAAGH! led by the savage ork warboss Brutus has plunged the planet into chaos. The hive city of Martyria Eterna, the last bastion of resistance, is being overrun by endless green-skinned hordes.</p>
+                        <p>In response, a strike force from the Ultramarines 3rd Company is deployed via orbital drop assault. But the overwhelming numbers of the orks and a storm of anti-aircraft fire turn the skies into a deathtrap. Drop pods are blasted from the heavens, one by one estroyed mid-air or crushed upon landing by the xenos tide.</p>
                     </div>
                 </div>
+                
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
                 
                 {/* Ultramarine Section */}
                 <div className="ultramarine-wrapper">
@@ -127,6 +186,13 @@ const Game: React.FC = () => {
                     </div>
                 </div>
                 
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
+                
                 {/* Enemies Section */}
                 <div className="enemies-showcase">
                     <div className="showcase-image">
@@ -141,6 +207,13 @@ const Game: React.FC = () => {
                     </div>
                 </div>
                 
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
+                
                 {/* Levels Section */}
                 <div className="levels-showcase reverse-layout">
                     <div className="showcase-info">
@@ -154,6 +227,13 @@ const Game: React.FC = () => {
                         <img src={assets.images.gameScreenshots.screenshot3} alt="Game Levels" />
                     </div>
                 </div>
+                
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
                 
                 {/* Controls Section */}
                 <div className="controls-wrapper">
@@ -194,6 +274,13 @@ const Game: React.FC = () => {
                     </div>
                 </div>
                 
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
+                
                 {/* Coffee Engine Section */}
                 <div className="engine-showcase">
                     <div className="engine-layout">
@@ -209,6 +296,13 @@ const Game: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
                 
                 {/* Screenshots Gallery */}
                 <div className="screenshots-wrapper">

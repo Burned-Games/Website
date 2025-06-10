@@ -43,6 +43,7 @@ class AssetManager {
             separator: this.image('separator.webp'), 
             corner: this.image('corner.webp'),
             dossierBackground: this.image('dossier_background.webp'),
+            gameBackground: this.image('gameBackground.webp'),
             cardName: this.image('cardName.webp'),
             // Logos de departamentos
             departmentLogos: {
@@ -65,13 +66,14 @@ class AssetManager {
                 screenshot2: this.image('screenshot2.webp'),
                 screenshot3: this.image('screenshot3.webp'),
                 screenshot4: this.image('screenshot4.webp')
-            }
+            },
         };
     }
 
     get videos() {
         return {
             background: this.video('background.mp4'),
+            gameSinopsis: this.video('cinematica2.mp4'),
         };
     }
 
