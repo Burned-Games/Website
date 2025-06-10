@@ -17,14 +17,14 @@ const Engine: React.FC = () => {
                 <EngineSection
                     title="Docs"
                     description="Explore the official Coffee Engine documentation to get started, find guides, and learn about all available features."
-                    background="--color-background-secondary"
+                    background="var(--color-background-secondary)"
                     buttonText="Docs"
                     onButtonClick={() => window.open('https://burned-games.github.io/Coffee-Engine/', '_blank')}
                 />
                 <EngineSection
                     title="Github"
                     description="Visit the Coffee Engine GitHub repository to view the source code."
-                    background="--color-background-primary"
+                    background="var(--color-background-primary)"
                     buttonText="Github"
                     onButtonClick={() => window.open('https://github.com/Burned-Games/Coffee-Engine', '_blank')}
                 />
