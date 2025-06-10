@@ -1,18 +1,93 @@
 import React, { useState } from 'react';
 import './Gallery.css';
 
+interface MediaItem {
+    src: string;
+    alt: string;
+    caption?: string;
+    type: 'image' | 'video' | 'gif';
+}
+
 interface GalleryProps {
-    images: Array<{
-        src: string;
-        alt: string;
-        caption?: string;
-    }>;
+    images: Array<MediaItem>;
     type: 'grid' | 'slider';
 }
 
 const Gallery: React.FC<GalleryProps> = ({ images, type }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+    const getMediaType = (src: string): 'image' | 'video' | 'gif' => {
+        const extension = src.split('.').pop()?.toLowerCase();
+        switch (extension) {
+            case 'mp4':
+            case 'webm':
+                return 'video';
+            case 'gif':
+                return 'gif';
+            default:
+                return 'image';
+        }
+    };
+
+    const handleModalClick = (e: React.MouseEvent) => {
+        // Don't close modal if clicking on video controls
+        const target = e.target as HTMLElement;
+        if (target.tagName === 'VIDEO' || target.closest('video')) {
+            e.stopPropagation();
+            return;
+        }
+        handleClose();
+    };
+
+    const renderMediaElement = (item: MediaItem, className: string, key?: React.Key, showControls = true) => {
+        const mediaType = item.type || getMediaType(item.src);
+        
+        switch (mediaType) {
+            case 'video':
+                return (
+                    <video 
+                        key={key}
+                        src={item.src} 
+                        className={className}
+                        controls={showControls}
+                        loop
+                        muted
+                        preload="metadata"
+                        autoPlay={true}
+                        playsInline
+                        onLoadedData={(e) => {
+                            // Ensure video plays automatically
+                            const video = e.target as HTMLVideoElement;
+                            video.play().catch(() => {
+                                // Fallback if autoplay fails due to browser policy
+                                console.log('Autoplay was prevented');
+                            });
+                        }}
+                    />
+                );
+            case 'gif':
+                return (
+                    <img 
+                        key={key}
+                        src={item.src} 
+                        alt={item.alt} 
+                        className={className}
+                        loading="lazy"
+                    />
+                );
+            default:
+                return (
+                    <img 
+                        key={key}
+                        src={item.src} 
+                        alt={item.alt} 
+                        className={className}
+                        loading="lazy"
+                    />
+                );
+        }
+    };
 
     const handleImageClick = (index: number) => {
         setSelectedImage(index);
@@ -38,20 +113,24 @@ const Gallery: React.FC<GalleryProps> = ({ images, type }) => {
         return (
             <div className="gallery-container">
                 <div className="gallery-grid">
-                    {images.map((image, index) => (
-                        <div 
-                            key={index} 
-                            className="gallery-item"
-                            onClick={() => handleImageClick(index)}
-                        >
-                            <img src={image.src} alt={image.alt} />
-                            {image.caption && <span className="caption">{image.caption}</span>}
-                        </div>
-                    ))}
+                    {images.map((image, index) => {
+                        const mediaType = image.type || getMediaType(image.src);
+                        return (
+                            <div 
+                                key={index} 
+                                className="gallery-item"
+                                data-type={mediaType}
+                                onClick={() => handleImageClick(index)}
+                            >
+                                {renderMediaElement(image, 'gallery-media', undefined, false)}
+                                {image.caption && <span className="caption">{image.caption}</span>}
+                            </div>
+                        );
+                    })}
                 </div>
 
                 {selectedImage !== null && (
-                    <div className="modal" onClick={handleClose}>
+                    <div className="modal" onClick={handleModalClick}>
                         <button className="close-button">
                             <svg 
                                 viewBox="0 0 24 24" 
@@ -68,11 +147,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, type }) => {
                                 />
                             </svg>
                         </button>
-                        <img 
-                            src={images[selectedImage].src} 
-                            alt={images[selectedImage].alt} 
-                            className="modal-image"
-                        />
+                        {renderMediaElement(images[selectedImage], 'modal-image', undefined, true)}
                         {images[selectedImage].caption && (
                             <div className="modal-caption">
                                 {images[selectedImage].caption}
@@ -108,12 +183,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, type }) => {
             </button>
             
             <div className="slider-content">
-                <img 
-                    key={currentSlide}
-                    src={images[currentSlide].src} 
-                    alt={images[currentSlide].alt}
-                    className="slider-image" 
-                />
+                {renderMediaElement(images[currentSlide], 'slider-image', currentSlide, true)}
                 {images[currentSlide].caption && (
                     <div className="slider-caption">
                         {images[currentSlide].caption}

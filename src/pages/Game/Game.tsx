@@ -324,7 +324,7 @@ const Game: React.FC = () => {
                 {/* Screenshots Gallery */}
                 <div className="screenshots-wrapper">
                     <h2 className="screenshots-heading">Screenshots</h2>
-                    <Gallery images={gameImages} type="slider" />
+                    {/* <Gallery images={gameImages} type="slider" /> */}
                 </div>
             </div>
         </div>

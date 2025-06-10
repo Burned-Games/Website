@@ -137,10 +137,23 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     const getGalleryImages = () => {
         if (!assetsLoaded || !member.pics || member.pics.length === 0) return [];
         
-        return member.pics.map((pic, index) => ({
-            src: assets.dossier(member.id, pic),
-            alt: `${member.name} - Image ${index + 1}`,
-        }));
+        return member.pics.map((pic, index) => {
+            const src = assets.dossier(member.id, pic);
+            const extension = pic.split('.').pop()?.toLowerCase();
+            
+            let type: 'image' | 'video' | 'gif' = 'image';
+            if (extension === 'mp4' || extension === 'webm') {
+                type = 'video';
+            } else if (extension === 'gif') {
+                type = 'gif';
+            }
+            
+            return {
+                src,
+                alt: `${member.name} - Media ${index + 1}`,
+                type
+            };
+        });
     };
 
     const galleryImages = getGalleryImages();
