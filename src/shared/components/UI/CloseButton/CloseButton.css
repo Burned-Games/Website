@@ -1,0 +1,117 @@
+.close-button {
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-text-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0;
+    outline: none;
+    position: relative;
+}
+
+.close-button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.close-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.close-button:not(:disabled):hover {
+    background: var(--color-primary);
+    color: var(--color-background-secondary);
+    transform: scale(1.1);
+}
+
+.close-button__icon {
+    width: 100%;
+    height: 100%;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+/* Size variants */
+.close-button--sm {
+    width: 32px;
+    height: 32px;
+}
+
+.close-button--sm .close-button__icon {
+    max-width: 18px;
+    max-height: 18px;
+}
+
+.close-button--md {
+    width: 40px;
+    height: 40px;
+}
+
+.close-button--md .close-button__icon {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.close-button--lg {
+    width: 48px;
+    height: 48px;
+}
+
+.close-button--lg .close-button__icon {
+    max-width: 28px;
+    max-height: 28px;
+}
+
+/* Style variants */
+.close-button--default {
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-text-primary);
+}
+
+.close-button--minimal {
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+}
+
+.close-button--minimal:not(:disabled):hover {
+    background: var(--color-background-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.close-button--filled {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-background-secondary);
+}
+
+.close-button--filled:not(:disabled):hover {
+    background: var(--color-hover);
+    border-color: var(--color-hover);
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .close-button--sm {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .close-button--md {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .close-button--lg {
+        width: 42px;
+        height: 42px;
+    }
+}

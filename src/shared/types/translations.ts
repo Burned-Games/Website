@@ -106,6 +106,88 @@ export interface TranslationType {
             title: string;
             items: string[];
         };
+        catchphrase?: {
+            line1: string;
+            line2: string;
+        };
+        mainDescription?: string;
+        videoCaption?: string;
+        pillars?: {
+            heading: string;
+            worldExploration: {
+                title: string;
+                description: string;
+            };
+            diabloLike: {
+                title: string;
+                description: string;
+            };
+            fastPaced: {
+                title: string;
+                description: string;
+            };
+            ownEngine: {
+                title: string;
+                description: string;
+            };
+        };
+        lore?: {
+            heading: string;
+            paragraph1: string;
+            paragraph2: string;
+        };
+        ultramarine?: {
+            heading: string;
+            character: {
+                title: string;
+                description: string;
+            };
+            weapons: {
+                title: string;
+                description: string;
+            };
+            abilities: {
+                title: string;
+                description: string;
+            };
+        };
+        enemies?: {
+            heading: string;
+            description: string;
+            button: string;
+        };
+        levels?: {
+            heading: string;
+            description: string;
+            button: string;
+        };
+        controls?: {
+            heading: string;
+            movement: string;
+            lookAround: string;
+            primaryAttack: string;
+            secondaryAttack: string;
+            jumpDodge: string;
+            run: string;
+            interact: string;
+            inventory: string;
+        };
+        coffeeEngine?: {
+            heading: string;
+            description: string;
+            button: string;
+        };
+        screenshots?: {
+            heading: string;
+        };
+        altTexts?: {
+            ultramarineCharacter: string;
+            gameEnemies: string;
+            gameLevels: string;
+            coffeeEngine: string;
+            gameScreenshot: string;
+        };
+        videoError?: string;
     };
 
         // Game Page

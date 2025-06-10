@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { EngineFeature } from './FeatureCard';
+import CloseButton from '../../UI/CloseButton/CloseButton';
 import './FeatureModal.css';
 
 interface FeatureModalProps {
@@ -70,26 +71,13 @@ const FeatureModal: React.FC<FeatureModalProps> = ({ feature, isOpen, onClose })
                         <h2 className="feature-modal-title">{feature.title}</h2>
                         <p className="feature-modal-short-desc">{feature.shortDescription}</p>
                     </div>
-                    <button 
-                        className="feature-modal-close"
+                    <CloseButton
                         onClick={onClose}
-                        aria-label="Close modal"
-                    >
-                        <svg 
-                            viewBox="0 0 24 24" 
-                            width="24" 
-                            height="24" 
-                            stroke="currentColor" 
-                            fill="none"
-                        >
-                            <path 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                strokeWidth={2} 
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </button>
+                        size="md"
+                        variant="default"
+                        ariaLabel="Close modal"
+                        className="feature-modal-close"
+                    />
                 </div>
                 
                 <div className="feature-modal-body">

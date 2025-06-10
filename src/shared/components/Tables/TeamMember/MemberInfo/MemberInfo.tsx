@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { config } from '../../../../../config/paths';
 import assets from '../../../../../config/assets';
-import Gallery from '../../Gallery/Gallery';
 import { useTranslation } from '../../../../hooks/useTranslation';
+import CloseButton from '../../../UI/CloseButton/CloseButton';
 import './MemberInfo.css';
+
+const LazyGallery = React.lazy(() => import('../../Gallery/Gallery'));
 
 interface Member {
     id: string;
@@ -50,10 +52,12 @@ interface MemberInfoProps {
 
 const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     const { language } = useTranslation();
+    const [assetsLoaded, setAssetsLoaded] = useState(false);
 
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
+            setAssetsLoaded(true);
         } else {
             document.body.style.overflow = 'unset';
         }
@@ -65,35 +69,6 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
 
     if (!isOpen) return null;
 
-    // Función para obtener contenido traducido
-    const getTranslatedContent = () => {
-        const translations = member.translations?.[language];
-        return {
-            role: translations?.role || member.role,
-            department: translations?.department || member.department,
-            bio: translations?.bio || member.bio,
-            skills: translations?.skills || member.skills
-        };
-    };
-
-    const translatedContent = getTranslatedContent();
-
-    const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
-    const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
-    
-    // Función para obtener las imágenes de la galería
-    const getGalleryImages = () => {
-        if (!member.pics || member.pics.length === 0) return [];
-        
-        return member.pics.map((pic, index) => ({
-            src: assets.dossier(member.id, pic),
-            alt: `${member.name} - Image ${index + 1}`,
-        }));
-    };
-
-    const galleryImages = getGalleryImages();
-    
-    // Función para obtener el logo del departamento
     const getDepartmentLogo = (department: string): string => {
         const departmentKey = department.toLowerCase();
         const logos = assets.images.departmentLogos;
@@ -115,11 +90,10 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
             case 'disseny':
                 return logos.design;
             default:
-                return logos.code; // Logo por defecto
+                return logos.code;
         }
     };
 
-    // Función para obtener el estandarte del departamento
     const getDepartmentBanner = (department: string): string => {
         const departmentKey = department.toLowerCase();
         const banners = assets.images.departmentBanners;
@@ -141,25 +115,55 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
             case 'disseny':
                 return banners.design;
             default:
-                return banners.code; // Estandarte por defecto
+                return banners.code;
         }
     };
 
-    // Función para obtener el primer departamento para el logo (usando traducción)
-    const primaryDepartment = translatedContent.department.split(',')[0].trim();
-    const departmentLogo = getDepartmentLogo(primaryDepartment);
-    const departmentBanner = getDepartmentBanner(primaryDepartment);
+    const getTranslatedContent = () => {
+        const translations = member.translations?.[language];
+        return {
+            role: translations?.role || member.role,
+            department: translations?.department || member.department,
+            bio: translations?.bio || member.bio,
+            skills: translations?.skills || member.skills
+        };
+    };
+
+    const translatedContent = getTranslatedContent();
+
+    const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
+    const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
-    // Función para procesar texto con markdown básico
+    const getGalleryImages = () => {
+        if (!assetsLoaded || !member.pics || member.pics.length === 0) return [];
+        
+        return member.pics.map((pic, index) => ({
+            src: assets.dossier(member.id, pic),
+            alt: `${member.name} - Image ${index + 1}`,
+        }));
+    };
+
+    const galleryImages = getGalleryImages();
+    
+    const getDepartmentAssets = () => {
+        if (!assetsLoaded) return { logo: '', banner: '' };
+        
+        const primaryDepartment = translatedContent.department.split(',')[0].trim();
+        return {
+            logo: getDepartmentLogo(primaryDepartment),
+            banner: getDepartmentBanner(primaryDepartment)
+        };
+    };
+
+    const departmentAssets = getDepartmentAssets();
+    const primaryDepartment = translatedContent.department.split(',')[0].trim();
+    
     const processText = (text: string): string => {
         if (!text) return '';
         
         return text
-            // Convertir **texto** a <strong>texto</strong>
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-            // Convertir *texto* a <em>texto</em>
             .replace(/\*(.*?)\*/g, '<em>$1</em>')
-            // Convertir dobles saltos de línea a párrafos
             .split('\n\n')
             .map(paragraph => paragraph.trim())
             .filter(paragraph => paragraph.length > 0)
@@ -169,49 +173,55 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
     
     return (
         <div className="member-info-overlay" onClick={onClose}>
-            <button 
-                className="close-button" 
+            <CloseButton
                 onClick={onClose}
-                aria-label="Cerrar dossier"
-            >
-                ×
-            </button>
+                size="lg"
+                variant="default"
+                className="member-info-close-button"
+                ariaLabel="Cerrar dossier"
+            />
             <div 
                 className="member-info-content" 
                 onClick={(e) => e.stopPropagation()}
                 style={{
-                    '--dossier-background-image': `url(${assets.images.dossierBackground})`,
+                    '--dossier-background-image': assetsLoaded ? `url(${assets.images.dossierBackground})` : 'none',
                 } as React.CSSProperties}
             >
                 <div className="member-info-inner">
-                    <div 
-                        className="corner-decoration top-left"
-                        style={{
-                            '--corner-image': `url(${assets.images.corner})`
-                        } as React.CSSProperties}
-                    ></div>
-                    <div 
-                        className="corner-decoration top-right"
-                        style={{
-                            '--corner-image': `url(${assets.images.corner})`
-                        } as React.CSSProperties}
-                    ></div>
+                    {assetsLoaded && (
+                        <>
+                            <div 
+                                className="corner-decoration top-left"
+                                style={{
+                                    '--corner-image': `url(${assets.images.corner})`
+                                } as React.CSSProperties}
+                            ></div>
+                            <div 
+                                className="corner-decoration top-right"
+                                style={{
+                                    '--corner-image': `url(${assets.images.corner})`
+                                } as React.CSSProperties}
+                            ></div>
+                        </>
+                    )}
                     
                     <div className="dossier-header">
                         <div className="dossier-icon">
-                            <div 
-                                className="department-banner"
-                                style={{
-                                    backgroundImage: `url(${departmentBanner})`
-                                }}
-                            >
-                                <img 
-                                    src={departmentLogo} 
-                                    alt={`${primaryDepartment} logo`}
-                                    className="department-logo"
-                                />
-                                <p className="department-name">{primaryDepartment}</p>
-                            </div>
+                            {assetsLoaded && (
+                                <div 
+                                    className="department-banner"
+                                    style={{
+                                        backgroundImage: `url(${departmentAssets.banner})`
+                                    }}
+                                >
+                                    <img 
+                                        src={departmentAssets.logo} 
+                                        alt={`${primaryDepartment} logo`}
+                                        className="department-logo"
+                                    />
+                                    <p className="department-name">{primaryDepartment}</p>
+                                </div>
+                            )}
                         </div>
                         <div className="dossier-title-container">
                             <h1 className="dossier-title">Classified Personal Dossier</h1>
@@ -219,19 +229,21 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                         </div>
                     </div>
                     
-                    <div 
-                        className="separator"
-                        style={{
-                            backgroundImage: `url(${assets.images.separator})`
-                        }}
-                    ></div>
+                    {assetsLoaded && (
+                        <div 
+                            className="separator"
+                            style={{
+                                backgroundImage: `url(${assets.images.separator})`
+                            }}
+                        ></div>
+                    )}
                     
                     <div className="member-main-section">
                         <div className="member-left-section">
                             <div 
                                 className="member-avatar-container"
                                 style={{
-                                    '--border-image': `url(${assets.images.borderMember})`
+                                    '--border-image': assetsLoaded ? `url(${assets.images.borderMember})` : 'none'
                                 } as React.CSSProperties}
                             >
                                 <img 
@@ -276,7 +288,7 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                             <div 
                                 className="member-name-box"
                                 style={{
-                                    '--card-name-image': `url(${assets.images.cardName})`
+                                    '--card-name-image': assetsLoaded ? `url(${assets.images.cardName})` : 'none'
                                 } as React.CSSProperties}
                             >
                                 <h2>{member.name}</h2>
@@ -294,25 +306,28 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                         </div>
                     </div>
                     
-                    <div 
-                        className="separator"
-                        style={{
-                            backgroundImage: `url(${assets.images.separator})`
-                        }}
-                    ></div>
+                    {assetsLoaded && (
+                        <div 
+                            className="separator"
+                            style={{
+                                backgroundImage: `url(${assets.images.separator})`
+                            }}
+                        ></div>
+                    )}
                     
-                    {/* Sección de Galería */}
-                    {galleryImages.length > 0 && (
+                    {galleryImages.length > 0 && assetsLoaded && (
                         <div className="member-gallery-section">
                             <h3 className="gallery-title">Portfolio</h3>
-                            <Gallery 
-                                images={galleryImages}
-                                type="grid"
-                            />
+                            <React.Suspense fallback={<div>Loading gallery...</div>}>
+                                <LazyGallery 
+                                    images={galleryImages}
+                                    type="grid"
+                                />
+                            </React.Suspense>
                         </div>
                     )}
                     
-                    {member.detailedRoles && member.detailedRoles.length > 0 && (
+                    {member.detailedRoles && member.detailedRoles.length > 0 && assetsLoaded && (
                         <>
                             <div 
                                 className="separator"
@@ -335,11 +350,13 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                                                             <img 
                                                                 src={`${config.basePath}/data/dossier/${member.id}/${media.image}`}
                                                                 alt={`${role.title} media ${mediaIndex + 1}`}
+                                                                loading="lazy"
                                                             />
                                                         ) : (
                                                             <video 
                                                                 src={`${config.basePath}/data/dossier/${member.id}/${media.image}`}
                                                                 controls
+                                                                preload="none"
                                                             />
                                                         )}
                                                     </div>

@@ -51,12 +51,12 @@ interface FilterState {
     subcategory: string | null;
 }
 
-const Card = ({ member, onClick }: { 
+const Card = ({ member, onClick, departmentsData }: { 
     member: Member;
     onClick: () => void;
+    departmentsData: DepartmentsData | null;
 }) => {
     const { language } = useTranslation();
-    const [departments, setDepartments] = useState<DepartmentsData | null>(null);
     
     // Función para obtener contenido traducido del miembro
     const getTranslatedMemberContent = () => {
@@ -69,18 +69,11 @@ const Card = ({ member, onClick }: {
 
     const translatedMember = getTranslatedMemberContent();
     
-    useEffect(() => {
-        fetch(`${config.basePath}/data/members/departments.json`)
-            .then(response => response.json())
-            .then(data => setDepartments(data[language as keyof typeof data]))
-            .catch(error => console.error('Error loading departments:', error));
-    }, [language]);
-
     const defaultIcon = `${config.basePath}${config.icons.defaultAvatar}`;
     const memberIcon = member.icon ? `${config.basePath}/data/dossier/${member.id}/${member.icon}` : defaultIcon;
     
     const primaryDepartmentName = parseDepartments(translatedMember.department)[0];
-    const department = departments?.departments.find(
+    const department = departmentsData?.departments.find(
         d => d.name.toLowerCase() === primaryDepartmentName.toLowerCase()
     );
 
@@ -227,18 +220,14 @@ const TeamMember: React.FC = () => {
             const department = departments.departments.find(d => d.id === filter.department);
             if (!department) return false;
 
-            // Verificar si el miembro pertenece a alguno de los departamentos que tiene (usando traducción)
             const isDepartmentMatch = memberBelongsToDepartment(member, department.name, language);
             if (!isDepartmentMatch) return false;
 
-            // Si no hay filtro de subcategoría, mostrar todos los miembros del departamento
             if (!filter.subcategory) return true;
 
-            // Buscar la subcategoría seleccionada
             const subcategory = department.subcategories.find(s => s.id === filter.subcategory);
             if (!subcategory) return false;
 
-            // Verificar si alguno de los roles del miembro coincide con la subcategoría
             return memberMatchesSubcategory(member, subcategory.name);
         })
         .sort((a, b) => a.name.localeCompare(b.name));
@@ -301,6 +290,7 @@ const TeamMember: React.FC = () => {
                         key={member.id}
                         member={member}
                         onClick={() => setSelectedMember(member)}
+                        departmentsData={departments}
                     />
                 ))}
             </div>

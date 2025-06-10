@@ -43,6 +43,14 @@
     border-radius: 8px;
 }
 
+.member-info-close-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1002;
+    box-shadow: var(--shadow-lg);
+}
+
 .corner-decoration {
     position: absolute;
     width: 180px;
@@ -455,39 +463,6 @@
     justify-content: center;
 }
 
-.close-button {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background: var(--color-background-secondary);
-    border: 2px solid var(--color-primary);
-    color: var(--color-text-primary);
-    font-size: 1.5rem;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-md);
-    z-index: 1002;
-    transition: all 0.2s ease;
-    font-weight: bold;
-    line-height: 1;
-    user-select: none;
-}
-
-.close-button:hover {
-    background: var(--color-primary);
-    color: var(--color-background-secondary);
-    transform: scale(1.1);
-}
-
-.close-button:active {
-    transform: scale(0.95);
-}
-
 .member-gallery-section {
     margin: 2rem 0;
     padding: 2rem;
@@ -508,7 +483,6 @@
     padding-bottom: 1rem;
 }
 
-/* Estilos para integrar mejor la galería con el diseño del dossier */
 .member-gallery-section .gallery-container {
     margin-top: 1rem;
 }
@@ -613,22 +587,11 @@
         font-size: 1.5rem;
     }
     
-    .close-button {
+    .member-info-close-button {
         top: 1rem;
         left: 50%;
         right: auto;
         transform: translateX(-50%);
-        width: 50px;
-        height: 50px;
-        font-size: 1.8rem;
-    }
-    
-    .close-button:hover {
-        transform: translateX(-50%) scale(1.1);
-    }
-    
-    .close-button:active {
-        transform: translateX(-50%) scale(0.95);
     }
     
     .dossier-icon {

@@ -77,7 +77,89 @@
   "game": {
     "title": "A new Warhammer 40.000 Title",
     "subtitle": "By Burned Games",
-    "loading": "Loading game assets..."
+    "loading": "Loading game assets...",
+    "catchphrase": {
+      "line1": "Only one Ultramarine survived the drop - Battle-Brother Quintus Maxillian.",
+      "line2": "Alone. Outnumbered. Unbreakable."
+    },
+    "mainDescription": "You are the last Space Marine. Unleash your strength and courage on the battlefield to eliminate any enemy that stands in your way. Will you be able to reach the end of this story using your entire arsenal?",
+    "videoCaption": "Play as the Last Marine",
+    "pillars": {
+      "heading": "Game Pillars",
+      "worldExploration": {
+        "title": "World Exploration",
+        "description": "Explore a world full of challenges, enemies, and rewards. From the most desolate desert to the darkness of the Hive City, will you be able to survive as the last Space Marine?"
+      },
+      "diabloLike": {
+        "title": "Diablo-Like",
+        "description": "Our game features incredible world exploration combined with the fun and intense gameplay of Diablo, delivering a unique and unmatched experience."
+      },
+      "fastPaced": {
+        "title": "Fast-Paced",
+        "description": "Thanks to the fast-paced gameplay, combat will be filled with frantic action that will put every player's skills to the test."
+      },
+      "ownEngine": {
+        "title": "Own Game Engine",
+        "description": "This game is developed exclusively on our own game engine, which allows us great customization and optimization of the experience."
+      }
+    },
+    "lore": {
+      "heading": "Our Universe",
+      "paragraph1": "The hive world of Temperis is under siege. A brutal WAAAGH! led by the savage ork warboss Brutus has plunged the planet into chaos. The hive city of Martyria Eterna, the last bastion of resistance, is being overrun by endless green-skinned hordes.",
+      "paragraph2": "In response, a strike force from the Ultramarines 3rd Company is deployed via orbital drop assault. But the overwhelming numbers of the orks and a storm of anti-aircraft fire turn the skies into a deathtrap. Drop pods are blasted from the heavens, one by one destroyed mid-air or crushed upon landing by the xenos tide."
+    },
+    "ultramarine": {
+      "heading": "The Ultramarine",
+      "character": {
+        "title": "Character",
+        "description": "A genetically enhanced super-soldier, the last of his kind. Enhanced strength, speed, and tactical awareness make him humanity's final hope."
+      },
+      "weapons": {
+        "title": "Weapons",
+        "description": "Wield devastating plasma weapons, chainswords, and ancient relics. Each weapon can be upgraded and customized for your playstyle."
+      },
+      "abilities": {
+        "title": "Abilities",
+        "description": "Master psychic powers, tactical skills, and combat techniques. Unlock new abilities as you progress through your journey."
+      }
+    },
+    "enemies": {
+      "heading": "Face the Darkness",
+      "description": "Confront hordes of terrifying enemies, from corrupted cultists to ancient demons. Each enemy type requires different tactics and strategies to defeat.",
+      "button": "Meet them"
+    },
+    "levels": {
+      "heading": "Explore Diverse Worlds",
+      "description": "Journey through varied environments, from desolate desert planets to the twisted corridors of hive cities. Each level presents unique challenges and secrets.",
+      "button": "Discover them"
+    },
+    "controls": {
+      "heading": "Game Controls",
+      "movement": "Movement",
+      "lookAround": "Look Around",
+      "primaryAttack": "Primary Attack",
+      "secondaryAttack": "Secondary Attack",
+      "jumpDodge": "Jump/Dodge",
+      "run": "Run",
+      "interact": "Interact",
+      "inventory": "Inventory"
+    },
+    "coffeeEngine": {
+      "heading": "Built with Coffee Engine",
+      "description": "Developed exclusively with our proprietary Coffee Engine, this game showcases cutting-edge technology, optimized performance, and unlimited creative possibilities. Experience the future of gaming engines.",
+      "button": "Coffee Engine"
+    },
+    "screenshots": {
+      "heading": "Screenshots"
+    },
+    "altTexts": {
+      "ultramarineCharacter": "Ultramarine Character",
+      "gameEnemies": "Game Enemies",
+      "gameLevels": "Game Levels",
+      "coffeeEngine": "Coffee Engine",
+      "gameScreenshot": "Game Screenshot"
+    },
+    "videoError": "Your browser does not support the video tag."
   },
   "memberInfo": {
     "sections": {

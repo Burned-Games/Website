@@ -26,14 +26,6 @@
     transition: filter 0.3s ease;
 }
 
-:root[data-theme="light"] .navbar-logo img {
-    filter: brightness(0);
-}
-
-:root[data-theme="dark"] .navbar-logo img {
-    filter: none;
-}
-
 .company-name {
     color: var(--color-text-primary);
     font-size: 1.5rem;
@@ -138,24 +130,11 @@
         display: none;
     }
 
-    .theme-selector {
-        display: none;
-    }
-
-    .navbar-links.open ~ .theme-selector {
-        display: block;
-        position: absolute;
-        top: calc(var(--layout-navbar-height) + 1rem);
-        left: 35%;
-        transform: translateX(-50%);
-        z-index: 1001;
-    }
-
     .navbar-links.open ~ .language-selector {
         display: block;
         position: absolute;
         top: calc(var(--layout-navbar-height) + 1rem);
-        left: 65%;
+        left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
     }
