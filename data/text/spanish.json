@@ -75,15 +75,89 @@
     "title": "Un nuevo título de Warhammer 40.000",
     "subtitle": "Por Burned Games",
     "description": "Embárcate en una misión épica",
-    "features": {
-      "title": "Características",
-      "items": [
-        "Combate táctico",
-        "Historia inmersiva",
-        "Gráficos detallados",
-        "Personalización única"
-      ]
-    }
+    "loading": "Cargando recursos del juego...",
+    "catchphrase": {
+      "line1": "Solo un Ultramarine sobrevivió al descenso - el Hermano de Batalla Quintus Maxillian.",
+      "line2": "Solo. Superado en número. Inquebrantable."
+    },
+    "mainDescription": "Eres el último Marine Espacial. Desata tu fuerza y coraje en el campo de batalla para eliminar a cualquier enemigo que se interponga en tu camino. ¿Serás capaz de llegar al final de esta historia usando todo tu arsenal?",
+    "videoCaption": "Juega como el Último Marine",
+    "pillars": {
+      "heading": "Pilares del Juego",
+      "worldExploration": {
+        "title": "Exploración del Mundo",
+        "description": "Explora un mundo lleno de desafíos, enemigos y recompensas. Desde el desierto más desolado hasta la oscuridad de la Ciudad Colmena, ¿serás capaz de sobrevivir como el último Marine Espacial?"
+      },
+      "diabloLike": {
+        "title": "Estilo Diablo",
+        "description": "Nuestro juego presenta una increíble exploración del mundo combinada con la diversión y el juego intenso de Diablo, ofreciendo una experiencia única e inigualable."
+      },
+      "fastPaced": {
+        "title": "Ritmo Acelerado",
+        "description": "Gracias al ritmo acelerado del juego, el combate estará lleno de acción frenética que pondrá a prueba las habilidades de cada jugador."
+      },
+      "ownEngine": {
+        "title": "Motor de Juego Propio",
+        "description": "Este juego está desarrollado exclusivamente en nuestro propio motor de juego, lo que nos permite una gran personalización y optimización de la experiencia."
+      }
+    },
+    "lore": {
+      "heading": "Nuestro Universo",
+      "paragraph1": "El mundo colmena de Temperis está bajo asedio. Una brutal WAAAGH! liderada por el salvaje jefe de guerra orko Brutus ha sumido el planeta en el caos. La ciudad colmena de Martyria Eterna, el último bastión de resistencia, está siendo invadida por hordas infinitas de pieles verdes.",
+      "paragraph2": "En respuesta, una fuerza de ataque de la 3ª Compañía de los Ultramarines es desplegada mediante asalto de descenso orbital. Pero los números abrumadores de los orkos y una tormenta de fuego antiaéreo convierten los cielos en una trampa mortal. Las cápsulas de descenso son voladas desde los cielos, una por una destruidas en el aire o aplastadas al aterrizar por la marea xenos."
+    },
+    "ultramarine": {
+      "heading": "El Ultramarine",
+      "character": {
+        "title": "Personaje",
+        "description": "Un supersoldado genéticamente mejorado, el último de su especie. Fuerza, velocidad y conciencia táctica mejoradas lo convierten en la esperanza final de la humanidad."
+      },
+      "weapons": {
+        "title": "Armas",
+        "description": "Empuña devastadoras armas de plasma, motosierras y reliquias ancestrales. Cada arma puede ser mejorada y personalizada según tu estilo de juego."
+      },
+      "abilities": {
+        "title": "Habilidades",
+        "description": "Domina poderes psíquicos, habilidades tácticas y técnicas de combate. Desbloquea nuevas habilidades mientras progresas en tu viaje."
+      }
+    },
+    "enemies": {
+      "heading": "Enfréntate a la Oscuridad",
+      "description": "Confronta hordas de enemigos aterradores, desde cultistas corruptos hasta demonios ancestrales. Cada tipo de enemigo requiere diferentes tácticas y estrategias para ser derrotado.",
+      "button": "Conócelos"
+    },
+    "levels": {
+      "heading": "Explora Mundos Diversos",
+      "description": "Viaja a través de entornos variados, desde planetas desérticos desolados hasta los pasillos retorcidos de las ciudades colmena. Cada nivel presenta desafíos únicos y secretos.",
+      "button": "Descúbrelos"
+    },
+    "controls": {
+      "heading": "Controles del Juego",
+      "movement": "Movimiento",
+      "lookAround": "Mirar Alrededor",
+      "primaryAttack": "Ataque Primario",
+      "secondaryAttack": "Ataque Secundario",
+      "jumpDodge": "Saltar/Esquivar",
+      "run": "Correr",
+      "interact": "Interactuar",
+      "inventory": "Inventario"
+    },
+    "coffeeEngine": {
+      "heading": "Construido con Coffee Engine",
+      "description": "Desarrollado exclusivamente con nuestro motor propietario Coffee Engine, este juego muestra tecnología de vanguardia, rendimiento optimizado y posibilidades creativas ilimitadas. Experimenta el futuro de los motores de juegos.",
+      "button": "Coffee Engine"
+    },
+    "screenshots": {
+      "heading": "Capturas de Pantalla"
+    },
+    "altTexts": {
+      "ultramarineCharacter": "Personaje Ultramarine",
+      "gameEnemies": "Enemigos del Juego",
+      "gameLevels": "Niveles del Juego",
+      "coffeeEngine": "Coffee Engine",
+      "gameScreenshot": "Captura del Juego"
+    },
+    "videoError": "Tu navegador no soporta la etiqueta de vídeo."
   },
 
   "footer": {

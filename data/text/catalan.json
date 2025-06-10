@@ -76,7 +76,89 @@
   "game": {
     "title": "Un nou títol de Warhammer 40.000",
     "subtitle": "Per Burned Games",
-    "loading": "Carregant recursos del joc..."
+    "loading": "Carregant recursos del joc...",
+    "catchphrase": {
+      "line1": "Només un Ultramarine va sobreviure al descens - el Germà de Batalla Quintus Maxillian.",
+      "line2": "Sol. Superat en nombre. Inquebrantable."
+    },
+    "mainDescription": "Ets l'últim Marine Espacial. Desferma la teva força i coratge al camp de batalla per eliminar qualsevol enemic que s'interposi al teu camí. Seràs capaç d'arribar al final d'aquesta història usant tot el teu arsenal?",
+    "videoCaption": "Juga com l'Últim Marine",
+    "pillars": {
+      "heading": "Pilars del Joc",
+      "worldExploration": {
+        "title": "Exploració del Món",
+        "description": "Explora un món ple de desafiaments, enemics i recompenses. Des del desert més desolat fins a la foscor de la Ciutat Rusc, seràs capaç de sobreviure com l'últim Marine Espacial?"
+      },
+      "diabloLike": {
+        "title": "Estil Diablo",
+        "description": "El nostre joc presenta una increïble exploració del món combinada amb la diversió i el joc intens de Diablo, oferint una experiència única i inigualable."
+      },
+      "fastPaced": {
+        "title": "Ritme Accelerat",
+        "description": "Gràcies al ritme accelerat del joc, el combat estarà ple d'acció frenètica que posarà a prova les habilitats de cada jugador."
+      },
+      "ownEngine": {
+        "title": "Motor de Joc Propi",
+        "description": "Aquest joc està desenvolupat exclusivament al nostre propi motor de joc, que ens permet una gran personalització i optimització de l'experiència."
+      }
+    },
+    "lore": {
+      "heading": "El Nostre Univers",
+      "paragraph1": "El món rusc de Temperis està sota setge. Una brutal WAAAGH! liderada pel salvatge cap de guerra orc Brutus ha submergit el planeta en el caos. La ciutat rusc de Martyria Eterna, l'últim bastió de resistència, està sent envaïda per hordes infinites de pells verdes.",
+      "paragraph2": "En resposta, una força d'atac de la 3a Companyia dels Ultramarines es desplega mitjançant assalt de descens orbital. Però els nombres aclaparadors dels orcs i una tempesta de foc antiaeri converteixen els cels en una trampa mortal. Les càpsules de descens són volades dels cels, una per una destruïdes a l'aire o aixafades en aterrar per la marea xenos."
+    },
+    "ultramarine": {
+      "heading": "L'Ultramarine",
+      "character": {
+        "title": "Personatge",
+        "description": "Un supersoldat genèticament millorat, l'últim de la seva espècie. Força, velocitat i consciència tàctica millorades el converteixen en l'esperança final de la humanitat."
+      },
+      "weapons": {
+        "title": "Armes",
+        "description": "Empunya devastadores armes de plasma, motosserres i relíquies ancestrals. Cada arma pot ser millorada i personalitzada segons el teu estil de joc."
+      },
+      "abilities": {
+        "title": "Habilitats",
+        "description": "Domina poders psíquics, habilitats tàctiques i tècniques de combat. Desbloqueja noves habilitats mentre progreses en el teu viatge."
+      }
+    },
+    "enemies": {
+      "heading": "Enfronta't a la Foscor",
+      "description": "Confronta hordes d'enemics terrorífics, des de cultistes corruptes fins a dimonis ancestrals. Cada tipus d'enemic requereix diferents tàctiques i estratègies per ser derrotat.",
+      "button": "Coneix-los"
+    },
+    "levels": {
+      "heading": "Explora Mons Diversos",
+      "description": "Viatja a través d'entorns variats, des de planetes desèrtics desolats fins als passadissos retorçats de les ciutats rusc. Cada nivell presenta desafiaments únics i secrets.",
+      "button": "Descobreix-los"
+    },
+    "controls": {
+      "heading": "Controls del Joc",
+      "movement": "Moviment",
+      "lookAround": "Mirar al Voltant",
+      "primaryAttack": "Atac Primari",
+      "secondaryAttack": "Atac Secundari",
+      "jumpDodge": "Saltar/Esquivar",
+      "run": "Córrer",
+      "interact": "Interactuar",
+      "inventory": "Inventari"
+    },
+    "coffeeEngine": {
+      "heading": "Construït amb Coffee Engine",
+      "description": "Desenvolupat exclusivament amb el nostre motor propietari Coffee Engine, aquest joc mostra tecnologia d'avantguarda, rendiment optimitzat i possibilitats creatives il·limitades. Experimenta el futur dels motors de jocs.",
+      "button": "Coffee Engine"
+    },
+    "screenshots": {
+      "heading": "Captures de Pantalla"
+    },
+    "altTexts": {
+      "ultramarineCharacter": "Personatge Ultramarine",
+      "gameEnemies": "Enemics del Joc",
+      "gameLevels": "Nivells del Joc",
+      "coffeeEngine": "Coffee Engine",
+      "gameScreenshot": "Captura del Joc"
+    },
+    "videoError": "El teu navegador no suporta l'etiqueta de vídeo."
   },
   "memberInfo": {
     "sections": {
