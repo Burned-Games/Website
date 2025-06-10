@@ -5,6 +5,8 @@ import Media from '../pages/Media/Media';
 import About from '../pages/About/About';
 import Engine from '../pages/Engine/Engine';
 import Downloads from '../pages/Downloads/Downloads';
+import Enemies from '../pages/Enemies/Enemies';
+import Levels from '../pages/Levels/Levels';
 import { TranslationType } from '../shared/types/translations';
 import config from './config';
 
@@ -57,5 +59,15 @@ export const createRoutes = (t: TranslationType): RouteConfig[] => [
       // logoSrc: config.assets.images.gameLogo,
       logoAlt: t.general.altTexts.teamLogo
     }
+  },
+  {
+    path: '/enemies',
+    element: Enemies,
+    hideHeader: true
+  },
+  {
+    path: '/levels',
+    element: Levels,
+    hideHeader: true
   }
 ];
