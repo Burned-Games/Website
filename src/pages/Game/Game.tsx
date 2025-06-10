@@ -11,10 +11,15 @@ const Game: React.FC = () => {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const [isMobile, setIsMobile] = useState(false);
+    const [isSmallMobile, setIsSmallMobile] = useState(false);
     
     useEffect(() => {
         const checkMobile = () => {
-            setIsMobile(window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+            const width = window.innerWidth;
+            const userAgent = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            setIsMobile(width <= 768 || userAgent);
+            setIsSmallMobile(width <= 500);
         };
         
         checkMobile();
@@ -44,9 +49,9 @@ const Game: React.FC = () => {
     
     return (
         <div 
-            className="game-page-container"
+            className={`game-page-container ${isMobile ? 'mobile-optimized' : ''}`}
             style={{
-                '--game-background': `url(${assets.images.gameBackground})`
+                '--game-background': `url(${isSmallMobile ? assets.images.gameBackgroundMobile : assets.images.gameBackground})`
             } as React.CSSProperties}
         >
             

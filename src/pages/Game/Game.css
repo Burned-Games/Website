@@ -458,10 +458,57 @@
     margin-right: auto;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design - tablets and larger mobile devices */
+@media (max-width: 768px) and (min-width: 501px) {
     .game-catchphrase h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    
+    .game-video-section {
+        margin-top: 2rem;
+    }
+    
+    .pillars-heading,
+    .lore-heading,
+    .ultramarine-heading,
+    .controls-heading,
+    .screenshots-heading {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .showcase-info h2,
+    .engine-details h2 {
+        font-size: 2.2rem;
+    }
+    
+    .corner-decoration {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .corner-decoration.top-left {
+        top: 1rem;
+        left: 1.5rem;
+    }
+    
+    .corner-decoration.top-right {
+        top: 1rem;
+        right: 1.5rem;
+    }
+    
+    /* Ensure background stays full coverage for tablets */
+    .game-page-container::before {
+        background-size: cover !important;
+        background-attachment: fixed;
+        opacity: 0.1;
+    }
+}
+
+/* Responsive Design - small mobile devices */
+@media (max-width: 500px) {
+    .game-catchphrase h3 {
+        font-size: 1rem;
     }
     
     .game-video-section {
@@ -477,8 +524,8 @@
     .ultramarine-heading,
     .controls-heading,
     .screenshots-heading {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     
     .pillars-grid {
@@ -507,7 +554,7 @@
     
     .showcase-info h2,
     .engine-details h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .controls-layout {
@@ -535,23 +582,69 @@
     }
     
     .corner-decoration {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
     
     .corner-decoration.top-left {
-        top: 1rem;
-        left: 1rem;
+        left: 0.5rem;
+        top: 0.5rem;
     }
     
     .corner-decoration.top-right {
-        top: 1rem;
-        right: 1rem;
+        right: 0.5rem;
+        top: 0.5rem;
     }
     
     .game-separator {
-        height: 30px;
-        margin: 1.5rem 0;
+        height: 25px;
+        margin: 1rem 0;
         background-size: 120% 100%;
+    }
+}
+
+/* Mobile-specific background optimization */
+.game-page-container.mobile-optimized::before {
+    background-attachment: scroll;
+    opacity: 0.05;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Ensure desktop background maintains full coverage */
+@media (min-width: 501px) {
+    .game-page-container::before {
+        background-size: cover !important;
+        background-position: center !important;
+        background-attachment: fixed;
+    }
+}
+
+/* iOS Safari specific optimizations - only for mobile */
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 500px) {
+        .game-page-container::before {
+            position: absolute; /* Use absolute instead of fixed for iOS mobile */
+            background-attachment: scroll;
+            background-size: contain; /* Prevent over-scaling on iOS mobile */
+            opacity: 0.03; /* Even lower opacity for iOS mobile */
+        }
+    }
+}
+
+/* Extra background optimizations for very small mobile screens */
+@media (max-width: 500px) {
+    .game-page-container::before {
+        background-size: cover; /* Mobile image is already optimized, use cover */
+        background-position: center;
+        background-attachment: scroll;
+        opacity: 0.08; /* Slightly higher opacity since mobile image is optimized */
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    
+    .game-hero-section {
+        padding: 2vh 1rem 1rem 1rem;
+        min-height: 35vh;
     }
 }

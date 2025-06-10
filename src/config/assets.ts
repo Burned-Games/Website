@@ -44,6 +44,7 @@ class AssetManager {
             corner: this.image('corner.webp'),
             dossierBackground: this.image('dossier_background.webp'),
             gameBackground: this.image('gameBackground.webp'),
+            gameBackgroundMobile: this.image('gameBackground_mobile.webp'),
             cardName: this.image('cardName.webp'),
             // Logos de departamentos
             departmentLogos: {
