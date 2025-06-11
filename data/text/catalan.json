@@ -176,8 +176,8 @@
       "inventory": "Inventari"
     },
     "coffeeEngine": {
-      "heading": "Construït amb Coffee Engine",
-      "description": "Desenvolupat exclusivament amb el nostre motor propietari Coffee Engine, aquest joc mostra tecnologia d'avantguarda, rendiment optimitzat i possibilitats creatives il·limitades. Experimenta el futur dels motors de jocs.",
+      "heading": "Fet amb Coffee Engine",
+      "description": "Desenvolupat en Coffee Engine, un motor 3D propi realitzat completament per nosaltres.",
       "button": "Coffee Engine"
     },
     "screenshots": {

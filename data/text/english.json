@@ -177,8 +177,8 @@
       "inventory": "Inventory"
     },
     "coffeeEngine": {
-      "heading": "Built with Coffee Engine",
-      "description": "Developed exclusively with our proprietary Coffee Engine, this game showcases cutting-edge technology, optimized performance, and unlimited creative possibilities. Experience the future of gaming engines.",
+      "heading": "Made with Coffee Engine",
+      "description": "Developed in Coffee Engine, a proprietary 3D engine created entirely by us.",
       "button": "Coffee Engine"
     },
     "screenshots": {

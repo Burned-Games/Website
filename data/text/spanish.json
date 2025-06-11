@@ -188,8 +188,8 @@
       "inventory": "Inventario"
     },
     "coffeeEngine": {
-      "heading": "Construido con Coffee Engine",
-      "description": "Desarrollado exclusivamente con nuestro motor propietario Coffee Engine, este juego muestra tecnología de vanguardia, rendimiento optimizado y posibilidades creativas ilimitadas. Experimenta el futuro de los motores de juegos.",
+      "heading": "Hecho con Coffee Engine",
+      "description": "Desarrollado en Coffee Engine, un motor 3D propio realizado completamente por nosotros.",
       "button": "Coffee Engine"
     },
     "screenshots": {
