@@ -24,6 +24,6 @@
   },
   "portfolio": "https://edgarmd1.github.io/Porfolio/",
   "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
-  "picfoot": [""],
+  "picfoot": ["Main Menu and settings","Credits with option to add more velocity","New game animation and load screen","Pause Menu with his options","Lose screen with options to continue or go back","First UI Module"],
   "pics": ["edgar_mesa1.webm", "edgar_mesa2.mp4", "edgar_mesa3.mp4", "edgar_mesa4.mp4", "edgar_mesa5.mp4", "edgar_mesa6.webm"]
 }

@@ -25,6 +25,6 @@
   },
 
   "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
-  "picfoot": [""],
+   "picfoot": ["",""],
   "pics": ["pau_mena1.mp4", "pau_mena2.mp4", "pau_mena3.mp4", "pau_mena4.mp4", "pau_mena5.mp4"]
 }

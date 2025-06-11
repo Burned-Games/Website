@@ -24,6 +24,6 @@
     }
   },
   "skills": ["C++", "Engine Development", "Rendering", "Cross-Platform"],
-  "picfoot": [""],
+   "picfoot": ["",""],
   "pics": []
 }

@@ -25,6 +25,6 @@
   },
 
   "skills": ["UI/UX Design", "Photoshop", "Illustrator", "Game UI"],
-  "picfoot": [""],
+   "picfoot": ["",""],
   "pics": ["rafael_esquius1.webp", "rafael_esquius2.webp", "rafael_esquius3.webp", "rafael_esquius4.webp", "rafael_esquius5.webp", "rafael_esquius6.webp", "rafael_esquius7.webp"]
 }

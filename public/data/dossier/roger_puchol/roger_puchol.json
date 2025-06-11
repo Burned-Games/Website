@@ -24,6 +24,6 @@
   },
 
   "skills": ["C++", "C#", "Unity", "Input Systems", "Engine Development", "Debugging", "Code Analysis"],
-  "picfoot": [""],
+   "picfoot": ["",""],
   "pics": ["roger_puchol1.webp", "roger_puchol2.webp"]
 }

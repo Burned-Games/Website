@@ -24,6 +24,6 @@
   },
 
   "skills": ["Project Management", "Team Leadership", "Agile Methodologies", "Game Production"],
-  "picfoot": [""],
-  "pics": ["guillem_montes1.webp", "guillem_montes2.webp", "guillem_montes3.webp", "guillem_montes4.webp"]
+   "picfoot": ["","","",""],
+  "pics": ["guillem_montes1.webp", "guillem_montes2.webp", "guillem_montes3.webp", "guillem_montes4.webp", "guillem_montes5.webp"]
 }
