@@ -8,23 +8,23 @@
   "portfolio": "https://msabate00.github.io/",
   "translations": {
     "en": {
-      "role": "Lead Coder, Gameplay Programmer",
+      "role": "Lead Coder, Gameplay Programmer, UI Programmer, Enemy Programmer, Engine Programmer",
       "department": "Production, Code",
       "bio": "As Lead Programmer, I was responsible for defining and maintaining the game's technical structure from pre-production to final release. I coordinated the code department, organizing tasks, ensuring technical consistency, and facilitating communication across teams. I personally handled the planning and execution of both the engine and game release processes, ensuring stability, version control, and deployment accuracy. Throughout the project, I also contributed directly to several core systems, including the engine's particle module, destructible props, gameplay indicators, camera boundaries, and various optimization tasks. Additionally, I provided technical support across gameplay systems, including Player, Enemies, UI, and Environment, helping team members troubleshoot, integrate, and maintain quality code."
     },
     "es": {
-      "role": "Líder de Código, Programador de Jugabilidad",
+      "role": "Líder de Código, Programador de Gameplay, Programador de UI, Programador de Enemigos, Programador de Motor",
       "department": "Producción, Código",
       "bio": "Como Programador Principal, fui responsable de definir y mantener la estructura técnica del juego desde la preproducción hasta su lanzamiento final. Coordiné el departamento de código, organizando tareas, asegurando la coherencia técnica y facilitando la comunicación entre equipos. Me encargué personalmente de la planificación y ejecución de los procesos de lanzamiento del motor y del juego, garantizando estabilidad, control de versiones y precisión en la implementación. A lo largo del proyecto, también contribuí directamente a varios sistemas clave, incluyendo el módulo de partículas del motor, objetos destructibles, indicadores de jugabilidad, límites de cámara y diversas tareas de optimización. Además, proporcioné soporte técnico en múltiples sistemas de jugabilidad, incluyendo Jugador, Enemigos, UI y Entorno, ayudando a los miembros del equipo a solucionar problemas, integrar elementos y mantener un código de calidad."
     },
     "ca": {
-      "role": "Líder de Codi, Programador de Jugabilitat",
+      "role": "Líder de Codi, Programador de Ganeplay, Programador de UI, Programador d'Enemics, Programador de Motor",
       "department": "Producció, Codi",
       "bio": "Com a Programador Principal, vaig ser responsable de definir i mantenir l'estructura tècnica del joc des de la preproducció fins al llançament final. Vaig coordinar el departament de codi, organitzant tasques, assegurant la coherència tècnica i facilitant la comunicació entre equips. Em vaig encarregar personalment de la planificació i execució dels processos de llançament del motor i del joc, garantint estabilitat, control de versions i precisió en la implementació. Al llarg del projecte, també vaig contribuir directament a diversos sistemes clau, incloent-hi el mòdul de partícules del motor, objectes destructibles, indicadors de jugabilitat, límits de càmera i diverses tasques d'optimització. A més, vaig proporcionar suport tècnic en múltiples sistemes de jugabilitat, incloent-hi Jugador, Enemics, UI i Entorn, ajudant els membres de l'equip a solucionar problemes, integrar elements i mantenir un codi de qualitat."
     }
   },
 
-  "skills": ["C++", "Unity", "Unreal Engine", "OpenGL"],
-   "picfoot": ["Task coordination example","Particle system in action","Particle system in action with in-game effects","Examples of destructible environment objects","Enemy behavior showcase","Player with enemy encounter","Seamless level transitions with loading screen"],
+  "task": ["Team & Code Department Management","Engine Release Management","Game Release Execution & Coordination","Core Particle System Development","Destructible Props Implementation","Gameplay Indicators (e.g., tutorials, tips, attack prompts)","Gameplay Systems Support (Player, Camera, Enemies, UI, & Environment)","Asset Optimization"],
+  "picfoot": ["Task coordination example","Particle system in action","Particle system in action with in-game effects","Examples of destructible environment objects","Enemy behavior showcase","Player with enemy encounter","Seamless level transitions with loading screen"],
   "pics": ["marti_sabate1.webp", "marti_sabate2.gif", "marti_sabate3.gif", "marti_sabate4.gif", "marti_sabate5.webm", "marti_sabate6.gif", "marti_sabate7.gif"]
 }

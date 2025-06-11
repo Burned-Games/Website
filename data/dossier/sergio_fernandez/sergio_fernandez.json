@@ -22,7 +22,7 @@
       "bio": "El meu treball s'ha centrat en ser programador de jugabilitat i enemics, tot i que durant el primer sprint vaig col·laborar amb altres companys per desenvolupar el mòdul d'entrada del motor. Com a programador de jugabilitat, vaig implementar la primera iteració de la granada, que es llança en un arc parabòlic i causa mal als enemics. També vaig desenvolupar el sistema de millora d'armadura, que activa millores visuals i proporciona beneficis addicionals al jugador. A més, vaig crear el sistema de generació de ferralla que s'activa quan els enemics són derrotats. La batalla a l'arena contra el mini-cap va ser una altra tasca de la qual vaig ser responsable. Finalment, vaig corregir diversos errors relacionats amb el comportament dels enemics, assegurant-me que funcionessin correctament."
     }
   },
-  "skills": ["C#", "Unity", "Gameplay Programming", "Enemy AI"],
-   "picfoot": ["Arena battle","Scrap Spawner when enemy dies"],
+  "task": ["Input Module in Engine","Grenade First Iteration","Player Armor Upgrade System","Scrap Spawner System","Arena Coliseum Battle","Enemy Functionalities and Bug Fixes"],
+  "picfoot": ["Arena battle","Scrap Spawner when enemy dies"],
   "pics": ["sergio_fernandez1.mp4", "sergio_fernandez2.mp4"]
 }

@@ -23,7 +23,7 @@
       "bio": "Treballar en aquest projecte m'ha permès contribuir a diferents aspectes artístics del desenvolupament de videojocs. Durant la fase inicial, em vaig centrar en crear diversos conceptes basats en les directrius del dissenyador. Un dels moments destacats va ser els meus conceptes del Personatge Principal per al Space Marine, on vam començar a donar forma a la identitat visual del personatge. Després, vaig passar al modelatge 3D: vaig començar amb la Chainsword, l'arma del Space Marine, i després vaig passar a modelar objectes de l'entorn, complint amb els requisits tant tècnics com artístics que buscàvem. Finalment, em vaig unir a l'equip de VFX, on vaig contribuir creant efectes visuals utilitzant tant sistemes de partícules com sistemes basats en malles."
     }
   },
-  "skills": ["Blender", "ZBrush", "Substance Painter", "Concept Art"],
+  "task": ["Enemies Tank","Enemies bug fixing & improvements","Explosion physics","Scripting","Scripting Documentation","MiniBoss (cancelled task)"],
   "picfoot": ["ConceptSpaceMarine","Chainsword_Concept","ChainswordRender","Bushes","HangerRender","ForgeToolsRender","VFX_Droppod","VFX_BolterHab","VFX_BossSmash"],
   "pics": ["alexia_palacin1.webp", "alexia_palacin2.webp", "alexia_palacin3.webp", "alexia_palacin4.webm", "alexia_palacin5.webp", "alexia_palacin6.webp", "alexia_palacin7.webm", "alexia_palacin8.webm", "alexia_palacin9.webm"]
 }

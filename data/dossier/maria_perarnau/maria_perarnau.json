@@ -22,7 +22,7 @@
     }
   },
 
-  "skills": ["Blender", "Substance Painter", "Concept Art", "Environment Art"],
-   "picfoot": ["Ammo Box Model","Columnas Door Concept","Decals to polish Asset Dressing","Enemy Tank Weapon Model","Hive City Door Model","Modular Wall Model","Concept Enemy Ranged & Weapons","Tank Model","Concept Enemy Tank","Totem Model","VFX Explosion","Concept Workbench"],
+  "task": ["Enemy & Prop Concepts","Enemy Assets","Environment Art","VFX"],
+  "picfoot": ["Ammo Box Model","Columnas Door Concept","Decals to polish Asset Dressing","Enemy Tank Weapon Model","Hive City Door Model","Modular Wall Model","Concept Enemy Ranged & Weapons","Tank Model","Concept Enemy Tank","Totem Model","VFX Explosion","Concept Workbench"],
   "pics": ["maria_perarnau1.webp", "maria_perarnau2.webp", "maria_perarnau3.webp", "maria_perarnau4.webp", "maria_perarnau5.webp", "maria_perarnau6.webp", "maria_perarnau7.webp", "maria_perarnau8.webp", "maria_perarnau9.webp", "maria_perarnau10.webp", "maria_perarnau11.gif", "maria_perarnau12.webp"]
 }

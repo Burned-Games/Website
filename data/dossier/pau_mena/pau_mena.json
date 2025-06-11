@@ -24,7 +24,7 @@
     }
   },
 
-  "skills": ["C#", "Unity", "UI Development", "Engine Programming"],
-   "picfoot": ["All main HUD actions","All features of the 1st UI Module","TankBarStandard","Splash Screen animation","Animation of enemy alert on appears and disappears"],
+  "task": ["HUD","Enemy Alert","Boss bars","Colliseum doors","Fervor Standard","UI Module"],
+  "picfoot": ["All main HUD actions","All features of the 1st UI Module","TankBarStandard","Splash Screen animation","Animation of enemy alert on appears and disappears"],
   "pics": ["pau_mena1.mp4", "pau_mena2.mp4", "pau_mena3.mp4", "pau_mena4.mp4", "pau_mena5.mp4"]
 }

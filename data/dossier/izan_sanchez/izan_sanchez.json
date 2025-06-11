@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["Game Design", "Audio Design", "Enemy Design", "Balancing"],
-   "picfoot": ["",""],
+  "task": ["Enemies & Boss Design","Audio effects Design & Research","Particles Design & Creation","Gameplay stats balancing","QA"],
+  "picfoot": ["",""],
   "pics": []
 }

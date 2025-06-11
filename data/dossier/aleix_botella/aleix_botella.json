@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["C#", "Unity", "Game Programming", "Gameplay Systems"],
+  "task": ["Player System Support","Player Movement and orientation","Player shooting","Player aiming and autoAim help","InGameCamera(smooth, shake, zoomOut)","Player guns(bolter and shotgun)","Player Abilities","Player Animations system logic","Tutorial"],
   "picfoot": ["ElectricZone","General Player","Granade","MeleeAttack","PlayerMovement","PlayerShooting"],
   "pics": ["aleix_botella1.webm", "aleix_botella2.gif", "aleix_botella3.webm", "aleix_botella4.webm", "aleix_botella5.webm", "aleix_botella6.gif"]
 }

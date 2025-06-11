@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["Game Design", "Multiplayer Design", "Social Systems", "Monetization"],
-   "picfoot": ["Level 1 Design","Level 1 Blockout","Level 2 Design","Level 2 Blockout","Level 3 Blockout #1","Level 3 Blockout #2"],
+  "task": ["Level 1, 2 & 3 Design","QA","Particles Design & Creation","Sound effects Design & Research"],
+  "picfoot": ["Level 1 Design","Level 1 Blockout","Level 2 Design","Level 2 Blockout","Level 3 Blockout #1","Level 3 Blockout #2"],
   "pics": ["miguel_iglesias1.webp", "miguel_iglesias2.webp", "miguel_iglesias3.webp", "miguel_iglesias4.webp", "miguel_iglesias5.webp", "miguel_iglesias6.webp"]
 }

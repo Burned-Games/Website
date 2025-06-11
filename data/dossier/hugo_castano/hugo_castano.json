@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["Game Design", "UI/UX Design", "Prototyping", "User Research"],
-   "picfoot": ["",""],
+  "task": ["Enviroment Design","Narrative Design"],
+  "picfoot": ["",""],
   "pics": []
 }
