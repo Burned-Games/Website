@@ -131,23 +131,25 @@ const Gallery: React.FC<GalleryProps> = ({ images, type }) => {
 
                 {selectedImage !== null && (
                     <div className="modal" onClick={handleModalClick}>
-                        <button className="close-button">
-                            <svg 
-                                viewBox="0 0 24 24" 
-                                width="24" 
-                                height="24" 
-                                stroke="currentColor" 
-                                fill="none"
-                            >
-                                <path 
-                                    strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth={2} 
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            </svg>
-                        </button>
-                        {renderMediaElement(images[selectedImage], 'modal-image', undefined, true)}
+                        <div className="modal-content">
+                            <button className="close-button">
+                                <svg 
+                                    viewBox="0 0 24 24" 
+                                    width="18" 
+                                    height="18" 
+                                    stroke="currentColor" 
+                                    fill="none"
+                                >
+                                    <path 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        strokeWidth={2} 
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                            {renderMediaElement(images[selectedImage], 'modal-image', undefined, true)}
+                        </div>
                         {images[selectedImage].caption && (
                             <div className="modal-caption">
                                 {images[selectedImage].caption}
