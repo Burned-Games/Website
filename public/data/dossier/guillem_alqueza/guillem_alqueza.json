@@ -24,7 +24,7 @@
     }
   },
 
-  "skills": ["C#", "Unity", "Engine Programming", "Audio Integration"],
-   "picfoot": ["Animation","Pathfinding","UI","Wwise"],
+  "task": ["Audio Module","Animation Module","UI Module","Navigation System","Engine and Game Optimization","Bug Fixing","Save & Load System and Checkpoints","Interaction Mechanics, Doors and Levers"],
+  "picfoot": ["Animation","Pathfinding","UI","Wwise"],
   "pics": ["guillem_alqueza1.mp4","guillem_alqueza2.mp4","guillem_alqueza3.mp4","guillem_alqueza4.mp4"]
 }

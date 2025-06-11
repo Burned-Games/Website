@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["C++", "C#", "Unity", "Input Systems", "Engine Development", "Debugging", "Code Analysis"],
-   "picfoot": ["Project settings & scene search","Input bindings window"],
+  "task": ["Event-based input system with unified, rebindable controls","Keyboard","Gamepad (with rumble)","Project Settings window","Custom audio path on a per-project basis","Custom project starting scene path","Scene hierarchy search","Rotating log files","FXAA shader","Entity hierarchy fixes and improvements","Engine bug fixing"],
+  "picfoot": ["Project settings & scene search","Input bindings window"],
   "pics": ["roger_puchol1.webp", "roger_puchol2.webp"]
 }

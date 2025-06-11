@@ -24,7 +24,7 @@
     }
   },
 
-  "skills": ["C#", "Unity", "Enemy AI", "VFX Systems"],
-   "picfoot": ["General Enemies","Enemy Kamikaze","Enemy Ranged","Enemy Support","Enemy Tank","Final Boss"],
+  "task": ["Enemy Design & Implementation","Ranged Enemy","Support Enemy","Kamikaze Enemy","Tank Enemy","Final Boss Enemy","Enemies Systems Support","Enemies particles/VFX","Final Boss Cinematics Integration","Game Release Execution"],
+  "picfoot": ["General Enemies","Enemy Kamikaze","Enemy Ranged","Enemy Support","Enemy Tank","Final Boss"],
   "pics": ["eduardo_bergillos1.webm", "eduardo_bergillos2.mp4", "eduardo_bergillos3.mp4", "eduardo_bergillos4.mp4", "eduardo_bergillos5.mp4", "eduardo_bergillos6.webm"]
 }

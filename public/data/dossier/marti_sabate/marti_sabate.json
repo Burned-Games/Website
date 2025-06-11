@@ -24,7 +24,7 @@
     }
   },
 
-  "skills": ["C++", "Unity", "Unreal Engine", "OpenGL"],
-   "picfoot": ["Task coordination example","Particle system in action","Particle system in action with in-game effects","Examples of destructible environment objects","Enemy behavior showcase","Player with enemy encounter","Seamless level transitions with loading screen"],
+  "task": ["Team & Code Department Management","Engine Release Management","Game Release Execution & Coordination","Core Particle System Development","Destructible Props Implementation","Gameplay Indicators (e.g., tutorials, tips, attack prompts)","Gameplay Systems Support (Player, Camera, Enemies, UI, & Environment)","Asset Optimization"],
+  "picfoot": ["Task coordination example","Particle system in action","Particle system in action with in-game effects","Examples of destructible environment objects","Enemy behavior showcase","Player with enemy encounter","Seamless level transitions with loading screen"],
   "pics": ["marti_sabate1.webp", "marti_sabate2.gif", "marti_sabate3.gif", "marti_sabate4.gif", "marti_sabate5.gif", "marti_sabate6.gif", "marti_sabate7.gif"]
 }

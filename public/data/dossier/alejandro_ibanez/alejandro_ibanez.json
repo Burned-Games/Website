@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["C#", "Unity", "Mobile Development", "iOS/Android"],
+  "task": ["Player Upgrade System","Workbench UI","Arena Coliseum Battle","Engine Physics Programming","QA Bug Fixing","Main Character Improvements"],
   "picfoot": ["Workbench"],
   "pics": ["alejandro_ibanez1.webm"]
 }

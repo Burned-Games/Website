@@ -9,7 +9,7 @@
     "en": {
       "role": "Enemy Programmer",
       "department": "Code",
-      "bio": "As a programmer, I mainly worked in the enemy department, though I initially contributed to explosion physics, scripting documentation, and public variable visibility. In the enemies department, I began working on an early MiniBoss prototype, but it was later canceled. Therefore, I was reassigned to the enemy Tank. When I joined the task, the Tank had already some of its work done; however, I worked on various iterations to improve its previous state machine as well as add new features to it, such as animations, an alert-nearby-enemies system (later reused in other enemies), the berserk ability and the indicator state. I've also worked on general improvements for the enemies' rotation, detection, and raycasting systems. After that, I've been dedicated to bug-fixing and polishing their behavior. Working on this project has taught me the importance of teamwork and adaptability in a large team while also improving my problem-solving and interpersonal skills."
+      "bio": "As a programmer, I mainly worked in the enemy department, though I initially contributed to explosion physics, scripting documentation, and public variable visibility. In the enemies department, I began working on an early MiniBoss prototype, but it was later canceled. Therefore, I was reassigned to the enemy Tank. When I joined the task, the Tank had already some of its work done; however, I worked on various iterations to improve its previous state machine as well as add new features to it, such as animations, an alert-nearby-enemies system (later reused in other enemies), the berserk ability and the indicator state. I've also worked on general improvements for the enemies' rotation, detection, and raycasting systems. After that, I've been dedicated to bug-fixing and polishing their behavior. Working on this project has taught me the importance of teamwork and adaptability in a large team while also improving my problem-solving and interpersonal task."
     },
     "es": {
       "role": "Programador de Enemigos",
@@ -23,7 +23,7 @@
     }
   },
 
-  "skills": ["Python", "Machine Learning", "TensorFlow", "AI Integration"],
+  "task": ["Enemies Tank","Enemies bug fixing & improvements","Explosion physics","Scripting","Scripting Documentation","MiniBoss (cancelled task)"],
   "picfoot": ["Tank tackle attack and berserk ability","Tank melee attack","Raycast system improvements","Scripting documentation","Tank tackle attack and berserk ability","Tank tackle attack indicator"],
   "pics": ["carla_puga1.webm", "carla_puga2.webm", "carla_puga3.webm", "carla_puga4.webp", "carla_puga5.webm", "carla_puga6.webm"]
 }

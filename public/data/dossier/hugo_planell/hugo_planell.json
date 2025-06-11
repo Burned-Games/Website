@@ -23,7 +23,7 @@
       "bio": "Soc el creador original de **TeaEngine**, un motor de joc personalitzat que va servir com a base per al desenvolupament de **Coffee Engine**, el qual vaig co-crear juntament amb Mario Dorado Martínez. Aquest motor va ser utilitzat en el desenvolupament de Warhammer 40k: The Last Marine. Al llarg del projecte, vaig treballar amb un equip que vaig liderar com a Líder de Motor, coordinant el desenvolupament i prenent decisions tècniques clau sobre la direcció del motor.\n\nDurant el projecte, em vaig centrar en àrees fonamentals com **renderització**, **gestió de recursos**, Coffee Runtime, el sistema de scripting i el seu manteniment, **frustum culling**, el Gestor d'Escenes i la serialització. També vaig ser responsable de la *documentació tècnica* i de garantir la *compatibilitat multiplataforma* del motor.\n\nA més de les meves responsabilitats tècniques, vaig treballar estretament amb el meu equip per resoldre errors, proporcionant suport tècnic constant i solucions efectives a problemes complexos."
     }
   },
-  "skills": ["C++", "Engine Development", "Rendering", "Cross-Platform"],
-   "picfoot": ["",""],
+  "task": ["Game Engine Project Management and Organization","Crossplatform Support","Rendering","Resource Manager","Coffee Runtime Development","Static Frustum Culling using Octrees","Game Engine Documentation","Technical Decisions","Scene Manager","Serialization","Scripting System"],
+  "picfoot": ["",""],
   "pics": []
 }
