@@ -15,13 +15,6 @@ const EngineFeaturesGrid: React.FC = () => {
             imageAlt: 'Realistic rendering example'
         },
         {
-            id: 'cross-platform',
-            title: 'Cross-Platform',
-            shortDescription: 'Deploy to multiple platforms with a single codebase.',
-            imageSrc: assets.images.coffeEngineLogo,
-            imageAlt: 'Cross-platform compatibility'
-        },
-        {
             id: 'scripting',
             title: 'Lua Scripting',
             shortDescription: 'Flexible scripting with Lua for game logic and behavior.',
@@ -29,10 +22,17 @@ const EngineFeaturesGrid: React.FC = () => {
             imageAlt: 'Lua scripting example'
         },
         {
+            id: 'cross-platform',
+            title: 'Cross-Platform',
+            shortDescription: 'Deploy to multiple platforms with a single codebase.',
+            imageSrc: "data/dossier/mario_dorado/mario_dorado10.webp",
+            imageAlt: 'Cross-platform compatibility'
+        },
+        {
             id: 'ecs',
             title: 'ECS',
             shortDescription: 'Entity Component System architecture for better performance and flexibility.',
-            imageSrc: assets.images.coffeEngineLogo,
+            imageSrc: "assets/images/engine/ecs.webp",
             imageAlt: 'ECS architecture diagram'
         }
     ];

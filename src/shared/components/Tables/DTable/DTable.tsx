@@ -4,15 +4,21 @@ import config from '../../../../config/config';
 import assets from '../../../../config/assets';
 import './DTable.css';
 
+interface SystemSpecs {
+    cpu: string;
+    gpu: string;
+    vram: string;
+    ram: string;
+    storage: string;
+    os: string;
+}
+
 interface SystemProps {
     type: 'windows' | 'linux';
     icon: string;
     specs: {
-        os: string;
-        processor: string;
-        memory: string;
-        graphics: string;
-        storage: string;
+        minimum: SystemSpecs;
+        recommended: SystemSpecs;
     };
     downloadUrl: string;
 }
@@ -26,15 +32,51 @@ const SystemColumn: React.FC<SystemProps> = ({ type, icon, specs, downloadUrl })
                 <img src={icon} alt={`${t.downloads.platforms[type]} icon`} className="system-icon" />
                 <h3>{t.downloads.platforms[type]}</h3>
             </div>
+            
             <div className="system-specs">
-                <ul>
-                    <li><strong>{t.downloads.systemSpecs.os}:</strong> {specs.os}</li>
-                    <li><strong>{t.downloads.systemSpecs.processor}:</strong> {specs.processor}</li>
-                    <li><strong>{t.downloads.systemSpecs.memory}:</strong> {specs.memory}</li>
-                    <li><strong>{t.downloads.systemSpecs.graphics}:</strong> {specs.graphics}</li>
-                    <li><strong>{t.downloads.systemSpecs.storage}:</strong> {specs.storage}</li>
-                </ul>
+                <table className="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Hardware</th>
+                            <th>Minimum</th>
+                            <th>Recommended</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>CPU</strong></td>
+                            <td>{specs.minimum.cpu}</td>
+                            <td>{specs.recommended.cpu}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPU</strong></td>
+                            <td>{specs.minimum.gpu}</td>
+                            <td>{specs.recommended.gpu}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>VRAM</strong></td>
+                            <td>{specs.minimum.vram}</td>
+                            <td>{specs.recommended.vram}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>RAM</strong></td>
+                            <td>{specs.minimum.ram}</td>
+                            <td>{specs.recommended.ram}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Storage</strong></td>
+                            <td>{specs.minimum.storage}</td>
+                            <td>{specs.recommended.storage}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>OS</strong></td>
+                            <td>{specs.minimum.os}</td>
+                            <td>{specs.recommended.os}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div className="download-action">
                 <button 
                     className="download-button"
