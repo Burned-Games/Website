@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import '../../styles/layout_theme.css'; // Actualizado path
 import './Base.css';
 import Navbar from '../components/Viewer/Navbar/Navbar';
+import assets from '../../config/assets';
 
 interface BaseLayoutProps {
     children: React.ReactNode;
@@ -23,9 +24,30 @@ const Base: React.FC<BaseLayoutProps> = ({
     className
 }) => {
     const { t } = useTranslation();
+    const [isMobile, setIsMobile] = useState(false);
+    const [isSmallMobile, setIsSmallMobile] = useState(false);
+    
+    useEffect(() => {
+        const checkMobile = () => {
+            const width = window.innerWidth;
+            const userAgent = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            setIsMobile(width <= 768 || userAgent);
+            setIsSmallMobile(width <= 500);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     return (
-        <div className={`base ${className || ''}`}>
+        <div 
+            className={`base ${isMobile ? 'mobile-optimized' : ''} ${className || ''}`}
+            style={{
+                '--global-background': `url(${isSmallMobile ? assets.images.gameBackgroundMobile : assets.images.gameBackground})`
+            } as React.CSSProperties}
+        >
             <nav className="base-nav">
                 <Navbar />
             </nav>

@@ -9,25 +9,26 @@ import './Game.css';
 const Game: React.FC = () => {
     const navigate = useNavigate();
     const { t } = useTranslation();
-    const [isMobile, setIsMobile] = useState(false);
-    const [isSmallMobile, setIsSmallMobile] = useState(false);
     const [selectedWeapon, setSelectedWeapon] = useState(0);
     
     const weapons = [
         { 
-            name: 'Chainsaw', 
+            name: t.game.ultramarine?.weapons.list.chainsword.name || 'Chainsword', 
             image: assets.images.weapons.chainsaw,
-            key: 'chainsaw'
+            key: 'chainsaw',
+            description: t.game.ultramarine?.weapons.list.chainsword.description || 'Melee weapon. Area damage, heals the player based on number of enemies hit.'
         },
         { 
-            name: 'Shotgun', 
+            name: t.game.ultramarine?.weapons.list.shotgun.name || 'Assault Shotgun', 
             image: assets.images.weapons.shotgun,
-            key: 'shotgun'
+            key: 'shotgun',
+            description: t.game.ultramarine?.weapons.list.shotgun.description || 'Short-range. Heavy spread, devastating in close combat.'
         },
         { 
-            name: 'Bolter', 
+            name: t.game.ultramarine?.weapons.list.bolter.name || 'Bolter Rifle', 
             image: assets.images.weapons.bolter,
-            key: 'bolter'
+            key: 'bolter',
+            description: t.game.ultramarine?.weapons.list.bolter.description || 'Mid-range, versatile. Fires self-propelled explosive rounds.'
         }
     ];
     
@@ -40,14 +41,6 @@ const Game: React.FC = () => {
     }, [weapons.length]);
     
     useEffect(() => {
-        const checkMobile = () => {
-            const width = window.innerWidth;
-            const userAgent = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-            
-            setIsMobile(width <= 768 || userAgent);
-            setIsSmallMobile(width <= 500);
-        };
-        
         const handleKeyPress = (event: KeyboardEvent) => {
             if (event.key === 'ArrowLeft') {
                 prevWeapon();
@@ -56,23 +49,15 @@ const Game: React.FC = () => {
             }
         };
         
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
         window.addEventListener('keydown', handleKeyPress);
         
         return () => {
-            window.removeEventListener('resize', checkMobile);
             window.removeEventListener('keydown', handleKeyPress);
         };
     }, [nextWeapon, prevWeapon]);
     
     return (
-        <div 
-            className={`game-page-container ${isMobile ? 'mobile-optimized' : ''}`}
-            style={{
-                '--game-background': `url(${isSmallMobile ? assets.images.gameBackgroundMobile : assets.images.gameBackground})`
-            } as React.CSSProperties}
-        >
+        <div className="game-page-container">
             
             <div className="game-hero-section">
                 <div 
@@ -108,12 +93,12 @@ const Game: React.FC = () => {
                     <video
                         className="game-cinematic"
                         controls
-                        autoPlay={!isMobile}
+                        autoPlay={window.innerWidth > 768}
                         loop
                         muted
                         poster={assets.images.gameScreenshots.screenshot1}
                         playsInline
-                        preload={isMobile ? "none" : "metadata"}
+                        preload={window.innerWidth <= 768 ? "none" : "metadata"}
                     >
                         <source 
                             src={assets.videos.gameSinopsis}
@@ -191,7 +176,7 @@ const Game: React.FC = () => {
                         loop
                         muted
                         playsInline
-                        preload={isMobile ? "none" : "metadata"}
+                        preload={window.innerWidth <= 768 ? "none" : "metadata"}
                     >
                         <source 
                             src={assets.videos.spaceMarine}
@@ -199,21 +184,18 @@ const Game: React.FC = () => {
                         />
                     </video>
                     <h2 className="ultramarine-heading">{t.game.ultramarine?.heading}</h2>
-                    <div className="ultramarine-layout">
-                        <div className="detail-card">
+                    
+                    {/* Single Ultramarine Description Card */}
+                    <div className="ultramarine-description">
+                        <div className="ultramarine-main-card">
                             <h3>{t.game.ultramarine?.character.title}</h3>
                             <p>{t.game.ultramarine?.character.description}</p>
-                        </div>
-                        <div className="detail-card">
-                            <h3>{t.game.ultramarine?.abilities.title}</h3>
-                            <p>{t.game.ultramarine?.abilities.description}</p>
                         </div>
                     </div>
                     
                     {/* Weapons Section */}
                     <div className="weapons-section">
                         <h3 className="weapons-title">{t.game.ultramarine?.weapons.title}</h3>
-                        <p className="weapons-description">{t.game.ultramarine?.weapons.description}</p>
                         <div className="weapon-selector">
                             <button className="weapon-arrow left" onClick={prevWeapon}>
                                 <span>‹</span>
@@ -227,7 +209,10 @@ const Game: React.FC = () => {
                                         className="weapon-image"
                                     />
                                 </div>
-                                <h4 className="weapon-name">{weapons[selectedWeapon].name}</h4>
+                                <div className="weapon-info">
+                                    <h4 className="weapon-name">{weapons[selectedWeapon].name}</h4>
+                                    <p className="weapon-description">{weapons[selectedWeapon].description}</p>
+                                </div>
                             </div>
                             <button className="weapon-arrow right" onClick={nextWeapon}>
                                 <span>›</span>
@@ -243,6 +228,43 @@ const Game: React.FC = () => {
                             ))}
                         </div>
                     </div>
+                    
+                    {/* Abilities Section */}
+                    <div className="abilities-section">
+                        <h3 className="abilities-title">{t.game.ultramarine?.abilities.title}</h3>
+                        <table className="abilities-table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div className="ability-card">
+                                            <h4>{t.game.ultramarine?.abilities.list.dash.name}</h4>
+                                            <p>{t.game.ultramarine?.abilities.list.dash.description}</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="ability-card">
+                                            <h4>{t.game.ultramarine?.abilities.list.rifleSpecial.name}</h4>
+                                            <p>{t.game.ultramarine?.abilities.list.rifleSpecial.description}</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div className="ability-card">
+                                            <h4>{t.game.ultramarine?.abilities.list.shotgunSpecial.name}</h4>
+                                            <p>{t.game.ultramarine?.abilities.list.shotgunSpecial.description}</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="ability-card">
+                                            <h4>{t.game.ultramarine?.abilities.list.armorSpecial.name}</h4>
+                                            <p>{t.game.ultramarine?.abilities.list.armorSpecial.description}</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 
                 <div 
@@ -253,7 +275,7 @@ const Game: React.FC = () => {
                 ></div>
                 
                 {/* Enemies Section */}
-                <div className="enemies-showcase">
+                {/* <div className="enemies-showcase">
                     <div className="showcase-image">
                         <img src={assets.images.gameScreenshots.screenshot2} alt={t.game.altTexts?.gameEnemies} />
                     </div>
@@ -271,10 +293,10 @@ const Game: React.FC = () => {
                     style={{
                         backgroundImage: `url(${assets.images.separator})`
                     }}
-                ></div>
+                ></div> */}
                 
                 {/* Levels Section */}
-                <div className="levels-showcase reverse-layout">
+                {/* <div className="levels-showcase reverse-layout">
                     <div className="showcase-info">
                         <h2>{t.game.levels?.heading}</h2>
                         <p>{t.game.levels?.description}</p>
@@ -292,44 +314,13 @@ const Game: React.FC = () => {
                     style={{
                         backgroundImage: `url(${assets.images.separator})`
                     }}
-                ></div>
+                ></div> */}
                 
                 {/* Controls Section */}
                 <div className="controls-wrapper">
                     <h2 className="controls-heading">{t.game.controls?.heading}</h2>
-                    <div className="controls-layout">
-                        <div className="control-box">
-                            <span className="control-key">WASD</span>
-                            <span className="control-desc">{t.game.controls?.movement}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">Mouse</span>
-                            <span className="control-desc">{t.game.controls?.lookAround}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">Left Click</span>
-                            <span className="control-desc">{t.game.controls?.primaryAttack}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">Right Click</span>
-                            <span className="control-desc">{t.game.controls?.secondaryAttack}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">Space</span>
-                            <span className="control-desc">{t.game.controls?.jumpDodge}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">Shift</span>
-                            <span className="control-desc">{t.game.controls?.run}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">E</span>
-                            <span className="control-desc">{t.game.controls?.interact}</span>
-                        </div>
-                        <div className="control-box">
-                            <span className="control-key">Tab</span>
-                            <span className="control-desc">{t.game.controls?.inventory}</span>
-                        </div>
+                    <div className="controls-image">
+                        <img src={assets.images.controls} alt="Game Controls" />
                     </div>
                 </div>
                 
@@ -362,12 +353,6 @@ const Game: React.FC = () => {
                         backgroundImage: `url(${assets.images.separator})`
                     }}
                 ></div>
-                
-                {/* Screenshots Gallery */}
-                <div className="screenshots-wrapper">
-                    <h2 className="screenshots-heading">Screenshots</h2>
-                    {/* <Gallery images={gameImages} type="slider" /> */}
-                </div>
             </div>
         </div>
     );

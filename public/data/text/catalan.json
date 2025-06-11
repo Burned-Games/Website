@@ -110,16 +110,48 @@
     "ultramarine": {
       "heading": "L'Ultramarine",
       "character": {
-        "title": "Personatge",
-        "description": "Un supersoldat genèticament millorat, l'últim de la seva espècie. Força, velocitat i consciència tàctica millorades el converteixen en l'esperança final de la humanitat."
+        "title": "Ultramarine",
+        "description": "Un Marine Espacial d'elit de l'Imperi. Portant armadura pesada, força bruta i entrenament letal, és l'última línia de defensa contra la horda Orca. Especialitzat en combat a distància amb suport cos a cos."
       },
       "weapons": {
         "title": "Armes",
-        "description": "Empunya devastadores armes de plasma, motosserres i relíquies ancestrals. Cada arma pot ser millorada i personalitzada segons el teu estil de joc."
+        "description": "Empunya devastadores armes de plasma, motosserres i relíquies ancestrals. Cada arma pot ser millorada i personalitzada segons el teu estil de joc.",
+        "list": {
+          "chainsword": {
+            "name": "Motoserra",
+            "description": "Arma cos a cos. Dany en àrea, cura el jugador basat en el nombre d'enemics colpejats."
+          },
+          "shotgun": {
+            "name": "Escopeta d'Assalt", 
+            "description": "Curt abast. Dispersió intensa, devastadora en combat proper."
+          },
+          "bolter": {
+            "name": "Rifle Bólter",
+            "description": "Abast mitjà, versàtil. Dispara projectils explosius autopropulsats."
+          }
+        }
       },
       "abilities": {
         "title": "Habilitats",
-        "description": "Domina poders psíquics, habilitats tàctiques i tècniques de combat. Desbloqueja noves habilitats mentre progreses en el teu viatge."
+        "description": "Domina habilitats de combat devastadores i maniobres tàctiques per canviar el rumb de la batalla.",
+        "list": {
+          "dash": {
+            "name": "Dash",
+            "description": "Desplaçament ràpid de curt abast amb invencibilitat temporal."
+          },
+          "rifleSpecial": {
+            "name": "Habilitat Especial del Rifle",
+            "description": "Llança una gran bala elèctrica que explota en impactar."
+          },
+          "shotgunSpecial": {
+            "name": "Habilitat Especial de l'Escopeta", 
+            "description": "Llança una granada explosiva que desplaça els enemics."
+          },
+          "armorSpecial": {
+            "name": "Habilitat Especial d'Armadura",
+            "description": "Un estendard descendeix del cel i aterra prop del jugador, emetent una aura poderosa que millora l'Ultramarine per temps limitat."
+          }
+        }
       }
     },
     "enemies": {

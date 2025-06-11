@@ -42,6 +42,7 @@ class AssetManager {
             borderMember: this.image('border_member.webp'),
             separator: this.image('separator.webp'), 
             corner: this.image('corner.webp'),
+            controls: this.image('controles.webp'),
             dossierBackground: this.image('dossier_background.webp'),
             gameBackground: this.image('gameBackground.webp'),
             gameBackgroundMobile: this.image('gameBackground_mobile.webp'),

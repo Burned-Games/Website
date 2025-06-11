@@ -7,7 +7,6 @@
     "game": "Juego",
     "engine": "Motor Propio"
   },
-
   "general": {
     "company": "Burned Games",
     "loading": "Cargando...",
@@ -19,10 +18,9 @@
       "defaultAvatar": "Avatar del Miembro"
     }
   },
-
   "home": {
     "title": "The Last Marine",
-    "subtitle": "Página y Juego en desarrollo",
+    "subtitle": "Un projecto original de Burned Games",
     "description": "Embárcate en una épica aventura en el universo de Warhammer 40,000",
     "playButton": "Jugar Ahora"
   },
@@ -34,12 +32,14 @@
     "title": "Burned Games",
     "subtitle": "Conoce al Equipo detrás de Warhammer 40.000: The Last Marine",
     "description": "Un equipo apasionado creando experiencias únicas",
-    "team": {
+    "teamSection": {
       "title": "Nuestro Equipo",
-      "subtitle": "Los creadores detrás del juego"
+      "filters": {
+        "allDepartments": "Todos los Equipos",
+        "allMembers": "Todos los Miembros"
+      }
     }
   },
-
   "downloads": {
     "title": "Descargas",
     "subtitle": "Descarga nuestro juego para tu plataforma",
@@ -49,6 +49,7 @@
       "linux": "Linux"
     },
     "systemSpecs": {
+      "title": "Requisitos del Sistema",
       "os": "Sistema Operativo",
       "processor": "Procesador",
       "memory": "Memoria",
@@ -61,16 +62,28 @@
       "viewOnGithub": "Ver en GitHub"
     }
   },
-
   "media": {
     "title": "Galería",
     "subtitle": "Capturas y Videos",
+    "sections": {
+      "characters": {
+        "title": "Diseños de Personajes",
+        "subtitle": "Conceptos y modelos de personajes"
+      },
+      "environments": {
+        "title": "Conceptos de Entornos",
+        "subtitle": "Diseños de mundos y niveles"
+      }
+    },
     "gallery": {
       "characters": "Personajes",
-      "environments": "Entornos"
+      "environments": "Entornos",
+      "previous": "Imagen anterior",
+      "next": "Siguiente imagen",
+      "close": "Cerrar galería",
+      "openFullscreen": "Abrir pantalla completa"
     }
   },
-
   "game": {
     "title": "Un nuevo título de Warhammer 40.000",
     "subtitle": "Por Burned Games",
@@ -109,16 +122,48 @@
     "ultramarine": {
       "heading": "El Ultramarine",
       "character": {
-        "title": "Personaje",
-        "description": "Un supersoldado genéticamente mejorado, el último de su especie. Fuerza, velocidad y conciencia táctica mejoradas lo convierten en la esperanza final de la humanidad."
+        "title": "Ultramarine",
+        "description": "Un Marine Espacial élite del Imperio. Portando armadura pesada, fuerza bruta y entrenamiento letal, es la última línea de defensa contra la horda Orka. Especializado en combate a distancia con apoyo cuerpo a cuerpo."
       },
       "weapons": {
         "title": "Armas",
-        "description": "Empuña devastadoras armas de plasma, motosierras y reliquias ancestrales. Cada arma puede ser mejorada y personalizada según tu estilo de juego."
+        "description": "Empuña devastadoras armas de plasma, motosierras y reliquias ancestrales. Cada arma puede ser mejorada y personalizada según tu estilo de juego.",
+        "list": {
+          "chainsword": {
+            "name": "Motosierra",
+            "description": "Arma cuerpo a cuerpo. Daño en área, cura al jugador basado en el número de enemigos golpeados."
+          },
+          "shotgun": {
+            "name": "Escopeta de Asalto", 
+            "description": "Corto alcance. Dispersión intensa, devastadora en combate cercano."
+          },
+          "bolter": {
+            "name": "Rifle Bólter",
+            "description": "Alcance medio, versátil. Dispara proyectiles explosivos autopropulsados."
+          }
+        }
       },
       "abilities": {
         "title": "Habilidades",
-        "description": "Domina poderes psíquicos, habilidades tácticas y técnicas de combate. Desbloquea nuevas habilidades mientras progresas en tu viaje."
+        "description": "Domina habilidades de combate devastadoras y maniobras tácticas para cambiar el rumbo de la batalla.",
+        "list": {
+          "dash": {
+            "name": "Dash",
+            "description": "Desplazamiento rápido de corto alcance con invencibilidad temporal."
+          },
+          "rifleSpecial": {
+            "name": "Habilidad Especial del Rifle",
+            "description": "Lanza una gran bala eléctrica que explota al impactar."
+          },
+          "shotgunSpecial": {
+            "name": "Habilidad Especial de la Escopeta", 
+            "description": "Lanza una granada explosiva que desplaza a los enemigos."
+          },
+          "armorSpecial": {
+            "name": "Habilidad Especial de Armadura",
+            "description": "Un estandarte desciende del cielo y aterriza cerca del jugador, emitiendo un aura poderosa que mejora al Ultramarine por tiempo limitado."
+          }
+        }
       }
     },
     "enemies": {
@@ -128,7 +173,7 @@
     },
     "levels": {
       "heading": "Explora Mundos Diversos",
-      "description": "Viaja a través de entornos variados, desde planetas desérticos desolados hasta los pasillos retorcidos de las ciudades colmena. Cada nivel presenta desafíos únicos y secretos.",
+      "description": "Atraviesa entornos variados y desafiantes, desde las áridas llanuras desérticas hasta los corredores industriales de la Ciudad Colmena. Cada nivel presenta desafíos únicos, secretos por descubrir y enemigos estratégicamente ubicados.",
       "button": "Descúbrelos"
     },
     "controls": {
@@ -159,14 +204,87 @@
     },
     "videoError": "Tu navegador no soporta la etiqueta de vídeo."
   },
-
+  "enemies": {
+    "title": "ENEMIGOS",
+    "subtitle": "Conoce las fuerzas que se interponen en tu camino",
+    "description": "Enfréntate a una variedad de enemigos letales, cada uno con habilidades y estrategias de combate únicas. Desde cultistas corruptos hasta demonios ancestrales, cada encuentro será una prueba de tu habilidad como el último Marine Espacial.",
+    "backButton": "Volver al Juego",
+    "types": {
+      "heading": "Tipos de Enemigos"
+    },
+    "abilities": {
+      "heading": "Habilidades de Enemigos"
+    },
+    "gallery": {
+      "heading": "Galería de Enemigos"
+    },
+    "challenge": {
+      "heading": "¿Listo para el Desafío?",
+      "description": "Regresa al juego principal y pon a prueba tus habilidades contra estos formidables enemigos.",
+      "button": "Volver al Juego"
+    }
+  },
+  "levels": {
+    "title": "NIVELES",
+    "subtitle": "Explora diversos entornos de batalla",
+    "description": "Atraviesa entornos variados y desafiantes, desde las áridas llanuras desérticas hasta los corredores industriales de la Ciudad Colmena. Cada nivel presenta desafíos únicos, secretos por descubrir y enemigos estratégicamente ubicados.",
+    "backButton": "Volver al Juego",
+    "environments": {
+      "heading": "Entornos de Combate"
+    },
+    "features": {
+      "heading": "Características de Niveles"
+    },
+    "progression": {
+      "heading": "Progresión del Jugador"
+    },
+    "gallery": {
+      "heading": "Galería de Niveles"
+    },
+    "mission": {
+      "heading": "¿Listo para la Misión?",
+      "description": "Regresa al juego principal y explora estos diversos entornos.",
+      "button": "Volver al Juego"
+    }
+  },
+  "memberInfo": {
+    "sections": {
+      "about": "Acerca de",
+      "skills": "Habilidades",
+      "portfolio": "Portafolio"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portafolio"
+    }
+  },
+  "components": {
+    "header": {
+      "backToHome": "Volver al inicio"
+    },
+    "gallery": {
+      "viewLarger": "Ver imagen más grande",
+      "loadingError": "Error cargando la imagen",
+      "noImages": "No hay imágenes disponibles"
+    },
+    "table": {
+      "noData": "No hay datos disponibles",
+      "loading": "Cargando datos..."
+    }
+  },
   "footer": {
     "copyright": "© 2025 Burned Games - Todos los derechos reservados",
-    "rights": "Todos los derechos reservados"
+    "links": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Uso",
+      "contact": "Contáctanos"
+    }
   },
-
   "errors": {
+    "general": "Algo salió mal",
     "notFound": "Página no encontrada",
-    "general": "Algo salió mal"
+    "loading": "Error cargando contenido",
+    "tryAgain": "Inténtalo de nuevo"
   }
 }

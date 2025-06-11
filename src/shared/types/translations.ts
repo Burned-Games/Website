@@ -145,10 +145,42 @@ export interface TranslationType {
             weapons: {
                 title: string;
                 description: string;
+                list: {
+                    chainsword: {
+                        name: string;
+                        description: string;
+                    };
+                    shotgun: {
+                        name: string;
+                        description: string;
+                    };
+                    bolter: {
+                        name: string;
+                        description: string;
+                    };
+                };
             };
             abilities: {
                 title: string;
                 description: string;
+                list: {
+                    dash: {
+                        name: string;
+                        description: string;
+                    };
+                    rifleSpecial: {
+                        name: string;
+                        description: string;
+                    };
+                    shotgunSpecial: {
+                        name: string;
+                        description: string;
+                    };
+                    armorSpecial: {
+                        name: string;
+                        description: string;
+                    };
+                };
             };
         };
         enemies?: {
