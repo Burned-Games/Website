@@ -1,8 +1,6 @@
 import React from 'react';
 import EngineFeaturesGrid from '../../shared/components/Cards/EngineFeatures/EngineFeaturesGrid';
 import EngineHero from './EngineHero';
-import assets from '../../config/assets';
-import ImageComparisonSlider from '../../shared/components/ImageComparisonSlider';
 import EngineSection from './EngineSection';
 
 const Engine: React.FC = () => {

@@ -9,7 +9,7 @@ const EngineHero: React.FC = () => {
                 <div className="engine-hero-flex">
                     <div className="engine-hero-left">
                         <h1 className="engine-hero-title">Coffee Engine</h1>
-                        <h2 className="engine-hero-subtitle">{'3D Multiplatform Game Engine'}</h2>
+                        <h2 className="engine-hero-subtitle">{'3D Cross-Platform Game Engine'}</h2>
                         <p className="engine-hero-description">
                             Multiplatform engine developed by the Engine Team at Burned Games.
                         </p>

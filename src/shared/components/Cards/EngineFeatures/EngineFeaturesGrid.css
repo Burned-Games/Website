@@ -1,6 +1,6 @@
 .engine-features-container {
     width: 100%;
-    max-width: 1200px;
+    max-width:70vw;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -34,6 +34,59 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     align-items: start;
+}
+
+.engine-features-grid.custom-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-card-large {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-card-row {
+  display: flex;
+  gap: 6rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card-small {
+  flex: 0 1 400px;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0;
+}
+
+.feature-card-row > .feature-card-small:first-child {
+  margin-left: 0;
+}
+.feature-card-row > .feature-card-small:last-child {
+  margin-right: 0;
+}
+
+.feature-card-large-sliders {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.feature-card-large .feature-card-large-sliders .image-comparison-slider {
+  max-width: 1100px;
+  min-width: 400px;
+  width: 100%;
+  flex: 1 1 0;
 }
 
 /* Responsive design */
@@ -77,4 +130,30 @@
     .engine-features-grid {
         gap: 1.25rem;
     }
+}
+
+@media (max-width: 900px) {
+  .feature-card-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  .feature-card-small {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+  .feature-card-large-sliders {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .feature-card-large .feature-card-large-sliders .image-comparison-slider {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
 }
