@@ -8,17 +8,17 @@
   "portfolio": "https://itch.io/profile/hugoplacer",
   "translations": {
     "en": {
-      "role": "Lead Engine, Engine Programmer, Lead Coder",
+      "role": "Lead Engine, Engine Programmer",
       "department": "Production, Code",
       "bio": "I am the original creator of **TeaEngine**, a custom game engine that served as the foundation for the development of **Coffee Engine**, which I co-created together with Mario Dorado Martínez. This engine was used in the development of Warhammer 40k: The Last Marine. Throughout the project, I worked with a team that I led as Lead Engine, coordinating development and making key technical decisions regarding the engine's direction.\n\nDuring the project, I focused on core areas such as **rendering**, **resource management**, Coffee Runtime, the scripting system and its maintenance, **frustum culling**, the Scene Manager, and serialization. I was also responsible for the *technical documentation* and ensuring the engine's *cross-platform support*.\n\nIn addition to my technical responsibilities, I worked closely with my team to resolve bugs, providing constant technical support and effective solutions to complex issues."
     },
     "es": {
-      "role": "Líder de Motor, Programador de Motor, Líder de Código",
+      "role": "Líder de Motor, Programador de Motor",
       "department": "Producción, Código",
       "bio": "Soy el creador original de **TeaEngine**, un motor de juego personalizado que sirvió como base para el desarrollo de **Coffee Engine**, el cual co-creé junto con Mario Dorado Martínez. Este motor fue utilizado en el desarrollo de Warhammer 40k: The Last Marine. A lo largo del proyecto, trabajé con un equipo al que lideré como Líder de Motor, coordinando el desarrollo y tomando decisiones técnicas clave sobre la dirección del motor.\n\nDurante el proyecto, me enfoqué en áreas fundamentales como **renderizado**, **gestión de recursos**, Coffee Runtime, el sistema de scripting y su mantenimiento, **frustum culling**, el Administrador de Escenas y la serialización. También fui responsable de la *documentación técnica* y de garantizar la *compatibilidad multiplataforma* del motor.\n\nAdemás de mis responsabilidades técnicas, trabajé estrechamente con mi equipo para resolver errores, brindando apoyo técnico constante y soluciones efectivas a problemas complejos."
     },
     "ca": {
-      "role": "Líder de Motor, Programador de Motor, Líder de Codi",
+      "role": "Líder de Motor, Programador de Motor",
       "department": "Producció, Codi",
       "bio": "Soc el creador original de **TeaEngine**, un motor de joc personalitzat que va servir com a base per al desenvolupament de **Coffee Engine**, el qual vaig co-crear juntament amb Mario Dorado Martínez. Aquest motor va ser utilitzat en el desenvolupament de Warhammer 40k: The Last Marine. Al llarg del projecte, vaig treballar amb un equip que vaig liderar com a Líder de Motor, coordinant el desenvolupament i prenent decisions tècniques clau sobre la direcció del motor.\n\nDurant el projecte, em vaig centrar en àrees fonamentals com **renderització**, **gestió de recursos**, Coffee Runtime, el sistema de scripting i el seu manteniment, **frustum culling**, el Gestor d'Escenes i la serialització. També vaig ser responsable de la *documentació tècnica* i de garantir la *compatibilitat multiplataforma* del motor.\n\nA més de les meves responsabilitats tècniques, vaig treballar estretament amb el meu equip per resoldre errors, proporcionant suport tècnic constant i solucions efectives a problemes complexos."
     }

@@ -26,5 +26,5 @@
 
   "task": ["Physics Module","Collision Detection System","Prefabs System","Scripting System","Static Frustum Culling using Octrees","PR Reviewer","Bug Fixing","Optimization","Game Engine Documentation"],
   "picfoot": ["Coffee Engine Documentation","Collider shapes","Collision Detection System","Creating prefabs","Early scripting system diagram","Octree","Octree_2","Physics_spheres_stress_test","Raycast","Steamdeck","Tracy"],
-  "pics": ["mario_dorado1.webp","mario_dorado2.webp","mario_dorado3.mp4","mario_dorado4.mp4","mario_dorado5.mp4","mario_dorado6.webp","mario_dorado7.webp","mario_dorado8.mp4","mario_dorado9.mp4","mario_dorado10.webp","mario_dorado11.webp"]
+  "pics": ["mario_dorado1.webp","mario_dorado2.webp","mario_dorado3.mp4","mario_dorado4.mp4","mario_dorado5.webp","mario_dorado6.webp","mario_dorado7.webp","mario_dorado8.mp4","mario_dorado9.mp4","mario_dorado10.webp","mario_dorado11.webp"]
 }
