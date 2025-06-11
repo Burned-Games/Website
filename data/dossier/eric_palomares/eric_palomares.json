@@ -24,5 +24,6 @@
   },
 
   "skills": ["C#", "Unity", "Particle Systems", "Engine Programming"],
+   "picfoot": ["Picture of desteroyeble objects","Barrel destruction","Scrap destruction and collection","Healing system","Particle system"],
   "pics": ["eric_palomares1.webp", "eric_palomares2.gif", "eric_palomares3.gif", "eric_palomares4.gif", "eric_palomares5.webp"]
 }

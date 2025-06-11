@@ -24,5 +24,6 @@
   },
 
   "skills": ["Maya", "Blender", "Environment Art", "VFX"],
+   "picfoot": ["Prop Anvil","Prop Barrel","Prop Ork Barricade","Prop Modular Bridge","Prop Forge","Prop Ork Banner","Prop Scrap","Prop Street Lamp","PropTree Trunks","Prop Ultramarine Container","VFX Thunder Fury Boss Attack"],
   "pics": ["luis_fernandez1.webp", "luis_fernandez2.webp", "luis_fernandez3.webp", "luis_fernandez4.webp", "luis_fernandez5.webp", "luis_fernandez6.webp", "luis_fernandez7.webp", "luis_fernandez8.webp", "luis_fernandez9.webp", "luis_fernandez10.webp", "luis_fernandez11.gif"]
 }

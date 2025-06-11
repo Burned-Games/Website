@@ -111,16 +111,48 @@
     "ultramarine": {
       "heading": "The Ultramarine",
       "character": {
-        "title": "Character",
-        "description": "A genetically enhanced super-soldier, the last of his kind. Enhanced strength, speed, and tactical awareness make him humanity's final hope."
+        "title": "Ultramarine",
+        "description": "An elite Space Marine of the Imperium. Wielding heavy armor, brute strength, and lethal training, he's the last line of defense against the Ork horde. Specialized in ranged combat with melee support."
       },
       "weapons": {
         "title": "Weapons",
-        "description": "Wield devastating plasma weapons, chainswords, and ancient relics. Each weapon can be upgraded and customized for your playstyle."
+        "description": "Wield devastating plasma weapons, chainswords, and ancient relics. Each weapon can be upgraded and customized for your playstyle.",
+        "list": {
+          "chainsword": {
+            "name": "Chainsword",
+            "description": "Melee weapon. Area damage, heals the player based on number of enemies hit."
+          },
+          "shotgun": {
+            "name": "Assault Shotgun", 
+            "description": "Short-range. Heavy spread, devastating in close combat."
+          },
+          "bolter": {
+            "name": "Bolter Rifle",
+            "description": "Mid-range, versatile. Fires self-propelled explosive rounds."
+          }
+        }
       },
       "abilities": {
         "title": "Abilities",
-        "description": "Master psychic powers, tactical skills, and combat techniques. Unlock new abilities as you progress through your journey."
+        "description": "Master devastating combat abilities and tactical maneuvers to turn the tide of battle.",
+        "list": {
+          "dash": {
+            "name": "Dash",
+            "description": "Short-range, fast displacement with temporal invincibility."
+          },
+          "rifleSpecial": {
+            "name": "Rifle Special Ability",
+            "description": "Launches a big electric bullet that explodes on-hit."
+          },
+          "shotgunSpecial": {
+            "name": "Shotgun Special Ability", 
+            "description": "Launches an explosive grenade that displaces enemies."
+          },
+          "armorSpecial": {
+            "name": "Armor Special Ability",
+            "description": "A banner descends from the sky and lands near the player, emitting a powerful aura that buffs the Ultramarine for a limited time."
+          }
+        }
       }
     },
     "enemies": {

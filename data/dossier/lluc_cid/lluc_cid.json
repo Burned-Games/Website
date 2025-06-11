@@ -24,5 +24,6 @@
   },
 
   "skills": ["Game Design", "Narrative Design", "Level Design", "Scripting"],
+   "picfoot": ["Level 1 Design","Level 2 Design","UiFlowchart"],
   "pics": ["lluc_cid1.webp", "lluc_cid2.webp", "lluc_cid3.webp"]
 }

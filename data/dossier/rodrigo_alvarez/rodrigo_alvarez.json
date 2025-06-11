@@ -23,5 +23,6 @@
     }
   },
   "skills": ["Lua", "Enemy AI", "Game Programming", "Scripting"],
+   "picfoot": ["Enemy Support Attack","Enemy Support creating shields","Recreation of shields"],
   "pics": ["rodrigo_alvarez1.mp4", "rodrigo_alvarez2.mp4", "rodrigo_alvarez3.mp4"]
 }

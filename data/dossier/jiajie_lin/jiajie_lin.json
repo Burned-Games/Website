@@ -24,5 +24,6 @@
   },
 
   "skills": ["C++", "Physics Systems", "Particle Systems", "UI Development"],
+   "picfoot": ["Dialogo System","Mission System","Particles System","Physics Colider","Pop System","ShotGun"],
   "pics": ["jiajie_lin1.mp4", "jiajie_lin2.mp4", "jiajie_lin3.mp4", "jiajie_lin4.webp", "jiajie_lin5.mp4", "jiajie_lin6.mp4"]
 }

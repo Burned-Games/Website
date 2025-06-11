@@ -25,5 +25,6 @@
   },
 
   "skills": ["C#", "Unity", "Engine Programming", "Audio Integration"],
+   "picfoot": ["",""],
   "pics": []
 }

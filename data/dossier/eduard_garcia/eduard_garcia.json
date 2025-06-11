@@ -24,5 +24,6 @@
   },
 
   "skills": ["C#", "Unity", "Blender", "VFX Systems"],
+   "picfoot": ["Colliders first iteration","Colliders final iteration"],
   "pics": ["eduard_garcia1.webp", "eduard_garcia2.webp"]
 }

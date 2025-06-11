@@ -24,5 +24,6 @@
   },
 
   "skills": ["C#", "Unity", "Mobile Development", "iOS/Android"],
+  "picfoot": ["Workbench"],
   "pics": ["alejandro_ibanez1.webm"]
 }

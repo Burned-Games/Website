@@ -23,5 +23,6 @@
     }
   },
   "skills": ["C#", "Unity UI", "React", "Frontend Development"],
+  "picfoot": ["WwiseScreenshot","WwiseScreenshot2","EngineAudioScreenshot"],
   "pics": ["albert_cifuentes1.webp", "albert_cifuentes2.webp", "albert_cifuentes3.webp"]
 }

@@ -24,5 +24,6 @@
   },
 
   "skills": ["Maya", "3ds Max", "Substance Painter", "Animation"],
+   "picfoot": ["Torch1","Torch2","Torch3","Close Animation","UI for Player Damage","UI For Enemy Detection","Statue Ultramarine forhive city","Kamikaze","Open Animation","Window1","Window2","Window3","Window4","Window5","Window6"],
   "pics": ["miguel_turmo1.webp", "miguel_turmo2.webp", "miguel_turmo3.webp", "miguel_turmo4.gif", "miguel_turmo5.webp", "miguel_turmo6.webp", "miguel_turmo7.webp", "miguel_turmo8.webp", "miguel_turmo9.gif", "miguel_turmo10.webp", "miguel_turmo11.webp", "miguel_turmo12.webp", "miguel_turmo13.webp", "miguel_turmo14.webp", "miguel_turmo15.webp"]
 }

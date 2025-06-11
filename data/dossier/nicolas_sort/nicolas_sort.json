@@ -25,5 +25,6 @@
   },
 
   "skills": ["Character Design", "Audio Design", "Game Balancing", "QA Testing"],
+   "picfoot": ["Enemy Blood Particle System","Main Character Level 1 Running Particle System","Bolter Rifle Skill Charge Particle System"],
   "pics": ["nicolas_sort1.gif", "nicolas_sort2.gif", "nicolas_sort3.gif"]
 }
