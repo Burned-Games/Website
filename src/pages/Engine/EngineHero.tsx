@@ -11,7 +11,7 @@ const EngineHero: React.FC = () => {
                         <h1 className="engine-hero-title">Coffee Engine</h1>
                         <h2 className="engine-hero-subtitle">{'3D Cross-Platform Game Engine'}</h2>
                         <p className="engine-hero-description">
-                            Multiplatform engine developed by the Engine Team at Burned Games.
+                            Multiplatform and Open Source Game Engine developed by Burned Games.
                         </p>
                     </div>
                     <div className="engine-hero-right">

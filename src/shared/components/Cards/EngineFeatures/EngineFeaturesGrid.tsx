@@ -18,7 +18,7 @@ const EngineFeaturesGrid: React.FC = () => {
             id: 'cross-platform',
             title: 'Cross-Platform',
             shortDescription: 'Deploy to multiple platforms with a single codebase.',
-            imageSrc: assets.images.coffeEngineLogo,
+            imageSrc: "data/dossier/mario_dorado/mario_dorado10.webp",
             imageAlt: 'Cross-platform compatibility'
         },
         {
@@ -32,7 +32,7 @@ const EngineFeaturesGrid: React.FC = () => {
             id: 'ecs',
             title: 'ECS',
             shortDescription: 'Entity Component System architecture for better performance and flexibility.',
-            imageSrc: assets.images.coffeEngineLogo,
+            imageSrc: "assets/images/engine/ecs.webp",
             imageAlt: 'ECS architecture diagram'
         }
     ];
