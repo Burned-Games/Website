@@ -115,7 +115,6 @@
     background: rgba(0, 0, 0, 0.9);
 }
 
-/* Slider styles */
 .gallery-slider {
     position: relative;
     width: 100%;
@@ -185,7 +184,6 @@
     text-align: center;
 }
 
-
 .gallery-item video {
     background: #000;
     cursor: pointer;
@@ -225,7 +223,6 @@
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
-
 
 .gallery-item[data-type="video"] {
     border: none;
