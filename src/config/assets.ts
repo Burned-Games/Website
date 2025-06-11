@@ -68,6 +68,12 @@ class AssetManager {
                 screenshot3: this.image('screenshot3.webp'),
                 screenshot4: this.image('screenshot4.webp')
             },
+            // Weapons
+            weapons: {
+                bolter: this.image('arma.webp'),
+                shotgun: this.image('shotgun.webp'),
+                chainsaw: this.image('Motosierra.webp')
+            },
         };
     }
 
@@ -75,6 +81,7 @@ class AssetManager {
         return {
             background: this.video('background.mp4'),
             gameSinopsis: this.video('cinematica2.mp4'),
+            spaceMarine: this.video('SpaceMarine.mp4'),
         };
     }
 

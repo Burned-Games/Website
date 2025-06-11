@@ -66,7 +66,6 @@
 
 @media (max-width: 768px) {
     .base-content {
-        padding: 1rem;
         width: 100%;
         max-width: 100%;
     }

@@ -91,6 +91,49 @@ const defaultTranslations: TranslationType = {
             items: []
         }
     },
+    enemies: {
+        title: 'ENEMIES',
+        subtitle: 'Meet the forces that stand in your way',
+        description: 'Face a variety of deadly enemies, each with unique abilities and combat strategies.',
+        backButton: 'Back to Game',
+        types: {
+            heading: 'Enemy Types'
+        },
+        abilities: {
+            heading: 'Enemy Abilities'
+        },
+        gallery: {
+            heading: 'Enemy Gallery'
+        },
+        challenge: {
+            heading: 'Ready for the Challenge?',
+            description: 'Return to the main game and test your skills against these formidable enemies.',
+            button: 'Back to Game'
+        }
+    },
+    levels: {
+        title: 'LEVELS',
+        subtitle: 'Explore diverse battle environments',
+        description: 'Traverse varied and challenging environments, from arid desert plains to the industrial corridors.',
+        backButton: 'Back to Game',
+        environments: {
+            heading: 'Combat Environments'
+        },
+        features: {
+            heading: 'Level Features'
+        },
+        progression: {
+            heading: 'Player Progression'
+        },
+        gallery: {
+            heading: 'Level Gallery'
+        },
+        mission: {
+            heading: 'Ready for the Mission?',
+            description: 'Return to the main game and explore these diverse environments.',
+            button: 'Back to Game'
+        }
+    },
     footer: {
         copyright: '© 2024 Burned Games',
         rights: 'All rights reserved'

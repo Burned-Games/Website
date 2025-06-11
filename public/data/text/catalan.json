@@ -19,7 +19,7 @@
     }
   },
   "home": {
-    "subtitle": "Pàgina i Joc en desenvolupament",
+    "subtitle": "Un Projecte Original de Burned Games",
     "playButton": "Jugar Ara"
   },
     "engine": {
@@ -159,6 +159,49 @@
       "gameScreenshot": "Captura del Joc"
     },
     "videoError": "El teu navegador no suporta l'etiqueta de vídeo."
+  },
+  "enemies": {
+    "title": "ENEMICS",
+    "subtitle": "Coneix les forces que s'interposen al teu camí",
+    "description": "Enfronta't a una varietat d'enemics letals, cadascun amb habilitats i estratègies de combat úniques. Des de cultistes corruptes fins a dimonis ancestrals, cada encontre serà una prova de la teva habilitat com l'últim Marine Espacial.",
+    "backButton": "Tornar al Joc",
+    "types": {
+      "heading": "Tipus d'Enemics"
+    },
+    "abilities": {
+      "heading": "Habilitats dels Enemics"
+    },
+    "gallery": {
+      "heading": "Galeria d'Enemics"
+    },
+    "challenge": {
+      "heading": "Preparat per al Desafiament?",
+      "description": "Torna al joc principal i posa a prova les teves habilitats contra aquests formidables enemics.",
+      "button": "Tornar al Joc"
+    }
+  },
+  "levels": {
+    "title": "NIVELLS",
+    "subtitle": "Explora diversos entorns de batalla",
+    "description": "Travessa entorns variats i desafiants, des de les planes desèrtiques àrides fins als corredors industrials de la Ciutat Rusc. Cada nivell presenta desafiaments únics, secrets per descobrir i enemics ubicats estratègicament.",
+    "backButton": "Tornar al Joc",
+    "environments": {
+      "heading": "Entorns de Combat"
+    },
+    "features": {
+      "heading": "Característiques dels Nivells"
+    },
+    "progression": {
+      "heading": "Progressió del Jugador"
+    },
+    "gallery": {
+      "heading": "Galeria de Nivells"
+    },
+    "mission": {
+      "heading": "Preparat per la Missió?",
+      "description": "Torna al joc principal i explora aquests entorns diversos.",
+      "button": "Tornar al Joc"
+    }
   },
   "memberInfo": {
     "sections": {

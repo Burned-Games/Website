@@ -12,18 +12,13 @@ const Home: React.FC = () => {
     
     return (
         <div className="home-content">
-            <video
+            <iframe
                 className="background-video"
-                autoPlay
-                loop
-                muted
-                playsInline
-            >
-                <source 
-                    src={assets.videos.background}
-                    type="video/mp4" 
-                />
-            </video>
+                src="https://www.youtube.com/embed/pNp_OPTwnTo?autoplay=1&loop=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playlist=pNp_OPTwnTo"
+                title="Background Video"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+            />
             
             <div className="content-overlay">
                 <PageTitle 

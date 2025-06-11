@@ -190,6 +190,53 @@ export interface TranslationType {
         videoError?: string;
     };
 
+    // Enemies Page
+    enemies: {
+        title: string;
+        subtitle: string;
+        description: string;
+        backButton: string;
+        types: {
+            heading: string;
+        };
+        abilities: {
+            heading: string;
+        };
+        gallery: {
+            heading: string;
+        };
+        challenge: {
+            heading: string;
+            description: string;
+            button: string;
+        };
+    };
+
+    // Levels Page
+    levels: {
+        title: string;
+        subtitle: string;
+        description: string;
+        backButton: string;
+        environments: {
+            heading: string;
+        };
+        features: {
+            heading: string;
+        };
+        progression: {
+            heading: string;
+        };
+        gallery: {
+            heading: string;
+        };
+        mission: {
+            heading: string;
+            description: string;
+            button: string;
+        };
+    };
+
         // Game Page
     engine: {
         title: string;
