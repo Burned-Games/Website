@@ -25,6 +25,6 @@
   },
 
   "skills": ["Game Design", "Level Design", "Player Psychology", "Balancing"],
-  "picfoot": ["Documents","FSM of the Kamikaze Enemy","FSM of the Ranged Enemy","FSM of the Support Enemy","FSM of the Tank Enemy","FSM of the Main Boss","Level 1 map creation process","Level 2 map creation process","Level 3 map creation process"],
-  "pics": ["raul_sanchez2.webp", "raul_sanchez4.mp4", "raul_sanchez5.mp4", "raul_sanchez6.mp4", "raul_sanchez7.mp4", "raul_sanchez8.mp4", "raul_sanchez9.mp4", "raul_sanchez10.mp4", "raul_sanchez11.mp4"]
+   "picfoot": ["Documents","FSM of the Kamikaze Enemy","FSM of the Ranged Enemy","FSM of the Support Enemy","FSM of the Tank Enemy","FSM of the Main Boss","Level 1 map creation process","Level 2 map creation process","Level 3 map creation process", "Carriage - Prop of a Carriage", "Diana - Prop of a Shooting Target"],
+  "pics": ["raul_sanchez2.webp", "raul_sanchez4.mp4", "raul_sanchez5.mp4", "raul_sanchez6.mp4", "raul_sanchez7.mp4", "raul_sanchez8.mp4", "raul_sanchez9.mp4", "raul_sanchez10.mp4", "raul_sanchez11.mp4", "raul_sanchez12.mp4", "raul_sanchez13.mp4"]
 }
