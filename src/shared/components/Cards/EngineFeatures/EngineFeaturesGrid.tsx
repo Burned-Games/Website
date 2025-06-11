@@ -55,14 +55,17 @@ const EngineFeaturesGrid: React.FC = () => {
                             <ImageComparisonSlider
                                 before="assets/images/engine/nofog.webp"
                                 after="assets/images/engine/fog.webp"
+                                title="Fog"
                             />
                             <ImageComparisonSlider
                                 before="assets/images/engine/bloom.webp"
                                 after="assets/images/engine/nobloom.webp"
+                                title="Bloom"
                             />
                             <ImageComparisonSlider
                                 before="assets/images/engine/noshadows.webp"
                                 after="assets/images/engine/shadows.webp"
+                                title="Shadows"
                             />
                         </div>
                     </FeatureCard>
