@@ -87,16 +87,16 @@
     "pillars": {
       "heading": "Game Pillars",
       "worldExploration": {
-        "title": "World Exploration",
-        "description": "Explore a world full of challenges, enemies, and rewards. From the most desolate desert to the darkness of the Hive City, will you be able to survive as the last Space Marine?"
+        "title": "World exploration",
+        "description": "Traverse diverse environments and uncover hidden secrets across vast, dangerous territories filled with enemies and challenges."
       },
       "diabloLike": {
-        "title": "Diablo-Like",
-        "description": "Our game features incredible world exploration combined with the fun and intense gameplay of Diablo, delivering a unique and unmatched experience."
+        "title": "Fast paced combat (action)",
+        "description": "Experience intense, adrenaline-fueled battles with fluid combat mechanics that demand quick reflexes and tactical thinking."
       },
       "fastPaced": {
-        "title": "Fast-Paced",
-        "description": "Thanks to the fast-paced gameplay, combat will be filled with frantic action that will put every player's skills to the test."
+        "title": "Easy to learn and play",
+        "description": "Jump straight into the action with intuitive controls and mechanics that are accessible to new players yet deep enough for veterans."
       },
       "ownEngine": {
         "title": "Own Game Engine",
@@ -178,7 +178,7 @@
     },
     "coffeeEngine": {
       "heading": "Made with Coffee Engine",
-      "description": "Developed in Coffee Engine, a proprietary 3D engine created entirely by us.",
+      "description": "Developed in Coffee Engine, a Open Source and cross platform 3D engine created entirely by us.",
       "button": "Coffee Engine"
     },
     "screenshots": {

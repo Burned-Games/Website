@@ -86,16 +86,16 @@
     "pillars": {
       "heading": "Pilars del Joc",
       "worldExploration": {
-        "title": "Exploració del Món",
-        "description": "Explora un món ple de desafiaments, enemics i recompenses. Des del desert més desolat fins a la foscor de la Ciutat Rusc, seràs capaç de sobreviure com l'últim Marine Espacial?"
+        "title": "Exploració del món",
+        "description": "Travessa entorns diversos i descobreix secrets amagats en vastos territoris perillosos plens d'enemics i desafiaments."
       },
       "diabloLike": {
-        "title": "Estil Diablo",
-        "description": "El nostre joc presenta una increïble exploració del món combinada amb la diversió i el joc intens de Diablo, oferint una experiència única i inigualable."
+        "title": "Combat ràpid (acció)",
+        "description": "Experimenta batalles intenses plenes d'adrenalina amb mecàniques de combat fluides que demanen reflexos ràpids i pensament tàctic."
       },
       "fastPaced": {
-        "title": "Ritme Accelerat",
-        "description": "Gràcies al ritme accelerat del joc, el combat estarà ple d'acció frenètica que posarà a prova les habilitats de cada jugador."
+        "title": "Fàcil d'aprendre i jugar",
+        "description": "Submergeix-te directament en l'acció amb controls i mecàniques intuïtives que són accessibles per a nous jugadors però profundes per a veterans."
       },
       "ownEngine": {
         "title": "Motor de Joc Propi",
@@ -177,7 +177,7 @@
     },
     "coffeeEngine": {
       "heading": "Fet amb Coffee Engine",
-      "description": "Desenvolupat en Coffee Engine, un motor 3D propi realitzat completament per nosaltres.",
+      "description": "Desenvolupat en Coffee Engine, un motor de codi obert i multiplataforma 3D propi realitzat completament per nosaltres.",
       "button": "Coffee Engine"
     },
     "screenshots": {
