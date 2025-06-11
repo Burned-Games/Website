@@ -22,6 +22,7 @@
       "bio": "Com a Artista Principal, vaig ser responsable d'establir i supervisar la direcció visual del joc des del concepte fins a la implementació final. Vaig liderar un equip d'artistes, assegurant un estil cohesiu en entorns, personatges, UI i animacions. Vaig col·laborar estretament amb els equips de disseny i programació per alinear l'art amb la jugabilitat i els objectius de rendiment. També vaig contribuir amb elements visuals clau i vaig guiar la integració de l'art en el motor del joc, equilibrant l'estètica amb les limitacions tècniques."
     }
   },
-  "skills": ["Blender", "Maya", "Substance Painter", "ZBrush"],
+  "task": ["Team & Art Department Management","Enemy & Boss Assets","Environment Art","Animation & Rigging","UI Design and animations","VFX","Pickups & Props","Simulation"],
+  "picfoot": ["Boss Concept","Animation","Workbench Model"],
   "pics": ["carlos_gonzalez1.webp" , "carlos1.mp4", "carlosWorkbench.mp4"]
 }

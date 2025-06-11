@@ -22,7 +22,7 @@
       "bio": "En aquest projecte, em vaig centrar en el desenvolupament de la IA dels enemics i en l'adquisició de coneixements de Lua, ja que va ser el llenguatge que vam utilitzar. La meva tasca principal va ser programar l'enemic de suport de principi a fi, i també vaig contribuir, encara que en menor mesura, al disseny d'altres enemics. Per exemple, vaig ser responsable de la primera iteració de l'enemic tanc i vaig tenir un paper de suport durant les primeres tres iteracions de l'enemic cap. Estic molt satisfet amb la feina realitzada i els resultats obtinguts. Sento que aquesta experiència ha millorat significativament la meva comprensió de la programació d'enemics i com abordar-la en el context d'un projecte tan ambiciós. Vaig gaudir molt aquest procés i espero seguir un camí similar en el futur."
     }
   },
-  "skills": ["Lua", "Enemy AI", "Game Programming", "Scripting"],
-   "picfoot": ["Enemy Support Attack","Enemy Support creating shields","Recreation of shields"],
+  "task": ["Enemies Concepts","Enemy Assets","Environment Assets","VFX","Animations & trailer content"],
+  "picfoot": ["Enemy Support Attack","Enemy Support creating shields","Recreation of shields"],
   "pics": ["rodrigo_alvarez1.mp4", "rodrigo_alvarez2.mp4", "rodrigo_alvarez3.mp4"]
 }

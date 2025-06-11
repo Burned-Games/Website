@@ -23,7 +23,7 @@
       "bio": "Com a programador, vaig treballar principalment en els sistemes d'enemics. Abans d'això, vaig treballar en la física d'explosions, el sistema BulletPool i també vaig ajudar amb les variables públiques de scripting i la documentació de scripting.\n\nEn el departament d'enemics, la meva tasca principal va ser l'Enemic a Distància, tot i que també vaig començar a treballar en el MiniBoss. No obstant això, el MiniBoss va ser cancel·lat després d'un petit progrés. Quan em vaig unir a la tasca de l'Enemic a Distància, ja havia començat, així que vaig afegir noves característiques com un sistema de retorn a l'origen (que més tard es va utilitzar en altres enemics), millores en el sistema de detecció i noves animacions. Després d'això, em vaig centrar en corregir errors en tots els enemics i millorar-ne el funcionament.\n\nUna de les coses més importants que vaig aprendre d'aquest projecte va ser com funciona realment el treball en equip. Durant el desenvolupament, la meva feina estava connectada amb el que feien els altres, i el mateix passava amb la seva feina i la meva. Per això, vaig veure com és d'important tenir una bona comunicació i entendre's mútuament per tal que el projecte avanci bé."
     }
   },
-  "skills": ["HLSL", "Shader Programming", "Visual Effects", "Graphics Programming"],
+  "task": ["Explosion Physics","Scripting","Scripting Documentation","MiniBoss (cancelled task)","Bullet Pool","Enemie Ranged","Enemies Fix and Improvements"],
   "picfoot": ["Scripting Documentation on the Engine Web", "Scripting vector variables showing", "Physics Explosion", "Enemy Return functionality","Bullets and Range logic"],
   "pics": ["adria_roger1.webp", "adria_roger2.webp", "adria_roger3.webp", "adria_roger4.webm", "adria_roger5.webm"]
   
