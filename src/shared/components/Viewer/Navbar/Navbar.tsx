@@ -67,12 +67,6 @@ const Navbar: React.FC = () => {
                         {t.navigation.engine}
                     </button>
                     <button 
-                        className={isActive('/media')}
-                        onClick={() => handleNavigation('/media')}
-                    >
-                        {t.navigation.media}
-                    </button>
-                    <button 
                         className={isActive('/about')}
                         onClick={() => handleNavigation('/about')}
                     >

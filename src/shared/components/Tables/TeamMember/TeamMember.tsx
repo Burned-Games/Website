@@ -12,9 +12,11 @@ interface Member {
     icon?: string;
     github?: string;
     linkedin?: string;
+    portfolio?: string;
     bio?: string;
     skills?: string[];
     pics?: string[];
+    picfoot?: string[];
     translations?: {
         [language: string]: {
             role?: string;

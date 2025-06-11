@@ -222,27 +222,54 @@
 
 .member-social {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    flex-direction: row;
+    gap: 1rem;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.member-social a {
-    color: var(--color-text-primary);
-    text-decoration: none;
-    padding: 0.75rem;
+.social-button {
+    width: 60px;
+    height: 60px;
+    background: var(--color-background-primary);
     border: 2px solid var(--color-primary);
-    border-radius: 4px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--color-text-primary);
+    position: relative;
 }
 
-.member-social a:hover {
+.social-button:hover {
     background: var(--color-primary);
     color: var(--color-background-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-button svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.social-button.github:hover {
+    background: #333;
+    border-color: #333;
+}
+
+.social-button.linkedin:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+.social-button.portfolio:hover {
+    background: #ff6b35;
+    border-color: #ff6b35;
 }
 
 .member-right-section {
@@ -553,6 +580,17 @@
         flex-direction: row;
         justify-content: center;
         max-width: 400px;
+        gap: 0.8rem;
+    }
+    
+    .social-button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-button svg {
+        width: 20px;
+        height: 20px;
     }
     
     .corner-decoration {
