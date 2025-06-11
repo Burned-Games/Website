@@ -2,7 +2,7 @@
     display: flex;
     gap: 2rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 2rem auto;
     padding: 2rem;
 }
@@ -38,27 +38,51 @@
 .system-specs {
     width: 100%;
     color: var(--color-text-primary);
+    overflow-x: auto;
 }
 
-.system-specs ul {
-    list-style: none;
-    padding: 0;
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    font-size: 0.9rem;
 }
 
-.system-specs li {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    text-align: center;
+.specs-table th,
+.specs-table td {
+    padding: 0.75rem 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: top;
 }
 
-.system-specs strong {
+.specs-table th {
+    background: var(--color-primary);
+    color: var(--color-background-secondary);
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.specs-table td:first-child {
+    font-weight: bold;
     color: var(--color-primary);
-    font-size: 1.2rem;
+    white-space: nowrap;
+    width: 20%;
+}
+
+.specs-table td:nth-child(2),
+.specs-table td:nth-child(3) {
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+.specs-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .download-action {
@@ -78,30 +102,40 @@
 }
 
 .download-button:hover {
-    background: var(--color-primary-dark);
+    background: var(--color-hover);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .download-table {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        padding: 1rem;
-        gap: 1rem;
-        box-sizing: border-box;
+        gap: 2rem;
+        max-width: 800px;
     }
 
     .download-column {
         width: 100%;
-        max-width: 400px;
-        padding: 1rem;
-        margin: 0 auto;
+        max-width: 700px;
     }
 
-    .system-specs {
-        width: 100%;
-        padding: 0 0.5rem;
-        box-sizing: border-box;
+    .specs-table {
+        font-size: 0.8rem;
+    }
+
+    .specs-table th,
+    .specs-table td {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .download-table {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .download-column {
+        padding: 1.5rem;
     }
 
     .system-icon {
@@ -109,14 +143,45 @@
         height: 64px;
     }
 
-    .system-specs ul {
-        gap: 0.75rem;
-        width: 100%;
+    .specs-table {
+        font-size: 0.75rem;
+    }
+
+    .specs-table th,
+    .specs-table td {
+        padding: 0.4rem 0.2rem;
+    }
+
+    .specs-table td:nth-child(2),
+    .specs-table td:nth-child(3) {
+        font-size: 0.75rem;
+        max-width: 150px;
     }
 
     .download-button {
         width: 100%;
         max-width: 300px;
         padding: 0.875rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .specs-table {
+        font-size: 0.7rem;
+    }
+
+    .specs-table th {
+        font-size: 0.8rem;
+    }
+
+    .specs-table th,
+    .specs-table td {
+        padding: 0.3rem 0.1rem;
+    }
+
+    .specs-table td:nth-child(2),
+    .specs-table td:nth-child(3) {
+        font-size: 0.7rem;
+        max-width: 120px;
     }
 }
