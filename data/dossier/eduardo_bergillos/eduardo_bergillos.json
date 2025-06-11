@@ -25,6 +25,6 @@
   },
 
   "skills": ["C#", "Unity", "Enemy AI", "VFX Systems"],
-   "picfoot": ["General Enemies","Enemy Kamikaze","Enemy Ranged","Enemy Support","Enemy Tank","Final Boss","Particle Sword"],
-  "pics": ["eduardo_bergillos1.webm", "eduardo_bergillos2.gif", "eduardo_bergillos3.gif", "eduardo_bergillos4.gif", "eduardo_bergillos5.gif", "eduardo_bergillos6.gif", "eduardo_bergillos7.gif"]
+   "picfoot": ["General Enemies","Enemy Kamikaze","Enemy Ranged","Enemy Support","Enemy Tank","Final Boss"],
+  "pics": ["eduardo_bergillos1.webm", "eduardo_bergillos2.mp4", "eduardo_bergillos3.mp4", "eduardo_bergillos4.mp4", "eduardo_bergillos5.mp4", "eduardo_bergillos6.webm"]
 }

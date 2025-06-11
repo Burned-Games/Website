@@ -9,21 +9,21 @@
     "en": {
       "role": "Concept Artist, Environment Artist",
       "department": "Art",
-      "bio": "In the early stages of the project, my primary contributions were in creating concept art and environment thumbnails to help define the visual direction. As development progressed, I transitioned to asset dressing for the first and second levels, ensuring each asset was properly optimized and exported for in-game use. Throughout the majority of the project, my focus remained on asset dressing, though I also supported other areas when needed. This included designing decals, developing the main logo and various UI elements."
+      "bio": "In the early stages of the project, my primary contributions were in creating concept art and environment thumbnails to help define the visual direction. As development progressed, I transitioned to asset dressing for the first and second levels, ensuring each asset was properly optimized and exported for in-game use. Throughout the majority of the project, my focus remained on asset dressing, though I also supported other areas when needed. This included designing decals, developing the main logo and various UI elements, and offering support during the production of the game trailer."
     },
     "es": {
       "role": "Artista Conceptual, Artista de Entornos",
       "department": "Arte",
-      "bio": "En las primeras etapas del proyecto, mis principales contribuciones fueron la creación de arte conceptual y miniaturas de entornos para ayudar a definir la dirección visual. A medida que avanzó el desarrollo, pasé al trabajo de integración de assets para los niveles uno y dos, asegurando que cada elemento estuviera correctamente optimizado y exportado para su uso en el juego. Durante la mayor parte del proyecto, mi enfoque se mantuvo en la integración de assets, aunque también brindé apoyo en otras áreas cuando fue necesario. Esto incluyó el diseño de decals, el desarrollo del logo principal y varios elementos de UI."
+      "bio": "En las primeras etapas del proyecto, mis principales contribuciones fueron la creación de arte conceptual y miniaturas de entornos para ayudar a definir la dirección visual. A medida que avanzó el desarrollo, pasé al trabajo de integración de assets para los niveles uno y dos, asegurando que cada elemento estuviera correctamente optimizado y exportado para su uso en el juego. Durante la mayor parte del proyecto, mi enfoque se mantuvo en la integración de assets, aunque también brindé apoyo en otras áreas cuando fue necesario. Esto incluyó el diseño de decals, el desarrollo del logo principal y varios elementos de UI, así como apoyo en la producción del tráiler del juego."
     },
     "ca": {
       "role": "Artista Conceptual, Artista d'Entorns",
       "department": "Art",
-      "bio": "En les primeres etapes del projecte, les meves principals contribucions van ser la creació d'art conceptual i miniatures d'entorns per ajudar a definir la direcció visual. A mesura que va avançar el desenvolupament, vaig passar al treball de integració d'assets per als nivells u i dos, assegurant que cada element estigués correctament optimitzat i exportat per al seu ús en el joc. Durant la major part del projecte, el meu enfocament es va mantenir en la integració d'assets, tot i que també vaig brindar suport en altres àrees quan va ser necessari. Això va incloure el disseny de decals, el desenvolupament del logotip principal i diversos elements d'UI."
+      "bio": "En les primeres etapes del projecte, les meves principals contribucions van ser la creació d'art conceptual i miniatures d'entorns per ajudar a definir la direcció visual. A mesura que va avançar el desenvolupament, vaig passar al treball de integració d'assets per als nivells u i dos, assegurant que cada element estigués correctament optimitzat i exportat per al seu ús en el joc. Durant la major part del projecte, el meu enfocament es va mantenir en la integració d'assets, tot i que també vaig brindar suport en altres àrees quan va ser necessari. Això va incloure el disseny de decals, el desenvolupament del logotip principal i diversos elements d'UI, així com suport en la producció del tràiler del joc."
     }
   },
 
   "skills": ["Maya", "ZBrush", "Substance Painter", "Marvelous Designer"],
-   "picfoot": ["ConceptBattlefield Final","Concepts","EnvironmentThumbnail Alien1","EnvironmentThumbnail Alien2","EnvironmentThumbnail Spaceship","Level 2 map creation process","Level 1 map creation process","Gif Trailer","TitleLogo40k Final"],
-  "pics": ["nuria_case1.webp", "nuria_case2.webp", "nuria_case3.webp", "nuria_case4.webp", "nuria_case5.webp", "nuria_case6.mp4", "nuria_case7.mp4", "nuria_case8.gif", "nuria_case9.webp"]
+   "picfoot": ["ConceptBattlefield Final","Concepts","EnvironmentThumbnail Alien1","EnvironmentThumbnail Alien2","EnvironmentThumbnail Spaceship","Level 2 map creation process","Level 1 map creation process","TitleLogo40k Final"],
+  "pics": ["nuria_case1.webp", "nuria_case2.webp", "nuria_case3.webp", "nuria_case4.webp", "nuria_case5.webp", "nuria_case6.mp4", "nuria_case7.mp4", "nuria_case8.gif"]
 }
