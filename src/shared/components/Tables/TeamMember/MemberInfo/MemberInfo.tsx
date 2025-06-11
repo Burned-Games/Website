@@ -21,6 +21,7 @@ interface Member {
     roles?: string[];
     pics?: string[];
     picfoot?: string[];
+    task?: string[];
     translations?: {
         [language: string]: {
             role?: string;
@@ -331,6 +332,19 @@ const MemberInfo: React.FC<MemberInfoProps> = ({ member, isOpen, onClose }) => {
                                         className="member-bio"
                                         dangerouslySetInnerHTML={{ __html: processText(translatedContent.bio) }}
                                     />
+                                </div>
+                            )}
+                            
+                            {member.task && member.task.length > 0 && (
+                                <div className="member-tasks">
+                                    <h3>Task List</h3>
+                                    <ul className="task-list">
+                                        {member.task.map((task, index) => (
+                                            <li key={index} className="task-item">
+                                                {task}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             )}
                         </div>

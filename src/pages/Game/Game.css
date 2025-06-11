@@ -107,7 +107,10 @@
 
 /* Game Pillars */
 .game-pillars-wrapper {
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 4rem 2rem 6rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .pillars-heading {
@@ -127,7 +130,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
+    align-items: stretch;
 }
 
 .pillar-card {
@@ -143,6 +147,10 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     height: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .pillar-card:hover {
@@ -342,29 +350,27 @@
 }
 
 .weapon-arrow {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: transparent;
     border: none;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    margin-top: 110px; /* Center with the 300px weapon container */
+    margin-top: 120px; /* Center with the 300px weapon container */
     flex-shrink: 0;
 }
 
 .weapon-arrow:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+    color: var(--color-primary);
 }
 
 .weapon-arrow span {
-    color: white;
-    font-size: 2.5rem;
+    color: var(--color-text-primary);
+    font-size: 3rem;
     font-weight: bold;
     line-height: 0.8;
     display: flex;
@@ -374,6 +380,7 @@
     height: 100%;
     position: relative;
     top: -2px;
+    transition: color 0.3s ease;
 }
 
 .weapon-display {
@@ -387,27 +394,22 @@
 .weapon-image-container {
     width: 300px;
     height: 300px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible;
     transition: all 0.4s ease;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .weapon-image-container:hover {
     transform: scale(1.05);
-    border-color: var(--color-primary);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 .weapon-image {
-    width: 80%;
-    height: 80%;
+    width: 120%;
+    height: 120%;
     object-fit: contain;
     transition: all 0.4s ease;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
@@ -509,14 +511,16 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 2rem;
+    padding: 1.5rem;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     text-align: left;
-    height: 180px;
+    height: auto;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 0.8rem;
 }
 
 .ability-card:hover {
@@ -528,15 +532,35 @@
 .ability-card h4 {
     color: var(--color-primary);
     font-size: 1.3rem;
-    margin: 0 0 1rem 0;
+    margin: 0;
     font-weight: 600;
 }
 
 .ability-card p {
     color: var(--color-text-secondary);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.4;
     margin: 0;
+    flex-grow: 1;
+}
+
+.ability-video {
+    margin-top: auto;
+    width: 100%;
+}
+
+.ability-video-element {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.ability-video-element:hover {
+    transform: scale(1.02);
 }
 
 /* Showcase Sections (Enemies & Levels) */
@@ -599,13 +623,20 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Controls Section */
-.controls-wrapper {
+/* Controls and Screenshots Combined Section */
+.controls-screenshots-wrapper {
     padding: 2rem 2rem 6rem 2rem;
     background: rgba(0, 0, 0, 0.3);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.controls-heading {
+.controls-section {
+    margin-bottom: 6rem;
+}
+
+.controls-heading,
+.screenshots-heading {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
@@ -625,6 +656,15 @@
     margin: 0 auto;
 }
 
+.screenshots-section {
+    margin-top: 0;
+}
+
+.screenshots-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .controls-image img {
     width: 100%;
     max-width: 900px;
@@ -633,8 +673,10 @@
 
 /* Coffee Engine Section */
 .engine-showcase {
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 4rem 2rem 6rem 2rem;
     background: var(--color-background);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .engine-layout {
@@ -644,25 +686,45 @@
     grid-template-columns: 1fr 2fr;
     gap: 4rem;
     align-items: center;
+    min-height: 400px;
+}
+
+.engine-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .engine-logo img {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.engine-logo img:hover {
+    transform: scale(1.05);
+}
+
+.engine-details {
+    padding: 2rem 0;
 }
 
 .engine-details h2 {
     color: var(--color-text-primary);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .engine-details p {
     color: var(--color-text-secondary);
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
 }
 
 /* Screenshots Gallery */
@@ -744,14 +806,50 @@
     
     .pillars-grid {
         grid-template-columns: 1fr 1fr;
-        max-width: 600px;
-        gap: 2rem;
+        max-width: 700px;
+        gap: 2.5rem;
+        margin: 0 auto;
+    }
+    
+    .pillar-card {
+        min-height: 320px;
+        padding: 2.5rem 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
     }
     
     .pillar-card:last-child {
         grid-column: 1 / -1;
+        max-width: 320px;
+        margin: 1rem auto 0 auto;
+    }
+    
+    .pillar-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .pillar-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .game-pillars-wrapper {
+        padding: 3rem 2rem 5rem 2rem;
+        overflow-x: hidden;
+    }
+    
+    .engine-showcase {
+        padding: 3rem 2rem 5rem 2rem;
+    }
+    
+    .engine-layout {
+        gap: 3rem;
+        min-height: 350px;
+    }
+    
+    .engine-logo img {
         max-width: 280px;
-        margin: 0 auto;
     }
     
     .pillars-heading,
@@ -795,16 +893,19 @@
     .weapon-image-container {
         width: 250px;
         height: 250px;
+        background: transparent;
+        border: none;
+        overflow: visible;
     }
     
     .weapon-arrow {
-        width: 70px;
-        height: 70px;
-        margin-top: 90px; /* Adjust for smaller weapon container */
+        width: 50px;
+        height: 50px;
+        margin-top: 100px; /* Adjust for smaller weapon container */
     }
     
     .weapon-arrow span {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -854,40 +955,108 @@
         margin-bottom: 1.5rem;
     }
     
+    .weapons-section {
+        margin-bottom: 3rem;
+    }
+    
     .pillars-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
+        max-width: 350px;
+        margin: 0 auto;
     }
     
     .pillar-card {
         flex-direction: column;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 1.5rem;
+        min-height: 280px;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .pillar-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+    }
+    
+    .pillar-text {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pillar-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+    
+    .game-pillars-wrapper {
+        padding: 2.5rem 1rem 4rem 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .engine-showcase {
+        padding: 3rem 1rem 4rem 1rem;
+        max-width: 100%;
     }
     
     /* Mobile weapon selector */
     .weapon-selector {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
     }
     
     .weapon-display {
-        min-width: 250px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .weapon-image-container {
         width: 200px;
         height: 200px;
+        background: transparent;
+        border: none;
+        overflow: visible;
     }
     
     .weapon-arrow {
-        width: 50px;
-        height: 50px;
-        margin-top: 0; /* Reset margin for mobile stacked layout */
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+    
+    .weapon-info {
+        text-align: center;
+        max-width: 200px;
+    }
+    
+    .weapon-name {
+        font-size: 1.2rem;
+        margin: 0 0 0.5rem 0;
+        letter-spacing: 1px;
+    }
+    
+    .weapon-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
     
     .weapon-arrow span {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -896,6 +1065,14 @@
         line-height: 0.8;
         position: relative;
         top: -1px;
+    }
+    
+    .weapon-indicators {
+        gap: 0.6rem;
+    }
+    
+    .weapon-indicator {
+        border-width: 1px;
     }
     
     /* Mobile abilities table */
@@ -917,7 +1094,13 @@
     }
     
     .ability-card {
-        padding: 1.5rem;
+        padding: 1.2rem;
+        height: auto;
+        min-height: 280px;
+        gap: 0.7rem;
+    }
+    
+    .ability-video-element {
         height: 160px;
     }
     
@@ -933,16 +1116,72 @@
         font-size: 1rem;
     }
     
+    .ultramarine-wrapper {
+        min-height: 80vh;
+        padding: 3rem 1rem 6rem 1rem;
+    }
+    
     .enemies-showcase,
     .levels-showcase,
     .engine-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
+        min-height: auto;
+    }
+    
+    .engine-logo {
+        order: 1;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .engine-details {
+        order: 2;
+        padding: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .engine-details h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    
+    .engine-details p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+    
+    .engine-logo img {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .engine-layout {
+        padding: 1rem 0;
+        gap: 1.5rem;
+    }
+    
+    .showcase-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 6px;
+        display: inline-block;
+        text-align: center;
+        min-width: 140px;
     }
     
     .weapon-image-container {
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
+        background: transparent;
+        border: none;
+        overflow: visible;
     }
     
     .showcase-info h2,
@@ -963,10 +1202,13 @@
     .game-pillars-wrapper,
     .game-lore-wrapper,
     .ultramarine-wrapper,
-    .controls-wrapper,
-    .engine-showcase,
-    .screenshots-wrapper {
-        padding: 2rem 1rem 4rem 1rem;
+    .controls-screenshots-wrapper {
+        padding: 3rem 1rem 4rem 1rem;
+    }
+    
+    .engine-showcase {
+        padding: 3rem 1rem 4rem 1rem;
+        max-width: 100%;
     }
     
     .corner-decoration {

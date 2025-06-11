@@ -17,6 +17,7 @@ interface Member {
     skills?: string[];
     pics?: string[];
     picfoot?: string[];
+    task?: string[];
     translations?: {
         [language: string]: {
             role?: string;

@@ -20,6 +20,65 @@
     z-index: 1;
 }
 
+.background-video.mobile-video {
+    width: 150%;
+    height: 150%;
+    pointer-events: auto;
+}
+
+/* Hide YouTube controls and overlay on mobile */
+.mobile-video::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Additional overlay to hide YouTube branding */
+.mobile-video::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: var(--color-background);
+    z-index: 11;
+    pointer-events: none;
+}
+
+/* Force video to cover entire area on mobile */
+@media (max-width: 768px) {
+    .background-video.mobile-video {
+        width: 200%;
+        height: 200%;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    
+    /* Hide any YouTube branding or controls that might appear */
+    .mobile-video {
+        mask: inset(10% 10% 10% 10%);
+        -webkit-mask: inset(10% 10% 10% 10%);
+    }
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
 .content-overlay {
     position: absolute;
     inset: 0;
@@ -33,11 +92,43 @@
 
 /* Mobile adaptations */
 @media (max-width: 768px) {
+    .background-video.mobile-video {
+        width: 200%;
+        height: 200%;
+        transform: translate(-50%, -50%) scale(1.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    /* Create an overlay to hide YouTube controls */
+    .home-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            transparent 0%, 
+            transparent 85%, 
+            var(--color-background) 100%
+        );
+        z-index: 1;
+        pointer-events: none;
+    }
+    
+    /* Hide any YouTube branding or controls that might appear */
+    .mobile-video {
+        clip-path: inset(8% 8% 12% 8%);
+        -webkit-clip-path: inset(8% 8% 12% 8%);
+    }
     
     .content-overlay {
         position: relative;
         min-height: calc(100vh - var(--layout-footer-height));
         width: 100%;
+        z-index: 2;
     }
 }
 

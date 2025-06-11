@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../shared/components/Text/PageTitle/PageTitle';
+import Gallery from '../../shared/components/Tables/Gallery/Gallery';
 import config from '../../config/config';
 import assets from '../../config/assets';
 import { useTranslation } from '../../shared/hooks/useTranslation';
@@ -239,12 +240,46 @@ const Game: React.FC = () => {
                                         <div className="ability-card">
                                             <h4>{t.game.ultramarine?.abilities.list.dash.name}</h4>
                                             <p>{t.game.ultramarine?.abilities.list.dash.description}</p>
+                                            <div className="ability-video">
+                                                <video
+                                                    className="ability-video-element"
+                                                    autoPlay
+                                                    loop
+                                                    muted
+                                                    playsInline
+                                                    preload="metadata"
+                                                    disablePictureInPicture
+                                                    controlsList="nodownload nofullscreen noremoteplayback"
+                                                >
+                                                    <source 
+                                                        src={assets.videos.abilities.dash}
+                                                        type="video/mp4" 
+                                                    />
+                                                </video>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div className="ability-card">
                                             <h4>{t.game.ultramarine?.abilities.list.rifleSpecial.name}</h4>
                                             <p>{t.game.ultramarine?.abilities.list.rifleSpecial.description}</p>
+                                            <div className="ability-video">
+                                                <video
+                                                    className="ability-video-element"
+                                                    autoPlay
+                                                    loop
+                                                    muted
+                                                    playsInline
+                                                    preload="metadata"
+                                                    disablePictureInPicture
+                                                    controlsList="nodownload nofullscreen noremoteplayback"
+                                                >
+                                                    <source 
+                                                        src={assets.videos.abilities.bolter}
+                                                        type="video/mp4" 
+                                                    />
+                                                </video>
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -253,12 +288,46 @@ const Game: React.FC = () => {
                                         <div className="ability-card">
                                             <h4>{t.game.ultramarine?.abilities.list.shotgunSpecial.name}</h4>
                                             <p>{t.game.ultramarine?.abilities.list.shotgunSpecial.description}</p>
+                                            <div className="ability-video">
+                                                <video
+                                                    className="ability-video-element"
+                                                    autoPlay
+                                                    loop
+                                                    muted
+                                                    playsInline
+                                                    preload="metadata"
+                                                    disablePictureInPicture
+                                                    controlsList="nodownload nofullscreen noremoteplayback"
+                                                >
+                                                    <source 
+                                                        src={assets.videos.abilities.granade}
+                                                        type="video/mp4" 
+                                                    />
+                                                </video>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div className="ability-card">
                                             <h4>{t.game.ultramarine?.abilities.list.armorSpecial.name}</h4>
                                             <p>{t.game.ultramarine?.abilities.list.armorSpecial.description}</p>
+                                            <div className="ability-video">
+                                                <video
+                                                    className="ability-video-element"
+                                                    autoPlay
+                                                    loop
+                                                    muted
+                                                    playsInline
+                                                    preload="metadata"
+                                                    disablePictureInPicture
+                                                    controlsList="nodownload nofullscreen noremoteplayback"
+                                                >
+                                                    <source 
+                                                        src={assets.videos.abilities.armor}
+                                                        type="video/mp4" 
+                                                    />
+                                                </video>
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -321,6 +390,55 @@ const Game: React.FC = () => {
                     <h2 className="controls-heading">{t.game.controls?.heading}</h2>
                     <div className="controls-image">
                         <img src={assets.images.controls} alt="Game Controls" />
+                    </div>
+                </div>
+                
+                <div 
+                    className="game-separator"
+                    style={{
+                        backgroundImage: `url(${assets.images.separator})`
+                    }}
+                ></div>
+                
+                {/* Screenshots Section */}
+                <div className="screenshots-wrapper">
+                    <h2 className="screenshots-heading">{t.game.screenshots?.heading}</h2>
+                    <div className="screenshots-gallery">
+                        <Gallery 
+                            images={[
+                                {
+                                    src: assets.images.gameScreenshots.game1,
+                                    alt: t.game.altTexts?.gameScreenshot || 'Game Screenshot 1',
+                                    type: 'image'
+                                },
+                                {
+                                    src: assets.images.gameScreenshots.game2,
+                                    alt: t.game.altTexts?.gameScreenshot || 'Game Screenshot 2',
+                                    type: 'image'
+                                },
+                                {
+                                    src: assets.images.gameScreenshots.game3,
+                                    alt: t.game.altTexts?.gameScreenshot || 'Game Screenshot 3',
+                                    type: 'image'
+                                },
+                                {
+                                    src: assets.images.gameScreenshots.game4,
+                                    alt: t.game.altTexts?.gameScreenshot || 'Game Screenshot 4',
+                                    type: 'image'
+                                },
+                                {
+                                    src: assets.images.gameScreenshots.game5,
+                                    alt: t.game.altTexts?.gameScreenshot || 'Game Screenshot 5',
+                                    type: 'image'
+                                },
+                                {
+                                    src: assets.images.gameScreenshots.game6,
+                                    alt: t.game.altTexts?.gameScreenshot || 'Game Screenshot 6',
+                                    type: 'image'
+                                }
+                            ]}
+                            type="grid"
+                        />
                     </div>
                 </div>
                 

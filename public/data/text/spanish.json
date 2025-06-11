@@ -98,16 +98,16 @@
     "pillars": {
       "heading": "Pilares del Juego",
       "worldExploration": {
-        "title": "Exploración del Mundo",
-        "description": "Explora un mundo lleno de desafíos, enemigos y recompensas. Desde el desierto más desolado hasta la oscuridad de la Ciudad Colmena, ¿serás capaz de sobrevivir como el último Marine Espacial?"
+        "title": "Exploración del mundo",
+        "description": "Atraviesa entornos diversos y descubre secretos ocultos en vastos territorios peligrosos llenos de enemigos y desafíos."
       },
       "diabloLike": {
-        "title": "Estilo Diablo",
-        "description": "Nuestro juego presenta una increíble exploración del mundo combinada con la diversión y el juego intenso de Diablo, ofreciendo una experiencia única e inigualable."
+        "title": "Combate rápido (acción)",
+        "description": "Experimenta batallas intensas llenas de adrenalina con mecánicas de combate fluidas que demandan reflejos rápidos y pensamiento táctico."
       },
       "fastPaced": {
-        "title": "Ritmo Acelerado",
-        "description": "Gracias al ritmo acelerado del juego, el combate estará lleno de acción frenética que pondrá a prueba las habilidades de cada jugador."
+        "title": "Fácil de aprender y jugar",
+        "description": "Sumérgete directamente en la acción con controles y mecánicas intuitivas que son accesibles para nuevos jugadores pero profundas para veteranos."
       },
       "ownEngine": {
         "title": "Motor de Juego Propio",
@@ -188,8 +188,8 @@
       "inventory": "Inventario"
     },
     "coffeeEngine": {
-      "heading": "Construido con Coffee Engine",
-      "description": "Desarrollado exclusivamente con nuestro motor propietario Coffee Engine, este juego muestra tecnología de vanguardia, rendimiento optimizado y posibilidades creativas ilimitadas. Experimenta el futuro de los motores de juegos.",
+      "heading": "Hecho con Coffee Engine",
+      "description": "Desarrollado en Coffee Engine, un motor de código abierto y multiplataforma 3D propio realizado completamente por nosotros.",
       "button": "Coffee Engine"
     },
     "screenshots": {

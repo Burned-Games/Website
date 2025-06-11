@@ -67,7 +67,13 @@ class AssetManager {
                 screenshot1: this.image('screenshot1.webp'),
                 screenshot2: this.image('screenshot2.webp'),
                 screenshot3: this.image('screenshot3.webp'),
-                screenshot4: this.image('screenshot4.webp')
+                screenshot4: this.image('screenshot4.webp'),
+                game1: this.image('screenshot_game1.webp'),
+                game2: this.image('screenshot_game2.webp'),
+                game3: this.image('screenshot_game3.webp'),
+                game4: this.image('screenshot_game4.webp'),
+                game5: this.image('screenshot_game5.webp'),
+                game6: this.image('screenshot_game6.webp')
             },
             // Weapons
             weapons: {
@@ -83,6 +89,13 @@ class AssetManager {
             background: this.video('background.mp4'),
             gameSinopsis: this.video('cinematica2.mp4'),
             spaceMarine: this.video('SpaceMarine.mp4'),
+            // Ability videos
+            abilities: {
+                dash: this.video('Dash.mp4'),
+                bolter: this.video('Bolter.mp4'),
+                granade: this.video('Granade.mp4'),
+                armor: this.video('Armor.mp4')
+            }
         };
     }
 
