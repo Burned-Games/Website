@@ -32,7 +32,7 @@ const config = {
                 graphics: '4GB NVIDIA GeForce GTX 660 or AMD Radeon HD 7870',
                 storage: '3GB available space'
             },
-            downloadUrl: 'https://github.com/Burned-Games/W40K-TLM/releases/download/v0.6/W40K-TLM-v0.6.1-linux.zip'
+            downloadUrl: 'https://github.com/Burned-Games/W40K-TLM/releases/download/v1.0/W40K-TLM-v1.5.2-linux.zip'
         },
         windows: {
             icon: `${process.env.PUBLIC_URL}/assets/images/windows.png`,
@@ -43,7 +43,7 @@ const config = {
                 graphics: '4GB NVIDIA GeForce GTX 660 or AMD Radeon HD 7870',
                 storage: '3GB available space'
             },
-            downloadUrl: 'https://github.com/Burned-Games/W40K-TLM/releases/download/v0.6/W40K-TLM-v0.6.1-windows.zip'
+            downloadUrl: 'https://github.com/Burned-Games/W40K-TLM/releases/download/v1.0/W40K-TLM-v1.5-windows.zip'
         }
     }
 };
