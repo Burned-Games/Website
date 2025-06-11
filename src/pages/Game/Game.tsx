@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../shared/components/Text/PageTitle/PageTitle';
-import Gallery from '../../shared/components/Tables/Gallery/Gallery';
 import config from '../../config/config';
 import assets from '../../config/assets';
 import { useTranslation } from '../../shared/hooks/useTranslation';
@@ -12,6 +11,33 @@ const Game: React.FC = () => {
     const { t } = useTranslation();
     const [isMobile, setIsMobile] = useState(false);
     const [isSmallMobile, setIsSmallMobile] = useState(false);
+    const [selectedWeapon, setSelectedWeapon] = useState(0);
+    
+    const weapons = [
+        { 
+            name: 'Chainsaw', 
+            image: assets.images.weapons.chainsaw,
+            key: 'chainsaw'
+        },
+        { 
+            name: 'Shotgun', 
+            image: assets.images.weapons.shotgun,
+            key: 'shotgun'
+        },
+        { 
+            name: 'Bolter', 
+            image: assets.images.weapons.bolter,
+            key: 'bolter'
+        }
+    ];
+    
+    const nextWeapon = useCallback(() => {
+        setSelectedWeapon((prev) => (prev + 1) % weapons.length);
+    }, [weapons.length]);
+    
+    const prevWeapon = useCallback(() => {
+        setSelectedWeapon((prev) => (prev - 1 + weapons.length) % weapons.length);
+    }, [weapons.length]);
     
     useEffect(() => {
         const checkMobile = () => {
@@ -22,30 +48,23 @@ const Game: React.FC = () => {
             setIsSmallMobile(width <= 500);
         };
         
+        const handleKeyPress = (event: KeyboardEvent) => {
+            if (event.key === 'ArrowLeft') {
+                prevWeapon();
+            } else if (event.key === 'ArrowRight') {
+                nextWeapon();
+            }
+        };
+        
         checkMobile();
         window.addEventListener('resize', checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
-    }, []);
-    
-    // Game screenshots for gallery
-    const gameImages = [
-        {
-            src: assets.images.gameScreenshots.screenshot1,
-            alt: "Game Screenshot 1",
-        },
-        {
-            src: assets.images.gameScreenshots.screenshot2,
-            alt: "Game Screenshot 2", 
-        },
-        {
-            src: assets.images.gameScreenshots.screenshot3,
-            alt: "Game Screenshot 3",
-        },
-        {
-            src: assets.images.gameScreenshots.screenshot4,
-            alt: "Game Screenshot 4",
-        }
-    ];
+        window.addEventListener('keydown', handleKeyPress);
+        
+        return () => {
+            window.removeEventListener('resize', checkMobile);
+            window.removeEventListener('keydown', handleKeyPress);
+        };
+    }, [nextWeapon, prevWeapon]);
     
     return (
         <div 
@@ -119,38 +138,23 @@ const Game: React.FC = () => {
                     <h2 className="pillars-heading">{t.game.pillars?.heading}</h2>
                     <div className="pillars-grid">
                         <div className="pillar-card">
-                            <div className="pillar-badge">
-                                <span>{t.game.pillars?.worldExploration.title}</span>
-                            </div>
+                            <h3 className="pillar-title">{t.game.pillars?.worldExploration.title}</h3>
                             <div className="pillar-text">
                                 <p>{t.game.pillars?.worldExploration.description}</p>
                             </div>
                         </div>
                         
                         <div className="pillar-card">
-                            <div className="pillar-badge">
-                                <span>{t.game.pillars?.diabloLike.title}</span>
-                            </div>
+                            <h3 className="pillar-title">{t.game.pillars?.diabloLike.title}</h3>
                             <div className="pillar-text">
                                 <p>{t.game.pillars?.diabloLike.description}</p>
                             </div>
                         </div>
                         
                         <div className="pillar-card">
-                            <div className="pillar-badge">
-                                <span>{t.game.pillars?.fastPaced.title}</span>
-                            </div>
+                            <h3 className="pillar-title">{t.game.pillars?.fastPaced.title}</h3>
                             <div className="pillar-text">
                                 <p>{t.game.pillars?.fastPaced.description}</p>
-                            </div>
-                        </div>
-                        
-                        <div className="pillar-card">
-                            <div className="pillar-badge">
-                                <span>{t.game.pillars?.ownEngine.title}</span>
-                            </div>
-                            <div className="pillar-text">
-                                <p>{t.game.pillars?.ownEngine.description}</p>
                             </div>
                         </div>
                     </div>
@@ -181,24 +185,62 @@ const Game: React.FC = () => {
                 
                 {/* Ultramarine Section */}
                 <div className="ultramarine-wrapper">
+                    <video
+                        className="ultramarine-background-video"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload={isMobile ? "none" : "metadata"}
+                    >
+                        <source 
+                            src={assets.videos.spaceMarine}
+                            type="video/mp4" 
+                        />
+                    </video>
                     <h2 className="ultramarine-heading">{t.game.ultramarine?.heading}</h2>
                     <div className="ultramarine-layout">
-                        <div className="ultramarine-picture">
-                            <img src={assets.images.gameScreenshots.screenshot1} alt={t.game.altTexts?.ultramarineCharacter} />
+                        <div className="detail-card">
+                            <h3>{t.game.ultramarine?.character.title}</h3>
+                            <p>{t.game.ultramarine?.character.description}</p>
                         </div>
-                        <div className="ultramarine-details">
-                            <div className="detail-block">
-                                <h3>{t.game.ultramarine?.character.title}</h3>
-                                <p>{t.game.ultramarine?.character.description}</p>
+                        <div className="detail-card">
+                            <h3>{t.game.ultramarine?.abilities.title}</h3>
+                            <p>{t.game.ultramarine?.abilities.description}</p>
+                        </div>
+                    </div>
+                    
+                    {/* Weapons Section */}
+                    <div className="weapons-section">
+                        <h3 className="weapons-title">{t.game.ultramarine?.weapons.title}</h3>
+                        <p className="weapons-description">{t.game.ultramarine?.weapons.description}</p>
+                        <div className="weapon-selector">
+                            <button className="weapon-arrow left" onClick={prevWeapon}>
+                                <span>‹</span>
+                            </button>
+                            <div className="weapon-display">
+                                <div className="weapon-image-container">
+                                    <img 
+                                        key={selectedWeapon}
+                                        src={weapons[selectedWeapon].image} 
+                                        alt={weapons[selectedWeapon].name}
+                                        className="weapon-image"
+                                    />
+                                </div>
+                                <h4 className="weapon-name">{weapons[selectedWeapon].name}</h4>
                             </div>
-                            <div className="detail-block">
-                                <h3>{t.game.ultramarine?.weapons.title}</h3>
-                                <p>{t.game.ultramarine?.weapons.description}</p>
-                            </div>
-                            <div className="detail-block">
-                                <h3>{t.game.ultramarine?.abilities.title}</h3>
-                                <p>{t.game.ultramarine?.abilities.description}</p>
-                            </div>
+                            <button className="weapon-arrow right" onClick={nextWeapon}>
+                                <span>›</span>
+                            </button>
+                        </div>
+                        <div className="weapon-indicators">
+                            {weapons.map((_, index) => (
+                                <button 
+                                    key={index}
+                                    className={`weapon-indicator ${index === selectedWeapon ? 'active' : ''}`}
+                                    onClick={() => setSelectedWeapon(index)}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
