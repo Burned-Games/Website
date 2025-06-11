@@ -18,7 +18,7 @@ const EngineSection: React.FC<EngineSectionProps> = ({
 }) => (
   <div
     style={{
-      height: '75vh',
+      height: '600px',
       width: '100%',
       background,
       display: 'flex',
